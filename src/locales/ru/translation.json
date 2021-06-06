@@ -14,11 +14,11 @@
       "promotion": "Новое жилье",
 
       "services": {
-        "manage": "Gestionamos tu compra",
-        "assistance": "Nuestra asistencia tras la compra-venta",
-        "caser": "Seguro Caser",
-        "tyco": "Alarma TYCO",
-        "iberdrola": "Energética Iberdrola"
+        "manage": "Сопровождение сделок",
+        "assistance": "Помощь при покупке -продаже недвижимости",
+        "caser": "Страховая компания Caser",
+        "tyco": "Системы Сигнализации компании Tyco",
+        "iberdrola": "Энергетическая группа Iberdrola"
       }
     }
   },
@@ -38,49 +38,49 @@
     },
 
     "manage": {
-      "p1": "¿Las gestiones que debes realizar para la compra de tu nueva casa te sobrecargan?",
-      "p2": "Las gestiones que hacemos de forma gratuita para que evites mayor estrés:",
-      "p3": "Formalización del N.I.E. (si hace falta)",
-      "p4": "Solicitud de toda la documentación necesaria referente a la propiedad elegida para estudio profundizado de la situación económica y catastral.",
-      "p5": "Garantizar la venta del inmueble libre de deudas, embargos, inquilinos o cualquier otra obligación frente a terceros",
-      "p6": "Asesoramiento de apertura de cuenta bancaria",
-      "p7": "Formalización notarial de compra-venta de acuerdo con la actual legislación española",
-      "p8": "Formalización de la hipoteca para la compra o construcción de la vivienda",
-      "p9": "Servicios de traducción"
+      "p1": "Вы хотите сэкономить время при оформлении сделки купли-продажи недвижимости ?",
+      "p2": "Наши специалисты помогут в предоставлении полного пакета услуг :",
+      "p3": "Получение номера  N.I.E. (в случае необходимости ).",
+      "p4": "Предоставление всех необходимых документов, касающихся имущества, для  детального изучения:  финансовое состояние  и кадастровые данные.",
+      "p5": "Гарантия  продажи  имущества, свободного от долгов, эмбарго, арендаторов или любых других обязательств перед третьими лицами.",
+      "p6": "Помощь  в открытии банковского счета.",
+      "p7": "Нотариальное сопровождение сделки  купли-продажи в соответствии с действующим испанским законодательством.",
+      "p8": "Оформление  ипотеки на покупку или строительство жилья.",
+      "p9": "Услуги по переводу."
     },
 
     "assistance": {
-      "p1": "¿La realización de los pagos y los trámites post compra-venta requieren mucho tiempo y eso a ti te gustaría ahorrarlo?",
-      "p2": "Confía en nosotros y lo realizamos rápidamente por un precio razonable.",
-      "p3": "A continuación, te indicamos los trámites que hay que realizar tras la compra-venta:",
-      "p4": "Realización del pago de los impuestos: IGIC (Impuesto General Islas Canarias) o ITP (Impuesto Transmisiones Patrimoniales)",
-      "p5": "Alta en todas las tasas municipales y de servicios, IBI (impuesto sobre bienes inmuebles), basura, alcantarillado, agua y luz",
-      "p6": "Presentación y pago en el Registro de la Propiedad",
-      "p7": "Otras consultas jurídicas y servicios relacionados con asuntos inmobiliarios",
-      "p8": "Alquiler a corto y a largo plazo de villas, pisos, apartamentos y etc.",
-      "p9": "Realización de proyectos en inversión",
-      "p10": "Servicios notariales y de traducción en asuntos relacionados con bienes inmuebles",
-      "p11": "Reformas en general"
+      "p1": "Платежи и послепродажные процедуры требуют много времени, и вы хотели бы его сэкономить?",
+      "p2": "Мы поможем сэкономить время и средства при оформлении сделки купли-продажи недвижимости.",
+      "p3": "Далее указываем процедуры, которые необходимо провести после продажи:",
+      "p4": "Оплата налогов: IGIC (НДС Канарских островов) или ITP (передаточный налог ).",
+      "p5": "Постановка на учёт во всех  муниципальных  и налоговых органах  согласно существующим ставкам и налогам :IBI (налог на недвижимость), мусор, канализация, вода и свет.",
+      "p6": "Представление и оплата в реестре собственников жилья.",
+      "p7": "Другие юридические  и  прочие услуги, связанные с недвижимостью. ",
+      "p8": "Краткосрочная и долгосрочная аренда домов и апартаментов.",
+      "p9": "Разработка  инвестиционных проектов.",
+      "p10": "Нотариальные и переводческие услуги по вопросам, касающимся недвижимости.",
+      "p11": "Ремонт недвижимости."
     },
 
     "caser": {
-      "p1": "Información Corporativa Caser Seguros",
-      "p2": "Caser es un grupo asegurador que nació hace más de 75 años. Hoy, nuestro propósito es el mismo que entonces: ofrecer un producto de valor y un excelente servicio.",
-      "p3": "En 1942 comenzamos dando cobertura a la Asociación de Agricultores. Poco a poco, fuimos incorporando productos para particulares y empresas, y crecimos hasta convertirnos en un grupo asegurador multigrano y especialista en servicio. Desde 2003 operamos en otros mercados que comparten sinergias con el asegurador: residencias para personas mayores, hospitales o facility management.",
-      "p4": "Procuramos conocer en detalle las necesidades de los clientes y anticiparnos con seguros y servicios innovadores."
+      "p1": "Страховая компания Caser - группа ,основанная более 75 лет назад.",
+      "p2": "Страховая компания Caser - группа ,основанная более 75 лет назад. Сегодня  целью группы остается предоставление  качественного  продукта и отличного сервиса.",
+      "p3": "В 1942 году компания начала с предложения  ассоциации фермеров. Постепенно были разработаны   продукты для частных  и физических лиц. На данный момент Caser является многопрофильной страховой группой и ведущими специалистами  в сфере страхового обслуживания. С 2003 года группа работает  на смежных  рынках, предлагая услуги по страхованию : дома для престарелых , больницы  и органы по управлению имуществом.",
+      "p4": "Приоритетом работы компании является  учёт  пожеланий клиентов ,предлагая инновационные технологии в области страхования имущества."
     },
 
     "tyco": {
-      "p1": "Las alarmas de Tyco, ahora conocidas como ADT Alarmas, son las que mejor calidad-precio ofrecen entre las grandes empresas de seguridad españolas e internacionales.",
-      "p2": "Te explicamos la clave de sus alarmas y todos los elementos que incorporan.",
-      "p3": "En el mes de enero de 2020 la empresa de seguridad Tyco, propiedad de Johnson Controls ha pasado a llamarse ADT. El cambio de nombre ha traído grandes innovaciones a sus sistemas de seguridad y nuevos packs de alarmas.",
-      "p4": "¡Te lo contamos!"
+      "p1": "Системы Сигнализации компании Tyco на сегодняшний день известны как ADT Salentas.",
+      "p2": "Компания является одной из лучших на рынке среди крупных испанских и международных охранных компаний в рамках сочетания цены и качества.",
+      "p3": "В январе 2020 года охранная компания Tyco, принадлежащая Johnson Controls, стала называться ADT. ",
+      "p4": "Реструктуризация компании привела к большим технологическим изменениям в системах безопасности  с предоставлением новых пакетов по услугам систем сигнализации."
     },
 
     "iberdrola": {
-      "p1": "Iberdrola, S. A. es una empresa española que tiene la sede en Bilbao, en el País Vasco, España. Es un grupo empresarial dedicado a la producción, distribución y comercialización de energía. Su nombre es el resultado de la fusión a finales de los 80 de Iberduero con Hidrola, dos empresas eléctricas que a su vez eran fusiones de otras anteriores.",
-      "p2": "Iberdrola constituye una de las grandes empresas eléctricas a nivel internacional, es el segundo grupo de producción eléctrica en España, el primer grupo energético de España por capitalización bursátil y cuarto del mundo y se sitúa a la cabeza del sector eólico mundial.",
-      "p3": "Iberdrola es la séptima empresa que emite más toneladas de CO2 equivalente en España. En el año 2018 Iberdrola se comprometió a reducir las emisiones de CO2 en un 50% para 2030 y a finales de 2017 anunció su intención de cerrar todas las centrales térmicas de carbón que tenía en el mundo."
+      "p1": "Iberdrola, S. A. - испанская компания, штаб-квартира которой находится в Бильбао, Страна Васко, Испания. Бизнес -группа  занимается производством, распределением и продажей Электроэнергии. Своё название группа получила в результате слияния в конце 80-х годов компаний «Ибердуэро» с «Гидролой» - двумя компаниями в области электрификации.",
+      "p2": "Компания «Ибердрола» является одной из крупнейших электросетевых компаний на международном уровне и  второй группой по производству электроэнергии в Испании. Также она является первой  в Испании и четвертой в мире энергетической группой по фондовой капитализации , занимая  лидирующие позиции в мировом ветроэнергетическом секторе.",
+      "p3": "Iberdrola - седьмая компания, которая выпускает больше всего тонн CO2 газа в Испании. В 2018 году «Ибердрола» взяла на себя обязательство сократить выбросы CO2 на 50% к 2030 году и в конце 2017 года объявила о намерении закрыть все угольные тепловые электростанции, которые находятся на ее балансе в мире."
     }
   },
 
