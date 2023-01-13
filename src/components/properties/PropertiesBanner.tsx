@@ -1,7 +1,8 @@
-import React, { FC } from "react";
 import { Container, Typography } from "@material-ui/core";
-import { ParallaxBanner } from "react-scroll-parallax";
+import React, { FC } from "react";
+
 import { FluidObject } from "gatsby-image";
+import { ParallaxBanner } from "react-scroll-parallax";
 
 type Props = {
   image: FluidObject;
@@ -13,7 +14,7 @@ const PropertiesBanner: FC<Props> = ({ image, title, subtitle }) => {
   return (
     <ParallaxBanner
       className="about-container"
-      layers={[{ image: image.src, amount: 0.5 }]}
+      layers={[{ image: image.src, speed: -20 }]}
     >
       <div className="about-overlay" />
       <div className="about-text">

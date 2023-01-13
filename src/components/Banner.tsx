@@ -1,6 +1,7 @@
 import React, { FC } from "react";
-import { Grid } from "@material-ui/core";
+
 import { FluidObject } from "gatsby-image";
+import { Grid } from "@material-ui/core";
 import { ParallaxBanner } from "react-scroll-parallax";
 
 type Props = {
@@ -29,7 +30,7 @@ export const Banner: FC<Props> = ({
         {image ? (
           <ParallaxBanner
             className={`banner-container banner-${size}`}
-            layers={[{ image: image.src, amount: 0.4 }]}
+            layers={[{ image: image.src, speed: -20 }]}
           >
             <div
               className={`mobile-padding banner-container banner-${size} ${

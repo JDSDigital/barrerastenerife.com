@@ -92,7 +92,7 @@ const MainSlider: React.FC = () => {
   return (
     <ParallaxBanner
       className="main-slider"
-      layers={[{ image: data.image.childImageSharp.fluid.src, amount: 0.3 }]}
+      layers={[{ image: data.image.childImageSharp.fluid.src, speed: -20 }]}
     >
       <Container className="main-slider-container">
         <Hidden xsDown>

@@ -23,7 +23,12 @@ const AboutBanner = () => {
   return (
     <ParallaxBanner
       className="about-container"
-      layers={[{ image: image.banner.childImageSharp.fluid.src, amount: 0.5 }]}
+      layers={[
+        {
+          image: image.banner.childImageSharp.fluid.src,
+          speed: -20,
+        },
+      ]}
     >
       <div className="about-overlay" />
       <div className="about-text">
