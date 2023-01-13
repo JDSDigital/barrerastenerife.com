@@ -66,9 +66,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-react-i18next`,
+      resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/locales`,
+        name: `locale`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        localeJsonSourceName: `locale`,
         languages: [`es`, `en`, `ru`, `it`],
         defaultLanguage: `es`,
 
