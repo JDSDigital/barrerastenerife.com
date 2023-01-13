@@ -1,11 +1,10 @@
-import React from "react";
-import { PageProps } from "gatsby";
-
-import Layout from "components/layout";
-import SEO from "components/SEO";
 import Detail from "components/properties/Detail";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import Layout from "components/layout";
+import { PageProps } from "gatsby";
+import React from "react";
+import SEO from "components/SEO";
 import { getProperty } from "../utils";
+import { useTranslation } from "hooks/useTranslation";
 
 const PropertyPage: React.FC<PageProps> = ({ location }) => {
   const { t } = useTranslation();

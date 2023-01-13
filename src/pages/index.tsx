@@ -1,17 +1,16 @@
-import React from "react";
-import { graphql, PageProps, useStaticQuery } from "gatsby";
 import { Container, Typography } from "@material-ui/core";
+import { PageProps, graphql, useStaticQuery } from "gatsby";
 
-import Layout from "components/layout";
-import SEO from "components/SEO";
-import MainSlider from "components/MainSlider";
-
-import { ServicesSection } from "components/ServicesSection";
-import { PropertiesSection } from "components/PropertiesSection";
-import { useTranslation } from "gatsby-plugin-react-i18next";
-import Partnerships from "components/Partnerships";
-import Testimonials from "components/testimonials/Testimonials";
 import { Banner } from "components/Banner";
+import Layout from "components/layout";
+import MainSlider from "components/MainSlider";
+import Partnerships from "components/Partnerships";
+import { PropertiesSection } from "components/PropertiesSection";
+import React from "react";
+import SEO from "components/SEO";
+import { ServicesSection } from "components/ServicesSection";
+import Testimonials from "components/testimonials/Testimonials";
+import { useTranslation } from "hooks/useTranslation";
 
 const IndexPage: React.FC<PageProps> = () => {
   const { t } = useTranslation();

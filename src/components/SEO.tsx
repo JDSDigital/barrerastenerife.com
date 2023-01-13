@@ -5,9 +5,10 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
+
 import { Helmet } from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
+import React from "react";
 
 type Meta = {
   name: string;
@@ -85,20 +86,21 @@ const SEO: React.FC<Props> = ({
           content: metaDescription,
         },
       ].concat(meta)}
-    >
-      <link
-        rel="icon"
-        type="image/png"
-        href="./assets/images/logo/favicon-32x32.png"
-        sizes="32x32"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        href="./assets/images/logo/favicon-16x16.png"
-        sizes="16x16"
-      />
-    </Helmet>
+      link={[
+        {
+          rel: "icon",
+          type: "image/png",
+          href: "./assets/images/logo/favicon-32x32.png",
+          sizes: "32x32",
+        },
+        {
+          rel: "icon",
+          type: "image/png",
+          href: "./assets/images/logo/favicon-16x16.png",
+          sizes: "16x16",
+        },
+      ]}
+    />
   );
 };
 

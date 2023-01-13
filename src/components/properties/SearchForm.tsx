@@ -1,4 +1,5 @@
-import React, { Dispatch, SetStateAction } from "react";
+import * as constants from "../../constants";
+
 import {
   Button,
   Card,
@@ -9,12 +10,13 @@ import {
   Slider,
   TextField,
 } from "@material-ui/core";
+import React, { Dispatch, SetStateAction } from "react";
+
+import { Search } from "models/Search";
 import SearchIcon from "@material-ui/icons/Search";
 import Select from "components/Select";
-import * as constants from "../../constants";
-import { Search } from "models/Search";
 import { formatPrice } from "../../utils";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { useTranslation } from "hooks/useTranslation";
 
 interface Props {
   types?: number;

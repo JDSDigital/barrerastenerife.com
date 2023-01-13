@@ -1,6 +1,7 @@
-import React from "react";
 import { InputLabel, MenuItem, TextField } from "@material-ui/core";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+
+import React from "react";
+import { useTranslation } from "hooks/useTranslation";
 
 interface Props {
   tKey?: string;

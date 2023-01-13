@@ -1,8 +1,10 @@
+import { Container, Grid, Typography } from "@material-ui/core";
+import Img, { FluidObject } from "gatsby-image";
 import React, { FC } from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import { Container, Grid, Typography } from "@material-ui/core";
-import { Link, useTranslation } from "gatsby-plugin-react-i18next";
-import Img, { FluidObject } from "gatsby-image";
+
+import { Link } from "gatsby-plugin-react-i18next";
+import { useTranslation } from "hooks/useTranslation";
 
 type Props = {
   image: FluidObject;

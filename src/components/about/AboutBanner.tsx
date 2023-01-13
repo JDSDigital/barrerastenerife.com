@@ -1,8 +1,9 @@
-import React from "react";
 import { Container, Typography } from "@material-ui/core";
-import { useStaticQuery, graphql } from "gatsby";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { graphql, useStaticQuery } from "gatsby";
+
 import { ParallaxBanner } from "react-scroll-parallax";
+import React from "react";
+import { useTranslation } from "hooks/useTranslation";
 
 const AboutBanner = () => {
   const { t } = useTranslation();

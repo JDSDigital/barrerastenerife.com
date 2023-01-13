@@ -1,16 +1,17 @@
-import React from "react";
-import { graphql, PageProps, useStaticQuery } from "gatsby";
+import { PageProps, graphql, useStaticQuery } from "gatsby";
+
+import Block from "components/contact/Block";
+import EmailIcon from "@material-ui/icons/Email";
+import Form from "components/contact/Form";
+import { Grid } from "@material-ui/core";
 import Img from "gatsby-image";
 import Layout from "components/layout";
-import SEO from "components/SEO";
-import { Grid } from "@material-ui/core";
-import RoomIcon from "@material-ui/icons/Room";
-import PhoneIcon from "@material-ui/icons/Phone";
-import EmailIcon from "@material-ui/icons/Email";
-import Block from "components/contact/Block";
-import Form from "components/contact/Form";
 import MapView from "components/maps/MapView";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import PhoneIcon from "@material-ui/icons/Phone";
+import React from "react";
+import RoomIcon from "@material-ui/icons/Room";
+import SEO from "components/SEO";
+import { useTranslation } from "hooks/useTranslation";
 
 const ContactPage: React.FC<PageProps> = () => {
   const data = useStaticQuery(graphql`

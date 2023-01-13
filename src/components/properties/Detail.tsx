@@ -1,23 +1,25 @@
-import React from "react";
 import {
-  CircularProgress,
+  Card,
+  CardContent,
+  CardHeader,
   Chip,
+  CircularProgress,
   Container,
   Grid,
-  Card,
-  CardHeader,
-  CardContent,
   Typography,
 } from "@material-ui/core";
-import RoomIcon from "@material-ui/icons/Room";
+
+import Form from "components/contact/Form";
+import { I18nextContext } from "gatsby-plugin-react-i18next";
 import ImageGallery from "react-image-gallery";
-import PropertyFooter from "./PropertyFooter";
-import { formatPrice } from "../../utils";
+import List from "./List";
 import MapView from "components/maps/MapView";
 import { Property } from "models/Property";
-import { I18nextContext, useTranslation } from "gatsby-plugin-react-i18next";
-import Form from "components/contact/Form";
-import List from "./List";
+import PropertyFooter from "./PropertyFooter";
+import React from "react";
+import RoomIcon from "@material-ui/icons/Room";
+import { formatPrice } from "../../utils";
+import { useTranslation } from "hooks/useTranslation";
 
 const Detail = ({ property }: { property: Property | undefined }) => {
   if (!property) {

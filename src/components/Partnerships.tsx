@@ -1,9 +1,10 @@
+import { Container, Link, Tooltip, Typography } from "@material-ui/core";
+import { graphql, useStaticQuery } from "gatsby";
+
+import Img from "gatsby-image";
 import React from "react";
 import Slider from "react-slick";
-import { Container, Typography, Link, Tooltip } from "@material-ui/core";
-import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { useTranslation } from "hooks/useTranslation";
 
 const partners = [
   {

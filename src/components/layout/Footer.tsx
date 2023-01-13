@@ -1,11 +1,12 @@
-import React from "react";
-import { Grid } from "@material-ui/core";
-import { graphql, Link, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
+import { Link, graphql, useStaticQuery } from "gatsby";
+
 import FacebookIcon from "@material-ui/icons/Facebook";
+import { Grid } from "@material-ui/core";
+import Img from "gatsby-image";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import LatestProperties from "components/LatestProperties";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import React from "react";
+import { useTranslation } from "hooks/useTranslation";
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();

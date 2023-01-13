@@ -1,8 +1,9 @@
 import React, { FC } from "react";
+
 import { Button } from "@material-ui/core";
 import Field from "./Field";
 import { sendMail } from "../../utils";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { useTranslation } from "hooks/useTranslation";
 
 type FormProps = {
   fullWidth?: boolean;

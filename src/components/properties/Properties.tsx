@@ -1,12 +1,14 @@
-import React, { FC, useState } from "react";
+import * as constants from "../../constants";
+
 import { Button, Container, Grid } from "@material-ui/core";
 import { QueryStatus, useQuery } from "react-query";
-import { Search } from "models/Search";
-import { getPropertyList } from "../../utils";
+import React, { FC, useState } from "react";
+
 import List from "./List";
+import { Search } from "models/Search";
 import SearchForm from "./SearchForm";
-import * as constants from "../../constants";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { getPropertyList } from "../../utils";
+import { useTranslation } from "hooks/useTranslation";
 
 type Props = {
   type?: number;

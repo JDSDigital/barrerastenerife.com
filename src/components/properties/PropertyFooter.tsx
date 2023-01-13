@@ -1,10 +1,11 @@
-import React from "react";
 import { CardActions, Grid } from "@material-ui/core";
-import CropFreeIcon from "@material-ui/icons/CropFree";
-import HotelIcon from "@material-ui/icons/Hotel";
+
 import BathtubIcon from "@material-ui/icons/Bathtub";
+import CropFreeIcon from "@material-ui/icons/CropFree";
 import FooterItem from "./PropertyFooterItem";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import HotelIcon from "@material-ui/icons/Hotel";
+import React from "react";
+import { useTranslation } from "hooks/useTranslation";
 
 interface Props {
   detail?: boolean;

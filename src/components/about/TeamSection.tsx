@@ -5,10 +5,11 @@ import {
   Grid,
   Typography,
 } from "@material-ui/core";
-import { graphql, useStaticQuery } from "gatsby";
 import Img, { FluidObject } from "gatsby-image";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { graphql, useStaticQuery } from "gatsby";
+
 import React from "react";
+import { useTranslation } from "hooks/useTranslation";
 
 const TeamSection = () => {
   const { t } = useTranslation();

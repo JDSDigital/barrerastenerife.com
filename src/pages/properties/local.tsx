@@ -1,11 +1,12 @@
-import React from "react";
-import { PageProps } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
+
 import Layout from "components/layout";
-import SEO from "components/SEO";
+import { PageProps } from "gatsby";
 import { Properties } from "components/properties/Properties";
-import { useTranslation } from "gatsby-plugin-react-i18next";
-import { useStaticQuery, graphql } from "gatsby";
 import PropertiesBanner from "components/properties/PropertiesBanner";
+import React from "react";
+import SEO from "components/SEO";
+import { useTranslation } from "hooks/useTranslation";
 
 const LocalProperties: React.FC<PageProps> = () => {
   const { t } = useTranslation();

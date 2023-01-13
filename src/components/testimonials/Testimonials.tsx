@@ -1,8 +1,10 @@
-import React from "react";
-import { Banner } from "components/Banner";
 import { Container, Typography } from "@material-ui/core";
 import { graphql, useStaticQuery } from "gatsby";
-import { useTranslation, Link } from "gatsby-plugin-react-i18next";
+
+import { Banner } from "components/Banner";
+import { Link } from "gatsby-plugin-react-i18next";
+import React from "react";
+import { useTranslation } from "hooks/useTranslation";
 
 const Testimonials = () => {
   const { t } = useTranslation();

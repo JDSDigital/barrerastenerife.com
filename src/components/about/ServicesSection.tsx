@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Card,
   CardContent,
@@ -6,7 +5,9 @@ import {
   Grid,
   Typography,
 } from "@material-ui/core";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+
+import React from "react";
+import { useTranslation } from "hooks/useTranslation";
 
 const ServicesSection = () => {
   const { t } = useTranslation();

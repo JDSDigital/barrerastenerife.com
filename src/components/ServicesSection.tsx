@@ -1,8 +1,9 @@
-import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
 import { Container, Grid } from "@material-ui/core";
+import { graphql, useStaticQuery } from "gatsby";
+
+import React from "react";
 import { Service } from "./Service";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { useTranslation } from "hooks/useTranslation";
 
 export const ServicesSection = () => {
   const { t } = useTranslation();
