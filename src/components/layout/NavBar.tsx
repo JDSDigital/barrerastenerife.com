@@ -1,6 +1,7 @@
 import { Hidden, List, ListItem } from "@material-ui/core";
-import { Link } from "gatsby-plugin-react-i18next";
 import React, { FC } from "react";
+
+import { Link } from "gatsby-plugin-react-i18next";
 
 type Props = {
   linkList: {
@@ -15,6 +16,7 @@ type Props = {
 
 const NavBar: FC<Props> = ({ linkList }) => {
   return (
+    // @ts-ignore TODO: Fix react children type error
     <Hidden smDown>
       <List className="top-menu ml-auto">
         {linkList.map((link, index) => (

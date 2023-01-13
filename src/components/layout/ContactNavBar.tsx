@@ -1,6 +1,7 @@
-import React, { FC } from "react";
 import { Container, Hidden, List, ListItem } from "@material-ui/core";
 import { Link, useI18next } from "gatsby-plugin-react-i18next";
+import React, { FC } from "react";
+
 import Img from "gatsby-image";
 
 type Props = {
@@ -12,6 +13,7 @@ const ContactNavBar: FC<Props> = ({ params, images }) => {
   const { languages, originalPath } = useI18next();
 
   return (
+    // @ts-ignore TODO: Fix react children type error
     <Hidden smDown>
       <div className="contact-bar">
         <Container className="text-right contact-bar">

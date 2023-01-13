@@ -95,6 +95,7 @@ const MainSlider: React.FC = () => {
       layers={[{ image: data.image.childImageSharp.fluid.src, speed: -20 }]}
     >
       <Container className="main-slider-container">
+        {/* @ts-ignore TODO: Fix react children type error */}
         <Hidden xsDown>
           <SearchForm />
         </Hidden>

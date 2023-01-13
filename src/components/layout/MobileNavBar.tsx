@@ -1,4 +1,3 @@
-import React, { FC, useState } from "react";
 import {
   Collapse,
   Hidden,
@@ -8,9 +7,11 @@ import {
   SwipeableDrawer,
 } from "@material-ui/core";
 import { Link, useI18next } from "gatsby-plugin-react-i18next";
+import React, { FC, useState } from "react";
+
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Img from "gatsby-image";
 import MenuIcon from "@material-ui/icons/Menu";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 type Props = {
   linkList: {
@@ -34,6 +35,7 @@ const MobileNavBar: FC<Props> = ({ linkList, images, params }) => {
   };
 
   return (
+    // @ts-ignore TODO: Fix react children type error
     <Hidden mdUp>
       <IconButton
         aria-label="open drawer"
