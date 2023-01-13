@@ -1,34 +1,25 @@
-import { graphql, useStaticQuery } from "gatsby";
-
 import Layout from "components/layout";
 import { PageProps } from "gatsby";
 import { PromotionContainer } from "components/promotion/PromotionContainer";
 import PropertiesBanner from "components/properties/PropertiesBanner";
 import React from "react";
 import SEO from "components/SEO";
+import { graphql } from "gatsby";
 import { useTranslation } from "hooks/useTranslation";
 
-const NewProperties: React.FC<PageProps> = () => {
+type NewPropertiesProps = {
+  banner: any; // TODO: Get image type
+};
+
+const NewProperties: React.FC<PageProps<NewPropertiesProps>> = ({ data }) => {
   const { t } = useTranslation();
   const title = t("header.link.promotion");
-
-  const image = useStaticQuery(graphql`
-    query {
-      banner: file(relativePath: { eq: "bg/developments.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1366) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
 
   return (
     <Layout>
       <SEO title={title} />
       <PropertiesBanner
-        image={image.banner.childImageSharp.fluid}
+        image={data.banner.childImageSharp.fluid}
         title={t("folders.promotion.title")}
       />
       <PromotionContainer />
@@ -37,3 +28,23 @@ const NewProperties: React.FC<PageProps> = () => {
 };
 
 export default NewProperties;
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          data
+          language
+        }
+      }
+    }
+    banner: file(relativePath: { eq: "bg/developments.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1366) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

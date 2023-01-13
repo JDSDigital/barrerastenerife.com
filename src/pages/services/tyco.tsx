@@ -1,5 +1,5 @@
 import { Container, Grid, Typography } from "@material-ui/core";
-import { PageProps, graphql, useStaticQuery } from "gatsby";
+import { PageProps, graphql } from "gatsby";
 
 import Img from "gatsby-image";
 import Layout from "components/layout";
@@ -7,21 +7,13 @@ import React from "react";
 import SEO from "components/SEO";
 import { useTranslation } from "hooks/useTranslation";
 
-const Tyco: React.FC<PageProps> = () => {
+type TycoPageProps = {
+  service: any; // TODO: Get image type
+};
+
+const Tyco: React.FC<PageProps<TycoPageProps>> = ({ data }) => {
   const { t } = useTranslation();
   const title = t("header.link.services.tyco");
-
-  const image = useStaticQuery(graphql`
-    query {
-      service: file(relativePath: { eq: "services/tyco.jpeg" }) {
-        childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
 
   return (
     <Layout>
@@ -46,7 +38,7 @@ const Tyco: React.FC<PageProps> = () => {
             <Typography variant="body1">{t("services.tyco.p4")}</Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Img fluid={image.service.childImageSharp.fluid} />
+            <Img fluid={data.service.childImageSharp.fluid} />
           </Grid>
         </Grid>
       </Container>
@@ -55,3 +47,23 @@ const Tyco: React.FC<PageProps> = () => {
 };
 
 export default Tyco;
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          data
+          language
+        }
+      }
+    }
+    service: file(relativePath: { eq: "services/tyco.jpeg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

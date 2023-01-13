@@ -1,4 +1,4 @@
-import { PageProps, graphql, useStaticQuery } from "gatsby";
+import { PageProps, graphql } from "gatsby";
 
 import Block from "components/contact/Block";
 import EmailIcon from "@material-ui/icons/Email";
@@ -13,19 +13,11 @@ import RoomIcon from "@material-ui/icons/Room";
 import SEO from "components/SEO";
 import { useTranslation } from "hooks/useTranslation";
 
-const ContactPage: React.FC<PageProps> = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "bg/1.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1366) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
+type ContactPageProps = {
+  placeholderImage: any; // TODO: Get image type
+};
 
+const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
   const { t } = useTranslation();
 
   return (
@@ -68,3 +60,23 @@ const ContactPage: React.FC<PageProps> = () => {
 };
 
 export default ContactPage;
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          data
+          language
+        }
+      }
+    }
+    placeholderImage: file(relativePath: { eq: "bg/1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1366) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

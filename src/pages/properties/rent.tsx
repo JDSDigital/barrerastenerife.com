@@ -1,34 +1,25 @@
-import { graphql, useStaticQuery } from "gatsby";
-
 import Layout from "components/layout";
 import { PageProps } from "gatsby";
 import { Properties } from "components/properties/Properties";
 import PropertiesBanner from "components/properties/PropertiesBanner";
 import React from "react";
 import SEO from "components/SEO";
+import { graphql } from "gatsby";
 import { useTranslation } from "hooks/useTranslation";
 
-const RentProperties: React.FC<PageProps> = () => {
+type RentPropertiesProps = {
+  banner: any; // TODO: Get image type
+};
+
+const RentProperties: React.FC<PageProps<RentPropertiesProps>> = ({ data }) => {
   const { t } = useTranslation();
   const title = t("header.link.rent");
-
-  const image = useStaticQuery(graphql`
-    query {
-      banner: file(relativePath: { eq: "bg/rent.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1366) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
 
   return (
     <Layout>
       <SEO title={title} />
       <PropertiesBanner
-        image={image.banner.childImageSharp.fluid}
+        image={data.banner.childImageSharp.fluid}
         title={t("properties.rent")}
       />
       <Properties contract={1} disableContract={true} />
@@ -37,3 +28,23 @@ const RentProperties: React.FC<PageProps> = () => {
 };
 
 export default RentProperties;
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          data
+          language
+        }
+      }
+    }
+    banner: file(relativePath: { eq: "bg/rent.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1366) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

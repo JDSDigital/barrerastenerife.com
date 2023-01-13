@@ -1,9 +1,9 @@
-import React from "react";
 import { Button, Grid } from "@material-ui/core";
-import { PageProps, navigate } from "gatsby";
-import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import { PageProps, graphql, navigate } from "gatsby";
 
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import Layout from "components/layout";
+import React from "react";
 import SEO from "components/SEO";
 
 const NotFoundPage: React.FC<PageProps> = () => (
@@ -32,3 +32,16 @@ const NotFoundPage: React.FC<PageProps> = () => (
 );
 
 export default NotFoundPage;
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          data
+          language
+        }
+      }
+    }
+  }
+`;

@@ -1,5 +1,5 @@
 import { Container, Grid, Typography } from "@material-ui/core";
-import { PageProps, graphql, useStaticQuery } from "gatsby";
+import { PageProps, graphql } from "gatsby";
 
 import Img from "gatsby-image";
 import Layout from "components/layout";
@@ -7,21 +7,13 @@ import React from "react";
 import SEO from "components/SEO";
 import { useTranslation } from "hooks/useTranslation";
 
-const Assistance: React.FC<PageProps> = () => {
+type AssistancePageProps = {
+  service: any; // TODO: Get image type
+};
+
+const Assistance: React.FC<PageProps<AssistancePageProps>> = ({ data }) => {
   const { t } = useTranslation();
   const title = t("header.link.services.assistance");
-
-  const image = useStaticQuery(graphql`
-    query {
-      service: file(relativePath: { eq: "services/assistance.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
 
   return (
     <Layout>
@@ -94,7 +86,7 @@ const Assistance: React.FC<PageProps> = () => {
           </Grid>
 
           <Grid item xs={12} sm={4}>
-            <Img fluid={image.service.childImageSharp.fluid} />
+            <Img fluid={data.service.childImageSharp.fluid} />
           </Grid>
         </Grid>
       </Container>
@@ -103,3 +95,23 @@ const Assistance: React.FC<PageProps> = () => {
 };
 
 export default Assistance;
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          data
+          language
+        }
+      }
+    }
+    service: file(relativePath: { eq: "services/assistance.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

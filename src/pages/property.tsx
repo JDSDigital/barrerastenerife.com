@@ -1,6 +1,7 @@
+import { PageProps, graphql } from "gatsby";
+
 import Detail from "components/properties/Detail";
 import Layout from "components/layout";
-import { PageProps } from "gatsby";
 import React from "react";
 import SEO from "components/SEO";
 import { getProperty } from "../utils";
@@ -22,3 +23,16 @@ const PropertyPage: React.FC<PageProps> = ({ location }) => {
 };
 
 export default PropertyPage;
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          data
+          language
+        }
+      }
+    }
+  }
+`;
