@@ -1,8 +1,9 @@
-import React from "react";
 import { Container, Grid, Typography } from "@material-ui/core";
 import { graphql, useStaticQuery } from "gatsby";
-import { Link } from "gatsby-plugin-react-i18next";
+
 import Img from "gatsby-image";
+import { Link } from "gatsby-plugin-react-i18next";
+import React from "react";
 import { promotions } from "../../constants";
 
 export const PromotionContainer = () => {
@@ -90,7 +91,7 @@ export const PromotionContainer = () => {
 
   return (
     <Container>
-      <Grid container alignItems="center" justify="center">
+      <Grid container alignItems="center" justifyContent="center">
         {promotions.map(promotion => (
           <Grid key={promotion.type} item xs={12} sm={6} md={4}>
             <Link to={`/promotion/list/?tag=${promotion.type}`}>

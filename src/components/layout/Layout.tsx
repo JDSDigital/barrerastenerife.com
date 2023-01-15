@@ -5,19 +5,18 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import "assets/scss/custom-theme.scss";
+
+import { QueryClient, QueryClientProvider } from "react-query";
+import { graphql, useStaticQuery } from "gatsby";
 
 import { Container } from "@material-ui/core";
 import CustomThemeProvider from "../theme/CustomThemeProvider";
-import "assets/scss/custom-theme.scss";
-
-import Header from "./Header";
 import Footer from "./Footer";
-
-import { QueryClient, QueryClientProvider } from "react-query";
-import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import Header from "./Header";
 import { ParallaxProvider } from "react-scroll-parallax";
+import React from "react";
+import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 
 interface Props {
   children: any;
@@ -25,7 +24,11 @@ interface Props {
 
 const WhatsAppButton = () => {
   return (
-    <a href="https://wa.me/34638418917" target="_blank">
+    <a
+      href="https://wa.me/34638418917"
+      target="_blank"
+      aria-label="go to whatsapp"
+    >
       <div className="whatsapp-button">
         <WhatsAppIcon fontSize="large" />
       </div>

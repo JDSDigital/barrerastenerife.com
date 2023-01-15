@@ -94,7 +94,7 @@ export const PropertiesSection = () => {
 
   return (
     <Container className="mt-10 mb-10">
-      <Grid container spacing={5} justify="center">
+      <Grid container spacing={5} justifyContent="center">
         <HomePropertiesContainer
           to="/properties/buy"
           image={images.buy.childImageSharp.fluid}

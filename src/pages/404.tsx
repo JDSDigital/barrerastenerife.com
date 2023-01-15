@@ -9,7 +9,7 @@ import SEO from "components/SEO";
 const NotFoundPage: React.FC<PageProps> = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <Grid container spacing={2} justify="center" alignItems="center">
+    <Grid container spacing={2} justifyContent="center" alignItems="center">
       <Grid item xs={12} className="text-center">
         <h1 className="error-title">404</h1>
       </Grid>

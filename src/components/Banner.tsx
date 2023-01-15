@@ -23,7 +23,7 @@ export const Banner: FC<Props> = ({
       className={`banner-root banner-${size} ${
         color ? "banner-primary-color" : ""
       }`}
-      justify="center"
+      justifyContent="center"
       alignItems="center"
     >
       <Grid item xs={12}>

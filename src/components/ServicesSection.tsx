@@ -23,7 +23,7 @@ export const ServicesSection = () => {
 
   return (
     <Container>
-      <Grid container spacing={2} justify="center" alignItems="stretch">
+      <Grid container spacing={2} justifyContent="center" alignItems="stretch">
         <Service
           to="/properties/buy"
           image={images.buy.publicURL}

@@ -133,7 +133,7 @@ const TeamSection = () => {
     <Container>
       <Grid
         container
-        justify="space-around"
+        justifyContent="space-around"
         className="team-section text-center"
         spacing={2}
       >

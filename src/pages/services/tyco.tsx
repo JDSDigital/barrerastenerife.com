@@ -28,7 +28,7 @@ const Tyco: React.FC<PageProps<TycoPageProps>> = ({ data }) => {
         <Grid
           container
           spacing={2}
-          justify="space-around"
+          justifyContent="space-around"
           className="service-page reverse-xs"
         >
           <Grid item xs={12} sm={6}>

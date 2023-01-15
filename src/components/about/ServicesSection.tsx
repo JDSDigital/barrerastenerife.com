@@ -14,7 +14,12 @@ const ServicesSection = () => {
 
   return (
     <Container>
-      <Grid container spacing={5} justify="center" className="about-content">
+      <Grid
+        container
+        spacing={5}
+        justifyContent="center"
+        className="about-content"
+      >
         <ServiceBox
           title={t("about.info.title")}
           text={t("about.info.description")}

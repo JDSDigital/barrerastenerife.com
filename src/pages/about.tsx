@@ -42,7 +42,12 @@ const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
 
       <Banner image={data.banner.childImageSharp.fluid}>
         <Container>
-          <Grid container spacing={2} justify="center" alignItems="stretch">
+          <Grid
+            container
+            spacing={2}
+            justifyContent="center"
+            alignItems="stretch"
+          >
             <Service
               circle
               to="/about#"
@@ -74,7 +79,7 @@ const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
       <TeamSection />
 
       <Container>
-        <Grid container justify="space-around" className="about-section">
+        <Grid container justifyContent="space-around" className="about-section">
           <Grid item xs={12} sm={6}>
             <Img
               fluid={data.founder.childImageSharp.fluid}
@@ -98,7 +103,7 @@ const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
 
         <Grid
           container
-          justify="space-around"
+          justifyContent="space-around"
           className="text-right reverse-xs about-section"
         >
           <Grid item xs={12} sm={4}>
@@ -122,7 +127,7 @@ const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
           </Grid>
         </Grid>
 
-        <Grid container justify="space-around" className="about-section">
+        <Grid container justifyContent="space-around" className="about-section">
           <Grid item xs={12} sm={6}>
             <Img
               fluid={data.service.childImageSharp.fluid}
