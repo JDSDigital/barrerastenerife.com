@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
     <footer>
       <Grid container spacing={5}>
         <Grid item xs={12} sm={3}>
-          <Link to="/">
+          <Link to="/" aria-label="go to home">
             <Img fixed={data.logo.childImageSharp.fixed} />
           </Link>
           <div className="mt-5">
@@ -54,6 +54,7 @@ const Footer: React.FC = () => {
               href="https://es-es.facebook.com/inmobiliariabarrerastenerife/"
               target="_blank"
               className="mr-3"
+              aria-label="go to facebook"
             >
               <FacebookIcon />
             </a>
@@ -61,6 +62,7 @@ const Footer: React.FC = () => {
               href="https://www.instagram.com/inmobarrerastenerife/"
               target="_blank"
               className="mr-3"
+              aria-label="go to instagram"
             >
               <InstagramIcon />
             </a>

@@ -1,9 +1,9 @@
-import React from "react";
 import { Card } from "@material-ui/core";
+import { Link } from "gatsby-plugin-react-i18next";
+import { Property } from "models/Property";
 import PropertyDescription from "./PropertyDescription";
 import PropertyFooter from "./PropertyFooter";
-import { Property } from "models/Property";
-import { Link } from "gatsby-plugin-react-i18next";
+import React from "react";
 
 interface Props {
   property: Property;
@@ -16,7 +16,7 @@ const PropertyCard: React.FC<Props> = ({ property }) => {
         <div className="property-card-media">
           <img
             src={property.pictures[0]}
-            alt={property.title}
+            alt={property.title || "Property title"}
             className="img-responsive crop-center"
           />
         </div>

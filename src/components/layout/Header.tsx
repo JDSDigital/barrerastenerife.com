@@ -1,6 +1,3 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
 import {
   AppBar,
   Container,
@@ -9,9 +6,13 @@ import {
   useScrollTrigger,
 } from "@material-ui/core";
 import { Link, useTranslation } from "gatsby-plugin-react-i18next";
+import { graphql, useStaticQuery } from "gatsby";
+
 import ContactNavBar from "./ContactNavBar";
-import NavBar from "./NavBar";
+import Img from "gatsby-image";
 import MobileNavBar from "./MobileNavBar";
+import NavBar from "./NavBar";
+import React from "react";
 
 interface Props {
   siteTitle: string;
@@ -109,7 +110,7 @@ const Header: React.FC<Props> = ({ siteTitle = "", ...rest }) => {
 
         <Container className="mt-3 mb-3">
           <Toolbar disableGutters>
-            <Link to="/" className="logo-link">
+            <Link to="/" className="logo-link" aria-label="go to home">
               <Img fixed={images.logo.childImageSharp.fixed} alt={siteTitle} />
             </Link>
 

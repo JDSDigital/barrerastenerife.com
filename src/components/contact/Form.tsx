@@ -69,6 +69,7 @@ const Form: FC<FormProps> = ({ fullWidth = false, id }) => {
           value={state.message}
         />
         <Button
+          type="submit"
           variant="contained"
           color="primary"
           size="large"

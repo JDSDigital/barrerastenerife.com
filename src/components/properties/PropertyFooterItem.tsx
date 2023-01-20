@@ -1,6 +1,7 @@
-import React from "react";
 import { Tooltip, Typography } from "@material-ui/core";
+
 import { OverridableComponent } from "@material-ui/core/OverridableComponent";
+import React from "react";
 import { SvgIconTypeMap } from "@material-ui/core/SvgIcon/SvgIcon";
 
 interface FooterItemProps {
@@ -20,17 +21,17 @@ const FooterItem: React.FC<FooterItemProps> = ({
 
   if (detail === true) {
     return (
-      <span>
-        <span className="flex-row">
+      <div>
+        <div className="flex-row">
           <Typography color="textSecondary">
             <Component className="mr-3" />
           </Typography>
           <Typography>{value}</Typography>
-        </span>
+        </div>
         <Typography variant="body2" color="textSecondary">
           {title}
         </Typography>
-      </span>
+      </div>
     );
   }
 

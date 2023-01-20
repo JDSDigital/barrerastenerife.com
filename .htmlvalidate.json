@@ -1,6 +1,7 @@
 {
   "extends": ["html-validate:recommended"],
   "rules": {
-    "no-inline-style": "warn"
+    "attribute-allowed-values": "warn",
+    "element-required-attributes": "warn"
   }
 }

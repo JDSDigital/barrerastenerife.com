@@ -1,13 +1,14 @@
-import React from "react";
 import {
-  Grid,
   CircularProgress,
   Container,
+  Grid,
   Typography,
 } from "@material-ui/core";
+
 import { Property } from "models/Property";
 import PropertyCard from "./PropertyCard";
 import { QueryStatus } from "react-query";
+import React from "react";
 
 interface Props {
   featured?: boolean;
