@@ -50,6 +50,17 @@ const imageNames = [
   "gian",
   "irina",
   "maryna",
+  "amarilla",
+  "sanblas",
+  "tejita",
+  "medano",
+  "abrigos",
+  "adeje",
+  "abama",
+  "sanjuan",
+  "isora",
+  "saneugenio",
+  "puerto",
 ];
 
 const images = imageNames.reduce(
@@ -106,12 +117,13 @@ jest.mock("google-map-react", () => jest.fn());
 jest.mock("@material-ui/core", () => ({
   ...jest.requireActual("@material-ui/core"),
   CircularProgress: jest.fn(),
+  Slider: jest.fn(),
+  TextField: jest.fn(),
 }));
 
-jest
-  .spyOn(utils, "getPropertyList")
-  .mockImplementation(() => createPropertiesMock());
-jest.spyOn(utils, "getProperty").mockImplementation(() => createPropertyMock());
+jest.spyOn(utils, "getPropertyList").mockImplementation(createPropertiesMock);
+
+jest.spyOn(utils, "getProperty").mockImplementation(createPropertyMock);
 
 beforeAll(() => {
   graphql.mockImplementation(() => mockData);
