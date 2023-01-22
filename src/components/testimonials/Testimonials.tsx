@@ -12,16 +12,14 @@ const Testimonials = () => {
     query {
       background: file(relativePath: { eq: "bg/6.jpeg" }) {
         childImageSharp {
-          fluid(maxWidth: 1366) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
   `);
 
   return (
-    <Banner size="xlarge" image={images.background.childImageSharp.fluid}>
+    <Banner size="xlarge" image={images.background}>
       <Container>
         <div className="testimonial-container">
           <div className="testimonial-description">

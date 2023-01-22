@@ -6518,6 +6518,26 @@ gatsby-plugin-google-fonts@1.0.1:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-1.0.1.tgz#d71054f7bf207b9a8da227380369e18e6f4e0201"
   integrity sha512-p1NVkn27GUnDA5qHM+Z4cCcLCJIardzZXMon3640sT4xuL/AZJbsx3HEt2KY/5oZu0UXIkytkxzV2Da4rQeUIg==
 
+gatsby-plugin-image@3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-3.4.0.tgz#e8109fc040adf5a6ff10adf821122b3f8226742e"
+  integrity sha512-wfFEe/yaa8CqrtFGwbdBo2Eqyfdo5fvXZazGaP8ShysCHKBEAyf2oKcHvqAjdCmibb7eq7VIgJYNU876RA6IQA==
+  dependencies:
+    "@babel/code-frame" "^7.18.6"
+    "@babel/parser" "^7.20.7"
+    "@babel/runtime" "^7.20.7"
+    "@babel/traverse" "^7.20.10"
+    babel-jsx-utils "^1.1.0"
+    babel-plugin-remove-graphql-queries "^5.4.0"
+    camelcase "^5.3.1"
+    chokidar "^3.5.3"
+    common-tags "^1.8.2"
+    fs-extra "^10.1.0"
+    gatsby-core-utils "^4.4.0"
+    gatsby-plugin-utils "^4.4.0"
+    objectFitPolyfill "^2.3.5"
+    prop-types "^15.8.1"
+
 gatsby-plugin-manifest@5.4.0:
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-5.4.0.tgz#945842f92d3c1e7ca46b3c5a74edf44cba1c2888"
@@ -9491,6 +9511,11 @@ object.values@^1.1.6:
     call-bind "^1.0.2"
     define-properties "^1.1.4"
     es-abstract "^1.20.4"
+
+objectFitPolyfill@^2.3.5:
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/objectFitPolyfill/-/objectFitPolyfill-2.3.5.tgz#be8c83064aabfa4e88780f776c2013c48ce1f745"
+  integrity sha512-8Quz071ZmGi0QWEG4xB3Bv5Lpw6K0Uca87FLoLMKMWjB6qIq9IyBegP3b/VLNxv2WYvIMGoeUQ+c6ibUkNa8TA==
 
 oblivious-set@1.0.0:
   version "1.0.0"

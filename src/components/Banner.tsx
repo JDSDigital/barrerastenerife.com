@@ -1,3 +1,4 @@
+import { ImageDataLike, getImage } from "gatsby-plugin-image";
 import React, { FC } from "react";
 
 import { FluidObject } from "gatsby-image";
@@ -6,7 +7,7 @@ import { ParallaxBanner } from "react-scroll-parallax";
 
 type Props = {
   color?: boolean;
-  image?: FluidObject;
+  image?: ImageDataLike;
   children?: any;
   size?: "small" | "medium" | "large" | "xlarge";
 };
@@ -17,6 +18,8 @@ export const Banner: FC<Props> = ({
   children,
   size = "large",
 }) => {
+  const bannerImage = image && getImage(image);
+
   return (
     <Grid
       container
@@ -27,10 +30,10 @@ export const Banner: FC<Props> = ({
       alignItems="center"
     >
       <Grid item xs={12}>
-        {image ? (
+        {bannerImage ? (
           <ParallaxBanner
             className={`banner-container banner-${size}`}
-            layers={[{ image: image.src, speed: -20 }]}
+            layers={[{ image: bannerImage.images.fallback?.src, speed: -20 }]}
           >
             <div
               className={`mobile-padding banner-container banner-${size} ${

@@ -7,6 +7,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import { ParallaxBanner } from "react-scroll-parallax";
 import SearchIcon from "@material-ui/icons/Search";
 import Select from "./Select";
+import { getImage } from "gatsby-plugin-image";
 import { useI18next } from "gatsby-plugin-react-i18next";
 import { useTranslation } from "hooks/useTranslation";
 
@@ -15,13 +16,13 @@ const MainSlider: React.FC = () => {
     query {
       image: file(relativePath: { eq: "properties/property5.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1920) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
   `);
+
+  const image = getImage(data.image);
 
   const SearchForm = () => {
     const { navigate } = useI18next();
@@ -92,7 +93,12 @@ const MainSlider: React.FC = () => {
   return (
     <ParallaxBanner
       className="main-slider"
-      layers={[{ image: data.image.childImageSharp.fluid.src, speed: -20 }]}
+      layers={[
+        {
+          image: image?.images.fallback?.src,
+          speed: -20,
+        },
+      ]}
     >
       <Container className="main-slider-container">
         {/* @ts-ignore TODO: Fix react children type error */}

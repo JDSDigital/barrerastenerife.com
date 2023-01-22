@@ -35,7 +35,7 @@ const IndexPage: React.FC<PageProps<IndexPageProps>> = ({ data }) => {
         </Container>
       </Banner>
 
-      <Banner image={data.background1.childImageSharp.fluid}>
+      <Banner image={data.background1}>
         <ServicesSection />
       </Banner>
 
@@ -62,9 +62,7 @@ export const query = graphql`
     }
     background1: file(relativePath: { eq: "bg/2.jpeg" }) {
       childImageSharp {
-        fluid(maxWidth: 1366) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

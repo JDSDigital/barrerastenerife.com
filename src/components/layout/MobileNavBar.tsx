@@ -65,7 +65,13 @@ const MobileNavBar: FC<Props> = ({ linkList, images, params }) => {
             {linkList.map((link, index) => {
               if (link.sub)
                 return (
-                  <LanguagesCollapsible title={link.text} list={link.sub} />
+                  <LanguagesCollapsible
+                    key={`${link.text
+                      .toLowerCase()
+                      .replace(" ", "-")}-${index}`}
+                    title={link.text}
+                    list={link.sub}
+                  />
                 );
 
               return (

@@ -25,6 +25,7 @@ const partners = [
 ];
 
 const Partnerships = () => {
+  // TODO: Update Query
   const images = useStaticQuery(graphql`
     query {
       tyco: file(relativePath: { eq: "services/tyco.jpeg" }) {
