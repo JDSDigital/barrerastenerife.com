@@ -1,13 +1,14 @@
-import React, { FC } from "react";
+import { GatsbyImage, IGatsbyImageData, getImage } from "gatsby-plugin-image";
 import { Grid, Typography } from "@material-ui/core";
+import React, { FC } from "react";
+
 import { Link } from "gatsby-plugin-react-i18next";
-import Img, { FluidObject } from "gatsby-image";
 
 type Props = {
   circle?: boolean;
   title: string;
   description: string | string[];
-  image: string | FluidObject;
+  image: string | IGatsbyImageData;
   to: string;
 };
 
@@ -22,8 +23,8 @@ export const Service: FC<Props> = ({
     <Grid item xs={12} sm={12} md={4}>
       <Link to={to} className="service-container">
         {circle ? (
-          <Img
-            fluid={image as FluidObject}
+          <GatsbyImage
+            image={getImage(image as IGatsbyImageData)!}
             alt={title}
             className="service-image"
           />

@@ -1,16 +1,15 @@
 import { Container, Grid, Typography } from "@material-ui/core";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { PageProps, graphql } from "gatsby";
 
 import AboutBanner from "components/about/AboutBanner";
 import { Banner } from "components/Banner";
-import Img from "gatsby-image";
 import Layout from "components/layout";
-import { PageProps } from "gatsby";
 import React from "react";
 import SEO from "components/SEO";
 import { Service } from "components/Service";
 import ServicesSection from "components/about/ServicesSection";
 import TeamSection from "components/about/TeamSection";
-import { graphql } from "gatsby";
 import { useTranslation } from "hooks/useTranslation";
 
 //TODO: Get image type
@@ -40,7 +39,7 @@ const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
         <Typography gutterBottom>{t("about.p2")}</Typography>
       </Container>
 
-      <Banner image={data.banner.childImageSharp.fluid}>
+      <Banner image={data.banner}>
         <Container>
           <Grid
             container
@@ -51,14 +50,14 @@ const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
             <Service
               circle
               to="/about#"
-              image={data.time.childImageSharp.fluid}
+              image={data.time}
               title={t("about.time.p1")}
               description={[t("about.time.p2"), t("about.time.p3")]}
             />
             <Service
               circle
               to="/about#"
-              image={data.languages.childImageSharp.fluid}
+              image={data.languages}
               title={t("about.comunication.p1")}
               description={[
                 t("about.comunication.p2"),
@@ -68,7 +67,7 @@ const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
             <Service
               circle
               to="/about#"
-              image={data.reviews.childImageSharp.fluid}
+              image={data.reviews}
               title={t("about.rating.p1")}
               description={[t("about.rating.p2"), t("about.rating.p3")]}
             />
@@ -81,9 +80,9 @@ const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
       <Container>
         <Grid container justifyContent="space-around" className="about-section">
           <Grid item xs={12} sm={6}>
-            <Img
-              fluid={data.founder.childImageSharp.fluid}
-              alt=""
+            <GatsbyImage
+              image={getImage(data.founder)!}
+              alt="Barreras founder"
               className="img-responsive about-image"
             />
           </Grid>
@@ -119,9 +118,9 @@ const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
           </Grid>
 
           <Grid item xs={12} sm={6}>
-            <Img
-              fluid={data.mission.childImageSharp.fluid}
-              alt=""
+            <GatsbyImage
+              image={getImage(data.mission)!}
+              alt="Barreras mission"
               className="img-responsive about-image"
             />
           </Grid>
@@ -129,9 +128,9 @@ const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
 
         <Grid container justifyContent="space-around" className="about-section">
           <Grid item xs={12} sm={6}>
-            <Img
-              fluid={data.service.childImageSharp.fluid}
-              alt=""
+            <GatsbyImage
+              image={getImage(data.service)!}
+              alt="barreras service"
               className="img-responsive about-image"
             />
           </Grid>
@@ -170,51 +169,37 @@ export const query = graphql`
     }
     founder: file(relativePath: { eq: "team/founder.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
     time: file(relativePath: { eq: "time.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
     languages: file(relativePath: { eq: "languages.jpeg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
     reviews: file(relativePath: { eq: "reviews.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
     mission: file(relativePath: { eq: "mission.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
     service: file(relativePath: { eq: "team.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
     banner: file(relativePath: { eq: "properties/property3.jpeg" }) {
       childImageSharp {
-        fluid(maxWidth: 1366) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

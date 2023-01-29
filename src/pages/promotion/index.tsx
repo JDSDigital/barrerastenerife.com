@@ -19,7 +19,7 @@ const NewProperties: React.FC<PageProps<NewPropertiesProps>> = ({ data }) => {
     <Layout>
       <SEO title={title} />
       <PropertiesBanner
-        image={data.banner.childImageSharp.fluid}
+        image={data.banner}
         title={t("folders.promotion.title")}
       />
       <PromotionContainer />
@@ -41,9 +41,7 @@ export const query = graphql`
     }
     banner: file(relativePath: { eq: "bg/developments.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1366) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

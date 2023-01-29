@@ -6,6 +6,7 @@ import {
   ListItem,
   SwipeableDrawer,
 } from "@material-ui/core";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Link, useI18next } from "gatsby-plugin-react-i18next";
 import React, { FC, useState } from "react";
 
@@ -58,7 +59,7 @@ const MobileNavBar: FC<Props> = ({ linkList, images, params }) => {
         >
           <div className="side-menu--logo">
             <Link to="/">
-              <Img fixed={images.logo.childImageSharp.fixed} />
+              <GatsbyImage image={getImage(images.logo)!} alt="logo" />
             </Link>
           </div>
           <List disablePadding className="side-menu--list">
@@ -84,15 +85,18 @@ const MobileNavBar: FC<Props> = ({ linkList, images, params }) => {
                 </Link>
               );
             })}
+
             <ListItem className="languages-menu">
               {languages.map(lng => {
+                const flagImage = getImage(images[lng]);
+
                 return (
                   <Link
                     key={lng}
                     to={`${originalPath}${params}`}
                     language={lng}
                   >
-                    <Img fixed={images[lng].childImageSharp.fixed} alt={lng} />
+                    {flagImage && <GatsbyImage image={flagImage} alt={lng} />}
                   </Link>
                 );
               })}

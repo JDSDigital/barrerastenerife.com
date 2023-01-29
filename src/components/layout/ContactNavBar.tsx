@@ -1,8 +1,7 @@
 import { Container, Hidden, List, ListItem } from "@material-ui/core";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Link, useI18next } from "gatsby-plugin-react-i18next";
 import React, { FC } from "react";
-
-import Img from "gatsby-image";
 
 type Props = {
   params: string;
@@ -26,10 +25,12 @@ const ContactNavBar: FC<Props> = ({ params, images }) => {
               </a>
             </ListItem>
             {languages.map(lng => {
+              const flagImage = getImage(images[lng]);
+
               return (
                 <ListItem key={lng}>
                   <Link to={`${originalPath}${params}`} language={lng}>
-                    <Img fixed={images[lng].childImageSharp.fixed} alt={lng} />
+                    {flagImage && <GatsbyImage image={flagImage} alt={lng} />}
                   </Link>
                 </ListItem>
               );

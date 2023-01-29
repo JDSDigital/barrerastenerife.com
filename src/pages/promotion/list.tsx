@@ -26,10 +26,7 @@ const NewPropertiesList: React.FC<PageProps<NewPropertiesListProps>> = ({
   return (
     <Layout>
       <SEO title={t("header.link.promotion")} />
-      <PropertiesBanner
-        image={data.banner.childImageSharp.fluid}
-        title={title?.name}
-      />
+      <PropertiesBanner image={data.banner} title={title?.name} />
       <Properties tags={["promotion", tag!]} search={false} />
     </Layout>
   );
@@ -49,9 +46,7 @@ export const query = graphql`
     }
     banner: file(relativePath: { eq: "bg/developments.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1366) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 
 import { ParallaxBanner } from "react-scroll-parallax";
 import React from "react";
+import { getSrc } from "gatsby-plugin-image";
 import { useTranslation } from "hooks/useTranslation";
 
 const AboutBanner = () => {
@@ -12,9 +13,7 @@ const AboutBanner = () => {
     query {
       banner: file(relativePath: { eq: "bg/7.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1366) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
@@ -25,7 +24,7 @@ const AboutBanner = () => {
       className="about-container"
       layers={[
         {
-          image: image.banner.childImageSharp.fluid.src,
+          image: getSrc(image.banner),
           speed: -20,
         },
       ]}

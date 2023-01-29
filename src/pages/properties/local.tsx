@@ -20,10 +20,7 @@ const LocalProperties: React.FC<PageProps<LocalPropertiesProps>> = ({
   return (
     <Layout>
       <SEO title={title} />
-      <PropertiesBanner
-        image={data.banner.childImageSharp.fluid}
-        title={t("header.link.local")}
-      />
+      <PropertiesBanner image={data.banner} title={t("header.link.local")} />
       <Properties search={false} tags={["commercial"]} />
     </Layout>
   );
@@ -43,9 +40,7 @@ export const query = graphql`
     }
     banner: file(relativePath: { eq: "bg/7.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1366) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

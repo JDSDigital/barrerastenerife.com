@@ -1,7 +1,6 @@
 {
   "extends": ["html-validate:recommended"],
   "rules": {
-    "attribute-allowed-values": "warn",
     "element-required-attributes": "warn"
   }
 }

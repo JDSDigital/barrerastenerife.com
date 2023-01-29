@@ -20,10 +20,7 @@ const InvestProperties: React.FC<PageProps<InvestPropertiesProps>> = ({
   return (
     <Layout>
       <SEO title={title} />
-      <PropertiesBanner
-        image={data.banner.childImageSharp.fluid}
-        title={t("header.link.invest")}
-      />
+      <PropertiesBanner image={data.banner} title={t("header.link.invest")} />
       <Properties kind="building" disableKind />
     </Layout>
   );
@@ -43,9 +40,7 @@ export const query = graphql`
     }
     banner: file(relativePath: { eq: "bg/invest.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1366) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

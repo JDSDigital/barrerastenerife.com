@@ -1,20 +1,22 @@
 import { Container, Typography } from "@material-ui/core";
+import { IGatsbyImageData, getSrc } from "gatsby-plugin-image";
 import React, { FC } from "react";
 
-import { FluidObject } from "gatsby-image";
 import { ParallaxBanner } from "react-scroll-parallax";
 
 type Props = {
-  image: FluidObject;
+  image: IGatsbyImageData;
   title?: string;
   subtitle?: string;
 };
 
 const PropertiesBanner: FC<Props> = ({ image, title, subtitle }) => {
+  const bannerImage = getSrc(image);
+
   return (
     <ParallaxBanner
       className="about-container"
-      layers={[{ image: image.src, speed: -20 }]}
+      layers={[{ image: bannerImage, speed: -20 }]}
     >
       <div className="about-overlay" />
       <div className="about-text">

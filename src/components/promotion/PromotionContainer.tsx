@@ -1,7 +1,7 @@
 import { Container, Grid, Typography } from "@material-ui/core";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from "gatsby";
 
-import Img from "gatsby-image";
 import { Link } from "gatsby-plugin-react-i18next";
 import React from "react";
 import { promotions } from "../../constants";
@@ -11,79 +11,57 @@ export const PromotionContainer = () => {
     query {
       amarilla: file(relativePath: { eq: "promotions/amarilla.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       sanblas: file(relativePath: { eq: "promotions/amarilla.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       tejita: file(relativePath: { eq: "promotions/tejita.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       medano: file(relativePath: { eq: "promotions/medano.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       abrigos: file(relativePath: { eq: "promotions/amarilla.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       adeje: file(relativePath: { eq: "promotions/adeje.png" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       abama: file(relativePath: { eq: "promotions/abama.jpeg" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       sanjuan: file(relativePath: { eq: "promotions/sanjuan.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       isora: file(relativePath: { eq: "promotions/isora.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       saneugenio: file(relativePath: { eq: "promotions/amarilla.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       puerto: file(relativePath: { eq: "promotions/amarilla.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
@@ -97,8 +75,8 @@ export const PromotionContainer = () => {
             <Link to={`/promotion/list/?tag=${promotion.type}`}>
               <div className="promotion-container">
                 <div className="promotion-overlay" />
-                <Img
-                  fluid={images[promotion.type].childImageSharp.fluid}
+                <GatsbyImage
+                  image={getImage(images[promotion.type])!}
                   alt={promotion.name}
                   className="promotion-image crop-center"
                 />

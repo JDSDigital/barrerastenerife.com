@@ -517,9 +517,8 @@ body {
   }
 
   img {
-    width: 100%;
-    height: auto;
     margin-bottom: 1em;
+    object-fit: cover;
   }
 
   .service-title {

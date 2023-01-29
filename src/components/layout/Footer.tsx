@@ -1,3 +1,4 @@
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Link, graphql, useStaticQuery } from "gatsby";
 
 import FacebookIcon from "@material-ui/icons/Facebook";
@@ -12,25 +13,14 @@ const Footer: React.FC = () => {
   const { t } = useTranslation();
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "logo/logo-navbar.png" }) {
-        childImageSharp {
-          fixed(height: 55) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
       logo: file(relativePath: { eq: "logo/logo-navbar-2.png" }) {
         childImageSharp {
-          fixed(height: 55) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(layout: FIXED, height: 55)
         }
       }
       map: file(relativePath: { eq: "map.png" }) {
         childImageSharp {
-          fixed(width: 225) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(layout: FIXED, width: 255)
         }
       }
     }
@@ -41,7 +31,7 @@ const Footer: React.FC = () => {
       <Grid container spacing={5}>
         <Grid item xs={12} sm={3}>
           <Link to="/" aria-label="go to home">
-            <Img fixed={data.logo.childImageSharp.fixed} />
+            <GatsbyImage image={getImage(data.logo)!} alt="logo" />
           </Link>
           <div className="mt-5">
             <p>Av. Los Abrigos, 32.</p>
@@ -74,7 +64,7 @@ const Footer: React.FC = () => {
         </Grid>
         <Grid item xs={12} sm={3}>
           <p className="footer-title">{t("footer.offices")}</p>
-          <Img fixed={data.map.childImageSharp.fixed} />
+          <GatsbyImage image={getImage(data.map)!} alt="map" />
         </Grid>
         <Grid item xs={12} className="text-center">
           {`© ${new Date().getFullYear()} - ${t("footer.copyright")}`}

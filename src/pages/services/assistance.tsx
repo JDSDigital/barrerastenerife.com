@@ -1,7 +1,7 @@
 import { Container, Grid, Typography } from "@material-ui/core";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { PageProps, graphql } from "gatsby";
 
-import Img from "gatsby-image";
 import Layout from "components/layout";
 import React from "react";
 import SEO from "components/SEO";
@@ -86,7 +86,7 @@ const Assistance: React.FC<PageProps<AssistancePageProps>> = ({ data }) => {
           </Grid>
 
           <Grid item xs={12} sm={4}>
-            <Img fluid={data.service.childImageSharp.fluid} />
+            <GatsbyImage image={getImage(data.service)!} alt="Service image" />
           </Grid>
         </Grid>
       </Container>
@@ -108,9 +108,7 @@ export const query = graphql`
     }
     service: file(relativePath: { eq: "services/assistance.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

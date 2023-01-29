@@ -1,3 +1,4 @@
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { PageProps, graphql } from "gatsby";
 
 import Block from "components/contact/Block";
@@ -20,16 +21,20 @@ type ContactPageProps = {
 const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
   const { t } = useTranslation();
 
+  const contactImage = getImage(data.placeholderImage);
+
   return (
     <Layout>
       <SEO title={t("header.link.contact")} />
       <Grid container style={{ display: "flex" }}>
         <Grid item xs={12} sm={5} className="contact-section">
-          <Img
-            fluid={data.placeholderImage.childImageSharp.fluid}
-            alt=""
-            className="img-responsive crop-center"
-          />
+          {contactImage && (
+            <GatsbyImage
+              image={contactImage}
+              alt="Contact image"
+              className="img-responsive crop-center"
+            />
+          )}
           <div className="contact-data">
             <Grid container spacing={2}>
               <Block
@@ -73,9 +78,7 @@ export const query = graphql`
     }
     placeholderImage: file(relativePath: { eq: "bg/1.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1366) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

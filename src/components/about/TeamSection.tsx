@@ -5,7 +5,7 @@ import {
   Grid,
   Typography,
 } from "@material-ui/core";
-import Img, { FluidObject } from "gatsby-image";
+import { GatsbyImage, IGatsbyImageData, getImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from "gatsby";
 
 import React from "react";
@@ -18,65 +18,47 @@ const TeamSection = () => {
     query {
       gian: file(relativePath: { eq: "team/gian.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       irina: file(relativePath: { eq: "team/irina.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       maryna: file(relativePath: { eq: "team/maryna.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       es: file(relativePath: { eq: "flags/sp.jpg" }) {
         childImageSharp {
-          fixed(height: 20) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(layout: FIXED, height: 20)
         }
       }
       en: file(relativePath: { eq: "flags/uk.jpg" }) {
         childImageSharp {
-          fixed(height: 20) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(layout: FIXED, height: 20)
         }
       }
       fr: file(relativePath: { eq: "flags/fr.jpg" }) {
         childImageSharp {
-          fixed(height: 20) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(layout: FIXED, height: 20)
         }
       }
       it: file(relativePath: { eq: "flags/it.jpg" }) {
         childImageSharp {
-          fixed(height: 20) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(layout: FIXED, height: 20)
         }
       }
       de: file(relativePath: { eq: "flags/de.jpg" }) {
         childImageSharp {
-          fixed(height: 20) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(layout: FIXED, height: 20)
         }
       }
       ru: file(relativePath: { eq: "flags/ru.jpg" }) {
         childImageSharp {
-          fixed(height: 20) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(layout: FIXED, height: 20)
         }
       }
     }
@@ -88,16 +70,22 @@ const TeamSection = () => {
     phone,
     languages,
   }: {
-    image: FluidObject;
+    image: IGatsbyImageData;
     name: string;
     phone: string;
     languages: string[];
   }) => {
+    const teamImage = getImage(image)!;
+
     return (
       <Grid item xs={12} sm={4}>
         <Card className="team-card">
           <div className="team-image">
-            <Img fluid={image} alt={name} className="img-responsive crop-top" />
+            <GatsbyImage
+              image={teamImage}
+              alt={name}
+              className="img-responsive crop-top"
+            />
           </div>
           <CardContent className="team-container text-center">
             <p className="team-name">{name}</p>
@@ -105,22 +93,22 @@ const TeamSection = () => {
             <p className="team-position">{phone}</p>
             <div className="team-flags">
               {languages.includes("es") && (
-                <Img fixed={images.es.childImageSharp.fixed} alt="es" />
+                <GatsbyImage image={getImage(images.es)!} alt="es" />
               )}
               {languages.includes("en") && (
-                <Img fixed={images.en.childImageSharp.fixed} alt="en" />
+                <GatsbyImage image={getImage(images.en)!} alt="en" />
               )}
               {languages.includes("fr") && (
-                <Img fixed={images.fr.childImageSharp.fixed} alt="fr" />
+                <GatsbyImage image={getImage(images.fr)!} alt="fr" />
               )}
               {languages.includes("it") && (
-                <Img fixed={images.it.childImageSharp.fixed} alt="it" />
+                <GatsbyImage image={getImage(images.it)!} alt="it" />
               )}
               {languages.includes("de") && (
-                <Img fixed={images.de.childImageSharp.fixed} alt="de" />
+                <GatsbyImage image={getImage(images.de)!} alt="de" />
               )}
               {languages.includes("ru") && (
-                <Img fixed={images.ru.childImageSharp.fixed} alt="ru" />
+                <GatsbyImage image={getImage(images.ru)!} alt="ru" />
               )}
             </div>
           </CardContent>
@@ -143,19 +131,19 @@ const TeamSection = () => {
           </Typography>
         </Grid>
         <Team
-          image={images.gian.childImageSharp.fluid}
+          image={images.gian}
           name="Giambattista Guala"
           phone="+34 638 418 917"
           languages={["es", "en", "fr", "it"]}
         />
         <Team
-          image={images.maryna.childImageSharp.fluid}
+          image={images.maryna}
           name="Maryna Bohush"
           phone="+34 671 616 456"
           languages={["es", "en", "it", "ru"]}
         />
         <Team
-          image={images.irina.childImageSharp.fluid}
+          image={images.irina}
           name="Irina Elistratova"
           phone="+34 653 414 149"
           languages={["es", "en", "de", "it", "ru"]}

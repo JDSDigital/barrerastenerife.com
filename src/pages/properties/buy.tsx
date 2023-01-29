@@ -18,10 +18,7 @@ const BuyProperties: React.FC<PageProps<BuyPropertiesProps>> = ({ data }) => {
   return (
     <Layout>
       <SEO title={title} />
-      <PropertiesBanner
-        image={data.banner.childImageSharp.fluid}
-        title={t("properties.sell")}
-      />
+      <PropertiesBanner image={data.banner} title={t("properties.sell")} />
       <Properties contract={2} disableContract />
     </Layout>
   );
@@ -41,9 +38,7 @@ export const query = graphql`
     }
     banner: file(relativePath: { eq: "bg/buy.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1366) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

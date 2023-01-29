@@ -18,10 +18,7 @@ const RentProperties: React.FC<PageProps<RentPropertiesProps>> = ({ data }) => {
   return (
     <Layout>
       <SEO title={title} />
-      <PropertiesBanner
-        image={data.banner.childImageSharp.fluid}
-        title={t("properties.rent")}
-      />
+      <PropertiesBanner image={data.banner} title={t("properties.rent")} />
       <Properties contract={1} disableContract={true} />
     </Layout>
   );
@@ -41,9 +38,7 @@ export const query = graphql`
     }
     banner: file(relativePath: { eq: "bg/rent.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1366) {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }
