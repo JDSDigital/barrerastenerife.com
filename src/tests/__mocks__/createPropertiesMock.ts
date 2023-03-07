@@ -1,4 +1,6 @@
-export const createPropertiesMock = () => [
+import { RawProperty } from "models/Property";
+
+export const createPropertiesMock = (): RawProperty[] => [
   {
     id: 3653898,
     identifier: "IB - UP-2035000",
