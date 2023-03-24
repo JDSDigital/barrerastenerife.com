@@ -1,12 +1,10 @@
-import * as constants from "../constants";
-
-import { Button, Container, Hidden } from "@material-ui/core";
+import { Button, Container, Hidden, InputLabel } from "@material-ui/core";
 import React, { useState } from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
 import { ParallaxBanner } from "react-scroll-parallax";
 import SearchIcon from "@material-ui/icons/Search";
-import Select from "./Select";
+import { TownSearch } from "./TownSearch";
 import { getImage } from "gatsby-plugin-image";
 import { useI18next } from "gatsby-plugin-react-i18next";
 import { useTranslation } from "hooks/useTranslation";
@@ -28,44 +26,20 @@ const MainSlider: React.FC = () => {
     const { navigate } = useI18next();
     const { t } = useTranslation();
 
-    const [state, setState] = useState({
-      types: 0,
-      contract: 0,
-      zones: 0,
-    });
+    const [town, setTown] = useState<string>("");
 
-    const handleChange = (event: any) => {
-      setState({ ...state, [event.target.name]: event.target.value });
+    const handleChange = (town: string) => {
+      setTown(town);
     };
 
     const handleSearch = () => {
-      navigate("/properties/search", { state });
+      navigate("/properties/search", { state: { town } });
     };
 
     return (
       <div className="main-search-form MuiPaper-elevation3">
         <form>
-          <Select
-            tKey="types"
-            label={t("constants.fields.type")}
-            items={constants.types}
-            value={state.types}
-            onChange={handleChange}
-          />
-          <Select
-            tKey="contract"
-            label={t("constants.fields.contract")}
-            items={constants.contract}
-            value={state.contract}
-            onChange={handleChange}
-          />
-          <Select
-            tKey="zones"
-            label={t("constants.fields.zone")}
-            items={constants.zones}
-            value={state.zones}
-            onChange={handleChange}
-          />
+          <TownSearch value={town} onChange={handleChange} />
           <Button
             fullWidth
             variant="contained"

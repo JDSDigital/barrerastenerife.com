@@ -47,7 +47,13 @@ export const Layout: React.FC<Props> = ({ children }) => {
     }
   `);
 
-  const queryClient = new QueryClient();
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: {
+        cacheTime: 86400,
+      },
+    },
+  });
 
   return (
     <CustomThemeProvider>

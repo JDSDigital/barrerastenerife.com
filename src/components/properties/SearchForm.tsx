@@ -15,6 +15,7 @@ import React, { Dispatch, SetStateAction } from "react";
 import { Search } from "models/Search";
 import SearchIcon from "@material-ui/icons/Search";
 import Select from "components/Select";
+import { TownSearch } from "components/TownSearch";
 import { formatPrice } from "../../utils";
 import { useTranslation } from "hooks/useTranslation";
 
@@ -56,6 +57,7 @@ const SearchForm: React.FC<Props> = ({
     sort_by: 0,
     identifier: "",
     price: contract === 1 ? [400, 2000] : [50000, 1000000],
+    town: "",
   });
 
   const handleChange = (event: any) => {
@@ -68,6 +70,17 @@ const SearchForm: React.FC<Props> = ({
 
   const handleSearch = () => {
     let data: Search = {};
+
+    if (state.town !== "") {
+      setPage(1);
+
+      setFilter({
+        town: state.town,
+        page: 1,
+      });
+
+      return;
+    }
 
     if (state.identifier !== "") {
       setPage(1);
@@ -102,10 +115,6 @@ const SearchForm: React.FC<Props> = ({
     if (state.bathrooms === 8) {
       data.bathrooms_min = "8";
       data.bathrooms_max = "20";
-    }
-
-    if (state.zones !== 0) {
-      data.town = constants.zones[state.zones].value;
     }
 
     setPage(1);
@@ -199,15 +208,6 @@ const SearchForm: React.FC<Props> = ({
               />
             </Grid>
             <Grid item xs={12} sm={4}>
-              <Select
-                tKey="zones"
-                label={t("constants.fields.zone")}
-                items={constants.zones}
-                value={state.zones}
-                onChange={handleChange}
-              />
-            </Grid>
-            <Grid item xs={12} sm={4}>
               <InputLabel
                 shrink
                 htmlFor="price"
@@ -229,6 +229,12 @@ const SearchForm: React.FC<Props> = ({
               {`${formatPrice(state.price[0])} - ${formatPrice(
                 state.price[1]
               )}`}
+            </Grid>
+            <Grid item xs={12}>
+              <TownSearch
+                value={state.town}
+                onChange={value => setState({ ...state, town: value })}
+              />
             </Grid>
             <Grid item xs={12}>
               <Button
