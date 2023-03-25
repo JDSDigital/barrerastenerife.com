@@ -193,6 +193,10 @@ export const sort_by: Sort[] = [
 
 export const zones = [
   {
+    name: "all",
+    value: "",
+  },
+  {
     name: "adeje",
     value: "Adeje",
     highlight: true,

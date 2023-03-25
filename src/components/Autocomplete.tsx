@@ -1,14 +1,16 @@
 import * as Portal from "@radix-ui/react-portal";
 
-import { Popper, PopperAnchor, PopperContent } from "@radix-ui/react-popper";
 import {
+  IconButton,
   TextField,
   TextFieldProps,
   Typography,
   styled,
 } from "@material-ui/core";
+import { Popper, PopperAnchor, PopperContent } from "@radix-ui/react-popper";
+import React, { useRef } from "react";
 
-import React from "react";
+import CloseIcon from "@material-ui/icons/Close";
 import { useCombobox } from "downshift";
 import { useId } from "@radix-ui/react-id";
 import { useTranslation } from "hooks/useTranslation";
@@ -46,6 +48,7 @@ export function Autocomplete<T>({
 }: AutocompleteProps<T>) {
   const { t } = useTranslation();
   const autocompleteId = useId(id);
+  const textFieldRef = useRef(null);
 
   const {
     isOpen,
@@ -76,12 +79,19 @@ export function Autocomplete<T>({
     },
   });
 
+  const resetInput = () => {
+    onChange("");
+    // @ts-ignore
+    textFieldRef.current?.focus();
+  };
+
   return (
     <Popper>
       <div {...getComboboxProps()}>
         <PopperAnchor>
           <TextField
             fullWidth
+            inputRef={textFieldRef}
             id={id}
             name={id}
             label={label}
@@ -97,6 +107,13 @@ export function Autocomplete<T>({
               },
             })}
             {...rest}
+            InputProps={{
+              endAdornment: (
+                <IconButton onClick={resetInput}>
+                  <CloseIcon />
+                </IconButton>
+              ),
+            }}
           />
         </PopperAnchor>
 

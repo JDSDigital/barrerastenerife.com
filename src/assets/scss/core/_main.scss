@@ -147,7 +147,7 @@ body {
 
   .main-container {
     position: relative;
-    margin-top: 135px;
+    margin-top: 130px;
     padding-left: 0;
     padding-right: 0;
     min-height: calc(100vh - 92px - 52px);
@@ -157,13 +157,18 @@ body {
     }
 
     .main-slider {
-      // height: calc(100vh - 94px);
-      // max-height: 450px;
-      height: 450px !important;
+      height: calc(100vh - 130px);
       position: relative;
 
       @media (max-width: 960px) {
-        height: 80vh !important;
+        height: calc(100vh - 94px);
+      }
+
+      .main-slider-overlay {
+        background-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        width: 100%;
+        height: 100%;
       }
     }
 
@@ -196,96 +201,47 @@ body {
       }
     }
 
-    .main-search-form {
-      padding: 2em;
-      top: 0;
-      background-color: rgba(255, 255, 255, 0.5);
-      height: 100%;
-      width: 350px;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      button {
-        margin-top: 1em;
-      }
-
-      form {
-        width: 100%;
-      }
-    }
-
     .full-search-form {
-      padding: 2em;
+      padding: 1em;
       width: 100%;
       display: flex;
 
       .MuiCardContent-root {
         width: inherit;
       }
-    }
-
-    .property-data {
-      color: white;
-      background: $primary-color-gradient-background-2;
-      padding: 1em 2em;
-      border-radius: 5px;
-
-      .property-data-title {
-        margin: 0;
-        text-transform: uppercase;
-      }
-      .property-data-address {
-        margin: 0;
-      }
-      .property-data-price {
-        margin: 0;
-        font-size: 3em;
+      .MuiButton-root {
+        width: 100%;
       }
 
-      hr {
-        border-color: white;
+      @include sm {
+        padding: 2em;
+
+        .MuiButton-root {
+          width: auto;
+        }
       }
     }
 
     .main-slider-container {
-      display: flex;
       position: absolute;
-      top: 0;
-      justify-content: space-between;
-      align-items: flex-end;
-      height: 100%;
-      left: 50%;
-      right: 50%;
-      transform: translate(-50%);
-    }
+      left: 0;
+      right: 0;
+      top: 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-    .main-slider-property-data > h2 {
-      font-family: "Monsieur La Doulaise", cursive !important;
-      font-size: 4.8em;
-      bottom: 2em;
-      right: 2em;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-      // background: $secondary-color-gradient-text;
-      // background-clip: text;
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color: transparent;
-      background-image: linear-gradient(
-        to right,
-        #cb9e24 0%,
-        #e7bf32 25%,
-        #fae12f 50%,
-        #e7bf32 55%,
-        #cb9e24 75%
-      );
-      color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
+      .main-slider-title {
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        // TODO: Use correct font
+        font-family: "Times New Roman", Times, serif;
+      }
     }
   }
 }
+
 .section-title {
   position: relative;
   display: inline-block;

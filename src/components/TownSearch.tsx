@@ -26,7 +26,9 @@ export const TownSearch: FC<TownSearchProps> = ({ value, onChange }) => {
       items={items}
       itemToValue={option => option.value}
       itemToLabel={option => option?.value ?? ""}
-      optionFormatter={option => option.value}
+      optionFormatter={option =>
+        Boolean(option.value) ? option.value : t("constants.zones.all")
+      }
       value={value}
       onChange={value => onChange(value)}
       noMatchesText="No consigue resultados"
