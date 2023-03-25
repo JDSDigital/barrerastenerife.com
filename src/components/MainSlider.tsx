@@ -1,12 +1,17 @@
-import * as constants from "../constants";
-
-import { Button, Container, Hidden } from "@material-ui/core";
+import {
+  Button,
+  Container,
+  Grid,
+  Hidden,
+  InputLabel,
+  Typography,
+} from "@material-ui/core";
 import React, { useState } from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
 import { ParallaxBanner } from "react-scroll-parallax";
 import SearchIcon from "@material-ui/icons/Search";
-import Select from "./Select";
+import { TownSearch } from "./TownSearch";
 import { getImage } from "gatsby-plugin-image";
 import { useI18next } from "gatsby-plugin-react-i18next";
 import { useTranslation } from "hooks/useTranslation";
@@ -28,65 +33,34 @@ const MainSlider: React.FC = () => {
     const { navigate } = useI18next();
     const { t } = useTranslation();
 
-    const [state, setState] = useState({
-      types: 0,
-      contract: 0,
-      zones: 0,
-    });
+    const [town, setTown] = useState<string>("");
 
-    const handleChange = (event: any) => {
-      setState({ ...state, [event.target.name]: event.target.value });
+    const handleChange = (town: string) => {
+      setTown(town);
     };
 
     const handleSearch = () => {
-      navigate("/properties/search", { state });
+      navigate("/properties/search", { state: { town } });
     };
 
     return (
-      <div className="main-search-form MuiPaper-elevation3">
-        <form>
-          <Select
-            tKey="types"
-            label={t("constants.fields.type")}
-            items={constants.types}
-            value={state.types}
-            onChange={handleChange}
-          />
-          <Select
-            tKey="contract"
-            label={t("constants.fields.contract")}
-            items={constants.contract}
-            value={state.contract}
-            onChange={handleChange}
-          />
-          <Select
-            tKey="zones"
-            label={t("constants.fields.zone")}
-            items={constants.zones}
-            value={state.zones}
-            onChange={handleChange}
-          />
-          <Button
-            fullWidth
-            variant="contained"
-            color="primary"
-            size="large"
-            className="color-white"
-            startIcon={<SearchIcon />}
-            onClick={handleSearch}
-          >
-            {t("search")}
-          </Button>
-        </form>
-      </div>
-    );
-  };
-
-  const PropertyData = () => {
-    return (
-      <div className="main-slider-property-data">
-        <h2 className="">Where Dreams Come Home</h2>
-      </div>
+      <Grid container spacing={2} alignItems="center" justifyContent="center">
+        <Grid item xs={12} sm={8}>
+          <TownSearch value={town} onChange={handleChange} />
+          <div className="text-center">
+            <Button
+              variant="contained"
+              color="primary"
+              size="large"
+              className="color-white mt-5"
+              startIcon={<SearchIcon />}
+              onClick={handleSearch}
+            >
+              {t("search")}
+            </Button>
+          </div>
+        </Grid>
+      </Grid>
     );
   };
 
@@ -100,13 +74,26 @@ const MainSlider: React.FC = () => {
         },
       ]}
     >
-      <Container className="main-slider-container">
-        {/* @ts-ignore TODO: Fix react children type error */}
-        <Hidden xsDown>
+      <div className="main-slider-overlay">
+        <Container className="main-slider-container">
+          <Typography
+            variant="h2"
+            className="main-slider-title mb-3"
+            align="center"
+          >
+            BARRERAS
+          </Typography>
+          <Typography
+            variant="h3"
+            className="main-slider-title mb-5"
+            align="center"
+          >
+            Where Dreams Come Home
+          </Typography>
+
           <SearchForm />
-        </Hidden>
-        <PropertyData />
-      </Container>
+        </Container>
+      </div>
     </ParallaxBanner>
   );
 };

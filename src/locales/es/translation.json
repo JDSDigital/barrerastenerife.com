@@ -147,7 +147,12 @@
     "bedrooms": "Habitaciones",
     "bathrooms": "Baños",
     "tags": "Etiquetas",
-    "from": "A partir de"
+    "from": "A partir de",
+
+    "search": {
+      "show": "Búsqueda Avanzada",
+      "hide": "Ocultar Búsqueda Avanzada"
+    }
   },
 
   "about": {

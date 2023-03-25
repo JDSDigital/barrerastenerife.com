@@ -8,10 +8,7 @@ import { useTranslation } from "hooks/useTranslation";
 type Props = {
   location: {
     state: {
-      types: number;
-      contract: number;
-      cities: number;
-      zones: number;
+      town: string;
     };
   };
 };
@@ -23,12 +20,7 @@ const SearchProperties: React.FC<Props> = ({ location }) => {
   return (
     <Layout>
       <SEO title={title} />
-      <Properties
-        title={t("properties.title")}
-        type={location?.state?.types}
-        contract={location?.state?.contract}
-        zone={location?.state?.zones}
-      />
+      <Properties title={t("properties.title")} town={location?.state?.town} />
     </Layout>
   );
 };

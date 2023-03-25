@@ -147,7 +147,12 @@
     "bedrooms": "Bedrooms",
     "bathrooms": "Bathrooms",
     "tags": "Tags",
-    "from": "From"
+    "from": "From",
+
+    "search": {
+      "show": "Advanced Search",
+      "hide": "Hide Advanced Search"
+    }
   },
 
   "about": {

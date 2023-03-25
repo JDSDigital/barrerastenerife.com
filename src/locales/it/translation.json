@@ -147,7 +147,12 @@
     "bedrooms": "Camere",
     "bathrooms": "Bagni",
     "tags": "Tags",
-    "from": "Da"
+    "from": "Da",
+
+    "search": {
+      "show": "Advanced Search",
+      "hide": "Hide Advanced Search"
+    }
   },
 
   "about": {

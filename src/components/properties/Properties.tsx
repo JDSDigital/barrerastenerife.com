@@ -21,6 +21,7 @@ type Props = {
   pagination?: boolean;
   search?: boolean;
   tags?: string[];
+  town?: string;
 };
 
 export const Properties: FC<Props> = ({
@@ -34,13 +35,14 @@ export const Properties: FC<Props> = ({
   pagination = true,
   search = true,
   tags = [],
+  town,
 }) => {
   const { t } = useTranslation();
   const [page, setPage] = useState(1);
   const [filter, setFilter] = useState<Search>({
     kind: disableKind ? kind : constants.types[type].value,
     buyop: constants.contract[contract].value,
-    town: constants.zones[zone].value,
+    town: town ? town : constants.zones[zone].value,
     page,
   });
 
