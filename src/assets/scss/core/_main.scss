@@ -219,7 +219,7 @@ body {
 
       .main-slider-title {
         color: white;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
       }
     }
   }
@@ -931,4 +931,41 @@ body {
   align-items: center !important;
   color: white !important;
   border-bottom: 1px solid $color-light-gray-3 !important;
+}
+
+.arrows-container {
+  border: 1px solid $color-secondary-1-0;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+  overflow: hidden;
+  position: relative;
+
+  .arrow:first-child {
+    right: 100% !important;
+  }
+}
+
+.arrows-box {
+  overflow: hidden;
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  transform: rotate(90deg);
+}
+
+.arrow {
+  align-items: center;
+  animation: arrow 2s ease infinite;
+  display: flex;
+  flex-grow: 1;
+  height: 100% !important;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  right: 0 !important;
+  width: 100% !important;
 }

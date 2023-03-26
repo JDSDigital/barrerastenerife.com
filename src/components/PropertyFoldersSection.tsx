@@ -52,7 +52,7 @@ const HomePropertiesContainer: FC<Props> = ({
   );
 };
 
-export const PropertiesSection = () => {
+export const PropertyFoldersSection = () => {
   const { t } = useTranslation();
   const images = useStaticQuery(graphql`
     query {

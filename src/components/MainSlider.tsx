@@ -1,14 +1,8 @@
-import {
-  Button,
-  Container,
-  Grid,
-  Hidden,
-  InputLabel,
-  Typography,
-} from "@material-ui/core";
+import { Button, Container, Grid, Typography } from "@material-ui/core";
 import React, { useState } from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
+import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import { ParallaxBanner } from "react-scroll-parallax";
 import SearchIcon from "@material-ui/icons/Search";
 import { TownSearch } from "./TownSearch";
@@ -77,21 +71,30 @@ const MainSlider: React.FC = () => {
       <div className="main-slider-overlay">
         <Container className="main-slider-container">
           <Typography
-            variant="h2"
+            component="h1"
+            variant="h3"
             className="main-slider-title mb-3"
             align="center"
           >
             BARRERAS
           </Typography>
           <Typography
-            variant="h3"
-            className="main-slider-title mb-5"
+            component="p"
+            variant="h1"
+            className="main-slider-title mb-3"
             align="center"
           >
             Where Dreams Come Home
           </Typography>
 
           <SearchForm />
+
+          <div className="arrows-container">
+            <div className="arrows-box">
+              <ArrowRightAltIcon className="arrow color-white" />
+              <ArrowRightAltIcon className="arrow color-white" />
+            </div>
+          </div>
         </Container>
       </div>
     </ParallaxBanner>

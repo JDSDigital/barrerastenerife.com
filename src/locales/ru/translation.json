@@ -132,6 +132,7 @@
 
   "properties": {
     "title": "Недвижимость",
+    "featured": "Featured Properties",
     "recent": "Новинки в сфере недвижимости",
     "sell": "Недвижимость на продажу ",
     "rent": "Аренда недвижимости",

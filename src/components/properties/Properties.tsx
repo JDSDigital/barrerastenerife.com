@@ -1,13 +1,12 @@
 import * as constants from "../../constants";
 
-import { Button, Container, Grid } from "@material-ui/core";
-import { QueryStatus, useQuery } from "react-query";
 import React, { FC, useState } from "react";
 
+import { Container } from "@material-ui/core";
 import List from "./List";
 import { Search } from "models/Search";
 import SearchForm from "./SearchForm";
-import { getPropertyList } from "../../utils";
+import { useGetProperties } from "hooks/useGetProperties";
 import { useTranslation } from "hooks/useTranslation";
 
 type Props = {
@@ -46,15 +45,11 @@ export const Properties: FC<Props> = ({
     page,
   });
 
-  const {
-    status,
-    data,
-  }: {
-    status: QueryStatus;
-    data: any;
-  } = useQuery(["properties", [page, filter]], () =>
-    getPropertyList({ page, tags: tags.length > 0 ? tags : [], ...filter })
-  );
+  const { properties, status } = useGetProperties({
+    page,
+    tags: tags.length > 0 ? tags : [],
+    filter,
+  });
 
   const handleNext = () => {
     setPage(page + 1);
@@ -78,9 +73,11 @@ export const Properties: FC<Props> = ({
         />
       )}
 
-      <List properties={data?.data?.results} status={status} title={title} />
+      <List properties={properties} status={status} title={title} />
 
-      <Container>
+      {/* TODO: Fix pagination */}
+
+      {/* <Container>
         {pagination && (
           <Grid container spacing={2}>
             <Grid item xs={12} className="text-center">
@@ -89,7 +86,7 @@ export const Properties: FC<Props> = ({
                   {`< ${t("properties.previous")}`}
                 </Button>
               )}
-              {status !== "loading" && data?.data?.results.length === 12 && (
+              {status !== "loading" && properties.length >= 50 && (
                 <Button onClick={handleNext} className="p-5">
                   {`${t("properties.next")} >`}
                 </Button>
@@ -97,7 +94,7 @@ export const Properties: FC<Props> = ({
             </Grid>
           </Grid>
         )}
-      </Container>
+      </Container> */}
     </Container>
   );
 };
