@@ -6,5 +6,46 @@
     "secondary": {
       "main": "#cb9e24"
     }
+  },
+  "typography": {
+    "h1": {
+      "fontFamily": "\"GT Super Light\", Times, serif"
+    },
+    "h2": {
+      "fontFamily": "\"GT Super Light\", Times, serif"
+    },
+    "h3": {
+      "fontFamily": "\"GT Super Light\", Times, serif"
+    },
+    "h4": {
+      "fontFamily": "\"GT Super Light\", Times, serif"
+    },
+    "h5": {
+      "fontFamily": "\"GT Super Light\", Times, serif"
+    },
+    "h6": {
+      "fontFamily": "\"GT Super Light\", Times, serif"
+    },
+    "subtitle1": {
+      "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
+    },
+    "subtitle2": {
+      "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
+    },
+    "body1": {
+      "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
+    },
+    "body2": {
+      "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
+    },
+    "caption": {
+      "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
+    },
+    "button": {
+      "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
+    },
+    "overline": {
+      "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
+    }
   }
 }
