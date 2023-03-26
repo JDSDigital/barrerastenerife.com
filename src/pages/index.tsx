@@ -1,14 +1,12 @@
-import { Container, Typography } from "@material-ui/core";
 import { PageProps, graphql } from "gatsby";
 
-import { Banner } from "components/Banner";
+import { FeaturedPropertiesSection } from "components/FeaturedPropertiesSection";
 import Layout from "components/layout";
 import MainSlider from "components/MainSlider";
 import Partnerships from "components/Partnerships";
-import { PropertiesSection } from "components/PropertiesSection";
+import { PropertyFoldersSection } from "components/PropertyFoldersSection";
 import React from "react";
 import SEO from "components/SEO";
-import { ServicesSection } from "components/ServicesSection";
 import Testimonials from "components/testimonials/Testimonials";
 import { useTranslation } from "hooks/useTranslation";
 
@@ -22,24 +20,12 @@ const IndexPage: React.FC<PageProps<IndexPageProps>> = ({ data }) => {
   return (
     <Layout>
       <SEO title={t("home")} />
+
       <MainSlider />
-      <Banner size="medium" color={false}>
-        <Container>
-          <Typography
-            variant="h5"
-            className="text-uppercase source-font"
-            align="center"
-          >
-            {t("about.welcome")}
-          </Typography>
-        </Container>
-      </Banner>
 
-      <Banner image={data.background1}>
-        <ServicesSection />
-      </Banner>
+      <FeaturedPropertiesSection />
 
-      <PropertiesSection />
+      <PropertyFoldersSection />
 
       <Partnerships />
 
@@ -58,11 +44,6 @@ export const query = graphql`
           data
           language
         }
-      }
-    }
-    background1: file(relativePath: { eq: "bg/2.jpeg" }) {
-      childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

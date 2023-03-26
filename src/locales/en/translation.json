@@ -132,6 +132,7 @@
 
   "properties": {
     "title": "Properties",
+    "featured": "Featured Properties",
     "recent": "Recent properties",
     "sell": "Properties for sale",
     "rent": "Properties for rent",

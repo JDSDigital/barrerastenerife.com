@@ -24,10 +24,10 @@ const List: React.FC<Props> = ({
   status,
 }) => {
   return (
-    <Grid container spacing={3} className="properties-container">
+    <Grid container className="properties-container">
       {title && (
         <Grid item xs={12} className="text-center">
-          <Typography variant="h4" component="p" className="section-title">
+          <Typography variant="h3" component="p" className="section-title">
             {featured ? "Propiedades Recientes" : title}
           </Typography>
         </Grid>
@@ -43,14 +43,7 @@ const List: React.FC<Props> = ({
         </Container>
       ) : (
         properties.map(property => (
-          <Grid
-            key={`property-${property.id}`}
-            item
-            xs={12}
-            sm={6}
-            md={6}
-            lg={3}
-          >
+          <Grid key={`property-${property.id}`} item xs={12} sm={6} md={4}>
             <PropertyCard property={property} />
           </Grid>
         ))

@@ -132,6 +132,7 @@
 
   "properties": {
     "title": "Immobili",
+    "featured": "Featured Properties",
     "recent": "Immobili recenti",
     "sell": "Immobili in vendita",
     "rent": "Immobili in affitto",

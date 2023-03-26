@@ -1,13 +1,12 @@
 import * as constants from "../../constants";
 
-import { Button, Container, Grid } from "@material-ui/core";
-import { QueryStatus, useQuery } from "react-query";
 import React, { FC, useState } from "react";
 
+import { Container } from "@material-ui/core";
 import List from "./List";
 import { Search } from "models/Search";
 import SearchForm from "./SearchForm";
-import { getPropertyList } from "../../utils";
+import { useGetProperties } from "hooks/useGetProperties";
 import { useTranslation } from "hooks/useTranslation";
 
 type Props = {
@@ -46,15 +45,11 @@ export const Properties: FC<Props> = ({
     page,
   });
 
-  const {
-    status,
-    data,
-  }: {
-    status: QueryStatus;
-    data: any;
-  } = useQuery(["properties", [page, filter]], () =>
-    getPropertyList({ page, tags: tags.length > 0 ? tags : [], ...filter })
-  );
+  const { properties, status } = useGetProperties({
+    page,
+    tags: tags.length > 0 ? tags : [],
+    filter,
+  });
 
   const handleNext = () => {
     setPage(page + 1);
@@ -65,7 +60,7 @@ export const Properties: FC<Props> = ({
   };
 
   return (
-    <Container>
+    <Container maxWidth={false} disableGutters>
       {search && (
         <SearchForm
           disableContract={disableContract}
@@ -78,24 +73,28 @@ export const Properties: FC<Props> = ({
         />
       )}
 
-      <List properties={data?.data?.results} status={status} title={title} />
+      <List properties={properties} status={status} title={title} />
 
-      {pagination && (
-        <Grid container spacing={2}>
-          <Grid item xs={12} className="text-center">
-            {status !== "loading" && page > 1 && (
-              <Button onClick={handlePrevious} className="p-5">
-                {`< ${t("properties.previous")}`}
-              </Button>
-            )}
-            {status !== "loading" && data?.data?.results.length === 12 && (
-              <Button onClick={handleNext} className="p-5">
-                {`${t("properties.next")} >`}
-              </Button>
-            )}
+      {/* TODO: Fix pagination */}
+
+      {/* <Container>
+        {pagination && (
+          <Grid container spacing={2}>
+            <Grid item xs={12} className="text-center">
+              {status !== "loading" && page > 1 && (
+                <Button onClick={handlePrevious} className="p-5">
+                  {`< ${t("properties.previous")}`}
+                </Button>
+              )}
+              {status !== "loading" && properties.length >= 50 && (
+                <Button onClick={handleNext} className="p-5">
+                  {`${t("properties.next")} >`}
+                </Button>
+              )}
+            </Grid>
           </Grid>
-        </Grid>
-      )}
+        )}
+      </Container> */}
     </Container>
   );
 };

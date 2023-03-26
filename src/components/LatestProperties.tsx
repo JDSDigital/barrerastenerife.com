@@ -1,18 +1,12 @@
-import React from "react";
 import { CircularProgress, Container, Grid } from "@material-ui/core";
-import { QueryStatus, useQuery } from "react-query";
-import { getPropertyList } from "../utils";
-import { Property } from "models/Property";
+
 import { Link } from "gatsby-plugin-react-i18next";
+import { Property } from "models/Property";
+import React from "react";
+import { useGetProperties } from "hooks/useGetProperties";
 
 const LatestProperties = () => {
-  const {
-    status,
-    data,
-  }: {
-    status: QueryStatus;
-    data: any;
-  } = useQuery("properties", () => getPropertyList({}));
+  const { properties, status } = useGetProperties({});
 
   return (
     <Grid container spacing={2}>
@@ -22,7 +16,7 @@ const LatestProperties = () => {
         </Container>
       )}
       {status === "success" &&
-        data?.data?.results.slice(0, 4).map((property: Property) => (
+        properties.slice(0, 4).map((property: Property) => (
           <Grid key={`latest-properties-${property.id}`} item xs={6} md={3}>
             <Link to={`/property/?id=${property.identifier}`}>
               <img
