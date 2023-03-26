@@ -65,7 +65,7 @@ export const Properties: FC<Props> = ({
   };
 
   return (
-    <Container>
+    <Container maxWidth={false} disableGutters>
       {search && (
         <SearchForm
           disableContract={disableContract}
@@ -80,22 +80,24 @@ export const Properties: FC<Props> = ({
 
       <List properties={data?.data?.results} status={status} title={title} />
 
-      {pagination && (
-        <Grid container spacing={2}>
-          <Grid item xs={12} className="text-center">
-            {status !== "loading" && page > 1 && (
-              <Button onClick={handlePrevious} className="p-5">
-                {`< ${t("properties.previous")}`}
-              </Button>
-            )}
-            {status !== "loading" && data?.data?.results.length === 12 && (
-              <Button onClick={handleNext} className="p-5">
-                {`${t("properties.next")} >`}
-              </Button>
-            )}
+      <Container>
+        {pagination && (
+          <Grid container spacing={2}>
+            <Grid item xs={12} className="text-center">
+              {status !== "loading" && page > 1 && (
+                <Button onClick={handlePrevious} className="p-5">
+                  {`< ${t("properties.previous")}`}
+                </Button>
+              )}
+              {status !== "loading" && data?.data?.results.length === 12 && (
+                <Button onClick={handleNext} className="p-5">
+                  {`${t("properties.next")} >`}
+                </Button>
+              )}
+            </Grid>
           </Grid>
-        </Grid>
-      )}
+        )}
+      </Container>
     </Container>
   );
 };

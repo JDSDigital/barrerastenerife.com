@@ -23,17 +23,6 @@ const IndexPage: React.FC<PageProps<IndexPageProps>> = ({ data }) => {
     <Layout>
       <SEO title={t("home")} />
       <MainSlider />
-      <Banner size="medium" color={false}>
-        <Container>
-          <Typography
-            variant="h5"
-            className="text-uppercase source-font"
-            align="center"
-          >
-            {t("about.welcome")}
-          </Typography>
-        </Container>
-      </Banner>
 
       <Banner image={data.background1}>
         <ServicesSection />
