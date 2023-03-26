@@ -13,8 +13,6 @@ h4,
 h5,
 h6,
 p {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  // font-family: "Source Sans Pro", sans-serif !important;
   font-weight: 300;
   line-height: 1.5em;
 }
@@ -235,8 +233,6 @@ body {
       .main-slider-title {
         color: white;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-        // TODO: Use correct font
-        font-family: "Times New Roman", Times, serif;
       }
     }
   }
@@ -247,8 +243,6 @@ body {
   display: inline-block;
   margin: 1em 0 1.5em !important;
   text-align: center;
-  // text-transform: uppercase;
-  font-family: "Source Sans Pro", sans-serif !important;
   font-weight: 300;
 
   &:after {
@@ -268,7 +262,6 @@ body {
   position: relative;
   display: inline-block;
   margin: 0 0 1.5em !important;
-  font-family: "Source Sans Pro", sans-serif !important;
   font-weight: 300;
 
   &:after {
@@ -878,10 +871,6 @@ body {
     color: white;
     margin: 2em;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-    h3,
-    h4 {
-      font-family: "Source Sans Pro", sans-serif !important;
-    }
     h3 {
       font-weight: bold !important;
     }
