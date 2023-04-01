@@ -26,7 +26,7 @@ const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
   return (
     <Layout>
       <SEO title={t("header.link.contact")} />
-      <Grid container style={{ display: "flex" }}>
+      <Grid container className="contact-container">
         <Grid item xs={12} sm={5} className="contact-section">
           {contactImage && (
             <GatsbyImage

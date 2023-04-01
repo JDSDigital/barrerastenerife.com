@@ -37,7 +37,12 @@ body {
   text-align: left;
 
   header {
-    background: $primary-color;
+    background: rgba(29, 177, 184, 0.8) !important;
+    transition: all 0.1s ease !important;
+
+    &:hover {
+      background: rgba(29, 177, 184, 1) !important;
+    }
 
     .contact-bar {
       background-color: $color-white;
@@ -69,7 +74,7 @@ body {
   }
 
   footer {
-    background: #111;
+    background: $primary-color-gradient-background-2;
     color: $color-white;
     padding: 2rem;
 
@@ -131,22 +136,14 @@ body {
 
   .main-container {
     position: relative;
-    margin-top: 130px;
+    // margin-top: 94px;
     padding-left: 0;
     padding-right: 0;
-    min-height: calc(100vh - 92px - 52px);
-
-    @media (max-width: 960px) {
-      margin-top: 94px;
-    }
+    min-height: calc(100vh);
 
     .main-slider {
-      height: calc(100vh - 130px);
+      height: calc(100vh);
       position: relative;
-
-      @media (max-width: 960px) {
-        height: calc(100vh - 94px);
-      }
 
       .main-slider-overlay {
         background-color: rgba(0, 0, 0, 0.2);
@@ -211,7 +208,7 @@ body {
       position: absolute;
       left: 0;
       right: 0;
-      top: 25%;
+      top: 35%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -282,21 +279,13 @@ body {
 
   li {
     width: auto;
-    // text-transform: uppercase;
 
-    &:hover:before {
+    &.underline:hover:before {
       width: 100%;
     }
 
     &::before {
       background: $secondary-color-gradient-background;
-    }
-
-    &::before {
-      background: $secondary-color-gradient-background;
-    }
-
-    &:before {
       width: 0;
       height: 2px;
       bottom: 0;
@@ -534,6 +523,10 @@ body {
   img {
     border-radius: 5px;
   }
+}
+.contact-container {
+  display: flex;
+  margin-top: 94px;
 }
 .contact-section {
   position: relative;
@@ -825,7 +818,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 500px !important;
+  height: 75vh !important;
 
   .about-overlay {
     z-index: 1;
@@ -846,8 +839,9 @@ body {
     color: white;
     margin: 2em;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+
     h3 {
-      font-weight: bold !important;
+      margin-top: 100px;
     }
   }
 }
