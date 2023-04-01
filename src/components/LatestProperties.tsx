@@ -15,7 +15,7 @@ const LatestProperties = () => {
           <CircularProgress />
         </Container>
       )}
-      {status === "success" &&
+      {properties &&
         properties.slice(0, 4).map((property: Property) => (
           <Grid key={`latest-properties-${property.id}`} item xs={6} md={3}>
             <Link to={`/property/?id=${property.identifier}`}>

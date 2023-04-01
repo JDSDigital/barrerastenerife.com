@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+
+import { Property } from "./models/Property";
 import { Search } from "./models/Search";
 import firebase from "gatsby-plugin-firebase";
-import { Property } from "./models/Property";
+
+const USE_EMULATOR = process.env.NODE_ENV === "development";
 
 export const imageSetBySize = (string: string, size: string) => {
   const array = string.split(",\n").find(image => image.endsWith(size));
@@ -26,16 +29,16 @@ export const formatPrice = (price: number) => {
 export const getPropertyList = (data: Search) => {
   const emulator = firebase.functions();
 
-  // if (process.env.NODE_ENV === "development") {
-  //   emulator.useEmulator("localhost", 5001);
-  // }
+  if (USE_EMULATOR) {
+    emulator.useEmulator("localhost", 5001);
+  }
 
   const getProperties = emulator.httpsCallable("getPropertyList");
 
   return getProperties({
     ...data,
     status: "available",
-    // sort_by: "creation_date_desc",
+    sort_by: "creation_date_desc",
   }).catch(error => console.log("Error", error));
 };
 
@@ -51,9 +54,9 @@ export const getProperty = ({
   useEffect(() => {
     const emulator = firebase.functions();
 
-    // if (process.env.NODE_ENV === "development") {
-    //   emulator.useEmulator("localhost", 5001);
-    // }
+    if (USE_EMULATOR) {
+      emulator.useEmulator("localhost", 5001);
+    }
 
     const getProperty = emulator.httpsCallable("getProperty");
 
@@ -74,9 +77,9 @@ export const sendMail = (data: {
 }) => {
   const emulator = firebase.functions();
 
-  // if (process.env.NODE_ENV === "development") {
-  //   emulator.useEmulator("localhost", 5001);
-  // }
+  if (USE_EMULATOR) {
+    emulator.useEmulator("localhost", 5001);
+  }
 
   const sendMail = emulator.httpsCallable("sendMail");
 

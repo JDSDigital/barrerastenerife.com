@@ -11,7 +11,6 @@ import { Link, useI18next } from "gatsby-plugin-react-i18next";
 import React, { FC, useState } from "react";
 
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import Img from "gatsby-image";
 import MenuIcon from "@material-ui/icons/Menu";
 
 type Props = {
@@ -51,12 +50,7 @@ const MobileNavBar: FC<Props> = ({ linkList, images, params }) => {
         onClose={toggleDrawer(false)}
         onOpen={toggleDrawer(true)}
       >
-        <div
-          role="presentation"
-          // onClick={toggleDrawer(false)}
-          // onKeyDown={toggleDrawer(false)}
-          className="side-menu"
-        >
+        <div role="presentation" className="side-menu">
           <div className="side-menu--logo">
             <Link to="/">
               <GatsbyImage image={getImage(images.logo)!} alt="logo" />

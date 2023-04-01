@@ -9,8 +9,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Link, useTranslation } from "gatsby-plugin-react-i18next";
 import { graphql, useStaticQuery } from "gatsby";
 
-import ContactNavBar from "./ContactNavBar";
-import Img from "gatsby-image";
 import MobileNavBar from "./MobileNavBar";
 import NavBar from "./NavBar";
 import React from "react";
@@ -37,8 +35,8 @@ const Header: React.FC<Props> = ({ siteTitle = "", ...rest }) => {
   const { t } = useTranslation();
 
   const url = typeof window !== "undefined" ? window.location.href : "";
-  const test = url.split("/property/");
-  const params = test.length === 2 ? test[1] : "";
+  const paramsArray = url.split("/property/");
+  const params = paramsArray.length === 2 ? paramsArray[1] : "";
 
   const images = useStaticQuery(graphql`
     query {
@@ -71,26 +69,29 @@ const Header: React.FC<Props> = ({ siteTitle = "", ...rest }) => {
   `);
 
   const linkList = [
-    { to: "/properties/buy", text: t("header.link.buy") },
-    { to: "/properties/rent", text: t("header.link.rent") },
     {
-      to: "/about#services",
-      text: t("folders.services.title"),
+      to: "/properties/buy",
+      text: t("header.link.buy"),
       sub: [
-        { to: "/services/manage", text: t("header.link.services.manage") },
-        {
-          to: "/services/assistance",
-          text: t("header.link.services.assistance"),
-        },
-        { to: "/services/caser", text: t("header.link.services.caser") },
-        { to: "/services/tyco", text: t("header.link.services.tyco") },
-        {
-          to: "/services/iberdrola",
-          text: t("header.link.services.iberdrola"),
-        },
+        { to: "/properties/buy", text: t("header.link.luxury") },
+        { to: "/properties/buy", text: t("header.link.promotion") },
+        { to: "/properties/buy", text: t("header.link.properties") },
       ],
     },
+    {
+      to: "/properties/rent",
+      text: t("header.link.rent"),
+      sub: [{ to: "/properties/rent", text: t("header.link.rent") }],
+    },
     { to: "/about", text: t("header.link.about") },
+    {
+      to: "#",
+      text: t("header.link.info"),
+      sub: [
+        { to: "#", text: t("header.link.forBuyers") },
+        { to: "#", text: t("header.link.forSellers") },
+      ],
+    },
     { to: "/contact", text: t("header.link.contact") },
   ];
 
@@ -99,15 +100,13 @@ const Header: React.FC<Props> = ({ siteTitle = "", ...rest }) => {
   return (
     <HideOnScroll {...rest}>
       <AppBar position="fixed">
-        <ContactNavBar params={params} images={images} />
-
         <Container className="mt-3 mb-3">
           <Toolbar disableGutters>
             <Link to="/" className="logo-link" aria-label="go to home">
               {logo && <GatsbyImage image={logo} alt={siteTitle} />}
             </Link>
 
-            <NavBar linkList={linkList} />
+            <NavBar linkList={linkList} images={images} params={params} />
 
             <MobileNavBar linkList={linkList} images={images} params={params} />
           </Toolbar>
