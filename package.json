@@ -74,7 +74,9 @@
     "test": "TZ=UTC jest --coverage",
     "test:coverage": "TZ=UTC jest --collectCoverage",
     "test:watch": "TZ=UTC jest --watch",
-    "emulator": "cd functions && npm run build && cd .. && firebase emulators:start --only functions"
+    "emulator": "cd functions && npm run build && cd .. && firebase emulators:start --only functions",
+    "deploy:dev": "yarn test && yarn build && firebase deploy --only hosting:development",
+    "deploy:prod": "yarn test && yarn build && firebase deploy --only hosting:production"
   },
   "repository": {
     "type": "git",

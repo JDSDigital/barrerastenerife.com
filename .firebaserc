@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "barrerastenerife"
-  }
+  },
+  "targets": {
+    "barrerastenerife": {
+      "hosting": {
+        "development": [
+          "barrerastenerifedev"
+        ],
+        "production": [
+          "barrerastenerife"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
