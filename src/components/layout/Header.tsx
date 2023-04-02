@@ -47,22 +47,22 @@ const Header: React.FC<Props> = ({ siteTitle = "", ...rest }) => {
       }
       es: file(relativePath: { eq: "flags/sp.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 20)
+          gatsbyImageData(layout: FIXED, height: 30)
         }
       }
       en: file(relativePath: { eq: "flags/uk.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 20)
+          gatsbyImageData(layout: FIXED, height: 30)
         }
       }
       ru: file(relativePath: { eq: "flags/ru.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 20)
+          gatsbyImageData(layout: FIXED, height: 30)
         }
       }
       it: file(relativePath: { eq: "flags/it.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 20)
+          gatsbyImageData(layout: FIXED, height: 30)
         }
       }
     }

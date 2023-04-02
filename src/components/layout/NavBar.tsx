@@ -35,8 +35,12 @@ const NavBar: FC<Props> = ({ linkList, images, params }) => {
             </Link>
             {link.sub && (
               <List className="dropdown-list">
-                {link.sub.map(sub => (
-                  <Link key={sub.to} to={sub.to} activeClassName="active">
+                {link.sub.map((sub, index) => (
+                  <Link
+                    key={`${sub.text.toLowerCase().replace(" ", "-")}-${index}`}
+                    to={sub.to}
+                    activeClassName="active"
+                  >
                     <ListItem button>{sub.text}</ListItem>
                   </Link>
                 ))}
