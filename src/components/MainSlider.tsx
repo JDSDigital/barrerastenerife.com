@@ -81,7 +81,7 @@ const MainSlider: React.FC = () => {
           <Typography
             component="p"
             variant="h1"
-            className="main-slider-title mb-3"
+            className="main-slider-subtitle mb-4"
             align="center"
           >
             Where Dreams Come Home
