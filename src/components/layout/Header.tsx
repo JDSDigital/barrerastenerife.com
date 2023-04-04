@@ -42,7 +42,7 @@ const Header: React.FC<Props> = ({ siteTitle = "", ...rest }) => {
     query {
       logo: file(relativePath: { eq: "logo/logo-navbar.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 70)
+          gatsbyImageData(layout: FIXED, height: 60)
         }
       }
       es: file(relativePath: { eq: "flags/sp.jpg" }) {
