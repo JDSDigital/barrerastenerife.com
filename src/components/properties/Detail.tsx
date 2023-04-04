@@ -71,6 +71,21 @@ const Detail = ({ property }: { property: Property | undefined }) => {
     setIsGalleryOpen(false);
   };
 
+  const getPrice = () =>
+    `${
+      property.tags.includes("promocion" || "promotion")
+        ? t("properties.from")
+        : ""
+    } ${formatPrice(
+      property.selling ? property.selling_cost : property.renting_cost
+    )}`;
+
+  const getDescription = () =>
+    property[`description_${language}` as "description"] ||
+    property.description;
+
+  console.log({ property });
+
   return (
     <>
       <Container>
@@ -103,37 +118,18 @@ const Detail = ({ property }: { property: Property | undefined }) => {
               ))}
             </div>
           </Grid>
-          <Grid item xs={12} md={6}>
-            <Card className="mb-5">
-              <CardContent>
-                <Typography variant="h3">
-                  {`${
-                    property.tags.includes("promocion" || "promotion")
-                      ? t("properties.from")
-                      : ""
-                  } ${formatPrice(
-                    property.selling
-                      ? property.selling_cost
-                      : property.renting_cost
-                  )}`}
-                </Typography>
-                <Typography color="textSecondary" className="flex-row mt-3">
-                  <RoomIcon className="mr-3" />
-                  {getPropertyZone()}
-                </Typography>
-              </CardContent>
-            </Card>
-            <Card className="mb-5">
-              <CardHeader title={t("properties.info")} />
-              <CardContent>
-                <PropertyFooter
-                  detail={true}
-                  area={property.area}
-                  bathrooms={property.bathrooms}
-                  bedrooms={property.bedrooms}
-                />
-              </CardContent>
-            </Card>
+
+          <Grid item xs={12}>
+            <PropertyFooter
+              status={property.status}
+              price={getPrice()}
+              area={property.area}
+              bathrooms={property.bathrooms}
+              bedrooms={property.bedrooms}
+            />
+          </Grid>
+
+          {/* <Grid item xs={12} md={6}>
             <Card className="mb-5">
               {property.tags.length > 0 && (
                 <>
@@ -148,19 +144,32 @@ const Detail = ({ property }: { property: Property | undefined }) => {
                 </>
               )}
             </Card>
+          </Grid> */}
+
+          <Grid item xs={12}>
+            <Typography variant="h4" className="mb-3">
+              {property.street}, {property.town}
+            </Typography>
+            <Typography variant="body1">{getDescription()}</Typography>
+          </Grid>
+
+          {property.tags.length > 0 && (
+            <Grid item xs={12}>
+              <ul className="tag-list">
+                {property.tags.map(tag => (
+                  <li key={tag}>
+                    <Chip label={tag} color="primary" />
+                  </li>
+                ))}
+              </ul>
+            </Grid>
+          )}
+
+          <Grid item xs={12} md={6}>
+            <MapView lat={property.geo_lat} lng={property.geo_lng} />
           </Grid>
           <Grid item xs={12} md={6}>
-            <Card className="mb-5">
-              <CardHeader title={t("properties.description")} />
-              <CardContent>
-                {language === "es"
-                  ? property.description
-                  : property.description_en}
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Card className="mb-5">
+            <Card>
               <CardHeader title={t("contact.title")} />
               <CardContent>
                 <Form fullWidth id={property.identifier} />
@@ -168,7 +177,6 @@ const Detail = ({ property }: { property: Property | undefined }) => {
             </Card>
           </Grid>
         </Grid>
-        <MapView lat={property.geo_lat} lng={property.geo_lng} />
 
         {property.related && property.related.length > 0 && (
           <>

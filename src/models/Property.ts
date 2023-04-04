@@ -1,5 +1,6 @@
 export type Property = {
   id: string;
+  status: string;
   identifier: string;
   street: string;
   zone: string;
