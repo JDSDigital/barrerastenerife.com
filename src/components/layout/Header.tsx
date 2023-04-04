@@ -73,8 +73,8 @@ const Header: React.FC<Props> = ({ siteTitle = "", ...rest }) => {
       to: "/properties/buy",
       text: t("header.link.buy"),
       sub: [
-        { to: "/properties/buy", text: t("header.link.luxury") },
-        { to: "/properties/buy", text: t("header.link.promotion") },
+        { to: "/properties/luxury", text: t("header.link.luxury") },
+        { to: "/promotion", text: t("header.link.promotion") },
         { to: "/properties/buy", text: t("header.link.properties") },
       ],
     },

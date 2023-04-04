@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from "gatsby";
 
 import { Link } from "gatsby-plugin-react-i18next";
 import React from "react";
-import { promotions } from "../../constants";
+import { promotions } from "witeiConstants";
 
 export const PromotionContainer = () => {
   const images = useStaticQuery(graphql`

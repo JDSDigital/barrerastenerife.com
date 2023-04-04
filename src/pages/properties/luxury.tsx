@@ -1,3 +1,4 @@
+import { LUXURY_PROPERTIES_PRICE_RANGE } from "witeiConstants";
 import Layout from "components/layout";
 import { PageProps } from "gatsby";
 import { Properties } from "components/properties/Properties";
@@ -5,34 +6,32 @@ import PropertiesBanner from "components/properties/PropertiesBanner";
 import React from "react";
 import SEO from "components/SEO";
 import { graphql } from "gatsby";
-import { promotions } from "witeiConstants";
 import { useTranslation } from "hooks/useTranslation";
 
-type NewPropertiesListProps = {
+type LuxuryPropertiesProps = {
   banner: any; // TODO: Get image type
 };
 
-const NewPropertiesList: React.FC<PageProps<NewPropertiesListProps>> = ({
-  location,
+const LuxuryProperties: React.FC<PageProps<LuxuryPropertiesProps>> = ({
   data,
 }) => {
   const { t } = useTranslation();
-
-  const searchParams = new URLSearchParams(location.search);
-  const tag = searchParams.get("tag");
-
-  const title = promotions.find(promotion => promotion.type === tag);
+  const title = t("header.link.luxury");
 
   return (
     <Layout>
-      <SEO title={t("header.link.promotion")} />
-      <PropertiesBanner image={data.banner} title={title?.name} />
-      <Properties tags={["promotion", tag!]} search={false} />
+      <SEO title={title} />
+      <PropertiesBanner image={data.banner} title={t("header.link.luxury")} />
+      <Properties
+        contract={2}
+        price={LUXURY_PROPERTIES_PRICE_RANGE}
+        disableContract
+      />
     </Layout>
   );
 };
 
-export default NewPropertiesList;
+export default LuxuryProperties;
 
 export const query = graphql`
   query ($language: String!) {
@@ -44,7 +43,7 @@ export const query = graphql`
         }
       }
     }
-    banner: file(relativePath: { eq: "bg/developments.jpg" }) {
+    banner: file(relativePath: { eq: "bg/buy.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }

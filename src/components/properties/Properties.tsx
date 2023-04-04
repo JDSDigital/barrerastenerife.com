@@ -1,8 +1,8 @@
-import * as constants from "../../constants";
+import * as constants from "witeiConstants";
 
+import { Button, Container, Grid } from "@material-ui/core";
 import React, { FC, useState } from "react";
 
-import { Container } from "@material-ui/core";
 import List from "./List";
 import { Search } from "models/Search";
 import SearchForm from "./SearchForm";
@@ -21,6 +21,7 @@ type Props = {
   search?: boolean;
   tags?: string[];
   town?: string;
+  price?: [number, number];
 };
 
 export const Properties: FC<Props> = ({
@@ -31,10 +32,11 @@ export const Properties: FC<Props> = ({
   disableContract = false,
   disableKind = false,
   title,
-  pagination = true,
+  pagination = false,
   search = true,
   tags = [],
   town,
+  price,
 }) => {
   const { t } = useTranslation();
   const [page, setPage] = useState(1);
@@ -42,6 +44,8 @@ export const Properties: FC<Props> = ({
     kind: disableKind ? kind : constants.types[type].value,
     buyop: constants.contract[contract].value,
     town: town ? town : constants.zones[zone].value,
+    min_price: price ? price[0] : constants.MIN_PRICE,
+    max_price: price ? price[1] : constants.MAX_PRICE,
     page,
   });
 
@@ -68,6 +72,7 @@ export const Properties: FC<Props> = ({
           types={type}
           contract={contract}
           zones={zone}
+          price={[filter.min_price!, filter.max_price!]}
           setFilter={setFilter}
           setPage={setPage}
         />
@@ -77,7 +82,7 @@ export const Properties: FC<Props> = ({
 
       {/* TODO: Fix pagination */}
 
-      {/* <Container>
+      <Container>
         {pagination && (
           <Grid container spacing={2}>
             <Grid item xs={12} className="text-center">
@@ -94,7 +99,7 @@ export const Properties: FC<Props> = ({
             </Grid>
           </Grid>
         )}
-      </Container> */}
+      </Container>
     </Container>
   );
 };

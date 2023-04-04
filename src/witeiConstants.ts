@@ -604,3 +604,17 @@ export const promotions = [
   //   name: "Puerto de la Cruz",
   // },
 ];
+
+export const MIN_PRICE = 0;
+export const MAX_PRICE = 50000000;
+export const LUXURY_MIN_PRICE = 500000;
+
+export const PROPERTIES_PRICE_RANGE: [number, number] = [
+  MIN_PRICE,
+  LUXURY_MIN_PRICE,
+];
+
+export const LUXURY_PROPERTIES_PRICE_RANGE: [number, number] = [
+  LUXURY_MIN_PRICE,
+  MAX_PRICE,
+];
