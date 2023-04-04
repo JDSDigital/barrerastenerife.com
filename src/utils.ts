@@ -36,9 +36,9 @@ export const getPropertyList = (data: Search) => {
   const getProperties = emulator.httpsCallable("getPropertyList");
 
   return getProperties({
-    ...data,
-    status: "available",
     sort_by: "creation_date_desc",
+    status: "available",
+    ...data,
   }).catch(error => console.log("Error", error));
 };
 

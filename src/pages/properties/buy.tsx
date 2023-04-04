@@ -1,4 +1,5 @@
 import Layout from "components/layout";
+import { PROPERTIES_PRICE_RANGE } from "witeiConstants";
 import { PageProps } from "gatsby";
 import { Properties } from "components/properties/Properties";
 import PropertiesBanner from "components/properties/PropertiesBanner";
@@ -19,7 +20,7 @@ const BuyProperties: React.FC<PageProps<BuyPropertiesProps>> = ({ data }) => {
     <Layout>
       <SEO title={title} />
       <PropertiesBanner image={data.banner} title={t("properties.sell")} />
-      <Properties contract={2} disableContract />
+      <Properties contract={2} price={PROPERTIES_PRICE_RANGE} disableContract />
     </Layout>
   );
 };

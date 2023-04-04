@@ -1,4 +1,4 @@
-import * as constants from "../../constants";
+import * as constants from "witeiConstants";
 
 import {
   Button,
@@ -29,6 +29,7 @@ interface Props {
   bathrooms?: number;
   tags?: number;
   zones?: number;
+  price?: [number, number];
   disableContract?: boolean;
   disableKind?: boolean;
   setFilter: Dispatch<SetStateAction<Search>>;
@@ -45,6 +46,7 @@ const SearchForm: React.FC<Props> = ({
   zones = 0,
   disableContract = false,
   disableKind = false,
+  price = [0, 50000000],
   setFilter,
   setPage,
 }) => {
@@ -58,7 +60,7 @@ const SearchForm: React.FC<Props> = ({
     zones,
     sort_by: 0,
     identifier: "",
-    price: contract === 1 ? [400, 2000] : [50000, 1000000],
+    price,
     town: "",
   });
 
@@ -72,9 +74,9 @@ const SearchForm: React.FC<Props> = ({
     setState({ ...state, [event.target.name]: event.target.value });
   };
 
-  const handlePriceChange = (event: any, newValue: number | number[]) => {
-    setState({ ...state, price: newValue as number[] });
-  };
+  // const handlePriceChange = (event: any, newValue: number | number[]) => {
+  //   setState({ ...state, price: newValue as number[] });
+  // };
 
   const handleSearch = () => {
     let data: Search = {};
@@ -212,7 +214,7 @@ const SearchForm: React.FC<Props> = ({
                   onChange={handleChange}
                 />
               </Grid>
-              <Grid item xs={12} sm={4}>
+              {/* <Grid item xs={12} sm={4}>
                 <InputLabel
                   shrink
                   htmlFor="price"
@@ -234,7 +236,7 @@ const SearchForm: React.FC<Props> = ({
                 {`${formatPrice(state.price[0])} - ${formatPrice(
                   state.price[1]
                 )}`}
-              </Grid>
+              </Grid> */}
             </Grid>
           </Collapse>
           <Grid container spacing={2} className="mt-5">
