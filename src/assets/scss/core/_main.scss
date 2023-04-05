@@ -278,6 +278,28 @@ body {
         }
       }
     }
+
+    .expert-representation {
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: space-between;
+        margin-top: 24px;
+
+        button {
+          width: 100%;
+        }
+
+        @include sm {
+          flex-direction: row;
+
+          button {
+            width: auto;
+          }
+        }
+      }
+    }
   }
 
   .image-gallery {
@@ -293,10 +315,6 @@ body {
         display: flex;
       }
     }
-  }
-
-  .property-card-actions {
-    // text-align: center;
   }
 }
 

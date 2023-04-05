@@ -3,6 +3,10 @@
   "search": "Поиск",
   "property": "Недвижимость",
 
+  "expertRepresentation": {
+    "title": "Expert Representation"
+  },
+
   "header": {
     "link": {
       "buy": "Покупка и продажа",

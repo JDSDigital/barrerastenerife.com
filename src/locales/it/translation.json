@@ -3,6 +3,10 @@
   "search": "Cerca",
   "property": "Proprietá",
 
+  "expertRepresentation": {
+    "title": "Expert Representation"
+  },
+
   "header": {
     "link": {
       "buy": "Comprare",

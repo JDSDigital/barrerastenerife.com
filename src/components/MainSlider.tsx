@@ -69,7 +69,11 @@ const MainSlider: React.FC = () => {
       ]}
     >
       <div className="main-slider-overlay">
-        <Container className="main-slider-container">
+        <Container
+          className="main-slider-container"
+          data-aos="fade-in"
+          data-aos-delay="500"
+        >
           <Typography
             component="h1"
             variant="h3"

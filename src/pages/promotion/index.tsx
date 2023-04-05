@@ -1,6 +1,6 @@
 import Layout from "components/layout";
 import { PageProps } from "gatsby";
-import { PromotionContainer } from "components/promotion/PromotionContainer";
+import { Properties } from "components/properties/Properties";
 import PropertiesBanner from "components/properties/PropertiesBanner";
 import React from "react";
 import SEO from "components/SEO";
@@ -22,7 +22,7 @@ const NewProperties: React.FC<PageProps<NewPropertiesProps>> = ({ data }) => {
         image={data.banner}
         title={t("folders.promotion.title")}
       />
-      <PromotionContainer />
+      <Properties tags={["promotion"]} />
     </Layout>
   );
 };
