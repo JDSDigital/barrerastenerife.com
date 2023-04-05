@@ -35,8 +35,8 @@
     "react-query": "3.39.2",
     "react-scroll-parallax": "3.3.2",
     "react-slick": "0.29.0",
-    "react-spring-lightbox": "^1.7.1",
-    "styled-components": "^5.3.9"
+    "react-spring-lightbox": "1.7.1",
+    "styled-components": "5.3.9"
   },
   "devDependencies": {
     "@babel/preset-typescript": "7.18.6",

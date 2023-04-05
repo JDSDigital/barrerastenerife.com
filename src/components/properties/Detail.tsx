@@ -46,6 +46,8 @@ const Detail = ({ identifier }: DetailProps) => {
     );
   }
 
+  if (!property) return null;
+
   const getPropertyZone = () => {
     if (property.zone && !property.town) return property.zone;
     if (!property.zone && property.town) return property.town;

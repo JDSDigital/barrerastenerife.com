@@ -10847,7 +10847,7 @@ react-slick@0.29.0:
     lodash.debounce "^4.0.8"
     resize-observer-polyfill "^1.5.0"
 
-react-spring-lightbox@^1.7.1:
+react-spring-lightbox@1.7.1:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/react-spring-lightbox/-/react-spring-lightbox-1.7.1.tgz#a875280ba4972ea16d6f41841d3d578a9b7201fb"
   integrity sha512-TqJJfPAyb3KLHgKv/mkBJr/DYYsyZeDpVGOediGQ9XC7tDtxNReBTxaULjyFf5Yh389I3kbWKw5YFHqv1eFVMA==
@@ -11919,7 +11919,7 @@ style-loader@^2.0.0:
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"
 
-styled-components@^5.3.9:
+styled-components@5.3.9:
   version "5.3.9"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-5.3.9.tgz#641af2a8bb89904de708c71b439caa9633e8f0ba"
   integrity sha512-Aj3kb13B75DQBo2oRwRa/APdB5rSmwUfN5exyarpX+x/tlM/rwZA2vVk2vQgVSP6WKaZJHWwiFrzgHt+CLtB4A==
