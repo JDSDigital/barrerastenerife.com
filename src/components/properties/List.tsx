@@ -26,7 +26,7 @@ const List: React.FC<Props> = ({
   return (
     <Grid container className="properties-container">
       {title && (
-        <Grid item xs={12} className="text-center">
+        <Grid item xs={12} className="text-center" data-aos="fade-up">
           <Typography variant="h3" component="p" className="section-title">
             {featured ? "Propiedades Recientes" : title}
           </Typography>
@@ -43,7 +43,14 @@ const List: React.FC<Props> = ({
         </Container>
       ) : (
         properties.map(property => (
-          <Grid key={`property-${property.id}`} item xs={12} sm={6} md={4}>
+          <Grid
+            key={`property-${property.id}`}
+            item
+            xs={12}
+            sm={6}
+            md={4}
+            data-aos="fade-up"
+          >
             <PropertyCard property={property} />
           </Grid>
         ))

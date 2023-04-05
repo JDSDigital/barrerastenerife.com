@@ -24,13 +24,18 @@ export const ExpertRepresentation = () => {
   return (
     <Container className="expert-representation">
       <div className="text-center">
-        <Typography variant="h3" component="p" className="section-title">
+        <Typography
+          variant="h3"
+          component="p"
+          className="section-title"
+          data-aos="fade-up"
+        >
           Expert Representation
         </Typography>
       </div>
 
       <Grid container spacing={5}>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6} data-aos="fade-right" data-aos-delay="400">
           <Typography>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             luctus orci at nunc lacinia, condimentum molestie lectus hendrerit.
@@ -79,7 +84,7 @@ export const ExpertRepresentation = () => {
             </Link>
           </div>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6} data-aos="fade-left" data-aos-delay="400">
           <div style={{ height: "600px" }}>
             <GatsbyImage image={image} alt="" className="crop-center" />
           </div>

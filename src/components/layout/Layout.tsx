@@ -6,16 +6,18 @@
  */
 
 import "assets/scss/custom-theme.scss";
+import "/node_modules/aos/dist/aos.js";
 
 import { QueryClient, QueryClientProvider } from "react-query";
+import React, { useEffect } from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
+import Aos from "aos";
 import { Container } from "@material-ui/core";
 import CustomThemeProvider from "../theme/CustomThemeProvider";
 import Footer from "./Footer";
 import Header from "./Header";
 import { ParallaxProvider } from "react-scroll-parallax";
-import React from "react";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 
 interface Props {
@@ -54,6 +56,10 @@ export const Layout: React.FC<Props> = ({ children }) => {
       },
     },
   });
+
+  useEffect(() => {
+    Aos.init({ duration: 1200 });
+  }, []);
 
   return (
     <CustomThemeProvider>
