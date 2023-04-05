@@ -18,20 +18,27 @@ import { I18nextContext } from "gatsby-plugin-react-i18next";
 import Lightbox from "react-spring-lightbox";
 import List from "./List";
 import MapView from "components/maps/MapView";
-import { Property } from "models/Property";
 import PropertyFooter from "./PropertyFooter";
-import RoomIcon from "@material-ui/icons/Room";
 import { formatPrice } from "../../utils";
+import { useGetProperty } from "hooks/useGetProperty";
 import { useTranslation } from "hooks/useTranslation";
 
-const Detail = ({ property }: { property: Property | undefined }) => {
+type DetailProps = {
+  identifier: string | null;
+};
+
+const Detail = ({ identifier }: DetailProps) => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [currentImageIndex, setCurrentIndex] = useState(0);
 
   const { t } = useTranslation();
   const { language } = React.useContext(I18nextContext);
 
-  if (!property) {
+  const { property, status } = useGetProperty(identifier!, {
+    enabled: Boolean(identifier),
+  });
+
+  if (status === "loading") {
     return (
       <Container className="text-center p-5">
         <CircularProgress />
@@ -57,7 +64,7 @@ const Detail = ({ property }: { property: Property | undefined }) => {
   const imageGallery = property.pictures.map((image: any, index: number) => ({
     src: image.original,
     loading: "lazy",
-    alt: `Property image ${index}`,
+    alt: `Property image ${index + 1}`,
   }));
 
   const gotoPrevious = () =>
@@ -84,8 +91,6 @@ const Detail = ({ property }: { property: Property | undefined }) => {
     property[`description_${language}` as "description"] ||
     property.description;
 
-  console.log({ property });
-
   return (
     <>
       <Container>
@@ -94,6 +99,7 @@ const Detail = ({ property }: { property: Property | undefined }) => {
             <div className="image-container">
               {imageGrid.map((image: any, index: number) => (
                 <div
+                  key={`image-grid-${index}`}
                   onClick={() => {
                     setCurrentIndex(index);
                     setIsGalleryOpen(true);
@@ -102,6 +108,7 @@ const Detail = ({ property }: { property: Property | undefined }) => {
                   <img
                     className="img-responsive crop-center"
                     src={image.original}
+                    alt={`Property image ${index + 1}`}
                   />
                   {canShowOverlay(index) && (
                     <div className="overlay">
@@ -129,26 +136,9 @@ const Detail = ({ property }: { property: Property | undefined }) => {
             />
           </Grid>
 
-          {/* <Grid item xs={12} md={6}>
-            <Card className="mb-5">
-              {property.tags.length > 0 && (
-                <>
-                  <CardHeader title={t("properties.tags")} />
-                  <ul className="tag-list">
-                    {property.tags.map(tag => (
-                      <li key={tag}>
-                        <Chip label={tag} color="primary" />
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              )}
-            </Card>
-          </Grid> */}
-
           <Grid item xs={12}>
             <Typography variant="h4" className="mb-3">
-              {property.street}, {property.town}
+              {property.street}, {getPropertyZone()}
             </Typography>
             <Typography variant="body1">{getDescription()}</Typography>
           </Grid>

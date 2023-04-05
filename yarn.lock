@@ -3210,13 +3210,6 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-image-gallery@1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@types/react-image-gallery/-/react-image-gallery-1.2.0.tgz#b76ff74b312b8343f290ed105f134ee2d31a2ece"
-  integrity sha512-y5OEficUWcnGEc6KvflRXgvhtaMSsDH6JGT3/SJs0FV/RgtKuIgrUpGbDw5MdzyUwe/D8sJTo+aw8NOkaX0nIA==
-  dependencies:
-    "@types/react" "*"
-
 "@types/react-slick@0.23.10":
   version "0.23.10"
   resolved "https://registry.yarnpkg.com/@types/react-slick/-/react-slick-0.23.10.tgz#56126e6e4e95cdce7771535b2811c2c1931a7caa"

@@ -108,8 +108,6 @@ jest.mock("react-query", () => ({
   }),
 }));
 
-jest.mock("react-image-gallery", () => jest.fn());
-
 jest.mock("gatsby-image", () => jest.fn());
 
 jest.mock("google-map-react", () => jest.fn());

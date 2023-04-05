@@ -1,6 +1,10 @@
+import * as ReactQuery from "react-query";
+
+import { render, waitFor } from "@testing-library/react";
+
 import PropertyPage from "../pages/property";
 import React from "react";
-import { render } from "@testing-library/react";
+import { createPropertyMock } from "./__mocks__/createPropertyMock";
 
 const imageMock = {
   childImageSharp: {
@@ -14,13 +18,28 @@ const mockData = {
   background1: imageMock,
 };
 
+const property = createPropertyMock();
+
+jest.spyOn(ReactQuery, "useQuery").mockImplementation(
+  jest.fn().mockReturnValue({
+    data: { data: property },
+    isLoading: false,
+    isSuccess: true,
+  })
+);
+
 describe("Property", () => {
   it("does not have basic accessibility issues", async () => {
     const { container } = render(
-      // @ts-ignore
-      <PropertyPage data={mockData} location={{ search: "" }} />
+      <PropertyPage
+        data={mockData}
+        // @ts-ignore
+        location={{ search: "?id=property-id" }}
+      />
     );
 
-    expect(container).toHTMLValidate();
+    await waitFor(() => {
+      expect(container).toHTMLValidate();
+    });
   });
 });

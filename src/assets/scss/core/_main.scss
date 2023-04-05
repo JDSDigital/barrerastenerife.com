@@ -170,11 +170,12 @@ body {
         cursor: pointer;
         grid-column-start: 1;
         grid-column-end: 5;
+        max-height: 100%;
       }
 
       & > *:not(:first-child) {
         cursor: pointer;
-        height: 100px;
+        height: 400px;
         position: relative;
       }
 
@@ -190,6 +191,7 @@ body {
           grid-column-end: 3;
           grid-row-start: 1;
           grid-row-end: 3;
+          height: 600px;
         }
 
         & > *:not(:first-child) {
