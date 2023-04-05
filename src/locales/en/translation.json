@@ -3,6 +3,10 @@
   "search": "Search",
   "property": "Property",
 
+  "expertRepresentation": {
+    "title": "Expert Representation"
+  },
+
   "header": {
     "link": {
       "buy": "Buy",

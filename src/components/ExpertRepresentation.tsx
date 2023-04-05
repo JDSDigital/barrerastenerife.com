@@ -1,4 +1,4 @@
-import { Button, Container, Grid, Typography } from "@material-ui/core";
+import { Button, Container, Grid, Typography, styled } from "@material-ui/core";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from "gatsby";
 
@@ -30,7 +30,7 @@ export const ExpertRepresentation = () => {
           className="section-title"
           data-aos="fade-up"
         >
-          Expert Representation
+          {t("expertRepresentation.title")}
         </Typography>
       </div>
 
@@ -52,44 +52,33 @@ export const ExpertRepresentation = () => {
             est, in blandit enim.
           </Typography>
           <div className="button-container">
-            <Link to="promotion">
-              <Button
-                variant="contained"
-                color="primary"
-                className="color-white"
-                size="large"
-              >
-                <Typography>{t("header.link.promotion")}</Typography>
-              </Button>
-            </Link>
-            <Link to="/properties/luxury">
-              <Button
-                variant="contained"
-                color="primary"
-                className="color-white"
-                size="large"
-              >
-                <Typography>{t("header.link.luxury")}</Typography>
-              </Button>
-            </Link>
-            <Link to="/properties/buy">
-              <Button
-                variant="contained"
-                color="primary"
-                className="color-white"
-                size="large"
-              >
-                <Typography>{t("search")}</Typography>
-              </Button>
-            </Link>
+            <div className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge">
+              <Link to="/promotion" className="color-white">
+                {t("header.link.promotion")}
+              </Link>
+            </div>
+            <div className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge">
+              <Link to="/properties/luxury" className="color-white">
+                {t("header.link.luxury")}
+              </Link>
+            </div>
+            <div className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge">
+              <Link to="/properties/buy" className="color-white">
+                {t("search")}
+              </Link>
+            </div>
           </div>
         </Grid>
         <Grid item xs={12} sm={6} data-aos="fade-left" data-aos-delay="400">
-          <div style={{ height: "600px" }}>
+          <ImageContainer>
             <GatsbyImage image={image} alt="" className="crop-center" />
-          </div>
+          </ImageContainer>
         </Grid>
       </Grid>
     </Container>
   );
 };
+
+const ImageContainer = styled("div")({
+  height: "600px",
+});

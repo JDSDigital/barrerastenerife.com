@@ -11,7 +11,7 @@
     "@radix-ui/react-id": "0.1.1",
     "@radix-ui/react-popper": "0.1.1",
     "@radix-ui/react-portal": "0.1.1",
-    "aos": "2.3.4",
+    "aos": "3.0.0-beta.6",
     "downshift": "6.1.7",
     "firebase": "8.2.3",
     "gatsby": "5.4.1",

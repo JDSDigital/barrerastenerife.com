@@ -6,7 +6,6 @@
  */
 
 import "assets/scss/custom-theme.scss";
-import "/node_modules/aos/dist/aos.js";
 
 import { QueryClient, QueryClientProvider } from "react-query";
 import React, { useEffect } from "react";
