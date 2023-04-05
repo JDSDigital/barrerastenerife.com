@@ -161,19 +161,56 @@ body {
     }
 
     .image-container {
-      margin-top: 130px;
-      .image-gallery-content .image-gallery-slide .image-gallery-image {
-        height: 400px !important;
-      }
-    }
+      margin-top: 85px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
 
-    @media (max-width: 960px) {
-      .image-gallery-content .image-gallery-slide .image-gallery-image {
-        max-height: calc(100vh - 94px);
+      & > *:first-child {
+        cursor: pointer;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        height: 400px;
       }
 
-      .image-container {
-        padding: 0 !important;
+      & > *:not(:first-child) {
+        cursor: pointer;
+        position: relative;
+      }
+
+      p {
+        font-size: 2rem;
+      }
+
+      @include sm {
+        height: 600px;
+
+        & > *:first-child {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 3;
+          height: 600px;
+        }
+
+        & > *:not(:first-child) {
+          height: 300px;
+        }
+
+        p {
+          font-size: 3rem;
+        }
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
 
@@ -241,6 +278,25 @@ body {
         }
       }
     }
+  }
+
+  .image-gallery {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+
+    .image-gallery-button {
+      display: none;
+      z-index: 1;
+      margin: 16px;
+
+      @include sm {
+        display: flex;
+      }
+    }
+  }
+
+  .property-card-actions {
+    // text-align: center;
   }
 }
 
@@ -612,15 +668,19 @@ body {
   flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 1em;
-  padding: 8px;
+  padding: 0;
 
   li {
-    margin-right: 0.5em;
-    margin-left: 0.5em;
+    margin-right: 1em;
     margin-bottom: 1em;
+
+    & > * {
+      padding: 8px 16px;
+    }
 
     span {
       color: white;
+      font-size: 1rem;
     }
   }
 }

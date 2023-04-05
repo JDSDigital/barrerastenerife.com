@@ -46,28 +46,18 @@ type Identifier = {
   identifier: string | null;
 };
 
-export const getProperty = ({
-  identifier,
-}: Identifier): Property | undefined => {
-  const [property, setProperty] = useState<Property>();
+export const getProperty = ({ identifier }: Identifier) => {
+  const emulator = firebase.functions();
 
-  useEffect(() => {
-    const emulator = firebase.functions();
+  if (USE_EMULATOR) {
+    emulator.useEmulator("localhost", 5001);
+  }
 
-    if (USE_EMULATOR) {
-      emulator.useEmulator("localhost", 5001);
-    }
+  const getProperty = emulator.httpsCallable("getProperty");
 
-    const getProperty = emulator.httpsCallable("getProperty");
-
-    getProperty({ identifier })
-      .then(response => {
-        setProperty(response.data);
-      })
-      .catch(error => console.log("Error", error));
-  }, [identifier]);
-
-  return property;
+  return getProperty({ identifier }).catch(error =>
+    console.log("Error", error)
+  );
 };
 
 export const sendMail = (data: {

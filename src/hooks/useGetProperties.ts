@@ -1,5 +1,6 @@
 import { UseQueryOptions, useQuery } from "react-query";
 
+import { Property } from "models/Property";
 import { Search } from "models/Search";
 import { getPropertyList } from "utils";
 
@@ -14,7 +15,7 @@ export const useGetProperties = (
   options?: UseQueryOptions<any, any>
 ) => {
   const request = useQuery<any, any>(
-    ["products", [page, filter]],
+    ["properties", [page, filter]],
     () =>
       getPropertyList({ page, tags: tags.length > 0 ? tags : [], ...filter }),
     options
@@ -23,6 +24,6 @@ export const useGetProperties = (
   return {
     ...request,
     response: request.data,
-    properties: request.data?.data?.results,
+    properties: request.data?.data?.results as Property[],
   };
 };

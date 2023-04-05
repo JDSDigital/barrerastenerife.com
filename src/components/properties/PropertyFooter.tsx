@@ -1,54 +1,39 @@
 import { CardActions, Grid } from "@material-ui/core";
 
-import BathtubIcon from "@material-ui/icons/Bathtub";
-import CropFreeIcon from "@material-ui/icons/CropFree";
 import FooterItem from "./PropertyFooterItem";
-import HotelIcon from "@material-ui/icons/Hotel";
 import React from "react";
 import { useTranslation } from "hooks/useTranslation";
 
 interface Props {
-  detail?: boolean;
+  price: string;
+  status: string;
   area: number;
   bedrooms: number;
   bathrooms: number;
 }
 
 const PropertyFooter: React.FC<Props> = ({
-  detail = false,
+  price,
+  status,
   area,
   bedrooms,
   bathrooms,
 }) => {
   const { t } = useTranslation();
   return (
-    <CardActions
-      classes={{ root: `property-card-actions${detail ? "--detail" : ""}` }}
-    >
+    <CardActions classes={{ root: "property-card-actions" }}>
       <Grid container spacing={2}>
-        <Grid item xs={detail ? 6 : 4} sm={4}>
-          <FooterItem
-            detail={detail}
-            title={`${t("properties.area")} m2`}
-            value={area}
-            component={CropFreeIcon}
-          />
+        <Grid item xs={12} sm={6} md={3}>
+          <FooterItem title={status.toLocaleUpperCase()} value={price} />
         </Grid>
-        <Grid item xs={detail ? 6 : 4} sm={4}>
-          <FooterItem
-            detail={detail}
-            title={t("properties.bedrooms")}
-            value={bedrooms}
-            component={HotelIcon}
-          />
+        <Grid item xs={6} sm={6} md={3}>
+          <FooterItem title={`${t("properties.area")} m2`} value={area} />
         </Grid>
-        <Grid item xs={detail ? 6 : 4} sm={4}>
-          <FooterItem
-            detail={detail}
-            title={t("properties.bathrooms")}
-            value={bathrooms}
-            component={BathtubIcon}
-          />
+        <Grid item xs={6} sm={6} md={3}>
+          <FooterItem title={t("properties.bedrooms")} value={bedrooms} />
+        </Grid>
+        <Grid item xs={12} sm={6} md={3}>
+          <FooterItem title={t("properties.bathrooms")} value={bathrooms} />
         </Grid>
       </Grid>
     </CardActions>
