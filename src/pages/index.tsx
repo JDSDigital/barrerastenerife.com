@@ -1,9 +1,9 @@
 import { PageProps, graphql } from "gatsby";
 
+import { ExpertRepresentation } from "components/ExpertRepresentation";
 import { FeaturedPropertiesSection } from "components/FeaturedPropertiesSection";
 import Layout from "components/layout";
 import MainSlider from "components/MainSlider";
-import Partnerships from "components/Partnerships";
 import { PropertyFoldersSection } from "components/PropertyFoldersSection";
 import React from "react";
 import SEO from "components/SEO";
@@ -22,6 +22,8 @@ const IndexPage: React.FC<PageProps<IndexPageProps>> = ({ data }) => {
       <SEO title={t("home")} />
 
       <MainSlider />
+
+      <ExpertRepresentation />
 
       <FeaturedPropertiesSection />
 
