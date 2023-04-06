@@ -15,7 +15,7 @@ export const useGetProperties = (
   options?: UseQueryOptions<any, any>
 ) => {
   const request = useQuery<any, any>(
-    ["properties", [page, filter]],
+    ["properties", [page, tags, filter]],
     () =>
       getPropertyList({ page, tags: tags.length > 0 ? tags : [], ...filter }),
     options

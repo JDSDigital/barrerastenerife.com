@@ -4,6 +4,7 @@ import { ExpertRepresentation } from "components/ExpertRepresentation";
 import { FeaturedPropertiesSection } from "components/FeaturedPropertiesSection";
 import Layout from "components/layout";
 import MainSlider from "components/MainSlider";
+import { NewProperties } from "components/NewProperties";
 import { PropertyFoldersSection } from "components/PropertyFoldersSection";
 import React from "react";
 import SEO from "components/SEO";
@@ -26,6 +27,8 @@ const IndexPage: React.FC<PageProps<IndexPageProps>> = ({ data }) => {
       <ExpertRepresentation />
 
       <FeaturedPropertiesSection />
+
+      <NewProperties />
 
       <PropertyFoldersSection />
 
