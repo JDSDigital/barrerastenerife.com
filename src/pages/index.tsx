@@ -9,6 +9,7 @@ import { PropertyFoldersSection } from "components/PropertyFoldersSection";
 import React from "react";
 import SEO from "components/SEO";
 import Testimonials from "components/testimonials/Testimonials";
+import { ThinkingOfBuying } from "components/ThinkingOfBuying";
 import { useTranslation } from "hooks/useTranslation";
 
 type IndexPageProps = {
@@ -29,6 +30,8 @@ const IndexPage: React.FC<PageProps<IndexPageProps>> = ({ data }) => {
       <FeaturedPropertiesSection />
 
       <NewProperties />
+
+      <ThinkingOfBuying />
 
       <PropertyFoldersSection />
 
