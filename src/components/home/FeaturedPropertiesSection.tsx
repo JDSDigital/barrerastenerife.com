@@ -1,4 +1,4 @@
-import List from "./properties/List";
+import List from "components/properties/List";
 import React from "react";
 import { useGetProperties } from "hooks/useGetProperties";
 

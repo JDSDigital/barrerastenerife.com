@@ -79,9 +79,16 @@ const Header: React.FC<Props> = ({ siteTitle = "", ...rest }) => {
       ],
     },
     {
-      to: "/properties/rent",
+      to: "https://tenerifeservice.vip/",
       text: t("header.link.rent"),
-      sub: [{ to: "/properties/rent", text: t("header.link.rent") }],
+      external: true,
+      sub: [
+        {
+          to: "https://tenerifeservice.vip/",
+          text: t("header.link.luxury"),
+          external: true,
+        },
+      ],
     },
     { to: "/about", text: t("header.link.about") },
     {

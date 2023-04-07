@@ -1,15 +1,15 @@
 import { PageProps, graphql } from "gatsby";
 
-import { ExpertRepresentation } from "components/ExpertRepresentation";
-import { FeaturedPropertiesSection } from "components/FeaturedPropertiesSection";
+import { ExpertRepresentation } from "components/home/ExpertRepresentation";
+import { FeaturedPropertiesSection } from "components/home/FeaturedPropertiesSection";
 import Layout from "components/layout";
-import MainSlider from "components/MainSlider";
-import { NewProperties } from "components/NewProperties";
-import { PropertyFoldersSection } from "components/PropertyFoldersSection";
+import MainSlider from "components/home/MainSlider";
+import { NewProperties } from "components/home/NewProperties";
+import { PropertyFoldersSection } from "components/home/PropertyFoldersSection";
 import React from "react";
 import SEO from "components/SEO";
-import Testimonials from "components/testimonials/Testimonials";
-import { ThinkingOfBuying } from "components/ThinkingOfBuying";
+import Testimonials from "components/home/Testimonials";
+import { ThinkingOfBuying } from "components/home/ThinkingOfBuying";
 import { useTranslation } from "hooks/useTranslation";
 
 type IndexPageProps = {

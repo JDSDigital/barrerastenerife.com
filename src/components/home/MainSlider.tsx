@@ -5,7 +5,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import { ParallaxBanner } from "react-scroll-parallax";
 import SearchIcon from "@material-ui/icons/Search";
-import { TownSearch } from "./TownSearch";
+import { TownSearch } from "../TownSearch";
 import { getImage } from "gatsby-plugin-image";
 import { useI18next } from "gatsby-plugin-react-i18next";
 import { useTranslation } from "hooks/useTranslation";
