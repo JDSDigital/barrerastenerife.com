@@ -19,6 +19,25 @@
     "details": "Detalles"
   },
 
+  "workWithUs": {
+    "title": "TRABAJA CON NOSOTROS",
+
+    "experience": {
+      "title": "20+ AÑOS",
+      "subtitle": "Experiencia combinada en la industria - Ponga nuestra experiencia a trabajar para usted"
+    },
+    "knowledge": {
+      "title": "CONOCIMIENTO DEL MERCADO",
+      "subtitle": "El amplio conocimiento del mercado es la clave de nuestro éxito"
+    },
+    "guidance": {
+      "title": "GUÍA EXPERTA",
+      "subtitle": "Hacemos que incluso las transacciones más complicadas se realicen sin problemas"
+    },
+
+    "button": "CONTÁCTANOS"
+  },
+
   "header": {
     "link": {
       "buy": "Comprar",

@@ -19,6 +19,25 @@
     "details": "Details"
   },
 
+  "workWithUs": {
+    "title": "WORK WITH US",
+
+    "experience": {
+      "title": "20+ YEARS",
+      "subtitle": "Combined Industry Experience - Put Our Expertise to Work for You"
+    },
+    "knowledge": {
+      "title": "MARKET KNOWLEDGE",
+      "subtitle": "Extensive Market Knowledge is the Key to Our Success"
+    },
+    "guidance": {
+      "title": "EXPERT GUIDANCE",
+      "subtitle": "We Make Even the Most Complicated Transactions Run Smoothly"
+    },
+
+    "button": "GET IN TOUCH"
+  },
+
   "header": {
     "link": {
       "buy": "Покупка и продажа",

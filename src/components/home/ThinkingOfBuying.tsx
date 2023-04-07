@@ -102,7 +102,7 @@ export const ThinkingOfBuying = () => {
 };
 
 const RootContainer = styled(Grid)({
-  margin: "48px 0",
+  marginTop: "48px",
 });
 
 const ImageContainer = styled(Grid)({

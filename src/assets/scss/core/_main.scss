@@ -300,6 +300,26 @@ body {
         }
       }
     }
+
+    .work-with-us {
+      .item-container {
+        flex-direction: column;
+
+        & > *:not(:last-child) {
+          border-right: none;
+          border-bottom: 1px solid white;
+        }
+
+        @include sm {
+          flex-direction: row;
+
+          & > *:not(:last-child) {
+            border-right: 1px solid white;
+            border-bottom: none;
+          }
+        }
+      }
+    }
   }
 
   .image-gallery {
