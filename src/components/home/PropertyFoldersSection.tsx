@@ -105,28 +105,10 @@ export const PropertyFoldersSection = () => {
           description={t("folders.rent.description")}
         />
         <HomePropertiesContainer
-          to="/properties/invest"
-          image={images.invest}
-          title={t("folders.invest.title")}
-          description={t("folders.invest.description")}
-        />
-        <HomePropertiesContainer
-          to="/properties/local"
-          image={images.local}
-          title={t("folders.local.title")}
-          description={t("folders.local.description")}
-        />
-        <HomePropertiesContainer
           to="/promotion"
           image={images.promotion}
           title={t("folders.promotion.title")}
           description={t("folders.promotion.description")}
-        />
-        <HomePropertiesContainer
-          to="/about#services"
-          image={images.services}
-          title={t("folders.services.title")}
-          description={t("folders.services.description")}
         />
       </Grid>
     </Container>

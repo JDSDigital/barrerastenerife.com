@@ -7,7 +7,7 @@ import { Banner } from "components/Banner";
 import Layout from "components/layout";
 import React from "react";
 import SEO from "components/SEO";
-import { Service } from "components/Service";
+import { Service } from "components/about/Service";
 import ServicesSection from "components/about/ServicesSection";
 import TeamSection from "components/about/TeamSection";
 import { useTranslation } from "hooks/useTranslation";

@@ -9,9 +9,11 @@ type Props = {
   linkList: {
     to: string;
     text: string;
+    external?: boolean;
     sub?: {
       to: string;
       text: string;
+      external?: boolean;
     }[];
   }[];
   images: any;
@@ -30,20 +32,40 @@ const NavBar: FC<Props> = ({ linkList, images, params }) => {
             key={`${link.text.toLowerCase().replace(" ", "-")}-${index}`}
             className={link.sub ? "dropdown underline" : "underline"}
           >
-            <Link to={link.to} activeClassName="active">
-              {link.text}
-            </Link>
+            {link.external ? (
+              <a href={link.to} target="_blank">
+                {link.text}
+              </a>
+            ) : (
+              <Link to={link.to} activeClassName="active">
+                {link.text}
+              </Link>
+            )}
             {link.sub && (
               <List className="dropdown-list">
-                {link.sub.map((sub, index) => (
-                  <Link
-                    key={`${sub.text.toLowerCase().replace(" ", "-")}-${index}`}
-                    to={sub.to}
-                    activeClassName="active"
-                  >
-                    <ListItem button>{sub.text}</ListItem>
-                  </Link>
-                ))}
+                {link.sub.map((sub, index) =>
+                  sub.external ? (
+                    <a
+                      key={`${sub.text
+                        .toLowerCase()
+                        .replace(" ", "-")}-${index}`}
+                      href={sub.to}
+                      target="_blank"
+                    >
+                      <ListItem button>{sub.text}</ListItem>
+                    </a>
+                  ) : (
+                    <Link
+                      key={`${sub.text
+                        .toLowerCase()
+                        .replace(" ", "-")}-${index}`}
+                      to={sub.to}
+                      activeClassName="active"
+                    >
+                      <ListItem button>{sub.text}</ListItem>
+                    </Link>
+                  )
+                )}
               </List>
             )}
           </ListItem>
