@@ -7,6 +7,18 @@
     "title": "Representación de Expertos"
   },
 
+  "thinkingOfBuying": {
+    "buying": {
+      "title": "Lorem ipsum dolor sit amet",
+      "subtitle": "¿Pensando en comprar?"
+    },
+    "selling": {
+      "title": "Lorem ipsum dolor sit amet",
+      "subtitle": "¿Pensando en vender?"
+    },
+    "details": "Detalles"
+  },
+
   "header": {
     "link": {
       "buy": "Comprar",

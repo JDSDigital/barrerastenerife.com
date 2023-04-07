@@ -37,13 +37,14 @@ export const NewProperties = () => {
 
       <Grid container>
         {propertyGrid &&
-          propertyGrid.map(property => (
+          propertyGrid.map((property, index) => (
             <Grid item xs={12} sm={4} data-aos="fade-up">
               <Link to={`/property/?id=${property.identifier}`}>
                 <ImageContainer>
                   <img
                     src={property.pictures[0]}
                     className="img-responsive crop-center"
+                    alt={`New property development ${index + 1}`}
                   />
                 </ImageContainer>
               </Link>
