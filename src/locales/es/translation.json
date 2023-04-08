@@ -38,6 +38,23 @@
     "button": "CONTÁCTANOS"
   },
 
+  "info": {
+    "buyers": {
+      "title": "BUYER SERVICES",
+      "subtitle1": "World-Class Service",
+      "subtitle2": "Unrivaled Market Knowledge",
+      "description1": "Providing real estate services in Tenerife.",
+      "description2": "Helping buyers negotiate the perfect deal."
+    },
+    "sellers": {
+      "title": "SELLER SERVICES",
+      "subtitle1": "World-Class Service",
+      "subtitle2": "Unrivaled Market Knowledge",
+      "description1": "Providing real estate services in Tenerife.",
+      "description2": "Helping sellers market and sell their home for top dollar."
+    }
+  },
+
   "header": {
     "link": {
       "buy": "Comprar",
