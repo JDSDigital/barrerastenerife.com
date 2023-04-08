@@ -12,19 +12,23 @@
       "fontFamily": "\"GT Super Light\", Times, serif"
     },
     "h2": {
-      "fontFamily": "\"GT Super Light\", Times, serif"
+      "fontFamily": "\"GT Super Light\", Times, serif",
+      "fontSize": "4rem"
     },
     "h3": {
       "fontFamily": "\"GT Super Light\", Times, serif"
     },
     "h4": {
-      "fontFamily": "\"GT Super Light\", Times, serif"
+      "fontFamily": "\"GT Super Light\", Times, serif",
+      "fontSize": "2.375rem"
     },
     "h5": {
-      "fontFamily": "\"GT Super Light\", Times, serif"
+      "fontFamily": "\"GT Super Light\", Times, serif",
+      "fontSize": "1.75rem"
     },
     "h6": {
-      "fontFamily": "\"GT Super Light\", Times, serif"
+      "fontFamily": "\"GT Super Light\", Times, serif",
+      "fontSize": "1.375rem"
     },
     "subtitle1": {
       "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
@@ -33,7 +37,8 @@
       "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
     },
     "body1": {
-      "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
+      "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif",
+      "fontSize": "1.125rem"
     },
     "body2": {
       "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
@@ -42,7 +47,8 @@
       "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
     },
     "button": {
-      "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
+      "fontFamily": "\"Messina Sans Regular\", Helvetica, Arial, sans-serif",
+      "fontSize": "1rem"
     },
     "overline": {
       "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
