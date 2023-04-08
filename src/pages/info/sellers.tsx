@@ -27,10 +27,10 @@ const SellersPage: React.FC<PageProps<SellersPageProps>> = ({ data }) => {
 
         <InfoContainer>
           <Grid container spacing={10}>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} data-aos="fade-right">
               <GatsbyImage image={homeImage} alt="" />
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} data-aos="fade-left">
               <div className="text-center">
                 <Typography
                   variant="h3"

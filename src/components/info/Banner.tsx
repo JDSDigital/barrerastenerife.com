@@ -21,19 +21,34 @@ export const Banner: React.FC<BannerType> = ({ type, image }) => {
         className="info-banner-container"
       />
       <Overlay>
-        <Typography component="p" variant="h2">
+        <Typography component="p" variant="h2" data-aos="fade-right">
           {t(`info.${type}.title`)}
         </Typography>
-        <Typography component="p" variant="h3">
+        <Typography component="p" variant="h3" data-aos="fade-left">
           {t(`info.${type}.subtitle1`)}
         </Typography>
-        <Typography component="p" variant="h5" className="mb-5">
+        <Typography
+          component="p"
+          variant="h5"
+          className="mb-5"
+          data-aos="fade-up"
+        >
           {t(`info.${type}.subtitle2`)}
         </Typography>
-        <Typography component="p" variant="body1">
+        <Typography
+          component="p"
+          variant="body1"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           {t(`info.${type}.description1`)}
         </Typography>
-        <Typography component="p" variant="body1">
+        <Typography
+          component="p"
+          variant="body1"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
           {t(`info.${type}.description2`)}
         </Typography>
       </Overlay>
