@@ -58,6 +58,8 @@ const Overlay = styled("div")({
   "alignItems": "center",
   "justifyContent": "center",
   "color": "white",
+  "textAlign": "center",
+  "padding": "16px",
 
   "& p": {
     textShadow: "1px 1px 3px rgba(0,0,0,0.8)",
