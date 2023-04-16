@@ -1,8 +1,9 @@
-import { Container, Typography } from "@material-ui/core";
 import { graphql, useStaticQuery } from "gatsby";
 
+import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import { ParallaxBanner } from "react-scroll-parallax";
 import React from "react";
+import { Typography } from "@material-ui/core";
 import { getSrc } from "gatsby-plugin-image";
 import { useTranslation } from "hooks/useTranslation";
 
@@ -29,16 +30,21 @@ const AboutBanner = () => {
         },
       ]}
     >
-      <div className="about-overlay" />
-      <div className="about-text">
-        <Container maxWidth="md">
-          <Typography variant="h3" gutterBottom>
+      <div className="about-overlay">
+        <div className="about-text">
+          <Typography variant="h3" component="p">
             {t("about.banner.p1")}
           </Typography>
-          <Typography variant="h4" gutterBottom>
+          <Typography variant="h1" component="h1">
             {t("about.banner.p2")}
           </Typography>
-        </Container>
+          <div className="arrows-container">
+            <div className="arrows-box">
+              <ArrowRightAltIcon className="arrow color-white" />
+              <ArrowRightAltIcon className="arrow color-white" />
+            </div>
+          </div>
+        </div>
       </div>
     </ParallaxBanner>
   );

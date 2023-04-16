@@ -33,32 +33,32 @@ const TeamSection = () => {
       }
       es: file(relativePath: { eq: "flags/sp.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 20)
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       en: file(relativePath: { eq: "flags/uk.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 20)
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       fr: file(relativePath: { eq: "flags/fr.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 20)
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       it: file(relativePath: { eq: "flags/it.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 20)
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       de: file(relativePath: { eq: "flags/de.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 20)
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       ru: file(relativePath: { eq: "flags/ru.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 20)
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
@@ -78,70 +78,114 @@ const TeamSection = () => {
     const teamImage = getImage(image)!;
 
     return (
-      <Grid item xs={12} sm={4}>
-        <Card className="team-card">
-          <div className="team-image">
-            <GatsbyImage
-              image={teamImage}
-              alt={name}
-              className="img-responsive crop-top"
-            />
+      <Card className="team-card">
+        <div className="team-image">
+          <GatsbyImage
+            image={teamImage}
+            alt={name}
+            className="img-responsive crop-center"
+          />
+        </div>
+
+        <CardContent className="team-container">
+          <Typography className="team-name" variant="h4">
+            {name}
+          </Typography>
+          <Typography className="team-position" variant="body1">
+            {phone}
+          </Typography>
+
+          <div className="team-flags">
+            {languages.includes("es") && (
+              <div className="team-flag-container">
+                <GatsbyImage
+                  className="img-responsive crop-center"
+                  image={getImage(images.es)!}
+                  alt="es"
+                />
+              </div>
+            )}
+            {languages.includes("en") && (
+              <div className="team-flag-container">
+                <GatsbyImage
+                  className="img-responsive crop-center"
+                  image={getImage(images.en)!}
+                  alt="en"
+                />
+              </div>
+            )}
+            {languages.includes("fr") && (
+              <div className="team-flag-container">
+                <GatsbyImage
+                  className="img-responsive crop-center"
+                  image={getImage(images.fr)!}
+                  alt="fr"
+                />
+              </div>
+            )}
+            {languages.includes("it") && (
+              <div className="team-flag-container">
+                <GatsbyImage
+                  className="img-responsive crop-center"
+                  image={getImage(images.it)!}
+                  alt="it"
+                />
+              </div>
+            )}
+            {languages.includes("de") && (
+              <div className="team-flag-container">
+                <GatsbyImage
+                  className="img-responsive crop-center"
+                  image={getImage(images.de)!}
+                  alt="de"
+                />
+              </div>
+            )}
+            {languages.includes("ru") && (
+              <div className="team-flag-container">
+                <GatsbyImage
+                  className="img-responsive crop-center"
+                  image={getImage(images.ru)!}
+                  alt="ru"
+                />
+              </div>
+            )}
           </div>
-          <CardContent className="team-container text-center">
-            <p className="team-name">{name}</p>
-            <hr />
-            <p className="team-position">{phone}</p>
-            <div className="team-flags">
-              {languages.includes("es") && (
-                <GatsbyImage image={getImage(images.es)!} alt="es" />
-              )}
-              {languages.includes("en") && (
-                <GatsbyImage image={getImage(images.en)!} alt="en" />
-              )}
-              {languages.includes("fr") && (
-                <GatsbyImage image={getImage(images.fr)!} alt="fr" />
-              )}
-              {languages.includes("it") && (
-                <GatsbyImage image={getImage(images.it)!} alt="it" />
-              )}
-              {languages.includes("de") && (
-                <GatsbyImage image={getImage(images.de)!} alt="de" />
-              )}
-              {languages.includes("ru") && (
-                <GatsbyImage image={getImage(images.ru)!} alt="ru" />
-              )}
-            </div>
-          </CardContent>
-        </Card>
-      </Grid>
+        </CardContent>
+      </Card>
     );
   };
 
   return (
-    <Container>
-      <Grid
-        container
-        justifyContent="space-around"
-        className="team-section text-center"
-        spacing={2}
-      >
-        <Grid item xs={12}>
+    <Grid
+      container
+      justifyContent="space-around"
+      className="team-section text-center"
+      spacing={2}
+    >
+      <Grid item xs={12}>
+        <Container>
           <Typography variant="h4" component="p" className="section-title">
             {t("about.team")}
           </Typography>
-        </Grid>
+        </Container>
+      </Grid>
+
+      <Grid item xs={12} className="team-grid">
         <Team
           image={images.gian}
           name="Giambattista Guala"
           phone="+34 638 418 917"
           languages={["es", "en", "fr", "it"]}
         />
+
         <Team
           image={images.maryna}
           name="Maryna Bohush"
           phone="+34 671 616 456"
           languages={["es", "en", "it", "ru"]}
         />
+
         <Team
           image={images.irina}
           name="Irina Elistratova"
@@ -149,7 +193,7 @@ const TeamSection = () => {
           languages={["es", "en", "de", "it", "ru"]}
         />
       </Grid>
-    </Container>
+    </Grid>
   );
 };
 
