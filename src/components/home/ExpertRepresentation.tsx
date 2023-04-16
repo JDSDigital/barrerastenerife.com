@@ -64,7 +64,7 @@ export const ExpertRepresentation = () => {
             </div>
             <div className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge">
               <Link to="/properties/buy" className="color-white">
-                {t("search")}
+                {t("header.link.properties")}
               </Link>
             </div>
           </div>

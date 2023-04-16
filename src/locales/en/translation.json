@@ -145,9 +145,7 @@
   },
 
   "about": {
-    "welcome": "Welcome to the land of the eternal spring",
     "title": "Inmobiliaria Barreras",
-    "subtitle": "A high quality service",
     "p1": "The real estate agency BARRERAS was founded in 2000 in Los Abrigos, a town located in the southern part of the island of Tenerife.",
     "p2": "The founder, Pablo Barreras, continued the family tradition that, for several generations, has been linked to the field of law and business.",
     "p3": "Currently, after the retirement of the founder of the agency, his students continue to lead it ahead, maintaining the principles and values ​​of its founder.",
@@ -155,59 +153,8 @@
     "p5": "This work philosophy is the present and the future of real estate brokerage in Tenerife: a system that brings together the widest real estate offer of the moment made available to the client so that he obtains the maximum advantages when buying or selling his home.",
 
     "banner": {
-      "p1": "Why BARRERAS real estate?",
-      "p2": "Real estate specialists committed to obtaining the best possible results for you.",
-      "p3": "Results are more important than promises."
-    },
-
-    "time": {
-      "p1": "We Value Your Time",
-      "p2": "We know that your time is gold!",
-      "p3": "We prioritize attention and dedication to the needs of each of our clients to capture their priorities and offer a taylored service focused on achieving their goal."
-    },
-
-    "comunication": {
-      "p1": "Communicate without stress",
-      "p2": "We know that speaking in your own language saves you much effort!",
-      "p3": "Our team speaks more than 6 foreign languages ​​so that nothing prevents communication and concentration on the objective."
-    },
-
-    "rating": {
-      "p1": "Customer Star Rating",
-      "p2": "The satisfaction of our clients is our most important objective!",
-      "p3": "We are quite honored that BARRERAS customers rate our service with an average rating of 4.8 stars out of 5."
-    },
-
-    "services": {
-      "title": "Our Services",
-      "mission": "Nuestra Misión",
-
-      "p1": "BARRERAS offers a full range of real estate services. We specialize in the sale of residential, tourist, commercial and rural properties, as well as property management services.",
-      "p2": "We know that real estate clients want to deal with consultants who have knowledge, experience, honesty and integrity, and who are committed to achieving the best possible result for them.",
-      "p3": "Above all, they want to deal with sensitive people, that is why we absolutely focus on creating a relationship of trust and respect with all our clients.",
-      "p4": "Para brindar un servicio excepcional y los mejores resultados posibles para cada cliente con el que trabajamos.",
-      "p5": "Our values ​​are rooted in the way our team operates, in the decisions we make and the actions we take. Our values ​​provide the foundation for our success."
-    },
-
-    "info": {
-      "title": "Information",
-      "description": "Detailed information about the purchasing, selling or renting of your house, office or shop."
-    },
-    "consulting": {
-      "title": "Consulting",
-      "description": "Clarification of doubts and legal or fiscal assessment."
-    },
-    "investment": {
-      "title": "Investment",
-      "description": "Ideas to invest in properties in Tenerife and counseling to individuals buying their main house."
-    },
-    "attention": {
-      "title": "Attention",
-      "description": "Careful personalized attention to recurring clients, national investors, or from other countries."
-    },
-    "quality": {
-      "title": "Quality",
-      "description": "Dynamism and quality of service in the commitment of not dissapointing your trust."
+      "p1": "About",
+      "p2": "Inmobiliaria Barreras"
     },
 
     "team": "Our Team",

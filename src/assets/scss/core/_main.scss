@@ -31,6 +31,7 @@ a {
 p {
   font-size: 1rem;
 }
+
 body {
   background-color: $color-white !important;
   color: $color-black;
@@ -136,7 +137,6 @@ body {
 
   .main-container {
     position: relative;
-    // margin-top: 94px;
     padding-left: 0;
     padding-right: 0;
     min-height: 100vh;
@@ -151,13 +151,6 @@ body {
         width: 100%;
         height: 100%;
       }
-    }
-
-    .image-gallery-slide .image-gallery-image {
-      width: 100% !important;
-      height: 450px !important;
-      object-fit: cover !important;
-      object-position: center !important;
     }
 
     .image-container {
@@ -211,12 +204,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-      }
-    }
-
-    @media (min-width: 961px) {
-      .image-gallery-content .image-gallery-slide .image-gallery-image {
-        max-height: none;
       }
     }
 
@@ -286,6 +273,10 @@ body {
         gap: 12px;
         justify-content: space-between;
         margin-top: 24px;
+
+        a {
+          text-align: center;
+        }
 
         button {
           width: 100%;
@@ -392,10 +383,7 @@ body {
     }
   }
 }
-.MuiFilledInput-inputMarginDense {
-  padding-top: 14px !important;
-  padding-bottom: 14px !important;
-}
+
 .top-menu {
   display: flex;
 
@@ -425,12 +413,9 @@ body {
       font-weight: 400;
       letter-spacing: 1px;
     }
-
-    // a.active {
-    //   font-weight: 700;
-    // }
   }
 }
+
 .side-menu {
   background: $primary-color-gradient-background-2;
   flex: 1;
@@ -494,8 +479,8 @@ body {
     }
   }
 }
+
 .about-title {
-  // border-left: 3px solid black;
   padding: 10px 30px;
   border-width: 0 5px;
   border-style: solid;
@@ -512,144 +497,90 @@ body {
     color: $color-dark-gray-1;
   }
 }
-.about-content {
-  font-size: 1.2rem;
-  font-weight: 100;
-  padding: 0 0 3em;
 
-  ul {
-    li {
-      font-size: 1rem;
-      line-height: 2;
-    }
-  }
-}
 .about-section {
-  margin-top: 10em;
-  margin-bottom: 10em;
-  &--small {
-    margin-top: 4em;
-    margin-bottom: 6em;
+  margin-top: 8em;
+  margin-bottom: 8em;
+
+  &--text-shadow {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   }
 }
-.service-container {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid $color-light-gray-3;
-  border-radius: 4px;
-  padding: 20px;
-  text-align: center;
-  font-weight: 300;
-  background-color: rgba(255, 255, 255, 0.7);
 
-  @media (max-width: 960px) {
-    background-color: white;
-  }
-  .small {
-    max-width: 75px;
-  }
+.team-section {
+  margin-top: 8em;
 
-  img {
-    margin-bottom: 1em;
-    object-fit: cover;
-  }
+  .team-grid {
+    display: flex;
+    flex-direction: column;
 
-  .service-title {
-    position: relative;
-    margin-bottom: 1em;
-    font-weight: 300;
-    color: $color-black;
-
-    &:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 100%;
-      margin: 10px auto;
-      width: 50%;
-      height: 3px;
-      background: $secondary-color-gradient-background;
+    @include md {
+      flex-direction: row;
     }
   }
-  .service-description {
-    font-weight: 300;
-    color: $color-black;
-  }
-}
-.service-card {
-  background: $primary-color-gradient-background-2 !important;
-  color: $color-white !important;
-  height: 100%;
-  padding: 0.5em 0;
 
-  hr {
-    background: $secondary-color-gradient-background;
-    height: 1px;
-    border: 0;
+  .team-card {
+    position: relative;
+    display: flex;
+    flex: 1;
+    border-radius: 0;
   }
 
-  .service-avatar {
-    margin: 0 auto;
-    background: $secondary-color-gradient-background-2;
-  }
-}
-.service-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 2px solid $primary-color;
-}
-.team-section {
-  margin-top: 20px !important;
-  margin-bottom: 20px !important;
-}
-.team-card {
-  margin: 1em 6em;
-}
-.team-image {
-  height: 250px;
+  .team-image {
+    height: 500px;
+    width: 100%;
 
-  @media (max-width: 960px) {
-    height: 300px;
+    @include md {
+      height: 700px;
+    }
   }
-}
-.team-name {
-  margin: 0;
-  font-weight: 700;
-  font-size: 1.4rem;
-}
-.team-position {
-  margin: 0;
-  font-size: 1rem;
-  color: $color-light-gray-1;
-  font-weight: bold;
-}
-.team-container {
-  background: $primary-color-gradient-background-2 !important;
-  color: white;
 
-  hr {
-    background: $secondary-color-gradient-background;
-    height: 1px;
-    border: 0;
-  }
-}
-.team-flags {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 1em;
+  .team-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    // background: rgba(29, 177, 184, 0.3);
+    color: white;
 
-  img {
-    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    .team-name,
+    .team-position {
+      text-align: left;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    .team-flags {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 1em;
+      width: 100%;
+
+      .team-flag-container {
+        width: 35px;
+        height: 35px;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
   }
 }
+
 .contact-container {
   display: flex;
   margin-top: 94px;
 }
+
 .contact-section {
   position: relative;
   min-height: 380px;
@@ -668,6 +599,7 @@ body {
     }
   }
 }
+
 .contact-form {
   height: 100%;
   align-self: center;
@@ -682,15 +614,13 @@ body {
   height: 400px;
   width: 100%;
 }
+
 .location-icon {
   position: absolute;
   transform: translate(-50%, -50%);
   text-shadow: 3px 3px 3px black;
 }
-.image-gallery-thumbnail-image {
-  height: 80px;
-  object-fit: cover;
-}
+
 .whatsapp-button {
   display: flex;
   align-items: center;
@@ -706,6 +636,7 @@ body {
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);
   z-index: 100;
 }
+
 .tag-list {
   list-style: none;
   display: flex;
@@ -728,24 +659,12 @@ body {
     }
   }
 }
-.image-gallery-thumbnail.active,
-.image-gallery-thumbnail:hover,
-.image-gallery-thumbnail:focus,
-.image-gallery-icon:hover {
-  color: $primary-color !important;
-  border-color: $primary-color !important;
-}
+
 .highlight-item {
   text-transform: uppercase;
   font-weight: bold !important;
   background-color: $color-primary-2 !important;
   border-bottom: 1px solid $color-dark-gray-1 !important;
-}
-.MuiFilledInput-root {
-  background-color: $color-light-gray-2 !important;
-}
-.MuiFormLabel-root {
-  color: $color-black !important;
 }
 
 .banner-root {
@@ -842,6 +761,7 @@ body {
     opacity: 1;
   }
 }
+
 .home-properties-container {
   position: relative;
 
@@ -863,7 +783,6 @@ body {
     height: 150px;
     color: rgba(0, 0, 0, 0.87);
     margin: -50px 30px 0 30px;
-    // border: 1px solid $color-light-gray-1;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     background-color: $color-white;
   }
@@ -886,65 +805,10 @@ body {
     margin-left: 20px;
   }
 }
-.circle {
-  width: 128px;
-  height: 128px;
-  border: 4px solid $primary-color;
-  border-radius: 128px;
-  display: flex;
-  margin: 2em auto;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: $primary-color;
-}
-// .MuiButtonBase-root,
-// .MuiIconButton-root {
-//   color: white !important;
-// }
 
-.promotion-container {
-  margin: 2em;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .promotion-overlay {
-    z-index: 1;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-
-    &:hover {
-      background-color: transparent;
-    }
-  }
-
-  .promotion-image {
-    position: unset !important;
-    height: 300px;
-  }
-
-  .promotion-title {
-    z-index: 2;
-    position: absolute;
-    color: white;
-    margin: 2em;
-    font-weight: bold;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
-  }
-}
 .about-container {
   position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 75vh !important;
+  height: 100vh;
 
   .about-overlay {
     z-index: 1;
@@ -952,6 +816,8 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .about-image {
@@ -960,17 +826,17 @@ body {
   }
 
   .about-text {
-    z-index: 2;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: white;
     margin: 2em;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-
-    h3 {
-      margin-top: 100px;
-    }
   }
 }
+
 .testimonial-container {
   display: flex;
   flex-direction: row;
@@ -1016,10 +882,10 @@ body {
 
     .testimonial-text {
       font-style: italic;
-      // text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     }
   }
 }
+
 .dropdown {
   .dropdown-list {
     display: none;
@@ -1035,13 +901,6 @@ body {
     .dropdown-list {
       display: flex;
     }
-  }
-}
-
-.service-page {
-  padding-bottom: 2em;
-  p {
-    margin-bottom: 0.5em;
   }
 }
 
@@ -1088,4 +947,17 @@ body {
   position: absolute;
   right: 0 !important;
   width: 100% !important;
+}
+
+.MuiFilledInput-inputMarginDense {
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+}
+
+.MuiFilledInput-root {
+  background-color: $color-light-gray-2 !important;
+}
+
+.MuiFormLabel-root {
+  color: $color-black !important;
 }

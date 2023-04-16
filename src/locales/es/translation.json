@@ -31,7 +31,7 @@
       "subtitle": "El amplio conocimiento del mercado es la clave de nuestro éxito"
     },
     "guidance": {
-      "title": "GUÍA EXPERTA",
+      "title": "ORIENTACIÓN DE EXPERTOS",
       "subtitle": "Hacemos que incluso las transacciones más complicadas se realicen sin problemas"
     },
 
@@ -145,9 +145,7 @@
   },
 
   "about": {
-    "welcome": "Bienvenido a la tierra de la eterna primavera",
     "title": "Inmobiliaria Barreras",
-    "subtitle": "Un servicio de alta calidad",
     "p1": "BARRERAS inmobiliaria nace en Los Abrigos ubicado en la parte sur de la isla de Tenerife en el año 2000.",
     "p2": "El fundador, Pablo Barreras, ha seguido así la tradición familiar que, durante varias generaciones, ha estado vinculada al ámbito de la abogacía y de los negocios.",
     "p3": "Actualmente, tras la jubilación del fundador de la empresa, sus alumnos siguen llevando la gestión, manteniendo los principios y los valores del su fundador.",
@@ -155,59 +153,8 @@
     "p5": "Esta filosofía de trabajo es el presente y el futuro de la intermediación inmobiliaria en Tenerife: un sistema que aglutina la más amplia oferta inmobiliaria del momento puesta a disposición del cliente para que éste obtenga las máximas ventajas a la hora de comprar o vender su vivienda.",
 
     "banner": {
-      "p1": "¿Por qué BARRERAS inmobiliaria?",
-      "p2": "Especialistas inmobiliarios comprometidos a obtener los mejores resultados posibles para ustedes.",
-      "p3": "Los resultados son más importantes que las promesas."
-    },
-
-    "time": {
-      "p1": "Valoramos Tu Tiempo",
-      "p2": "¡Sabemos que tu tiempo vale oro!",
-      "p3": "Priorizamos atención y dedicación a las necesidades de cada uno de nuestro cliente para captar sus prioridades y ofrecer un servicio enfocado en el logro de su objetivo."
-    },
-
-    "comunication": {
-      "p1": "Comunicarse sin estrés",
-      "p2": "¡Sabemos que hablar en propio idioma te evita mayor esfuerzo!",
-      "p3": "Nuestro equipo habla más de 6 idiomas extranjeros para que nada impida la comunicación y concentración sobre el objetivo."
-    },
-
-    "rating": {
-      "p1": "Calificación de estrellas del cliente",
-      "p2": "¡La satisfacción de nuestros clientes es nuestro objetivo mas importante!",
-      "p3": "Nos sentimos bastante honrados de que los clientes de BARRERAS valoren nuestro servicio con una calificación promedio de 4.8 estrellas sobre 5."
-    },
-
-    "services": {
-      "title": "Nuestros Servicios",
-      "mission": "Nuestra Misión",
-
-      "p1": "BARRERAS ofrece una gama completa de servicios inmobiliarios. Nos especializamos en la venta de propiedades residenciales, turísticas, comerciales y rurales, así como en servicios de administración de propiedades.",
-      "p2": "Sabemos que los clientes inmobiliarios quieren tratar con consultores que tengan conocimiento, experiencia, honestidad e integridad, y que estén comprometidos a lograr el mejor resultado posible para ellos.",
-      "p3": "Por encima de todo, quieren tratar con personas cercanas, por eso nos enfocamos absolutamente en crear una relación de confianza y respeto con todos nuestros clientes.",
-      "p4": "Para brindar un servicio excepcional y los mejores resultados posibles para cada cliente con el que trabajamos.",
-      "p5": "Nuestros valores están arraigados en la forma en que opera nuestro equipo, en las decisiones que tomamos y las acciones que emprendemos. Nuestros valores proporcionan la base de nuestro éxito."
-    },
-
-    "info": {
-      "title": "Información",
-      "description": "Información detallada y puntual de las gestiones de compra, venta o alquiler de su casa, oficina o local."
-    },
-    "consulting": {
-      "title": "Asesoría",
-      "description": "Clarificación de dudas y asesoramiento legal y fiscal."
-    },
-    "investment": {
-      "title": "Inversión",
-      "description": "Ideas para invertir en inmuebles en Tenerife y asesoramiento a particulares que compran piso como vivienda habitual."
-    },
-    "attention": {
-      "title": "Atención",
-      "description": "Esmerada atención personalizada para clientes recurrentes e inversores nacionales o de otros paises."
-    },
-    "quality": {
-      "title": "Calidad",
-      "description": "Dinamismo y calidad de servicio el compromiso de no defraudar su confianza."
+      "p1": "Sobre",
+      "p2": "Inmobiliaria Barreras"
     },
 
     "team": "Nuestro Equipo",

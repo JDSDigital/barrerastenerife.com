@@ -145,9 +145,7 @@
   },
 
   "about": {
-    "welcome": "Benvenuto nella terra dell'eterna primavera",
     "title": "Agenzia Immobiliare Barreras",
-    "subtitle": "Un servizio di alta qulaitá",
     "p1": " L'Agenzia immobiliare BARRERAS nasce nel 2000 a Los Abrigos , nella parte meridionale dell'isola di Tenerife .",
     "p2": "Il fondatore, Pablo Barreras, ha così continuato la tradizione di famiglia che, da diverse generazioni, è stata legata al campo del diritto e degli affari.",
     "p3": "Attualmente, dopo il pensionamento del fondatore dell'agenzia, i suoi ragazzi continuano portandola avanti, mantenendo i principi ed i valori del suo fondatore.",
@@ -155,59 +153,8 @@
     "p5": "Questa filosofia di lavoro è il presente e il futuro dell'intermediazione immobiliare a Tenerife: un sistema che riunisce la più ampia offerta immobiliare del momento messa a disposizione del cliente in modo da ottenere i massimi vantaggi nell'acquisto o nella vendita della sua casa.",
 
     "banner": {
-      "p1": "Perché BARRERAS immobiliare?",
-      "p2": "Specialisti del settore immobiliare impegnati a ottenere i migliori risultati possibili per te.",
-      "p3": "I risultati sono più importanti delle promesse."
-    },
-
-    "time": {
-      "p1": "Apprezziamo il tuo tempo",
-      "p2": "Sappiamo che il tuo tempo vale oro!",
-      "p3": "Diamo priorità all'attenzione e alla dedizione alle esigenze di ciascuno dei nostri clienti per catturare le loro priorità e offrire un servizio incentrato sul raggiungimento del loro obiettivo."
-    },
-
-    "comunication": {
-      "p1": "Comunicare senza stress",
-      "p2": "Sappiamo che parlare nella tua lingua ti fa risparmiare molta energia!",
-      "p3": "Il nostro team parla più di 6 lingue straniere in modo che nulla impedisca la comunicazione e la concentrazione sull'obiettivo."
-    },
-
-    "rating": {
-      "p1": "Valutazione a stelle del cliente",
-      "p2": "La soddisfazione dei nostri clienti è il nostro obiettivo più importante!",
-      "p3": "Siamo molto onorati che i clienti BARRERAS valutino il nostro servizio con una valutazione media di 4,8 stelle su 5."
-    },
-
-    "services": {
-      "title": "I nostri servizi",
-      "mission": "Il nostro obbiettivo",
-
-      "p1": "BARRERAS offre una gamma completa di servizi immobiliari. Siamo specializzati nella vendita di immobili residenziali, turistici, commerciali e rurali, nonché servizi di gestione immobiliare.",
-      "p2": "Sappiamo che i clienti immobiliari vogliono trattare con consulenti che hanno conoscenza, esperienza, onestà e integrità e che si impegnano a ottenere il miglior risultato possibile per loro.",
-      "p3": "Soprattutto, vogliono avere a che fare con persone sensibili, per questo ci concentriamo assolutamente sulla creazione di un rapporto di fiducia e rispetto con tutti i nostri clienti.",
-      "p4": "Para brindar un servicio excepcional y los mejores resultados posibles para cada cliente con el que trabajamos.",
-      "p5": "I nostri valori sono radicati nel modo in cui opera il nostro team, nelle decisioni che prendiamo e nelle azioni che intraprendiamo. I nostri valori costituiscono la base del nostro successo."
-    },
-
-    "info": {
-      "title": "Informazioni",
-      "description": "informazione dettagliata e precisa sulla gestione della compravendita o affitto della sua proprietá."
-    },
-    "consulting": {
-      "title": "Gestione",
-      "description": "Chiarimenti su dubbi e consigli legali e fiscali."
-    },
-    "investment": {
-      "title": "Investimenti",
-      "description": "Idee per investitori in proprietá in  Tenerife e consigli per chi compra una proprietá come residenza."
-    },
-    "attention": {
-      "title": "Attenzione",
-      "description": "Attenzione personalizzata per investitori nazionali e internazionali."
-    },
-    "quality": {
-      "title": "Qualitá",
-      "description": "Dinamiosmo e qualitá del servizio e l'impegno a non deludere la sua fiducia."
+      "p1": "About",
+      "p2": "Inmobiliaria Barreras"
     },
 
     "team": "Il nostro Team",
