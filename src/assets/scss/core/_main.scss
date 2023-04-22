@@ -578,7 +578,6 @@ body {
 
 .contact-container {
   display: flex;
-  margin-top: 94px;
 }
 
 .contact-section {
@@ -602,6 +601,8 @@ body {
 
 .contact-form {
   height: 100%;
+  width: 100%;
+  max-width: 800px;
   align-self: center;
   padding: 5em;
 

@@ -69,16 +69,22 @@ const TeamSection = () => {
     name,
     phone,
     languages,
+    animationDelay = "0",
   }: {
     image: IGatsbyImageData;
     name: string;
     phone: string;
     languages: string[];
+    animationDelay?: string;
   }) => {
     const teamImage = getImage(image)!;
 
     return (
-      <Card className="team-card">
+      <Card
+        className="team-card"
+        data-aos="fade-up"
+        data-aos-delay={animationDelay}
+      >
         <div className="team-image">
           <GatsbyImage
             image={teamImage}
@@ -163,7 +169,7 @@ const TeamSection = () => {
       className="team-section text-center"
       spacing={2}
     >
-      <Grid item xs={12}>
+      <Grid item xs={12} data-aos="fade-up">
         <Container>
           <Typography variant="h4" component="p" className="section-title">
             {t("about.team")}
@@ -184,6 +190,7 @@ const TeamSection = () => {
           name="Maryna Bohush"
           phone="+34 671 616 456"
           languages={["es", "en", "it", "ru"]}
+          animationDelay="300"
         />
 
         <Team
@@ -191,6 +198,7 @@ const TeamSection = () => {
           name="Irina Elistratova"
           phone="+34 653 414 149"
           languages={["es", "en", "de", "it", "ru"]}
+          animationDelay="600"
         />
       </Grid>
     </Grid>
