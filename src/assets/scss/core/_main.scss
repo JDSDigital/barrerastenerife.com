@@ -77,11 +77,16 @@ body {
   footer {
     background: $primary-color-gradient-background-2;
     color: $color-white;
-    padding: 2rem;
+    height: 600px;
+
+    > * {
+      height: 100%;
+    }
 
     a {
       color: $color-white;
     }
+
     p {
       margin: 0;
       font-size: 1em;
@@ -94,10 +99,36 @@ body {
         text-transform: uppercase;
       }
     }
+
+    .footer-logo {
+      background-color: white;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+      @include sm {
+        display: flex;
+      }
+    }
+
+    .footer-data {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+      padding: 4em !important;
+
+      @include sm {
+        padding: 8em !important;
+      }
+    }
+
     .footer-social {
       display: flex;
       flex-wrap: nowrap;
       margin-top: 1em;
+
       a {
         margin-right: 0.5em;
       }

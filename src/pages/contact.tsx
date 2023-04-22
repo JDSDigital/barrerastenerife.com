@@ -69,12 +69,12 @@ const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
               hendrerit. Praesent fringilla massa a semper aliquam.
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={5} data-aos="fade-left">
+          <Grid item xs={12} sm={4} data-aos="fade-left">
             {oceanImage && (
               <GatsbyImage
                 image={oceanImage}
                 alt="Ocean dining"
-                className="img-responsive about-image"
+                className="img-responsive crop-center"
               />
             )}
           </Grid>
