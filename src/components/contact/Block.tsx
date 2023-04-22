@@ -1,4 +1,5 @@
 import { Grid, Typography } from "@material-ui/core";
+
 import React from "react";
 
 type Props = {
@@ -7,7 +8,7 @@ type Props = {
   text: string;
 };
 
-const Block: React.FC<Props> = ({ icon, title, text }) => (
+const Block: React.FC<Props> = ({ icon, title, text, ...rest }) => (
   <Grid
     item
     container
@@ -15,6 +16,7 @@ const Block: React.FC<Props> = ({ icon, title, text }) => (
     spacing={2}
     alignItems="center"
     className="contact-block"
+    {...rest}
   >
     <Grid item xs={2} className="text-right">
       {icon}

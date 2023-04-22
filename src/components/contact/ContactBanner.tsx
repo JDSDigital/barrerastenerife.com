@@ -7,12 +7,12 @@ import { Typography } from "@material-ui/core";
 import { getSrc } from "gatsby-plugin-image";
 import { useTranslation } from "hooks/useTranslation";
 
-const AboutBanner = () => {
+const ContactBanner = () => {
   const { t } = useTranslation();
 
   const image = useStaticQuery(graphql`
     query {
-      banner: file(relativePath: { eq: "bg/7.jpg" }) {
+      banner: file(relativePath: { eq: "bg/6.jpeg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
@@ -32,11 +32,8 @@ const AboutBanner = () => {
     >
       <div className="about-overlay">
         <div className="about-text" data-aos="fade-in" data-aos-delay="500">
-          <Typography variant="h3" component="p">
-            {t("about.banner.p1")}
-          </Typography>
           <Typography variant="h1" component="h1">
-            {t("about.banner.p2")}
+            {t("header.link.contact")}
           </Typography>
           <div className="arrows-container">
             <div className="arrows-box">
@@ -50,4 +47,4 @@ const AboutBanner = () => {
   );
 };
 
-export default AboutBanner;
+export default ContactBanner;
