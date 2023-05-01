@@ -1,4 +1,5 @@
 import {
+  Button,
   Card,
   CardContent,
   CardHeader,
@@ -8,6 +9,7 @@ import {
   Grid,
   IconButton,
   Typography,
+  styled,
 } from "@material-ui/core";
 import React, { useState } from "react";
 
@@ -19,6 +21,7 @@ import Lightbox from "react-spring-lightbox";
 import List from "./List";
 import MapView from "components/maps/MapView";
 import PropertyFooter from "./PropertyFooter";
+import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import { formatPrice } from "../../utils";
 import { useGetProperty } from "hooks/useGetProperty";
 import { useTranslation } from "hooks/useTranslation";
@@ -93,41 +96,44 @@ const Detail = ({ identifier }: DetailProps) => {
     property[`description_${language}` as "description"] ||
     property.description;
 
+  const onShareClick = () => {
+    const BASE_URL = "https://www.barrerastenerife.com";
+    // const BASE_URL_DEV = "https://barrerastenerifedev.web.app";
+
+    window.open(
+      `https://web.whatsapp.com/send?text=${BASE_URL}/property/?id=${identifier}`
+    );
+  };
+
   return (
     <>
+      <div className="image-container">
+        {imageGrid.map((image: any, index: number) => (
+          <div
+            key={`image-grid-${index}`}
+            onClick={() => {
+              setCurrentIndex(index);
+              setIsGalleryOpen(true);
+            }}
+          >
+            <img
+              className="img-responsive crop-center"
+              src={image.original}
+              alt={`Property image ${index + 1}`}
+            />
+            {canShowOverlay(index) && (
+              <div className="overlay">
+                <Typography component="p" variant="h3" className="color-white">
+                  +{imageQuantity}
+                </Typography>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
       <Container>
         <Grid container spacing={3}>
-          <Grid item xs={12}>
-            <div className="image-container">
-              {imageGrid.map((image: any, index: number) => (
-                <div
-                  key={`image-grid-${index}`}
-                  onClick={() => {
-                    setCurrentIndex(index);
-                    setIsGalleryOpen(true);
-                  }}
-                >
-                  <img
-                    className="img-responsive crop-center"
-                    src={image.original}
-                    alt={`Property image ${index + 1}`}
-                  />
-                  {canShowOverlay(index) && (
-                    <div className="overlay">
-                      <Typography
-                        component="p"
-                        variant="h3"
-                        className="color-white"
-                      >
-                        +{imageQuantity}
-                      </Typography>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </Grid>
-
           <Grid item xs={12}>
             <PropertyFooter
               status={property.status}
@@ -142,6 +148,10 @@ const Detail = ({ identifier }: DetailProps) => {
             <Typography variant="h4" className="mb-3">
               {property.street}, {getPropertyZone()}
             </Typography>
+            <WhatsAppButton variant="contained" onClick={onShareClick}>
+              <WhatsAppIcon />
+              {t("properties.share")}
+            </WhatsAppButton>
             <Typography variant="body1">{getDescription()}</Typography>
           </Grid>
 
@@ -169,16 +179,21 @@ const Detail = ({ identifier }: DetailProps) => {
             </Card>
           </Grid>
         </Grid>
-
-        {property.related && property.related.length > 0 && (
-          <>
-            <Typography variant="h5" component="p" className="mt-5">
-              {t("properties.related")}
-            </Typography>
-            <List properties={property.related} />
-          </>
-        )}
       </Container>
+
+      {property.related && property.related.length > 0 && (
+        <>
+          <Typography
+            variant="h5"
+            component="p"
+            className="mt-5 mb-5 text-center"
+          >
+            {t("properties.related")}
+          </Typography>
+
+          <List properties={property.related.slice(0, 3)} />
+        </>
+      )}
 
       <Lightbox
         className="image-gallery"
@@ -211,3 +226,18 @@ const Detail = ({ identifier }: DetailProps) => {
 };
 
 export default Detail;
+
+const WhatsAppButton = styled(Button)({
+  "marginBottom": "20px",
+  "backgroundColor": "#25D366",
+  "color": "white",
+
+  "&:hover": {
+    backgroundColor: "#25D366",
+  },
+
+  "& > *": {
+    display: "flex",
+    gap: "8px",
+  },
+});
