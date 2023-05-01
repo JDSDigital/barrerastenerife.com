@@ -17,25 +17,10 @@ import CustomThemeProvider from "../theme/CustomThemeProvider";
 import Footer from "./Footer";
 import Header from "./Header";
 import { ParallaxProvider } from "react-scroll-parallax";
-import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 
 interface Props {
   children: any;
 }
-
-const WhatsAppButton = () => {
-  return (
-    <a
-      href="https://wa.me/34638418917"
-      target="_blank"
-      aria-label="go to whatsapp"
-    >
-      <div className="whatsapp-button">
-        <WhatsAppIcon fontSize="large" />
-      </div>
-    </a>
-  );
-};
 
 export const Layout: React.FC<Props> = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -67,7 +52,6 @@ export const Layout: React.FC<Props> = ({ children }) => {
           <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
           <Container maxWidth={false} className="main-container">
             {children}
-            <WhatsAppButton />
           </Container>
           <Footer />
         </ParallaxProvider>
