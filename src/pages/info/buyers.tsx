@@ -27,38 +27,75 @@ const BuyersPage: React.FC<PageProps<BuyersPageProps>> = ({ data }) => {
 
         <InfoContainer>
           <Grid container spacing={10}>
-            <Grid item xs={12} md={6} data-aos="fade-right">
-              <GatsbyImage image={homeImage} alt="" />
-            </Grid>
-            <Grid item xs={12} md={6} data-aos="fade-left">
+            <Grid item xs={12} data-aos="fade-up">
               <div className="text-center">
                 <Typography
                   variant="h3"
                   component="p"
                   className="section-title"
                 >
-                  BUYING & RELOCATING
+                  {t("buyers.title")}
                 </Typography>
               </div>
-              <Typography component="p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum eget consectetur dolor, in eleifend massa. Nunc quis
-                lacinia neque. Donec ex erat, sagittis sed accumsan sed,
-                fermentum at lectus. Donec eros sem, tristique eget dictum a,
-                vulputate tincidunt sem. Sed maximus lorem vitae erat ultrices
-                volutpat. Nullam sit amet arcu tincidunt, molestie nibh non,
-                scelerisque magna.
+            </Grid>
+            <Grid item xs={12} md={6} data-aos="fade-right">
+              <GatsbyImage image={homeImage} alt="" />
+            </Grid>
+            <Grid item xs={12} md={6} data-aos="fade-left">
+              <Typography component="p" className="mb-5">
+                {t("buyers.description1")}
               </Typography>
-              <Typography component="p">
-                Mauris consequat molestie pulvinar. Etiam et ante sapien. Nam in
-                urna at diam lobortis rhoncus. Etiam suscipit rutrum imperdiet.
-                Donec pulvinar nisi et nunc bibendum, quis varius justo
-                porttitor. Nam placerat quam vel posuere interdum. Proin quam
-                orci, feugiat at sagittis ac, ornare nec augue. Praesent vitae
-                nibh ac odio commodo finibus ut in lectus. Vestibulum metus
-                eros, dignissim ac blandit eu, mattis vitae massa. Nulla at
-                lectus ornare, hendrerit mi at, semper velit.
-              </Typography>
+              <Typography component="p">{t("buyers.description2")}</Typography>
+            </Grid>
+
+            <Grid item xs={12} data-aos="fade-up">
+              <ol>
+                <li>
+                  <Typography component="p" className="mb-5">
+                    {t("buyers.process1")}
+                  </Typography>
+                </li>
+                <li>
+                  <Typography component="p" className="mb-5">
+                    {t("buyers.process2")}
+                  </Typography>
+                </li>
+                <li>
+                  <Typography component="p" className="mb-5">
+                    {t("buyers.process3")}
+                  </Typography>
+                </li>
+                <li>
+                  <Typography component="p" className="mb-5">
+                    {t("buyers.process4")}
+                  </Typography>
+                </li>
+                <li>
+                  <Typography component="p" className="mb-5">
+                    {t("buyers.process5")}
+                  </Typography>
+                </li>
+                <li>
+                  <Typography component="p" className="mb-5">
+                    {t("buyers.process6")}
+                  </Typography>
+                </li>
+                <li>
+                  <Typography component="p" className="mb-5">
+                    {t("buyers.process7")}
+                  </Typography>
+                </li>
+                <li>
+                  <Typography component="p" className="mb-5">
+                    {t("buyers.process8")}
+                  </Typography>
+                </li>
+                <li>
+                  <Typography component="p" className="mb-5">
+                    {t("buyers.process9")}
+                  </Typography>
+                </li>
+              </ol>
             </Grid>
           </Grid>
         </InfoContainer>
