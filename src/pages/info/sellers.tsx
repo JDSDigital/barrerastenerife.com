@@ -26,7 +26,7 @@ const SellersPage: React.FC<PageProps<SellersPageProps>> = ({ data }) => {
         <Banner image={bannerImage} type="sellers" />
 
         <InfoContainer>
-          <Grid container spacing={10}>
+          <Grid container>
             <Grid item xs={12} data-aos="fade-up">
               <div className="text-center">
                 <Typography
@@ -38,17 +38,19 @@ const SellersPage: React.FC<PageProps<SellersPageProps>> = ({ data }) => {
                 </Typography>
               </div>
             </Grid>
-            <Grid item xs={12} md={6} data-aos="fade-right">
-              <GatsbyImage image={homeImage} alt="" />
-            </Grid>
-            <Grid item xs={12} md={6} data-aos="fade-left">
-              <Grid item xs={12} data-aos="fade-left">
-                <Typography component="p" className="mb-5">
-                  {t("sellers.description")}
-                </Typography>
+            <Grid container spacing={10}>
+              <Grid item xs={12} md={6} data-aos="fade-right">
+                <GatsbyImage image={homeImage} alt="" />
+              </Grid>
+              <Grid item xs={12} md={6} data-aos="fade-left">
+                <Grid item xs={12} data-aos="fade-left">
+                  <Typography component="p" className="mb-5">
+                    {t("sellers.description")}
+                  </Typography>
+                </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={12} data-aos="fade-up">
+            <Grid item xs={12}>
               <ol>
                 <li>
                   <Typography component="p" className="mb-5">

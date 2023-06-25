@@ -9,14 +9,14 @@
 
   "thinkingOfBuying": {
     "buying": {
-      "title": "Lorem ipsum dolor sit amet",
-      "subtitle": "¿Pensando en comprar?"
+      "title": "Thinking of buying?",
+      "subtitle": "Understanding the buying process"
     },
     "selling": {
-      "title": "Lorem ipsum dolor sit amet",
-      "subtitle": "¿Pensando en vender?"
+      "title": "Thinking of selling?",
+      "subtitle": "Understanding the selling process"
     },
-    "details": "Detalles"
+    "details": "Details"
   },
 
   "workWithUs": {

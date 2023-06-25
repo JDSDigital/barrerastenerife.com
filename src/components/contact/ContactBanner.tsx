@@ -32,7 +32,7 @@ const ContactBanner = () => {
     >
       <div className="about-overlay">
         <div className="about-text" data-aos="fade-in" data-aos-delay="500">
-          <Typography variant="h1" component="h1">
+          <Typography variant="h1" component="h1" className="banner-title">
             {t("header.link.contact")}
           </Typography>
           <div className="arrows-container">

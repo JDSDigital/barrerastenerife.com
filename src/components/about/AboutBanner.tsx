@@ -35,7 +35,7 @@ const AboutBanner = () => {
           <Typography variant="h3" component="p">
             {t("about.banner.p1")}
           </Typography>
-          <Typography variant="h1" component="h1">
+          <Typography variant="h1" component="h1" className="banner-title">
             {t("about.banner.p2")}
           </Typography>
           <div className="arrows-container">

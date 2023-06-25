@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
 
   return (
     <footer>
-      <Grid container spacing={5} justifyContent="space-between">
+      <Grid container>
         <Grid item xs={12} sm={4} className="footer-logo">
           <Link to="/" aria-label="go to home">
             <GatsbyImage image={getImage(data.logo)!} alt="logo" />
