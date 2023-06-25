@@ -344,6 +344,8 @@ body {
     }
 
     .info {
+      overflow-x: hidden;
+
       .info-banner-container {
         height: 100vh;
       }
@@ -372,6 +374,7 @@ body {
   margin: 1em 0 1.5em !important;
   text-align: center;
   font-weight: 300;
+  font-size: 3rem;
 
   &:after {
     content: "";
@@ -383,6 +386,10 @@ body {
     width: 50%;
     height: 3px;
     background: $secondary-color-gradient-background;
+  }
+
+  @media (max-width: #{$screen-sm-min}) {
+    font-size: 2.5rem !important;
   }
 }
 
@@ -474,6 +481,7 @@ body {
   .property-card-media {
     position: relative;
     height: 350px;
+    overflow: hidden;
 
     &:hover .property-card-overlay {
       width: 80%;
@@ -867,6 +875,14 @@ body {
     margin: 2em;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
   }
+
+  .banner-title {
+    font-size: 4rem;
+
+    @include sm {
+      font-size: 6rem;
+    }
+  }
 }
 
 .testimonial-container {
@@ -992,4 +1008,8 @@ body {
 
 .MuiFormLabel-root {
   color: $color-black !important;
+}
+
+.MuiGrid-root {
+  overflow-x: hidden;
 }
