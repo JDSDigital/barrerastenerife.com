@@ -16,17 +16,17 @@ const TeamSection = () => {
 
   const images = useStaticQuery(graphql`
     query {
-      gian: file(relativePath: { eq: "team/gian.jpg" }) {
+      gian: file(relativePath: { eq: "about/gian.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      irina: file(relativePath: { eq: "team/irina.jpg" }) {
+      irina: file(relativePath: { eq: "about/irina.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      maryna: file(relativePath: { eq: "team/maryna.jpg" }) {
+      maryna: file(relativePath: { eq: "about/maryna.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
