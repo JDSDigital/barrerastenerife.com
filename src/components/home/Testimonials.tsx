@@ -10,7 +10,7 @@ const Testimonials = () => {
   const { t } = useTranslation();
   const images = useStaticQuery(graphql`
     query {
-      background: file(relativePath: { eq: "bg/6.jpeg" }) {
+      background: file(relativePath: { eq: "home/7.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }

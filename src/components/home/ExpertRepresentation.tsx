@@ -9,7 +9,7 @@ import { useTranslation } from "hooks/useTranslation";
 export const ExpertRepresentation = () => {
   const data = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "random/living-room.jpeg" }) {
+      image: file(relativePath: { eq: "home/3.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
@@ -71,7 +71,7 @@ export const ExpertRepresentation = () => {
         </Grid>
         <Grid item xs={12} sm={6} data-aos="fade-left" data-aos-delay="400">
           <ImageContainer>
-            <GatsbyImage image={image} alt="" className="crop-center" />
+            <GatsbyImage image={image} alt="" className="expert-image" />
           </ImageContainer>
         </Grid>
       </Grid>

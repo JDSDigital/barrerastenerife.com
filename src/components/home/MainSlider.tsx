@@ -13,7 +13,7 @@ import { useTranslation } from "hooks/useTranslation";
 const MainSlider: React.FC = () => {
   const data = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "properties/property5.jpg" }) {
+      image: file(relativePath: { eq: "home/2.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
@@ -82,11 +82,7 @@ const MainSlider: React.FC = () => {
           <GatsbyImage
             image={getImage(data.logo)!}
             alt="logo"
-            style={{
-              width: "100%",
-              maxWidth: "500px",
-              marginBottom: "3rem",
-            }}
+            className="main-slider-logo"
           />
 
           <SearchForm />
