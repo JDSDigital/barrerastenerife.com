@@ -16,14 +16,14 @@ import SEO from "components/SEO";
 import { useTranslation } from "hooks/useTranslation";
 
 type ContactPageProps = {
-  placeholderImage: any; // TODO: Get image type
+  team: any; // TODO: Get image type
   ocean: any;
 };
 
 const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
   const { t } = useTranslation();
 
-  const contactImage = getImage(data.placeholderImage);
+  const teamImage = getImage(data.team);
   const oceanImage = getImage(data.ocean);
 
   return (
@@ -70,10 +70,10 @@ const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
             </Typography>
           </Grid>
           <Grid item xs={12} sm={4} data-aos="fade-left">
-            {oceanImage && (
+            {teamImage && (
               <GatsbyImage
-                image={oceanImage}
-                alt="Ocean dining"
+                image={teamImage}
+                alt="Team image"
                 className="img-responsive crop-center"
               />
             )}
@@ -83,10 +83,10 @@ const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
 
       <Grid container className="contact-container" data-aos="fade-in">
         <Grid item xs={12} sm={5} className="contact-section">
-          {contactImage && (
+          {oceanImage && (
             <GatsbyImage
-              image={contactImage}
-              alt="Contact image"
+              image={oceanImage}
+              alt="Oceag image"
               className="img-responsive crop-center"
             />
           )}
@@ -137,12 +137,12 @@ export const query = graphql`
         }
       }
     }
-    placeholderImage: file(relativePath: { eq: "bg/1.jpg" }) {
+    team: file(relativePath: { eq: "contact/2.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }
     }
-    ocean: file(relativePath: { eq: "random/ocean-dining.jpeg" }) {
+    ocean: file(relativePath: { eq: "contact/3.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }

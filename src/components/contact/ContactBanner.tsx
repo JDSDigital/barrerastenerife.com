@@ -12,7 +12,7 @@ const ContactBanner = () => {
 
   const image = useStaticQuery(graphql`
     query {
-      banner: file(relativePath: { eq: "bg/6.jpeg" }) {
+      banner: file(relativePath: { eq: "contact/1.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
