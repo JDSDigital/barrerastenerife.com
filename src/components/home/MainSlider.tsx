@@ -6,7 +6,7 @@ import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import { ParallaxBanner } from "react-scroll-parallax";
 import SearchIcon from "@material-ui/icons/Search";
 import { TownSearch } from "../TownSearch";
-import { getImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { useI18next } from "gatsby-plugin-react-i18next";
 import { useTranslation } from "hooks/useTranslation";
 
@@ -14,6 +14,11 @@ const MainSlider: React.FC = () => {
   const data = useStaticQuery(graphql`
     query {
       image: file(relativePath: { eq: "properties/property5.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      logo: file(relativePath: { eq: "logo/logo-vertical-full.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
@@ -74,22 +79,15 @@ const MainSlider: React.FC = () => {
           data-aos="fade-in"
           data-aos-delay="500"
         >
-          <Typography
-            component="h1"
-            variant="h3"
-            className="main-slider-title mb-3"
-            align="center"
-          >
-            BARRERAS
-          </Typography>
-          <Typography
-            component="p"
-            variant="h1"
-            className="main-slider-subtitle mb-4"
-            align="center"
-          >
-            Where Dreams Come Home
-          </Typography>
+          <GatsbyImage
+            image={getImage(data.logo)!}
+            alt="logo"
+            style={{
+              width: "100%",
+              maxWidth: "500px",
+              marginBottom: "3rem",
+            }}
+          />
 
           <SearchForm />
 
