@@ -125,12 +125,12 @@ export const query = graphql`
         }
       }
     }
-    banner: file(relativePath: { eq: "random/buyers.webp" }) {
+    banner: file(relativePath: { eq: "buyers/1.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }
     }
-    home: file(relativePath: { eq: "random/home_large.jpeg" }) {
+    home: file(relativePath: { eq: "buyers/2.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }
