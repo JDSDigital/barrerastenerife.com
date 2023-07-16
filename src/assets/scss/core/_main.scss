@@ -569,6 +569,8 @@ body {
   .team-grid {
     display: flex;
     flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
 
     @include md {
       flex-direction: row;
