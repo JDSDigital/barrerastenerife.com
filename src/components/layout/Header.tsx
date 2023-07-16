@@ -65,6 +65,21 @@ const Header: React.FC<Props> = ({ siteTitle = "", ...rest }) => {
           gatsbyImageData(layout: FIXED, height: 30)
         }
       }
+      de: file(relativePath: { eq: "flags/de.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FIXED, height: 30)
+        }
+      }
+      fr: file(relativePath: { eq: "flags/fr.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FIXED, height: 30)
+        }
+      }
+      pl: file(relativePath: { eq: "flags/pl.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FIXED, height: 30)
+        }
+      }
     }
   `);
 
