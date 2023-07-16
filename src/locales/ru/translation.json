@@ -16,7 +16,7 @@
       "title": "Thinking of selling?",
       "subtitle": "Understanding the selling process"
     },
-    "details": "Details"
+    "details": "Ознакомиться подробнее"
   },
 
   "workWithUs": {
@@ -57,18 +57,18 @@
 
   "header": {
     "link": {
-      "buy": "Покупка и продажа",
+      "buy": "Покупка",
       "rent": "Аренда",
       "about": "О нас",
       "contact": "Контакты",
       "invest": "Инвестиции",
-      "local": "Коммерческая недвижимость",
+      "local": "Коммерческое помещение",
       "promotion": "Новое жилье",
-      "luxury": "Luxury properties",
-      "properties": "Properties",
-      "info": "Info",
-      "forBuyers": "For buyers",
-      "forSellers": "For sellers"
+      "luxury": "Недвижимость премиум класса",
+      "properties": "Недвижимость",
+      "info": "Информация",
+      "forBuyers": "Для желающих купить",
+      "forSellers": "для желающих продать"
     }
   },
 
@@ -112,8 +112,8 @@
   },
 
   "footer": {
-    "recent": "Новинки в сфере недвижимости",
-    "contact": "Контакты",
+    "recent": "Новые предложения",
+    "contact": "Контакт",
     "copyright": "Все права защищены",
     "offices": "Наш офис"
   },
@@ -121,11 +121,11 @@
   "properties": {
     "title": "Недвижимость",
     "featured": "Featured Properties",
-    "recent": "Новинки в сфере недвижимости",
-    "sell": "Недвижимость на продажу ",
+    "recent": "Новые предложения",
+    "sell": "Недвижимость на продажу",
     "rent": "Аренда недвижимости",
     "related": "Похожие объекты",
-    "share": "Share",
+    "share": "Поделиться",
 
     "info": "Общая информация",
     "description": "Описание",
@@ -133,14 +133,14 @@
     "previous": "Назад",
     "next": "Вперед",
 
-    "area": "Пространство",
-    "bedrooms": "Спальные комнаты",
+    "area": "Сфера",
+    "bedrooms": "Kомнаты",
     "bathrooms": "Ванные комнаты",
     "tags": "Дополнительные фильтры",
-    "from": "From",
+    "from": "От",
 
     "search": {
-      "show": "Advanced Search",
+      "show": "расширенный поиск",
       "hide": "Hide Advanced Search"
     }
   },
@@ -179,9 +179,9 @@
     "fields": {
       "type": "Тип",
       "contract": "Контакт",
-      "zone": "Город",
+      "zone": "зона",
       "sort_by": "Сортировка по",
-      "bedrooms": "Спальные комнаты",
+      "bedrooms": "Kомнаты",
       "bathrooms": "Ванные комнаты",
       "tags": "Фильтры",
       "identifier": "Номер референции",
@@ -263,7 +263,7 @@
       "puertoSantiago": "Puerto de Santiago"
     },
     "sort_by": {
-      "creation_date_desc": "Новинки в сфере недвижимости",
+      "creation_date_desc": "Новинки",
       "price_desc": "Самая высокая цена",
       "price_asc": "Самая низкая цена"
     },

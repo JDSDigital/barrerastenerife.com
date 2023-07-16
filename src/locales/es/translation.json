@@ -16,7 +16,7 @@
       "title": "Thinking of selling?",
       "subtitle": "Understanding the selling process"
     },
-    "details": "Details"
+    "details": "Más detalles"
   },
 
   "workWithUs": {
@@ -59,14 +59,14 @@
     "link": {
       "buy": "Comprar",
       "rent": "Alquilar",
-      "about": "Quienes Somos",
+      "about": "Sobre nosotros",
       "contact": "Contacto",
       "invest": "Inversión",
-      "local": "Local comercial",
+      "local": "Local",
       "promotion": "Nueva promoción",
       "luxury": "Propiedades de lujo",
       "properties": "Propiedades",
-      "info": "Info",
+      "info": "Información",
       "forBuyers": "Para compradores",
       "forSellers": "Para vendedores"
     }

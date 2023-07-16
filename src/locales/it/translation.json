@@ -16,7 +16,7 @@
       "title": "Thinking of selling?",
       "subtitle": "Understanding the selling process"
     },
-    "details": "Details"
+    "details": "Piú informazioni"
   },
 
   "workWithUs": {
@@ -60,15 +60,15 @@
       "buy": "Comprare",
       "rent": "Affittare",
       "about": "Chi siamo",
-      "contact": "Contatto",
-      "invest": "Investimento",
-      "local": "Locale commerciale",
+      "contact": "Contatti",
+      "invest": "Investimenti",
+      "local": "Locali",
       "promotion": "Nuova costruzione",
-      "luxury": "Luxury properties",
-      "properties": "Properties",
-      "info": "Info",
-      "forBuyers": "For buyers",
-      "forSellers": "For sellers"
+      "luxury": "Proprietá di lusso",
+      "properties": "Proprietá ",
+      "info": "informazioni",
+      "forBuyers": "Per acquirenti",
+      "forSellers": "Per venditori"
     }
   },
 
@@ -125,7 +125,7 @@
     "sell": "Immobili in vendita",
     "rent": "Immobili in affitto",
     "related": "Proprietà correlate",
-    "share": "Share",
+    "share": "Condividere",
 
     "info": "Informazioni",
     "description": "Descrizione",
@@ -140,8 +140,8 @@
     "from": "Da",
 
     "search": {
-      "show": "Advanced Search",
-      "hide": "Hide Advanced Search"
+      "show": "Ricerca avanzata",
+      "hide": "Nascondere ricerca avanzata"
     }
   },
 
@@ -171,7 +171,7 @@
       "email": "Email",
       "message": "Messaggio",
       "send": "Inviare",
-      "sent": "inviato"
+      "sent": "Inviato"
     }
   },
 
@@ -179,7 +179,7 @@
     "fields": {
       "type": "Tipo",
       "contract": "Contratto",
-      "zone": "Zona",
+      "zone": "Area",
       "sort_by": "Odina per",
       "bedrooms": "Camere",
       "bathrooms": "Bagni",
@@ -188,7 +188,7 @@
       "price": "Prezzo"
     },
     "types": {
-      "all": "Tutto",
+      "all": "Tutti",
       "flat": "Appartamento",
       "chalet": "Casa/Villa",
       "country_house": "Casa Rustica",
@@ -268,7 +268,7 @@
       "price_asc": "Prezzo piú basso"
     },
     "bedrooms": {
-      "all": "Tutto",
+      "all": "Tutti",
       "1": "1",
       "2": "2",
       "3": "3",
@@ -279,7 +279,7 @@
       "10": "Piú di 7"
     },
     "bathrooms": {
-      "all": "Tutto",
+      "all": "Tutti",
       "1": "1",
       "2": "2",
       "3": "3",
@@ -290,12 +290,12 @@
       "10": "Piú di 7"
     },
     "tags": {
-      "all": "Tutto",
+      "all": "Tutti",
       "elevator": "Ascensore",
       "garage": "Garage",
       "garden": "Giardino",
       "outdoor": "Esteriore",
-      "rooftop_terrace": "Attico",
+      "rooftop_terrace": "Terrazza sul tetto",
       "sea_views": "Vista mare",
       "storage_room": "Cantina",
       "swimming_pool": "Piscina",
