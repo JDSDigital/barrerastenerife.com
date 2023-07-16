@@ -127,12 +127,12 @@ export const query = graphql`
         }
       }
     }
-    banner: file(relativePath: { eq: "random/sellers.jpeg" }) {
+    banner: file(relativePath: { eq: "sellers/1.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }
     }
-    home: file(relativePath: { eq: "random/home_large.jpeg" }) {
+    home: file(relativePath: { eq: "sellers/2.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }

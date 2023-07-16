@@ -11,9 +11,9 @@ const Footer: React.FC = () => {
   const { t } = useTranslation();
   const data = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "logo/logo-navbar-2.png" }) {
+      logo: file(relativePath: { eq: "logo/logo-vertical-color.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 55)
+          gatsbyImageData(layout: FIXED, height: 150)
         }
       }
       map: file(relativePath: { eq: "map.png" }) {

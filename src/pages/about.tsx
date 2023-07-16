@@ -11,7 +11,7 @@ import { useTranslation } from "hooks/useTranslation";
 
 //TODO: Get image type
 type AboutPageProps = {
-  founder: any;
+  team: any;
   languages: any;
 };
 
@@ -44,7 +44,7 @@ const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
         >
           <Grid item xs={12} sm={5} data-aos="fade-right">
             <GatsbyImage
-              image={getImage(data.founder)!}
+              image={getImage(data.team)!}
               alt="Barreras founder"
               className="img-responsive about-image"
             />
@@ -72,7 +72,7 @@ export const query = graphql`
         }
       }
     }
-    founder: file(relativePath: { eq: "team/founder.jpg" }) {
+    team: file(relativePath: { eq: "about/team.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }

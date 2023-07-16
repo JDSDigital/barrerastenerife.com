@@ -16,17 +16,32 @@ const TeamSection = () => {
 
   const images = useStaticQuery(graphql`
     query {
-      gian: file(relativePath: { eq: "team/gian.jpg" }) {
+      gian: file(relativePath: { eq: "about/gian.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      irina: file(relativePath: { eq: "team/irina.jpg" }) {
+      irina: file(relativePath: { eq: "about/irina.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      maryna: file(relativePath: { eq: "team/maryna.jpg" }) {
+      maryna: file(relativePath: { eq: "about/maryna.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      arely: file(relativePath: { eq: "about/arely.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      uliana: file(relativePath: { eq: "about/uliana.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      oleksandra: file(relativePath: { eq: "about/oleksandra.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
@@ -57,6 +72,11 @@ const TeamSection = () => {
         }
       }
       ru: file(relativePath: { eq: "flags/ru.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      ua: file(relativePath: { eq: "flags/ua.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
@@ -156,6 +176,15 @@ const TeamSection = () => {
                 />
               </div>
             )}
+            {languages.includes("ua") && (
+              <div className="team-flag-container">
+                <GatsbyImage
+                  className="img-responsive crop-center"
+                  image={getImage(images.ua)!}
+                  alt="ua"
+                />
+              </div>
+            )}
           </div>
         </CardContent>
       </Card>
@@ -190,7 +219,6 @@ const TeamSection = () => {
           name="Maryna Bohush"
           phone="+34 671 616 456"
           languages={["es", "en", "it", "ru"]}
-          animationDelay="300"
         />
 
         <Team
@@ -198,7 +226,29 @@ const TeamSection = () => {
           name="Irina Elistratova"
           phone="+34 653 414 149"
           languages={["es", "en", "de", "it", "ru"]}
-          animationDelay="600"
+        />
+        {/* </Grid> */}
+
+        {/* <Grid item xs={12} className="team-grid"> */}
+        <Team
+          image={images.arely}
+          name="Arely Arteaga"
+          phone="+34 630 088 490"
+          languages={["es", "en"]}
+        />
+
+        <Team
+          image={images.uliana}
+          name="Uliana Popovycheva"
+          phone="+34 651 873 215"
+          languages={["es", "en", "ru", "ua"]}
+        />
+
+        <Team
+          image={images.oleksandra}
+          name="Oleksandra Dzhaparidze"
+          phone="+34 656 610 837"
+          languages={["es", "en", "ru", "ua"]}
         />
       </Grid>
     </Grid>
