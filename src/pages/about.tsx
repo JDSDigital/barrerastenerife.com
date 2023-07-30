@@ -8,6 +8,7 @@ import React from "react";
 import SEO from "components/SEO";
 import TeamSection from "components/about/TeamSection";
 import { useTranslation } from "hooks/useTranslation";
+import { Trans } from "gatsby-plugin-react-i18next";
 
 //TODO: Get image type
 type AboutPageProps = {
