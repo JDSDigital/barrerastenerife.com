@@ -1,5 +1,5 @@
 import { Button, Container, Grid, Typography } from "@material-ui/core";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
@@ -13,7 +13,37 @@ import { useTranslation } from "hooks/useTranslation";
 const MainSlider: React.FC = () => {
   const data = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "home/2.jpg" }) {
+      image1: file(relativePath: { eq: "home/1.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      image2: file(relativePath: { eq: "home/2.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      image3: file(relativePath: { eq: "home/3.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED)
+        }
+      }
+      image4: file(relativePath: { eq: "home/4.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED)
+        }
+      }
+      image5: file(relativePath: { eq: "home/5.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED)
+        }
+      }
+      image6: file(relativePath: { eq: "home/6.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      image7: file(relativePath: { eq: "home/7.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
@@ -26,7 +56,26 @@ const MainSlider: React.FC = () => {
     }
   `);
 
-  const image = getImage(data.image);
+  const queryImages = [
+    data.image1,
+    data.image2,
+    data.image3,
+    data.image4,
+    data.image5,
+    data.image6,
+    data.image7,
+  ];
+
+  const parsedImages = queryImages.map(image => getImage(image));
+
+  const images = parsedImages.map(image => image?.images.fallback?.src);
+
+  const [layers, setLayers] = useState([
+    {
+      image: images[0],
+      speed: -5,
+    },
+  ]);
 
   const SearchForm = () => {
     const { navigate } = useI18next();
@@ -63,16 +112,42 @@ const MainSlider: React.FC = () => {
     );
   };
 
+  const [, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(async () => {
+      setIndex(oldIndex => {
+        const newIndex = oldIndex === images.length - 1 ? 0 : oldIndex + 1;
+
+        setLayers(oldLayers => [
+          {
+            image: images[newIndex],
+            speed: -5,
+          },
+          ...oldLayers,
+        ]);
+
+        return oldIndex === images.length - 1 ? 0 : oldIndex + 1;
+      });
+
+      const promise = new Promise(resolve => {
+        setTimeout(resolve, 300);
+      });
+
+      await promise;
+
+      setLayers(oldLayers => {
+        const newLayers = [...oldLayers];
+        newLayers.pop();
+        return newLayers;
+      });
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <ParallaxBanner
-      className="main-slider"
-      layers={[
-        {
-          image: image?.images.fallback?.src,
-          speed: -20,
-        },
-      ]}
-    >
+    <ParallaxBanner className="main-slider" layers={layers}>
       <div className="main-slider-overlay">
         <Container
           className="main-slider-container"

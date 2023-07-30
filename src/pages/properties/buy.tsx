@@ -37,7 +37,7 @@ export const query = graphql`
         }
       }
     }
-    banner: file(relativePath: { eq: "properties/1.jpg" }) {
+    banner: file(relativePath: { eq: "properties/2.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }

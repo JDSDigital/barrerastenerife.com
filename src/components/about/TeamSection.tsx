@@ -227,9 +227,9 @@ const TeamSection = () => {
           phone="+34 653 414 149"
           languages={["es", "en", "de", "it", "ru"]}
         />
-        {/* </Grid> */}
+      </Grid>
 
-        {/* <Grid item xs={12} className="team-grid"> */}
+      <Grid item xs={12} className="team-grid">
         <Team
           image={images.arely}
           name="Arely Arteaga"
