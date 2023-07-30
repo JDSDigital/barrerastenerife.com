@@ -7,6 +7,7 @@ import Layout from "components/layout";
 import React from "react";
 import SEO from "components/SEO";
 import { useTranslation } from "hooks/useTranslation";
+import { Trans } from "gatsby-plugin-react-i18next";
 
 type BuyersPageProps = {
   banner: any; // TODO: Get image type
@@ -27,7 +28,7 @@ const BuyersPage: React.FC<PageProps<BuyersPageProps>> = ({ data }) => {
 
         <InfoContainer>
           <Grid container>
-            <Grid item xs={12} data-aos="fade-up">
+            <Grid item xs={12}>
               <div className="text-center">
                 <Typography
                   variant="h3"
@@ -38,68 +39,16 @@ const BuyersPage: React.FC<PageProps<BuyersPageProps>> = ({ data }) => {
                 </Typography>
               </div>
             </Grid>
-            <Grid container spacing={10}>
-              <Grid item xs={12} md={6} data-aos="fade-right">
+            {/* <Grid container spacing={10}>
+              <Grid item xs={12} md={6} data-aos="fade-up">
                 <GatsbyImage image={homeImage} alt="" />
               </Grid>
-              <Grid item xs={12} md={6} data-aos="fade-left">
-                <Typography component="p" className="mb-5">
-                  {t("buyers.description1")}
-                </Typography>
-                <Typography component="p">
-                  {t("buyers.description2")}
-                </Typography>
-              </Grid>
-            </Grid>
+            </Grid> */}
 
             <Grid item xs={12}>
-              <ol>
-                <li>
-                  <Typography component="p" className="mb-5">
-                    {t("buyers.process1")}
-                  </Typography>
-                </li>
-                <li>
-                  <Typography component="p" className="mb-5">
-                    {t("buyers.process2")}
-                  </Typography>
-                </li>
-                <li>
-                  <Typography component="p" className="mb-5">
-                    {t("buyers.process3")}
-                  </Typography>
-                </li>
-                <li>
-                  <Typography component="p" className="mb-5">
-                    {t("buyers.process4")}
-                  </Typography>
-                </li>
-                <li>
-                  <Typography component="p" className="mb-5">
-                    {t("buyers.process5")}
-                  </Typography>
-                </li>
-                <li>
-                  <Typography component="p" className="mb-5">
-                    {t("buyers.process6")}
-                  </Typography>
-                </li>
-                <li>
-                  <Typography component="p" className="mb-5">
-                    {t("buyers.process7")}
-                  </Typography>
-                </li>
-                <li>
-                  <Typography component="p" className="mb-5">
-                    {t("buyers.process8")}
-                  </Typography>
-                </li>
-                <li>
-                  <Typography component="p" className="mb-5">
-                    {t("buyers.process9")}
-                  </Typography>
-                </li>
-              </ol>
+              <Typography component="p">
+                <Trans i18nKey={"buyers.description"} />
+              </Typography>
             </Grid>
           </Grid>
         </InfoContainer>

@@ -1,0 +1,320 @@
+{
+  "home": "Startseite",
+  "search": "Suche",
+  "property": "Immobilie",
+
+  "expertRepresentation": {
+    "title": "Expert Representation"
+  },
+
+  "thinkingOfBuying": {
+    "buying": {
+      "title": "Thinking of buying?",
+      "subtitle": "Understanding the buying process"
+    },
+    "selling": {
+      "title": "Thinking of selling?",
+      "subtitle": "Understanding the selling process"
+    },
+    "details": "Weitere Details"
+  },
+
+  "workWithUs": {
+    "title": "WORK WITH US",
+
+    "experience": {
+      "title": "20+ YEARS",
+      "subtitle": "Combined Industry Experience - Put Our Expertise to Work for You"
+    },
+    "knowledge": {
+      "title": "MARKET KNOWLEDGE",
+      "subtitle": "Extensive Market Knowledge is the Key to Our Success"
+    },
+    "guidance": {
+      "title": "EXPERT GUIDANCE",
+      "subtitle": "We Make Even the Most Complicated Transactions Run Smoothly"
+    },
+
+    "button": "GET IN TOUCH"
+  },
+
+  "info": {
+    "buyers": {
+      "title": "BUYER SERVICES",
+      "subtitle1": "World-Class Service",
+      "subtitle2": "Unrivaled Market Knowledge",
+      "description1": "Providing real estate services in Tenerife.",
+      "description2": "Helping buyers negotiate the perfect deal."
+    },
+    "sellers": {
+      "title": "SELLER SERVICES",
+      "subtitle1": "World-Class Service",
+      "subtitle2": "Unrivaled Market Knowledge",
+      "description1": "Providing real estate services in Tenerife.",
+      "description2": "Helping sellers market and sell their home for top dollar."
+    }
+  },
+
+  "header": {
+    "link": {
+      "buy": "Kauf",
+      "rent": "Miete",
+      "about": "über uns",
+      "contact": "Kontakt",
+      "invest": "Investition",
+      "local": "Gewerberäume",
+      "promotion": "Neubau",
+      "luxury": "Luxus-Immobilien",
+      "properties": "Immobilie",
+      "info": "Information",
+      "forBuyers": "für Käufer",
+      "forSellers": "ür Verkäufer"
+    }
+  },
+
+  "folders": {
+    "buy": {
+      "title": "Buy",
+      "description": "Second hand properties"
+    },
+    "rent": {
+      "title": "Rent",
+      "description": "Properties for rent"
+    },
+    "invest": {
+      "title": "Invest",
+      "description": "Ideas for investment"
+    },
+    "local": {
+      "title": "Shop",
+      "description": "Commercial premises"
+    },
+    "promotion": {
+      "title": "New Promotion",
+      "description": "New property developments"
+    },
+    "services": {
+      "title": "Services",
+      "description": "Our services"
+    },
+    "more": "weitere Informationen"
+  },
+
+  "partnerships": "Partnerships",
+
+  "testimonials": {
+    "title": "Customer Testimonials",
+    "subtitle": "What our customers say about us.",
+
+    "t1": "Muy buena atención y profesionalidad por parte de Marina. Nos ha guiado y nos ha ayudado en todo el proceso de compraventa de la vivienda. Ahora somos propietarios y aún estamos en contacto. Recomendados 100%.",
+    "t2": "I used their services for the purchase of a property (main residence) in Tenerife and I couldn't be happier with how smoothly everything went throughout the whole process. Irina was very friendly understanding and most importantly never pushy! Communication eas fantastic in both Spanish and English. With Irina's help and advice, what is usually a very stressful process became very easy and straightforward. I would highly recommend this agency for anyone looking to buy/sell/rent a property in Tenerife.",
+    "t3": "Muy buena atención por parte de Inmobiliaria Barreras. Gian, es un excelente profesional, siempre dispuesto a ayudarte en todo momento y con un trato cercano y efectivo. Gracias a él alquilé mi piso rápidamente. Sin duda, volveré a repetir en el futuro."
+  },
+
+  "footer": {
+    "recent": "neuesten Immobilien",
+    "contact": "Kontakt",
+    "copyright": "alle Rechte vorbehalten",
+    "offices": "unser Büro"
+  },
+
+  "properties": {
+    "title": "Immobilie",
+    "featured": "Featured Properties",
+    "recent": "neuesten Immobilien",
+    "sell": "Immobilien zum Verkauf",
+    "rent": "Immobilien zur Vermietung",
+    "related": "verwandte Eigenschaften",
+    "share": "weitergeben",
+
+    "info": "Basisinformation",
+    "description": "Beschreibung",
+
+    "previous": "vorherigen",
+    "next": "folgende",
+
+    "area": "Gebiet",
+    "bedrooms": "Zimmer",
+    "bathrooms": "Badezimmer",
+    "tags": "Etiketten",
+    "from": "Ab",
+
+    "search": {
+      "show": "erweiterte Suche",
+      "hide": "Hide Advanced Search"
+    }
+  },
+
+  "about": {
+    "title": "Inmobiliaria Barreras",
+    "description": "Barreras Teneriffa S.L. wurde im Jahr 2000 von Pablo Barreras González auf Teneriffa gegründet. Heute setzen seine Nachfolger mit umfangreicher und positiver Erfahrung im Bereich der Immobilienberatung und -vermittlung weiterhin auf Ehrlichkeit, Vertrauen, Einfühlungsvermögen und Professionalität. Unser sorgfältig ausgewähltes Team hat den gemeinsamen Wunsch, jeden Kunden in allen Phasen des Kauf- oder Verkaufsprozesses zu betreuen, auf ihre Wünsche und Anliegen einzugehen und auch auf kleinste Details zu achten. Wir sind der Überzeugung, dass jede Immobilientransaktion eine der wichtigsten Entscheidungen unserer Kunden sein kann. Aus diesem Grund kümmern wir uns um alle Details, um ihren Erfolg zu garantieren.",
+
+    "banner": {
+      "p1": "ÜBER UNS",
+      "p2": "Inmobiliaria Barreras"
+    },
+
+    "team": "LERNEN SIE UNSER TEAM AUS SENIOR PROFESSIONALS LERNEN",
+    "agent": "Agent"
+  },
+
+  "contact": {
+    "description": {
+      "title": "Herzlich willkommen bei Inmobiliaria Barreras Teneriffa, Ihrer vertrauenswürdigen Immobilienagentur.",
+      "subtitle": "Wir haben diese Agentur gegründet, um Ihnen den erstklassigen Service, Ehrlichkeit und Vertrauen zu bieten, nach dem Sie auf Teneriffa suchen.",
+      "body": "Barreras Teneriffa S.L. wurde im Jahr 2000 von Pablo Barreras González auf Teneriffa, der größten und bevölkerungsreichsten Insel der Kanarischen Inseln, gegründet. Heute befindet sich das Unternehmen im Besitz seiner Nachfolger und kann auf eine erfolgreiche Geschichte in der Immobilienberatung und -vermittlung zurückblicken.  Wir streben immer nach optimalen Ergebnissen mit maximaler Gewährleistung und bieten jedem unserer Kunden eine individuell zugeschnittene, personalisierte Betreuung. Dabei setzen wir auf innovative Marketingstrategien sowie Integrität und Professionalität in all unseren Bemühungen."
+    },
+
+    "title": "kontaktieren Sie uns",
+    "subtitle": "At your service.",
+    "address": "Adresse",
+    "phone": "Telefonnummer",
+    "email": "E-Mail",
+
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Meldung",
+      "send": "senden",
+      "sent": "geschickt"
+    }
+  },
+
+  "constants": {
+    "fields": {
+      "type": "Art",
+      "contract": "Operation",
+      "zone": "Zone",
+      "sort_by": "Sortieren nach",
+      "bedrooms": "Zimmer",
+      "bathrooms": "Badezimmer",
+      "tags": "Etiketten",
+      "identifier": "Referenz-ID",
+      "price": "Preis"
+    },
+    "types": {
+      "all": "Wohnung",
+      "flat": "Flat",
+      "chalet": "Hause/Villa",
+      "country_house": "Landhaus",
+      "bungalow": "Bungalow",
+      "room": "Hotel",
+      "parking": "Garage",
+      "shop": "Gewerberäume",
+      "industrial": "Lagerhalle",
+      "office": "Büro",
+      "land": "Grundstück",
+      "storage": "Lagerraum",
+      "building": "Gebäude"
+    },
+    "contract": {
+      "all": "alle",
+      "rent": "Miete",
+      "sell": "Kauf"
+    },
+    "zones": {
+      "all": "alle ",
+      "adeje": "Adeje",
+      "armenime": "Armeñime",
+      "callao": "Callao Salvaje",
+      "costaAdeje": "Costa Adeje",
+      "duque": "El Duque",
+      "caldera": "La Caldera",
+      "caleta": "La Caleta",
+      "madronal": "Madroñal",
+      "playaAmericas": "Playa de Las Americas",
+      "playaParaiso": "Playa Paraiso",
+      "roqueConde": "Roque del Conde",
+      "sanEugenioAlto": "San Eugenio Alto",
+      "sanEugenioBajo": "San Eugenio Bajo",
+      "tijoco": "Tijoco",
+      "torviscasAlto": "Torviscas Alto",
+      "torviscasBajo": "Torviscas Bajo",
+      "arona": "Arona",
+      "buzanada": "Buzanada",
+      "caboBlanco": "Cabo Blanco",
+      "chayofa": "Chayofa",
+      "costaSilencio": "Costa del Silencio",
+      "camella": "La Camella",
+      "galletas": "Las Galletas",
+      "cristianos": "Los Cristianos",
+      "palMar": "Palm-Mar",
+      "parqueReina": "Parque de la Reina",
+      "valleSanLorenzo": "Valle San Lorenzo",
+      "granadilla": "Granadilla de Abona",
+      "sanIsidro": "San Isidro",
+      "losAbrigos": "Los Abrigos",
+      "laTejita": "La Tejita",
+      "elMedano": "El Medano",
+      "guiaIsora": "Guia de Isora",
+      "alcala": "Alcala",
+      "playaSanJuan": "Playa San Juan",
+      "norte": "Norte",
+      "sanCristobalLaguna": "San Cristobal de la Laguna",
+      "santaCruz": "Santa Cruz de Tenerife",
+      "puertoCruz": "Puerto de la Cruz",
+      "sanMiguel": "San Miguel de Abona",
+      "aldeaBlanca": "Aldea Blanca",
+      "amarillaGolf": "Amarilla Golf",
+      "elRoque": "El Roque",
+      "golfSur": "Golf del Sur",
+      "guargacho": "Guargacho",
+      "chafiras": "Las Chafiras",
+      "zocas": "Las Zocas",
+      "llanoCamello": "Llano del Camello",
+      "santiago": "Santiago del Teide",
+      "gigantes": "Acantilados de Los Gigantes",
+      "arguayo": "Arguayo",
+      "puertoSantiago": "Puerto de Santiago"
+    },
+    "sort_by": {
+      "creation_date_desc": "Letzten",
+      "price_desc": "höchsten Preis",
+      "price_asc": "niedrigsten Preis"
+    },
+    "bedrooms": {
+      "all": "alle",
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "10": "mehr als 7"
+    },
+    "bathrooms": {
+      "all": "alle",
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "10": "mehr als 7"
+    },
+    "tags": {
+      "all": "alle",
+      "elevator": "Aufzug",
+      "garage": "Garage",
+      "garden": "Garten",
+      "outdoor": "außen",
+      "rooftop_terrace": "Dachterrasse",
+      "sea_views": "Ozeanblick",
+      "storage_room": "Lagerraum",
+      "swimming_pool": "Schwimmbad",
+      "terrace": "Terrasse"
+    }
+  },
+
+  "buyers": {
+    "title": "UNDERSTANDING THE BUYING PROCESS",
+    "description": "• Ein Termin mit unserem Immobilienmakler zur Besprechung Ihrer Anliegen und Wünsche unterstützt unseren Makler dabei, die passende Immobilie für Sie zu finden. Dabei können wir Ihre Präferenzen wie ein Ferienhaus, eine normale Wohnung, ein Anlageobjekt, ein renovierungsbedürftiges Haus oder ein Neubau berücksichtigen. Ebenso können wir Ihre Vorlieben hinsichtlich der Lage wie eine bestimmte Gegend, ein Touristengebiet, ein Dorf oder eine etwas abgelegenere Lage beachten.<br /><br />    • Wenn Sie für den Immobilienkauf eine Hypothek benötigen, ist es empfehlenswert, sich vor der Immobiliensuche beraten zu lassen. So wissen Sie ungefähr, wie viel die Bank Ihnen finanzieren kann.<br /><br />    Die Höhe des Darlehens variiert je nach Bank und hängt vor allem von Ihrem steuerlichen Wohnsitz ab. Wenn Sie in Spanien wohnen, können Sie eine Hypothek von bis zu 80 % erhalten. Wenn Sie nicht steuerlich ansässig sind, können Sie bis zu 50-60 % erhalten.<br /><br />    •Wenn Sie eine Immobilie in Spanien kaufen, müssen Sie eine NIE-Nummer beantragen, die als Identifikationsnummer für Ausländer dient. Dies wird normalerweise bei der nationalen Polizeidienststelle beantragt.<br /><br />    • Es wird empfohlen, vor dem Kauf einer Immobilie ein spanisches Bankkonto zu eröffnen, damit Sie Geld für den Kauf überweisen und nach dem Kauf Rechnungen und andere Fixkosten bezahlen können. Für die Kontoeröffnung benötigen Sie Ihren Reisepass oder Personalausweis sowie weitere Dokumente. Die genauen Anforderungen können von Bank zu Bank unterschiedlich sein. Bei Bedarf können wir eine Bank finden, die Ihre Sprache spricht.<br /><br />    • Sobald Sie sich für die Immobilie entschieden haben, die Sie kaufen möchten, schließen Sie in der Regel einen Vorvertrag ab, in dem die Zahlung einer Kaution (in der Regel 10 % des Verkaufspreises) und die Dauer bis zur Kaufurkunde festgelegt wird. Der Zeitpunkt für einen Verkauf kann variieren und nur wenige Tage oder sogar mehrere Wochen dauern.<br /><br />    Der Kauf der Immobilie tritt in Kraft, sobald die Kaufurkunde erstellt wird. Die Unterzeichnung des Kaufvertrags erfolgt vor einem Notar, der die Transaktion begleitet.<br /><br />    Selbstverständlich muss die Immobilie am Tag der Unterzeichnung der Kaufurkunde völlig schulden-, miet- und bewohnungsfrei sein.<br /><br />     Ihr Immobilienmakler und/oder Rechtsberater (und ggf. ein Übersetzer) werden bei der Unterzeichnung anwesend sein, um Sie zu unterstützen und sicherzustellen, dass alle erforderlichen Dokumente übergeben und geprüft wurden.<br /><br />    Die Nebenkosten zusätzlich zum Kaufpreis der Immobilie variieren zwischen 7 % und 10 % des Verkaufspreises.<br /><br />    Die Steuer für den Kauf einer gebrauchten Immobilie beträgt 6,5 % (ITP),  für den Kauf einer neu gebauten Immobilie - 7 %.<br /><br />    • Neben der Kaufpreissteuer sind auch Notargebühren, Gebühren für die Grundbucheintragung und etwaige weitere Verwaltungskosten zu berücksichtigen.<br /><br />    •Wir hoffen, dass unsere Ratschläge Ihnen helfen können. Wenn Sie weitere Informationen wünschen oder Hilfe und Beratung beim Verkauf Ihrer Immobilie benötigen, zögern Sie nicht, uns zu kontaktieren."
+  },
+
+  "sellers": {
+    "title": "UNDERSTANDING THE SELLING PROCESS",
+    "description": "Der Verkauf Ihres Hauses ist ein aufregender und spannender Moment. Um die besten Ergebnisse mit möglichst geringem Stress zu erzielen, möchten wir Ihnen umfassende Informationen über den Verkaufsprozess bereitstellen. Im Folgenden beschreiben wir einige wichtige Punkte des Immobilienverkaufsprozesses:<br /><br />• eine korrekte Bewertung basierend auf dem aktuellen durchschnittlichen Marktpreis, den Eigenschaften der Immobilie und den Statistiken über offizielle Verkaufspreise in einem bestimmten Gebiet.<br /><br />•Online-Präsenz über professionelle Webseiten sowie nationale und internationale Immobilienportale.<br /><br />•Eine gute Marketingstrategie, einschließlich professioneller Fotos und einer eleganten und detaillierten Beschreibung der Immobilie und ihrer Umgebung.<br /><br />• Der Verkauf einer Immobilie ist mit bestimmten Kosten verbunden, wie z.B. dem Energieausweis, der gemäß einem 2013 eingeführten Gesetz für den Verkauf oder die Vermietung einer Immobilie erforderlich ist. Falls Sie keinen gültigen Energieausweis haben oder dieser abgelaufen ist (gültig für 10 Jahre), müssen Sie einen neuen erstellen lassen, was je nach Größe Ihrer Immobilie ab 100 € kosten kann. Ihr Makler kann Ihnen bei der Beschaffung behilflich sein.<br /><br />• Eine lokale Steuer, genannt Plusvalía Municipal (Bodenwertsteigerungssteuer), die an die Gemeinde zu zahlen ist. Es besteht die Möglichkeit, eine Simulation des Betrags der Plusvalía Municipal anzufordern.<br /><br />• Wenn Sie nicht in Spanien steuerlich ansässig sind, wird ein Betrag von 3 % des Verkaufspreises der Immobilie einbehalten. Dieser Betrag wird am Tag der Kaufurkunde von den Käufern einbehalten und muss an das Finanzamt abgeführt werden. Später können Sie eine teilweise oder vollständige Rückerstattung des einbehaltenen Betrags beantragen, abhängig von den eventuellen Steuern beim Verkauf der Immobilie.<br /><br />•Welche Dokumente benötigen Sie?<br /><br />Erforderlich sind der Ausweis und die NIE-Nummer des/der Eigentümer(s), die \"nota simple\" der Immobilie, eine aktuelle Bescheinigung vom Wohnungseigentumsverwalter, dass Sie keine ausstehenden Schulden gegenüber der Gemeinde haben, sowie der Nachweis über die Zahlung des IBI (Grundsteuer) für das laufende Jahr.<br /><br />Falls Sie eine Hypothek auf die Immobilie haben, müssen Sie eine Bescheinigung über den Restbetrag der Schulden von der Bank anfordern. Es wäre auch hilfreich, Kopien der aktuellen Rechnungen für Wasser, Strom und andere kommunale Steuern anzufertigen.<br /><br />•Wie wird vorgegangen, wenn Käufer und Verkäufer sich über den Verkaufspreis der Immobilie einigen?<br /><br />Im Falle einer wirtschaftlichen Einigung über den Verkaufspreis der Immobilie zwischen Käufer und Verkäufer wird normalerweise ein Vorvertrag unterzeichnet, und die Dauer bis zur Kaufurkunde wird festgelegt. Der Zeitpunkt für einen Verkauf kann variieren und dauert in der Regel nur wenige Tage oder sogar mehrere Wochen.<br /><br />• Der Kauf der Immobilie tritt in Kraft, sobald die Kaufurkunde erstellt wird. Die Unterzeichnung erfolgt vor einem Notar, der die Transaktion begleitet.<br /><br />Selbstverständlich muss die Immobilie am Tag der Unterzeichnung der Kaufurkunde völlig schulden-, miet- und bewohnungsfrei sein.<br /><br />Ihr Immobilienmakler und/oder Rechtsberater (und ggf. ein Übersetzer) werden bei der Unterzeichnung anwesend sein, um Sie zu unterstützen und sicherzustellen, dass alle erforderlichen Dokumente übergeben und überprüft wurden.<br /><br />Wir hoffen, dass unsere Tipps helfen. Wenn Sie weitere Informationen wünschen oder Hilfe und Beratung beim Verkauf Ihrer Immobilie benötigen, zögern Sie nicht, uns zu kontaktieren."
+  }
+}

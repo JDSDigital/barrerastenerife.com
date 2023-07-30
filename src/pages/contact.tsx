@@ -32,6 +32,17 @@ const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
 
       <ContactBanner />
 
+      <Container className="about-section about-section--text-shadow text-center">
+        <Typography
+          variant="h4"
+          color="primary"
+          className="about-section--text-shadow"
+          gutterBottom
+        >
+          {t("contact.description.title")}
+        </Typography>
+      </Container>
+
       <Container>
         <Grid
           container
@@ -40,33 +51,11 @@ const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
           className="about-section"
         >
           <Grid item xs={12} sm={5} data-aos="fade-right">
-            <Typography
-              variant="h4"
-              color="primary"
-              className="about-section--text-shadow"
-              gutterBottom
-            >
-              Inmobiliaria Barreras
+            <Typography gutterBottom>
+              {t("contact.description.subtitle")}
             </Typography>
             <Typography gutterBottom>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              luctus orci at nunc lacinia, condimentum molestie lectus
-              hendrerit. Praesent fringilla massa a semper aliquam.
-            </Typography>
-            <Typography gutterBottom>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              luctus orci at nunc lacinia, condimentum molestie lectus
-              hendrerit. Praesent fringilla massa a semper aliquam.
-            </Typography>
-            <Typography gutterBottom>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              luctus orci at nunc lacinia, condimentum molestie lectus
-              hendrerit. Praesent fringilla massa a semper aliquam.
-            </Typography>
-            <Typography gutterBottom>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              luctus orci at nunc lacinia, condimentum molestie lectus
-              hendrerit. Praesent fringilla massa a semper aliquam.
+              {t("contact.description.body")}
             </Typography>
           </Grid>
           <Grid item xs={12} sm={4} data-aos="fade-left">

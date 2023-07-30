@@ -8,6 +8,7 @@ import React from "react";
 import SEO from "components/SEO";
 import TeamSection from "components/about/TeamSection";
 import { useTranslation } from "hooks/useTranslation";
+import { Trans } from "gatsby-plugin-react-i18next";
 
 //TODO: Get image type
 type AboutPageProps = {
@@ -24,17 +25,6 @@ const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
 
       <AboutBanner />
 
-      <Container className="about-section about-section--text-shadow">
-        <Typography
-          variant="h4"
-          color="primary"
-          gutterBottom
-          data-aos="fade-up"
-        >
-          {t("about.p1")}
-        </Typography>
-      </Container>
-
       <Container>
         <Grid
           container
@@ -50,7 +40,7 @@ const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
             />
           </Grid>
           <Grid item xs={12} sm={5} data-aos="fade-left">
-            <Typography gutterBottom>{t("about.p2")}</Typography>
+            <Typography gutterBottom>{t("about.description")}</Typography>
           </Grid>
         </Grid>
       </Container>

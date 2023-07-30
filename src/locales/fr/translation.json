@@ -1,0 +1,320 @@
+{
+  "home": "Home",
+  "search": "Search",
+  "property": "Property",
+
+  "expertRepresentation": {
+    "title": "Expert Representation"
+  },
+
+  "thinkingOfBuying": {
+    "buying": {
+      "title": "Thinking of buying?",
+      "subtitle": "Understanding the buying process"
+    },
+    "selling": {
+      "title": "Thinking of selling?",
+      "subtitle": "Understanding the selling process"
+    },
+    "details": "Details"
+  },
+
+  "workWithUs": {
+    "title": "WORK WITH US",
+
+    "experience": {
+      "title": "20+ YEARS",
+      "subtitle": "Combined Industry Experience - Put Our Expertise to Work for You"
+    },
+    "knowledge": {
+      "title": "MARKET KNOWLEDGE",
+      "subtitle": "Extensive Market Knowledge is the Key to Our Success"
+    },
+    "guidance": {
+      "title": "EXPERT GUIDANCE",
+      "subtitle": "We Make Even the Most Complicated Transactions Run Smoothly"
+    },
+
+    "button": "GET IN TOUCH"
+  },
+
+  "info": {
+    "buyers": {
+      "title": "BUYER SERVICES",
+      "subtitle1": "World-Class Service",
+      "subtitle2": "Unrivaled Market Knowledge",
+      "description1": "Providing real estate services in Tenerife.",
+      "description2": "Helping buyers negotiate the perfect deal."
+    },
+    "sellers": {
+      "title": "SELLER SERVICES",
+      "subtitle1": "World-Class Service",
+      "subtitle2": "Unrivaled Market Knowledge",
+      "description1": "Providing real estate services in Tenerife.",
+      "description2": "Helping sellers market and sell their home for top dollar."
+    }
+  },
+
+  "header": {
+    "link": {
+      "buy": "Buy",
+      "rent": "Rent",
+      "about": "About Us",
+      "contact": "Contact",
+      "invest": "Invest",
+      "local": "Shop",
+      "promotion": "New development",
+      "luxury": "Luxury properties",
+      "properties": "Properties",
+      "info": "Info",
+      "forBuyers": "For buyers",
+      "forSellers": "For sellers"
+    }
+  },
+
+  "folders": {
+    "buy": {
+      "title": "Buy",
+      "description": "Second hand properties"
+    },
+    "rent": {
+      "title": "Rent",
+      "description": "Properties for rent"
+    },
+    "invest": {
+      "title": "Invest",
+      "description": "Ideas for investment"
+    },
+    "local": {
+      "title": "Shop",
+      "description": "Commercial premises"
+    },
+    "promotion": {
+      "title": "New Promotion",
+      "description": "New property developments"
+    },
+    "services": {
+      "title": "Services",
+      "description": "Our services"
+    },
+    "more": "View More"
+  },
+
+  "partnerships": "Partnerships",
+
+  "testimonials": {
+    "title": "Customer Testimonials",
+    "subtitle": "What our customers say about us.",
+
+    "t1": "Muy buena atención y profesionalidad por parte de Marina. Nos ha guiado y nos ha ayudado en todo el proceso de compraventa de la vivienda. Ahora somos propietarios y aún estamos en contacto. Recomendados 100%.",
+    "t2": "I used their services for the purchase of a property (main residence) in Tenerife and I couldn't be happier with how smoothly everything went throughout the whole process. Irina was very friendly understanding and most importantly never pushy! Communication eas fantastic in both Spanish and English. With Irina's help and advice, what is usually a very stressful process became very easy and straightforward. I would highly recommend this agency for anyone looking to buy/sell/rent a property in Tenerife.",
+    "t3": "Muy buena atención por parte de Inmobiliaria Barreras. Gian, es un excelente profesional, siempre dispuesto a ayudarte en todo momento y con un trato cercano y efectivo. Gracias a él alquilé mi piso rápidamente. Sin duda, volveré a repetir en el futuro."
+  },
+
+  "footer": {
+    "recent": "Recent Properties",
+    "contact": "Contact",
+    "copyright": "All rights reserved",
+    "offices": "Our office"
+  },
+
+  "properties": {
+    "title": "Properties",
+    "featured": "Featured Properties",
+    "recent": "Recent properties",
+    "sell": "Properties for sale",
+    "rent": "Properties for rent",
+    "related": "Related properties",
+    "share": "Share",
+
+    "info": "Basic information",
+    "description": "Description",
+
+    "previous": "Previous",
+    "next": "Next",
+
+    "area": "Area",
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "tags": "Tags",
+    "from": "From",
+
+    "search": {
+      "show": "Advanced Search",
+      "hide": "Hide Advanced Search"
+    }
+  },
+
+  "about": {
+    "title": "Inmobiliaria Barreras",
+    "description": "Barreras Tenerife S.L. a été fondée par Pablo Barreras González à Tenerife en 2000. Aujourd'hui, ses successeurs, avec une expérience vaste et positive dans le domaine du conseil et des négociations immobilières, continuent de fournir des services avec honnêteté, confiance, empathie et professionnalisme. Notre équipe soigneusement sélectionnée est unie par le désir de prendre soin de chaque client à toutes les étapes du processus d'achat ou de vente, d'être à l'écoute des demandes et des préoccupations des clients, de prêter attention au moindre détail. Nous pensons que chaque transaction immobilière peut être l'une des décisions les pluses importantes que nos clients aient prises, c'est pourquoi nous prenons soin de tous les détails pour garantir son succès.",
+
+    "banner": {
+      "p1": "À PROPOS DE NOUS",
+      "p2": "Inmobiliaria Barreras"
+    },
+
+    "team": "RENCONTREZ NOTRE ÉQUIPE DE PROFESSIONNELS",
+    "agent": "Agent"
+  },
+
+  "contact": {
+    "description": {
+      "title": "Bienvenue à Inmobiliaria Barreras Tenerife, votre agence immobilière doté d'une grand expérience professionnelle.",
+      "subtitle": "Nous avons créé notre agence pour vous, afin de vous fournir le service d'excellence, d'honnêteté et de confiance que vous souhaitez trouver à Tenerife.",
+      "body": "Fondée par Pablo Barreras González en 2000 à Tenerife, l'île la plus grande et la plus peuplée des îles Canaries et aujourd'hui détenue par ses successeurs avec une riche expérience dans le domaine du conseil et des opérations immobilières, Barreras Tenerife S.L. Il est toujours prêt à obtenir des résultats optimaux avec la garantie maximale, offrant un traitement personnalisé adapté à chacun de nos clients, y compris une stratégie marketing innovante et l'intégrité et le professionnalisme dans tous les efforts."
+    },
+
+    "title": "Contact us",
+    "subtitle": "At your service.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send",
+      "sent": "Sent"
+    }
+  },
+
+  "constants": {
+    "fields": {
+      "type": "Type",
+      "contract": "Operation",
+      "zone": "Zone",
+      "sort_by": "Sort by",
+      "bedrooms": "Bedrooms",
+      "bathrooms": "Bathrooms",
+      "tags": "Tags",
+      "identifier": "Reference ID",
+      "price": "Price"
+    },
+    "types": {
+      "all": "All",
+      "flat": "Flat",
+      "chalet": "House / Chalet",
+      "country_house": "Country House",
+      "bungalow": "Bungalow",
+      "room": "Hotel",
+      "parking": "Parking",
+      "shop": "Shop",
+      "industrial": "Industrial Ship",
+      "office": "Office",
+      "land": "Land",
+      "storage": "Storage",
+      "building": "Building"
+    },
+    "contract": {
+      "all": "All",
+      "rent": "Rent",
+      "sell": "Sale"
+    },
+    "zones": {
+      "all": "All",
+      "adeje": "Adeje",
+      "armenime": "Armeñime",
+      "callao": "Callao Salvaje",
+      "costaAdeje": "Costa Adeje",
+      "duque": "El Duque",
+      "caldera": "La Caldera",
+      "caleta": "La Caleta",
+      "madronal": "Madroñal",
+      "playaAmericas": "Playa de Las Americas",
+      "playaParaiso": "Playa Paraiso",
+      "roqueConde": "Roque del Conde",
+      "sanEugenioAlto": "San Eugenio Alto",
+      "sanEugenioBajo": "San Eugenio Bajo",
+      "tijoco": "Tijoco",
+      "torviscasAlto": "Torviscas Alto",
+      "torviscasBajo": "Torviscas Bajo",
+      "arona": "Arona",
+      "buzanada": "Buzanada",
+      "caboBlanco": "Cabo Blanco",
+      "chayofa": "Chayofa",
+      "costaSilencio": "Costa del Silencio",
+      "camella": "La Camella",
+      "galletas": "Las Galletas",
+      "cristianos": "Los Cristianos",
+      "palMar": "Palm-Mar",
+      "parqueReina": "Parque de la Reina",
+      "valleSanLorenzo": "Valle San Lorenzo",
+      "granadilla": "Granadilla de Abona",
+      "sanIsidro": "San Isidro",
+      "losAbrigos": "Los Abrigos",
+      "laTejita": "La Tejita",
+      "elMedano": "El Medano",
+      "guiaIsora": "Guia de Isora",
+      "alcala": "Alcala",
+      "playaSanJuan": "Playa San Juan",
+      "norte": "Norte",
+      "sanCristobalLaguna": "San Cristobal de la Laguna",
+      "santaCruz": "Santa Cruz de Tenerife",
+      "puertoCruz": "Puerto de la Cruz",
+      "sanMiguel": "San Miguel de Abona",
+      "aldeaBlanca": "Aldea Blanca",
+      "amarillaGolf": "Amarilla Golf",
+      "elRoque": "El Roque",
+      "golfSur": "Golf del Sur",
+      "guargacho": "Guargacho",
+      "chafiras": "Las Chafiras",
+      "zocas": "Las Zocas",
+      "llanoCamello": "Llano del Camello",
+      "santiago": "Santiago del Teide",
+      "gigantes": "Acantilados de Los Gigantes",
+      "arguayo": "Arguayo",
+      "puertoSantiago": "Puerto de Santiago"
+    },
+    "sort_by": {
+      "creation_date_desc": "Recent",
+      "price_desc": "Highest price",
+      "price_asc": "Lowest price"
+    },
+    "bedrooms": {
+      "all": "All",
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "10": "More than 7"
+    },
+    "bathrooms": {
+      "all": "All",
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "10": "More than 7"
+    },
+    "tags": {
+      "all": "All",
+      "elevator": "Elevator",
+      "garage": "Garage",
+      "garden": "Garden",
+      "outdoor": "Outdoor",
+      "rooftop_terrace": "Rooftop terrace",
+      "sea_views": "Ocean views",
+      "storage_room": "Storage room",
+      "swimming_pool": "Swimimng pool",
+      "terrace": "Terrace"
+    }
+  },
+
+  "buyers": {
+    "title": "UNDERSTANDING THE BUYING PROCESS",
+    "description": "• Un rendez-vous avec notre Conseiller immobilier pour exprimer vos besoins, et notre mission sera de vous trouver le bien qui vous convient : Maison de vacances, appartement ordinaire, immeuble, maison à rénover ou nouvelle construction, en copropriété ou indépendante, dans un quartier précis, en zone touristique, au village ou plus isolé.<br /><br />    • Si vous avez besoin d'un prêt hypothécaire pour acheter la propriété, il serait idéal d'obtenir des conseils avant de chercher une propriété. De cette façon, vous saurez approximativement combien la banque peut vous financer.<br /><br />     Le montant du prêt variera selon les banques et dépendra surtout de votre lieu de résidence. Si vous résidez en Espagne, vous pouvez obtenir une hypothèque jusqu'à 80 %, si vous n'êtes pas résident, vous pouvez obtenir jusqu'à 50/60 %.<br /><br />    • Lors de l'achat d'une propriété en Espagne, vous devez demander un numéro NIE qui est un numéro d'identification pour les étrangers. Ceci est normalement demandé au commissariat de la police nationale.<br /><br />    • Il est conseillé d'ouvrir un compte bancaire espagnol avant d'acheter une propriété afin de pouvoir transférer de l'argent pour effectuer l'achat et pouvoir ensuite payer les factures et autres dépenses fixes après l'achat. Pour ouvrir un compte, vous aurez besoin de votre passeport ou de votre carte d'identité et d'autres documents vous seront demandés. Les exigences exactes peuvent varier d'une banque à l'autre. En cas de besoin, nous pouvons trouver une banque qui parle votre langue.<br /><br />    • une fois que vous avez choisi le bien que vous souhaitez acheter, vous procédez généralement à un avant-contrat dans lequel le versement d'un acompte pénitentiel est exigé qui est généralement de 10% du prix de vente et il est établi combien de temps il faudra pour aller à l'acte. Le moment d'une vente peut varier, cela peut prendre quelques jours ou même plusieurs semaines.<br /><br />    La livraison du bien aura lieu au moment de l'acte authentique. La signature a lieu devant un notaire qui assistera la transaction.<br /><br />    Naturellement, le bien doit être totalement libre de dettes, locataires et occupants au jour de la signature de l'acte.<br /><br />     Votre Conseiller immobilier et/ou conseiller juridique (et traducteur si nécessaire) sera présent lors de la signature pour vous assister et s'assurer que tous les documents nécessaires ont été remis et vérifiés.<br /><br />    Les surcoûts qui s'ajoutent au prix d'achat du bien varient entre 7% et 10% du prix de vente.<br /><br />     la taxe pour l'achat d'un bien d'occasion est de 6,5% (ITP), alors qu'elle est de 7% pour l'achat d'un bien neuf.<br /><br />    • Outre la taxe sur le prix d'achat, il faut également tenir compte des frais de notaire, des droits d'enregistrement de la propriété et de tout autre frais de gestion.<br /><br />    •Nous espérons que nos conseils pourront vous aider. Si vous souhaitez plus d'informations ou souhaitez obtenir de l'aide et des conseils sur la vente de votre propriété, n'hésitez pas à nous contacter."
+  },
+
+  "sellers": {
+    "title": "UNDERSTANDING THE SELLING PROCESS",
+    "description": "Vendre sa maison est un moment excitant et stimulant. Une information plus complète sur le processus de vente vous apportera les meilleurs résultats avec le moins de stress possible. Nous décrivons ici quelques points importants du processus de vente immobilière.<br /><br />• une évaluation correcte basée sur le prix moyen actuel du marché, les caractéristiques de la propriété et les statistiques sur les prix de vente officiels dans une zone spécifique.<br /><br />•Présence en ligne à travers le web professionnel et les portails immobiliers nationaux et internationaux.<br /><br />Une bonne stratégie marketing.<br /><br />Photos professionnelles, description élégante et détaillée de la propriété et de la zone dans laquelle elle se trouve.<br /><br />• vendre un bien immobilier implique aussi des frais :<br /><br />Une loi introduite en 2013, qui établit que pour vendre ou louer une propriété, il est nécessaire d'avoir un certificat d'efficacité énergétique valide. Si vous n'en avez pas ou qu'il est périmé (valable 10 ans) vous devrez en faire produire pour un coût à partir de 100€ selon la taille de votre bien. Votre Conseiller Immobilier pourra vous aider à l'obtenir.<br /><br />Une taxe locale à payer à la municipalité appelée Plus Valía Municipal (taxe d'augmentation de la valeur foncière). Il est possible de demander une simulation du montant de la Plusvalía Municipal.<br /><br />Si vous n'êtes pas résident fiscal en Espagne, 3% du prix de vente du bien seront retenus. Celle-ci est retenue au jour de l'acte par les acquéreurs qui sont tenus de la verser à l'administration fiscale et de fournir une preuve de paiement. Vous pouvez alors demander ultérieurement un remboursement partiel ou total de la somme retenue dans l'acte. Le remboursement dépendra des éventuelles taxes sur la vente du bien.<br /><br />•De quels documents avez-vous besoin ?<br /><br />La pièce d'identité et le NIE du ou des propriétaires, la \"nota simple\" du bien,<br /><br />une attestation à jour signée par l'administrateur de la copropriété attestant que vous n'avez pas de dettes impayées avec la communauté,<br /><br />preuve de paiement de l'IBI pour l'année en cours (paiement dû par la loi au vendeur),<br /><br />s'il avait une hypothèque sur la propriété, un certificat devrait être demandé à la Banque attestant le montant résiduel de la dette.<br /><br />Il serait également utile de préparer des copies des factures récentes d'eau, d'électricité et d'autres taxes municipales.<br /><br />•Comment procéder en cas d'accord économique sur le prix de vente du bien entre l'acheteur et le vendeur ?<br /><br />Normalement, un contrat préliminaire est signé et le temps nécessaire pour passer à l'acte est établi. Le moment d'une vente peut varier, cela peut prendre quelques jours ou même plusieurs semaines.<br /><br />La livraison du bien aux acquéreurs aura lieu au moment de l'acte notarié. La signature a lieu devant un notaire qui assistera la transaction.<br /><br />La propriété devra bien sûr être totalement libre de dettes, locataires, occupants au jour de la signature de l'acte.<br /><br />Votre Conseiller Immobilier et/ou conseiller juridique (et traducteur si nécessaire) sera présent lors de la signature pour vous assister et s'assurer que tous les documents nécessaires ont été remis et vérifiés.<br /><br />Nous serions très heureux de vous accompagner dans la réussite de vos projets si cela vous agrée"
+  }
+}
