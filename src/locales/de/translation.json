@@ -1,7 +1,7 @@
 {
-  "home": "Home",
-  "search": "Search",
-  "property": "Property",
+  "home": "Startseite",
+  "search": "Suche",
+  "property": "Immobilie",
 
   "expertRepresentation": {
     "title": "Expert Representation"
@@ -16,7 +16,7 @@
       "title": "Thinking of selling?",
       "subtitle": "Understanding the selling process"
     },
-    "details": "Details"
+    "details": "Weitere Details"
   },
 
   "workWithUs": {
@@ -57,18 +57,18 @@
 
   "header": {
     "link": {
-      "buy": "Buy",
-      "rent": "Rent",
-      "about": "About Us",
-      "contact": "Contact",
-      "invest": "Invest",
-      "local": "Shop",
-      "promotion": "New development",
-      "luxury": "Luxury properties",
-      "properties": "Properties",
-      "info": "Info",
-      "forBuyers": "For buyers",
-      "forSellers": "For sellers"
+      "buy": "Kauf",
+      "rent": "Miete",
+      "about": "über uns",
+      "contact": "Kontakt",
+      "invest": "Investition",
+      "local": "Gewerberäume",
+      "promotion": "Neubau",
+      "luxury": "Luxus-Immobilien",
+      "properties": "Immobilie",
+      "info": "Information",
+      "forBuyers": "für Käufer",
+      "forSellers": "ür Verkäufer"
     }
   },
 
@@ -97,7 +97,7 @@
       "title": "Services",
       "description": "Our services"
     },
-    "more": "View More"
+    "more": "weitere Informationen"
   },
 
   "partnerships": "Partnerships",
@@ -112,35 +112,35 @@
   },
 
   "footer": {
-    "recent": "Recent Properties",
-    "contact": "Contact",
-    "copyright": "All rights reserved",
-    "offices": "Our office"
+    "recent": "neuesten Immobilien",
+    "contact": "Kontakt",
+    "copyright": "alle Rechte vorbehalten",
+    "offices": "unser Büro"
   },
 
   "properties": {
-    "title": "Properties",
+    "title": "Immobilie",
     "featured": "Featured Properties",
-    "recent": "Recent properties",
-    "sell": "Properties for sale",
-    "rent": "Properties for rent",
-    "related": "Related properties",
-    "share": "Share",
+    "recent": "neuesten Immobilien",
+    "sell": "Immobilien zum Verkauf",
+    "rent": "Immobilien zur Vermietung",
+    "related": "verwandte Eigenschaften",
+    "share": "weitergeben",
 
-    "info": "Basic information",
-    "description": "Description",
+    "info": "Basisinformation",
+    "description": "Beschreibung",
 
-    "previous": "Previous",
-    "next": "Next",
+    "previous": "vorherigen",
+    "next": "folgende",
 
-    "area": "Area",
-    "bedrooms": "Bedrooms",
-    "bathrooms": "Bathrooms",
-    "tags": "Tags",
-    "from": "From",
+    "area": "Gebiet",
+    "bedrooms": "Zimmer",
+    "bathrooms": "Badezimmer",
+    "tags": "Etiketten",
+    "from": "Ab",
 
     "search": {
-      "show": "Advanced Search",
+      "show": "erweiterte Suche",
       "hide": "Hide Advanced Search"
     }
   },
@@ -161,60 +161,60 @@
 
   "contact": {
     "description": {
-      "title": "Welcome to Barreras Tenerife S.L., your Trusted Real Estate Agency.",
-      "subtitle": "We have created our agency for you, to provide you with the service of Excellence, Honesty and Trust that you want to find in Tenerife.",
-      "body": "Founded by Pablo Barreras González in the year 2000 in Tenerife (the largest and most populated island of the Canary archipelago) and today owned by his successors with a rich track record in the field of real estate consulting and operations, Barreras Tenerife S.L guarantees optimal results while offering personalized treatment tailored to each of our clients. We provide an innovative marketing strategy and exhibit integrity and professionalism in all our work."
+      "title": "Herzlich willkommen bei Inmobiliaria Barreras Teneriffa, Ihrer vertrauenswürdigen Immobilienagentur.",
+      "subtitle": "Wir haben diese Agentur gegründet, um Ihnen den erstklassigen Service, Ehrlichkeit und Vertrauen zu bieten, nach dem Sie auf Teneriffa suchen.",
+      "body": "Barreras Teneriffa S.L. wurde im Jahr 2000 von Pablo Barreras González auf Teneriffa, der größten und bevölkerungsreichsten Insel der Kanarischen Inseln, gegründet. Heute befindet sich das Unternehmen im Besitz seiner Nachfolger und kann auf eine erfolgreiche Geschichte in der Immobilienberatung und -vermittlung zurückblicken.  Wir streben immer nach optimalen Ergebnissen mit maximaler Gewährleistung und bieten jedem unserer Kunden eine individuell zugeschnittene, personalisierte Betreuung. Dabei setzen wir auf innovative Marketingstrategien sowie Integrität und Professionalität in all unseren Bemühungen."
     },
 
-    "title": "Contact us",
+    "title": "kontaktieren Sie uns",
     "subtitle": "At your service.",
-    "address": "Address",
-    "phone": "Phone",
-    "email": "Email",
+    "address": "Adresse",
+    "phone": "Telefonnummer",
+    "email": "E-Mail",
 
     "form": {
       "name": "Name",
-      "email": "Email",
-      "message": "Message",
-      "send": "Send",
-      "sent": "Sent"
+      "email": "E-Mail",
+      "message": "Meldung",
+      "send": "senden",
+      "sent": "geschickt"
     }
   },
 
   "constants": {
     "fields": {
-      "type": "Type",
+      "type": "Art",
       "contract": "Operation",
       "zone": "Zone",
-      "sort_by": "Sort by",
-      "bedrooms": "Bedrooms",
-      "bathrooms": "Bathrooms",
-      "tags": "Tags",
-      "identifier": "Reference ID",
-      "price": "Price"
+      "sort_by": "Sortieren nach",
+      "bedrooms": "Zimmer",
+      "bathrooms": "Badezimmer",
+      "tags": "Etiketten",
+      "identifier": "Referenz-ID",
+      "price": "Preis"
     },
     "types": {
-      "all": "All",
+      "all": "Wohnung",
       "flat": "Flat",
-      "chalet": "House / Chalet",
-      "country_house": "Country House",
+      "chalet": "Hause/Villa",
+      "country_house": "Landhaus",
       "bungalow": "Bungalow",
       "room": "Hotel",
-      "parking": "Parking",
-      "shop": "Shop",
-      "industrial": "Industrial Ship",
-      "office": "Office",
-      "land": "Land",
-      "storage": "Storage",
-      "building": "Building"
+      "parking": "Garage",
+      "shop": "Gewerberäume",
+      "industrial": "Lagerhalle",
+      "office": "Büro",
+      "land": "Grundstück",
+      "storage": "Lagerraum",
+      "building": "Gebäude"
     },
     "contract": {
-      "all": "All",
-      "rent": "Rent",
-      "sell": "Sale"
+      "all": "alle",
+      "rent": "Miete",
+      "sell": "Kauf"
     },
     "zones": {
-      "all": "All",
+      "all": "alle ",
       "adeje": "Adeje",
       "armenime": "Armeñime",
       "callao": "Callao Salvaje",
@@ -269,12 +269,12 @@
       "puertoSantiago": "Puerto de Santiago"
     },
     "sort_by": {
-      "creation_date_desc": "Recent",
-      "price_desc": "Highest price",
-      "price_asc": "Lowest price"
+      "creation_date_desc": "Letzten",
+      "price_desc": "höchsten Preis",
+      "price_asc": "niedrigsten Preis"
     },
     "bedrooms": {
-      "all": "All",
+      "all": "alle",
       "1": "1",
       "2": "2",
       "3": "3",
@@ -282,10 +282,10 @@
       "5": "5",
       "6": "6",
       "7": "7",
-      "10": "More than 7"
+      "10": "mehr als 7"
     },
     "bathrooms": {
-      "all": "All",
+      "all": "alle",
       "1": "1",
       "2": "2",
       "3": "3",
@@ -293,19 +293,19 @@
       "5": "5",
       "6": "6",
       "7": "7",
-      "10": "More than 7"
+      "10": "mehr als 7"
     },
     "tags": {
-      "all": "All",
-      "elevator": "Elevator",
+      "all": "alle",
+      "elevator": "Aufzug",
       "garage": "Garage",
-      "garden": "Garden",
-      "outdoor": "Outdoor",
-      "rooftop_terrace": "Rooftop terrace",
-      "sea_views": "Ocean views",
-      "storage_room": "Storage room",
-      "swimming_pool": "Swimimng pool",
-      "terrace": "Terrace"
+      "garden": "Garten",
+      "outdoor": "außen",
+      "rooftop_terrace": "Dachterrasse",
+      "sea_views": "Ozeanblick",
+      "storage_room": "Lagerraum",
+      "swimming_pool": "Schwimmbad",
+      "terrace": "Terrasse"
     }
   },
 

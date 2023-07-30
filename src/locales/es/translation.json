@@ -160,6 +160,12 @@
   },
 
   "contact": {
+    "description": {
+      "title": "Bienvenidos a Inmobiliaria Barreras Tenerife, su Agencia Inmobiliaria de Confianza.",
+      "subtitle": "Hemos creado nuestra agencia para usted, para prestarle el servicio de Excelencia, Honestidad y Confianza que desea encontrar en Tenerife.",
+      "body": "Fundada por Pablo Barreras González en el año 2000 en Tenerife, la isla más grande y poblada del archipiélago canario y hoy propiedad de sus sucesores con una rica trayectoria en el campo de consultoría y operaciones inmobiliarias, Barreras Tenerife S.L. Siempre está dispuesta para lograr con la máxima garantía los resultados óptimos, ofreciendo un trato personalizado a la medida de cada uno de nuestros clientes incluyendo estrategia de márketing innovadora e integridad y profesionalidad en todas las gestiones."
+    },
+
     "title": "Contáctanos",
     "subtitle": "A su disposición.",
     "address": "Dirección",
