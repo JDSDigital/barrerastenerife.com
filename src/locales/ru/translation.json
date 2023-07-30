@@ -147,15 +147,14 @@
 
   "about": {
     "title": "Агентство  недвижимости Barreras",
-    "p1": "Founded by Pablo Barreras in 2000 in Tenerife, the largest and most populous island of the Canary archipelago and owned today by his successors with a rich background in the field of real estate consulting and negotiations, Barreras Tenerife S.L. is always on the watch for your best interest in each step of your journey offering white-glove bespoke treatment, innovative marketing strategies, integrity and overall professionalism.",
-    "p2": "Barreras Tenerife S.L. was founded by Pablo Barreras in Tenerife in 2000. Today Pablo’s successors with a rich background in the field of real estate consulting and negotiations own the company conducting the services with honesty, trustworthiness, empathy and professionalism. Our carefully selected team is united by a wish to look after each customer walking through all stages of a sale or a purchase process, to be receptive to the clients’ requests and concerns, to look out for key details. We believe that every single property transaction might be one of the most important decision our customers have ever made and we care of all the details to ensure its safety and legality.",
+    "description": "Агентство недвижимости «Barreras Tenerife»  основано в 2000 году Пабло Баррерас  Гонзалес, профессионалом высокого класса. Уже в течении многих лет, мы- его преемники, обладая богатым опытом в сфере консалтинга и операций с недвижимостью, следуем вектору, заданном основателем и оказываем  профессиональные, высококвалифицированные услуги в сфере недвижимости. В нашей работе мы опираемся на инновационные маркетинговые стратегии. Цель нашего агентства - достижение оптимальных результатов посредством индивидуального подхода к запросу каждого клиента. Нашу, тщательно подобранную, команду объединяет стремление сопроводить каждого клиента на всех этапах процесса покупки или продажи, прислушиваясь к запросам и переживаниям клиента, и, уделяя внимание даже мельчайшим деталям. Мы верим, что каждая сделка с недвижимостью - это одно из самых важных и ответственных решений для любого человека, поэтому наши услуги, основанные на доверии, честности и профессионализме обеспечат Вам безопасность процесса и гарантию успеха.",
 
     "banner": {
-      "p1": "About",
+      "p1": "О нас",
       "p2": "Inmobiliaria Barreras"
     },
 
-    "team": "Meet our experts",
+    "team": "ПОЗНАКОМЬТЕСЬ С НАШЕЙ КОМАНДОЙ СПЕЦИАЛИСТОВ",
     "agent": "Агент"
   },
 

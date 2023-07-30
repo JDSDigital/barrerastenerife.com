@@ -147,15 +147,14 @@
 
   "about": {
     "title": "Inmobiliaria Barreras",
-    "p1": "Founded by Pablo Barreras in 2000 in Tenerife, the largest and most populous island of the Canary archipelago and owned today by his successors with a rich background in the field of real estate consulting and negotiations, Barreras Tenerife S.L. is always on the watch for your best interest in each step of your journey offering white-glove bespoke treatment, innovative marketing strategies, integrity and overall professionalism.",
-    "p2": "Barreras Tenerife S.L. was founded by Pablo Barreras in Tenerife in 2000. Today Pablo’s successors with a rich background in the field of real estate consulting and negotiations own the company conducting the services with honesty, trustworthiness, empathy and professionalism. Our carefully selected team is united by a wish to look after each customer walking through all stages of a sale or a purchase process, to be receptive to the clients’ requests and concerns, to look out for key details. We believe that every single property transaction might be one of the most important decision our customers have ever made and we care of all the details to ensure its safety and legality.",
+    "description": "Barreras Tenerife S.L. została założona przez Pablo Barrerasa Gonzáleza na Teneryfie w 2000 roku. Dziś jego następcy, posiadający bogate doświadczenie w zakresie doradztwa i negocjacji w branży nieruchomości, kontynuują jego dzieło świadcząc swoje usługi z uczciwością, zaufaniem, empatią i profesjonalizmem. Nasz starannie dobrany zespół dba o każdego klienta na wszystkich etapach procesu kupna lub sprzedaży, reaguje na prośby i wątpliwości klientów, zwraca uwagę na najdrobniejsze  szczegóły. Wierzymy, że każda transakcja dotycząca nieruchomości może być jedną z najważniejszych decyzji, jakie podjęli nasi klienci, dlatego dbamy o każdy szczegół, aby zagwarantować jej powodzenie.",
 
     "banner": {
-      "p1": "About",
+      "p1": "O NAS POLSKI",
       "p2": "Inmobiliaria Barreras"
     },
 
-    "team": "Meet our experts",
+    "team": "POZNAJ NASZ ZESPÓŁ PROFESJONALISTÓW",
     "agent": "Agent"
   },
 
