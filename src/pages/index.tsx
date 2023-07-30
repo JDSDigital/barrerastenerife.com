@@ -35,10 +35,6 @@ const IndexPage: React.FC<PageProps<IndexPageProps>> = ({ data }) => {
       <ThinkingOfBuying />
 
       <WorkWithUs />
-
-      <PropertyFoldersSection />
-
-      <Testimonials />
     </Layout>
   );
 };

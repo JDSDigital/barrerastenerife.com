@@ -9,12 +9,12 @@ import { useTranslation } from "hooks/useTranslation";
 export const ThinkingOfBuying = () => {
   const data = useStaticQuery(graphql`
     query {
-      buying: file(relativePath: { eq: "home/4.jpg" }) {
+      buying: file(relativePath: { eq: "buyers/3.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      selling: file(relativePath: { eq: "home/5.jpg" }) {
+      selling: file(relativePath: { eq: "sellers/3.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
@@ -112,7 +112,8 @@ const ImageContainer = styled(Grid)({
 
 const Overlay = styled("div")({
   "position": "absolute",
-  "backgroundColor": "rgba(29, 177, 184, 0.4)",
+  "backgroundColor": "rgba(0, 0, 0, 0.3)",
+  // "backgroundColor": "rgba(29, 177, 184, 0.4)",
   "width": "100%",
   "height": "100%",
   "top": 0,
