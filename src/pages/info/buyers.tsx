@@ -28,7 +28,7 @@ const BuyersPage: React.FC<PageProps<BuyersPageProps>> = ({ data }) => {
 
         <InfoContainer>
           <Grid container>
-            <Grid item xs={12} data-aos="fade-up">
+            <Grid item xs={12}>
               <div className="text-center">
                 <Typography
                   variant="h3"

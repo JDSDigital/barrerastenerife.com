@@ -134,7 +134,8 @@ const Overlay = styled("div")({
   },
 
   "&:hover": {
-    backgroundColor: "rgba(29, 177, 184, 0.7)",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    // backgroundColor: "rgba(29, 177, 184, 0.7)",
     gap: "24px",
   },
 });
