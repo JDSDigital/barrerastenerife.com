@@ -11,7 +11,7 @@ export const ExpertRepresentation = () => {
     query {
       image: file(relativePath: { eq: "home/3.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
         }
       }
     }

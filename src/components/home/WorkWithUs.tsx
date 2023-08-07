@@ -79,7 +79,8 @@ const ParallaxContainer = styled(ParallaxBanner)({
 const RootContainer = styled(ParallaxBanner)({
   minHeight: "100vh",
   width: "100%",
-  backgroundColor: "rgba(29, 177, 184, 0.4)",
+  backgroundColor: "rgba(0, 0, 0, 0.3)",
+  // backgroundColor: "rgba(29, 177, 184, 0.4)",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",

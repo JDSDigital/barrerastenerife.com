@@ -50,7 +50,7 @@ const MainSlider: React.FC = () => {
       }
       logo: file(relativePath: { eq: "logo/logo-vertical-full.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: CONSTRAINED)
         }
       }
     }
