@@ -28,15 +28,15 @@ export const ThinkingOfBuying = () => {
   const sellingImage = getImage(data.selling)!;
 
   return (
-    <RootContainer container>
+    <Grid container className="thinking-of-buying-container">
       <Grid item xs={12} md={6} data-aos="fade-right">
-        <ImageContainer>
+        <Grid className="thinking-image-container">
           <GatsbyImage
             image={buyingImage}
             alt="Thinking of buying image"
             className="crop-center"
           />
-          <Overlay>
+          <div className="thinking-image-overlay">
             <div>
               <Typography
                 component="p"
@@ -60,17 +60,17 @@ export const ThinkingOfBuying = () => {
                 {t("thinkingOfBuying.details")}
               </Link>
             </div>
-          </Overlay>
-        </ImageContainer>
+          </div>
+        </Grid>
       </Grid>
       <Grid item xs={12} md={6} data-aos="fade-left">
-        <ImageContainer>
+        <Grid className="thinking-image-container">
           <GatsbyImage
             image={sellingImage}
             alt="Thinking of selling image"
             className="crop-center"
           />
-          <Overlay>
+          <div className="thinking-image-overlay">
             <div>
               <Typography
                 component="p"
@@ -94,48 +94,9 @@ export const ThinkingOfBuying = () => {
                 {t("thinkingOfBuying.details")}
               </Link>
             </div>
-          </Overlay>
-        </ImageContainer>
+          </div>
+        </Grid>
       </Grid>
-    </RootContainer>
+    </Grid>
   );
 };
-
-const RootContainer = styled(Grid)({
-  marginTop: "48px",
-});
-
-const ImageContainer = styled(Grid)({
-  position: "relative",
-  height: "calc(100vh - 90px)",
-});
-
-const Overlay = styled("div")({
-  "position": "absolute",
-  "backgroundColor": "rgba(0, 0, 0, 0.3)",
-  // "backgroundColor": "rgba(29, 177, 184, 0.4)",
-  "width": "100%",
-  "height": "100%",
-  "top": 0,
-  "left": 0,
-  "display": "flex",
-  "flexDirection": "column",
-  "alignItems": "center",
-  "justifyContent": "center",
-  "gap": "56px",
-  "transition": "all 0.3s ease",
-
-  "& p": {
-    textShadow: "1px 1px 3px rgba(0,0,0,0.8)",
-  },
-
-  "& p:not(:first-child)": {
-    fontWeight: "bold",
-  },
-
-  "&:hover": {
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
-    // backgroundColor: "rgba(29, 177, 184, 0.7)",
-    gap: "24px",
-  },
-});

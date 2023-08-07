@@ -42,7 +42,7 @@ const Header: React.FC<Props> = ({ siteTitle = "", ...rest }) => {
     query {
       logo: file(relativePath: { eq: "logo/logo-navbar.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 45)
+          gatsbyImageData(layout: CONSTRAINED, height: 45)
         }
       }
       es: file(relativePath: { eq: "flags/sp.jpg" }) {
@@ -125,7 +125,7 @@ const Header: React.FC<Props> = ({ siteTitle = "", ...rest }) => {
         <Container className="mt-3 mb-3">
           <Toolbar disableGutters>
             <Link to="/" className="logo-link" aria-label="go to home">
-              {logo && <GatsbyImage image={logo} alt={siteTitle} />}
+              <GatsbyImage image={logo!} alt={siteTitle} />
             </Link>
 
             <NavBar linkList={linkList} images={images} params={params} />

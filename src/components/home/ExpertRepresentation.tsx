@@ -1,17 +1,17 @@
-import { Button, Container, Grid, Typography, styled } from "@material-ui/core";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { Container, Grid, Typography } from "@material-ui/core";
 import { graphql, useStaticQuery } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import { Link } from "gatsby-plugin-react-i18next";
-import React from "react";
 import { useTranslation } from "hooks/useTranslation";
+import React from "react";
 
 export const ExpertRepresentation = () => {
   const data = useStaticQuery(graphql`
     query {
       image: file(relativePath: { eq: "home/3.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
         }
       }
     }
@@ -70,15 +70,11 @@ export const ExpertRepresentation = () => {
           </div>
         </Grid>
         <Grid item xs={12} sm={6} data-aos="fade-left" data-aos-delay="400">
-          <ImageContainer>
+          <div className="expert-image-container">
             <GatsbyImage image={image} alt="" className="expert-image" />
-          </ImageContainer>
+          </div>
         </Grid>
       </Grid>
     </Container>
   );
 };
-
-const ImageContainer = styled("div")({
-  height: "600px",
-});
