@@ -18,16 +18,6 @@ const MainSlider: React.FC = () => {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      image2: file(relativePath: { eq: "home/2.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-      image3: file(relativePath: { eq: "home/3.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
-        }
-      }
       image4: file(relativePath: { eq: "home/4.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED)
@@ -43,12 +33,12 @@ const MainSlider: React.FC = () => {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      image7: file(relativePath: { eq: "home/7.jpg" }) {
+      team: file(relativePath: { eq: "about/team.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      logo: file(relativePath: { eq: "logo/logo-vertical-full.png" }) {
+      logo: file(relativePath: { eq: "logo/logo-vertical-full-text.png" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED)
         }
@@ -58,12 +48,10 @@ const MainSlider: React.FC = () => {
 
   const queryImages = [
     data.image1,
-    data.image2,
-    data.image3,
     data.image4,
     data.image5,
     data.image6,
-    data.image7,
+    data.team,
   ];
 
   const parsedImages = queryImages.map(image => getImage(image));
@@ -118,6 +106,8 @@ const MainSlider: React.FC = () => {
     const interval = setInterval(async () => {
       setIndex(oldIndex => {
         const newIndex = oldIndex === images.length - 1 ? 0 : oldIndex + 1;
+
+        console.log({ newIndex });
 
         setLayers(oldLayers => [
           {
