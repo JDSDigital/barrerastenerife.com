@@ -145,14 +145,16 @@ const Detail = ({ identifier }: DetailProps) => {
           </Grid>
 
           <Grid item xs={12}>
-            <Typography variant="h4" className="mb-3">
+            <Typography variant="h4" className="text-poppins-bold mb-3">
               {property.street}, {getPropertyZone()}
             </Typography>
             <WhatsAppButton variant="contained" onClick={onShareClick}>
               <WhatsAppIcon />
               {t("properties.share")}
             </WhatsAppButton>
-            <Typography variant="body1">{getDescription()}</Typography>
+            <Typography variant="body1" className="text-poppins">
+              {getDescription()}
+            </Typography>
           </Grid>
 
           {property.tags.length > 0 && (
@@ -172,7 +174,9 @@ const Detail = ({ identifier }: DetailProps) => {
           </Grid>
           <Grid item xs={12} md={6}>
             <Card>
-              <CardHeader title={t("contact.title")} />
+              <Typography variant="h4" className="text-poppins-bold  m-4">
+                {t("contact.title")}
+              </Typography>
               <CardContent>
                 <Form fullWidth id={property.identifier} />
               </CardContent>
@@ -183,11 +187,7 @@ const Detail = ({ identifier }: DetailProps) => {
 
       {property.related && property.related.length > 0 && (
         <>
-          <Typography
-            variant="h5"
-            component="p"
-            className="mt-5 mb-5 text-center"
-          >
+          <Typography variant="h3" component="p" className="section-title">
             {t("properties.related")}
           </Typography>
 
