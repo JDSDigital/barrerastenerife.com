@@ -199,11 +199,9 @@ const TeamSection = () => {
       spacing={2}
     >
       <Grid item xs={12} data-aos="fade-up">
-        <Container>
-          <Typography variant="h4" component="p" className="section-title">
-            {t("about.team")}
-          </Typography>
-        </Container>
+        <Typography variant="h4" component="p" className="section-title">
+          {t("about.team")}
+        </Typography>
       </Grid>
 
       <Grid item xs={12} className="team-grid">
