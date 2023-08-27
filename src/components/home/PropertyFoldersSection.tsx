@@ -66,22 +66,7 @@ export const PropertyFoldersSection = () => {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      invest: file(relativePath: { eq: "services/invest.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-      local: file(relativePath: { eq: "services/local.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
       promotion: file(relativePath: { eq: "properties/promotion.jpeg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-      services: file(relativePath: { eq: "properties/services.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }

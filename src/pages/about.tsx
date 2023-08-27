@@ -13,7 +13,6 @@ import { Trans } from "gatsby-plugin-react-i18next";
 //TODO: Get image type
 type AboutPageProps = {
   team: any;
-  languages: any;
 };
 
 const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
@@ -63,11 +62,6 @@ export const query = graphql`
       }
     }
     team: file(relativePath: { eq: "about/team.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
-      }
-    }
-    languages: file(relativePath: { eq: "languages.jpeg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }
