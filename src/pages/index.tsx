@@ -25,7 +25,7 @@ const IndexPage: React.FC<PageProps<IndexPageProps>> = ({ data }) => {
 
       <MainSlider />
 
-      <p className="text-display" data-aos="fade-in">
+      <p className="text-blastyes" data-aos="fade-in">
         {t("welcome")}
       </p>
 

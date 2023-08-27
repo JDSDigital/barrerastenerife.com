@@ -103,11 +103,29 @@
 .top-offset {
   top: 125px;
 }
-.text-display {
+.text-blastyes {
   font-family: "Blastyes";
   font-size: 4rem;
   margin: 3em 0;
   text-align: center;
+}
+.text-playfair {
+  font-family: "Playfair Display";
+}
+.text-lato {
+  font-family: "Lato Regular";
+}
+.text-lato-light {
+  font-family: "Lato Light";
+}
+.text-lato-bold {
+  font-family: "Lato Bold";
+}
+.text-poppins {
+  font-family: "Poppins Regular";
+}
+.text-poppins-bold {
+  font-family: "Poppins Bold";
 }
 .mr-3 {
   margin-right: 0.3em !important;
