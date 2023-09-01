@@ -103,6 +103,30 @@
 .top-offset {
   top: 125px;
 }
+.text-blastyes {
+  font-family: "Blastyes" !important;
+  font-size: 4rem;
+  margin: 3em 0;
+  text-align: center;
+}
+.text-playfair {
+  font-family: "Playfair Display" !important;
+}
+.text-lato {
+  font-family: "Lato Regular" !important;
+}
+.text-lato-light {
+  font-family: "Lato Light" !important;
+}
+.text-lato-bold {
+  font-family: "Lato Bold" !important;
+}
+.text-poppins {
+  font-family: "Poppins Regular" !important;
+}
+.text-poppins-bold {
+  font-family: "Poppins SemiBold" !important;
+}
 .mr-3 {
   margin-right: 0.3em !important;
 }
@@ -162,6 +186,9 @@
 }
 .color-white {
   color: white !important;
+}
+.color-grey {
+  color: $color-dark-gray-1 !important;
 }
 .reverse-xs {
   @media (max-width: 960px) {

@@ -107,8 +107,6 @@ const MainSlider: React.FC = () => {
       setIndex(oldIndex => {
         const newIndex = oldIndex === images.length - 1 ? 0 : oldIndex + 1;
 
-        console.log({ newIndex });
-
         setLayers(oldLayers => [
           {
             image: images[newIndex],

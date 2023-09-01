@@ -11,14 +11,12 @@ import { Trans } from "gatsby-plugin-react-i18next";
 
 type BuyersPageProps = {
   banner: any; // TODO: Get image type
-  home: any;
 };
 
 const BuyersPage: React.FC<PageProps<BuyersPageProps>> = ({ data }) => {
   const { t } = useTranslation();
 
   const bannerImage = getImage(data.banner)!;
-  const homeImage = getImage(data.home)!;
 
   return (
     <Layout>
@@ -26,25 +24,12 @@ const BuyersPage: React.FC<PageProps<BuyersPageProps>> = ({ data }) => {
       <div className="info">
         <Banner image={bannerImage} type="buyers" />
 
+        <Typography variant="h3" component="p" className="section-title">
+          {t("buyers.title")}
+        </Typography>
+
         <InfoContainer>
           <Grid container>
-            <Grid item xs={12}>
-              <div className="text-center">
-                <Typography
-                  variant="h3"
-                  component="p"
-                  className="section-title"
-                >
-                  {t("buyers.title")}
-                </Typography>
-              </div>
-            </Grid>
-            {/* <Grid container spacing={10}>
-              <Grid item xs={12} md={6} data-aos="fade-up">
-                <GatsbyImage image={homeImage} alt="" />
-              </Grid>
-            </Grid> */}
-
             <Grid item xs={12}>
               <Typography component="p">
                 <Trans i18nKey={"buyers.description"} />
@@ -58,7 +43,6 @@ const BuyersPage: React.FC<PageProps<BuyersPageProps>> = ({ data }) => {
 };
 
 const InfoContainer = styled(Container)({
-  marginTop: "56px",
   marginBottom: "56px",
 });
 
@@ -75,11 +59,6 @@ export const query = graphql`
       }
     }
     banner: file(relativePath: { eq: "buyers/1.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
-      }
-    }
-    home: file(relativePath: { eq: "buyers/2.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }

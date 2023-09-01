@@ -2,9 +2,11 @@
   "home": "Home",
   "search": "Search",
   "property": "Property",
+  "welcome": "Welcome to the island of eternal spring",
 
   "expertRepresentation": {
-    "title": "Expert Representation"
+    "title": "Expert Representation",
+    "description": "Witamy w Inmobiliaria Barreras Tenerife, agencji nieruchomości, której możesz zaufać.<br /><br />Naszą agencję na Teneryfie stworzyliśmy dla Ciebie, a świadczone przez nas usługi cechują Perfekcja, Uczciwość i Zaufanie.<br /><br />Założona przez Pablo Barrerasa Gonzáleza w 2000 roku na Teneryfie, największej i najgęściej zaludnionej wyspie archipelagu Wysp Kanaryjskich, a obecnie należąca do jego następców z bogatym doświadczeniem w dziedzinie doradztwa i negocjacji w zakresie nieruchomości,  Agencja Barreras Tenerife S.L. osiąga najlepsze rezultaty z najwyższą gwarancją, oferując indywidualne podejście dostosowane do każdego z naszych klientów, w tym innowacyjną strategię marketingową oraz rzetelność i profesjonalizm we wszystkich działaniach."
   },
 
   "thinkingOfBuying": {

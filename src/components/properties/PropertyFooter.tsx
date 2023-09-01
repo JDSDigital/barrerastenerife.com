@@ -21,7 +21,7 @@ const PropertyFooter: React.FC<Props> = ({
 }) => {
   const { t } = useTranslation();
   return (
-    <CardActions classes={{ root: "property-card-actions" }}>
+    <CardActions className="mt-5">
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6} md={3}>
           <FooterItem title={status.toLocaleUpperCase()} value={price} />

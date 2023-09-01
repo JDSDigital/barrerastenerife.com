@@ -1,8 +1,6 @@
-import { Grid, Tooltip, Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 
-import { OverridableComponent } from "@material-ui/core/OverridableComponent";
 import React from "react";
-import { SvgIconTypeMap } from "@material-ui/core/SvgIcon/SvgIcon";
 
 interface FooterItemProps {
   title: string;
@@ -13,12 +11,16 @@ const FooterItem: React.FC<FooterItemProps> = ({ title, value }) => {
   return (
     <Grid container justifyContent="center" spacing={2}>
       <Grid item xs={12}>
-        <Typography align="center" variant="h3">
+        <Typography align="center" variant="h5" className="text-poppins-bold">
           {value}
         </Typography>
       </Grid>
       <Grid item xs={12}>
-        <Typography align="center" variant="body1">
+        <Typography
+          align="center"
+          variant="body1"
+          className="text-poppins color-grey"
+        >
           {title}
         </Typography>
       </Grid>

@@ -12,13 +12,21 @@ interface Props {
 const PropertyDescription: React.FC<Props> = ({ price, title, address }) => {
   return (
     <CardContent classes={{ root: "property-card-content" }}>
-      <Typography variant="h4" component="p" className="color-white">
+      <Typography
+        variant="body2"
+        component="p"
+        className="color-white text-lato-light text-uppercase"
+      >
         {title}
       </Typography>
-      <Typography variant="body1" component="p" className="color-white">
+      <Typography
+        variant="h6"
+        component="p"
+        className="color-white text-lato-light text-uppercase"
+      >
         {address}
       </Typography>
-      <Typography variant="h3" component="p" className="color-white">
+      <Typography variant="h4" component="p" className="color-white text-lato">
         {formatPrice(price)}
       </Typography>
     </CardContent>
