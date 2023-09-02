@@ -14,7 +14,7 @@ const AboutBanner = () => {
     query {
       banner: file(relativePath: { eq: "about/1.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: CONSTRAINED)
         }
       }
     }

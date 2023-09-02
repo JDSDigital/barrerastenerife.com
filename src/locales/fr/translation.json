@@ -67,6 +67,7 @@
       "local": "Shop",
       "promotion": "New development",
       "luxury": "Luxury properties",
+      "investment": "Investment Projects",
       "properties": "Properties",
       "info": "Info",
       "forBuyers": "For buyers",
@@ -149,7 +150,7 @@
 
   "about": {
     "title": "Inmobiliaria Barreras",
-    "description": "Barreras Tenerife S.L. a été fondée par Pablo Barreras González à Tenerife en 2000. Aujourd'hui, ses successeurs, avec une expérience vaste et positive dans le domaine du conseil et des négociations immobilières, continuent de fournir des services avec honnêteté, confiance, empathie et professionnalisme. Notre équipe soigneusement sélectionnée est unie par le désir de prendre soin de chaque client à toutes les étapes du processus d'achat ou de vente, d'être à l'écoute des demandes et des préoccupations des clients, de prêter attention au moindre détail. Nous pensons que chaque transaction immobilière peut être l'une des décisions les pluses importantes que nos clients aient prises, c'est pourquoi nous prenons soin de tous les détails pour garantir son succès.",
+    "description": "<strong>BARRERAS TENERIFE S.L.</strong> a été fondée par PABLO BARRERAS GONZÁLEZ à Tenerife en <strong>2000</strong>. Aujourd'hui, ses successeurs, avec une expérience vaste et positive dans le domaine du conseil et des négociations immobilières, continuent de fournir des services avec <strong>HONNÊTETÉ, CONFIANCE, EMPATHIE ET PROFESSIONNALISME</strong>.<br /><br />Notre équipe soigneusement sélectionnée est unie par le désir de prendre soin de chaque client à toutes les étapes du processus d'achat ou de vente, d'être à l'écoute des demandes et des préoccupations des clients, de prêter attention au moindre détail.<br /><br />Nous pensons que chaque transaction immobilière peut être l'une des décisions les pluses importantes que nos clients aient prises, c'est pourquoi nous prenons soin de tous les détails pour garantir son succès.",
 
     "banner": {
       "p1": "À PROPOS DE NOUS",
@@ -163,8 +164,7 @@
   "contact": {
     "description": {
       "title": "Bienvenue à Inmobiliaria Barreras Tenerife, votre agence immobilière doté d'une grand expérience professionnelle.",
-      "subtitle": "Nous avons créé notre agence pour vous, afin de vous fournir le service d'excellence, d'honnêteté et de confiance que vous souhaitez trouver à Tenerife.",
-      "body": "Fondée par Pablo Barreras González en 2000 à Tenerife, l'île la plus grande et la plus peuplée des îles Canaries et aujourd'hui détenue par ses successeurs avec une riche expérience dans le domaine du conseil et des opérations immobilières, Barreras Tenerife S.L. Il est toujours prêt à obtenir des résultats optimaux avec la garantie maximale, offrant un traitement personnalisé adapté à chacun de nos clients, y compris une stratégie marketing innovante et l'intégrité et le professionnalisme dans tous les efforts."
+      "body": "NOS CONSEILLERS sont à votre disposition pour vous administrer dans la vente ou la location de votre bien, ainsi pour vous guider dans toutes transactions immobilières.<br /><br />NOUS SERONS HEUREUX DE POUVOIR VOUS GUIDER.<br /><br />Nos meilleures salutations Barreras Real Estate"
     },
 
     "title": "Contact us",

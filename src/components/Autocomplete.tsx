@@ -11,8 +11,9 @@ import { Popper, PopperAnchor, PopperContent } from "@radix-ui/react-popper";
 import React, { useRef } from "react";
 
 import CloseIcon from "@material-ui/icons/Close";
-import { useCombobox } from "downshift";
+import SearchIcon from "@material-ui/icons/Search";
 import { useId } from "@radix-ui/react-id";
+import { useCombobox } from "downshift";
 import { useTranslation } from "hooks/useTranslation";
 
 export type AutocompleteProps<T> = Omit<
@@ -29,6 +30,7 @@ export type AutocompleteProps<T> = Omit<
   loading?: boolean;
   defaultValue?: T;
   noMatchesText?: string;
+  onSubmit?: () => void;
 };
 
 export function Autocomplete<T>({
@@ -44,6 +46,7 @@ export function Autocomplete<T>({
   optionFormatter,
   itemToValue = selectedItem => selectedItem as unknown as string,
   itemToLabel = selectedItem => selectedItem as unknown as string,
+  onSubmit,
   ...rest
 }: AutocompleteProps<T>) {
   const { t } = useTranslation();
@@ -69,6 +72,7 @@ export function Autocomplete<T>({
     onSelectedItemChange: ({ inputValue, selectedItem }) => {
       onChange(inputValue!, selectedItem);
       onItemSelected?.(selectedItem);
+      onSubmit?.();
     },
     onInputValueChange: ({ inputValue }) => {
       onChange(inputValue!);
@@ -105,10 +109,19 @@ export function Autocomplete<T>({
                   openMenu();
                 }
               },
+              onKeyDown: event => {
+                if (event.key === "Enter") {
+                  onSubmit?.();
+                }
+              },
             })}
             {...rest}
             InputProps={{
-              endAdornment: (
+              endAdornment: onSubmit ? (
+                <IconButton onClick={onSubmit}>
+                  <SearchIcon />
+                </IconButton>
+              ) : (
                 <IconButton onClick={resetInput}>
                   <CloseIcon />
                 </IconButton>

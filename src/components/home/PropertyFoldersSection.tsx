@@ -58,17 +58,17 @@ export const PropertyFoldersSection = () => {
     query {
       buy: file(relativePath: { eq: "services/buy.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: CONSTRAINED)
         }
       }
       rent: file(relativePath: { eq: "services/rent.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: CONSTRAINED)
         }
       }
       promotion: file(relativePath: { eq: "properties/promotion.jpeg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: CONSTRAINED)
         }
       }
     }

@@ -32,14 +32,16 @@ const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
           className="about-section"
         >
           <Grid item xs={12} sm={5} data-aos="fade-right">
+            <Typography gutterBottom>
+              <Trans i18nKey="about.description" />
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={6} data-aos="fade-left">
             <GatsbyImage
               image={getImage(data.team)!}
               alt="Barreras founder"
               className="img-responsive about-image"
             />
-          </Grid>
-          <Grid item xs={12} sm={5} data-aos="fade-left">
-            <Typography gutterBottom>{t("about.description")}</Typography>
           </Grid>
         </Grid>
       </Container>
@@ -61,9 +63,9 @@ export const query = graphql`
         }
       }
     }
-    team: file(relativePath: { eq: "about/team.jpg" }) {
+    team: file(relativePath: { eq: "home/6.jpg" }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
   }

@@ -12,7 +12,7 @@ const Testimonials = () => {
     query {
       background: file(relativePath: { eq: "home/7.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: CONSTRAINED)
         }
       }
     }

@@ -1,19 +1,19 @@
 import { Container, Grid, Typography } from "@material-ui/core";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { PageProps, graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import Block from "components/contact/Block";
-import ContactBanner from "components/contact/ContactBanner";
 import EmailIcon from "@material-ui/icons/Email";
-import Form from "components/contact/Form";
-import Img from "gatsby-image";
-import Layout from "components/layout";
-import MapView from "components/maps/MapView";
 import PhoneIcon from "@material-ui/icons/Phone";
-import React from "react";
 import RoomIcon from "@material-ui/icons/Room";
 import SEO from "components/SEO";
+import Block from "components/contact/Block";
+import ContactBanner from "components/contact/ContactBanner";
+import Form from "components/contact/Form";
+import Layout from "components/layout";
+import MapView from "components/maps/MapView";
+import { Trans } from "gatsby-plugin-react-i18next";
 import { useTranslation } from "hooks/useTranslation";
+import React from "react";
 
 type ContactPageProps = {
   team: any; // TODO: Get image type
@@ -37,6 +37,7 @@ const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
           variant="h4"
           color="primary"
           className="about-section--text-shadow"
+          align="center"
           gutterBottom
         >
           {t("contact.description.title")}
@@ -52,13 +53,10 @@ const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
         >
           <Grid item xs={12} sm={5} data-aos="fade-right">
             <Typography gutterBottom>
-              {t("contact.description.subtitle")}
-            </Typography>
-            <Typography gutterBottom>
-              {t("contact.description.body")}
+              <Trans i18nKey="contact.description.body" />
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={4} data-aos="fade-left">
+          <Grid item xs={12} sm={6} data-aos="fade-left">
             {teamImage && (
               <GatsbyImage
                 image={teamImage}
@@ -126,14 +124,14 @@ export const query = graphql`
         }
       }
     }
-    team: file(relativePath: { eq: "contact/2.jpg" }) {
+    team: file(relativePath: { eq: "home/6.jpg" }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
     ocean: file(relativePath: { eq: "contact/3.jpg" }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
   }

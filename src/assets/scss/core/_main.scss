@@ -188,8 +188,9 @@ body {
 
         .main-slider-logo {
           width: 100%;
-          max-width: 500px;
-          margin-bottom: 3rem;
+          max-width: 600px;
+          margin-top: 10vh;
+          margin-bottom: 5vh;
         }
       }
     }
@@ -308,6 +309,7 @@ body {
     }
 
     .expert-representation {
+      text-align: justify;
       .button-container {
         display: flex;
         flex-direction: column;
@@ -371,6 +373,7 @@ body {
         transition: all 0.3s ease;
 
         & p {
+          font-family: "Poppins Regular";
           text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
         }
 
@@ -606,6 +609,7 @@ body {
 }
 
 .about-section {
+  text-align: justify;
   margin-top: 8em;
   margin-bottom: 8em;
 
@@ -634,6 +638,10 @@ body {
     display: flex;
     flex: 1;
     border-radius: 0;
+    margin-bottom: 36px;
+  }
+  .team-card:not(:last-child) {
+    margin-right: 36px;
   }
 
   .team-image {
@@ -641,7 +649,7 @@ body {
     width: 100%;
 
     @include md {
-      height: 700px;
+      height: 500px;
     }
   }
 
@@ -918,7 +926,7 @@ body {
 
 .about-container {
   position: relative;
-  height: 100vh;
+  height: 80vh;
 
   .about-overlay {
     z-index: 1;
@@ -936,6 +944,7 @@ body {
   }
 
   .about-text {
+    padding-top: 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -949,10 +958,10 @@ body {
   .banner-title {
     font-family: "Playfair Display";
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3rem;
 
     @include sm {
-      font-size: 6rem;
+      font-size: 5rem;
     }
   }
 }

@@ -86,7 +86,6 @@ const RootContainer = styled(ParallaxBanner)({
   alignItems: "center",
   justifyContent: "center",
   color: "white",
-  padding: "48px 24px",
   textAlign: "center",
 });
 
@@ -96,6 +95,7 @@ const Content = styled(Container)({
   "alignItems": "center",
   "justifyContent": "center",
   "gap": "48px",
+  "padding": "48px 24px",
 
   "& p": {
     textShadow: "1px 1px 3px rgba(0,0,0,0.8)",
