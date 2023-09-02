@@ -32,17 +32,16 @@ const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
 
       <ContactBanner />
 
-      <Container className="about-section about-section--text-shadow text-center">
+      {/* <Container className="text-center">
         <Typography
           variant="h4"
-          color="primary"
-          className="about-section--text-shadow"
+          className="text-blastyes"
           align="center"
           gutterBottom
         >
-          {t("contact.description.title")}
+          {t("welcome")}
         </Typography>
-      </Container>
+      </Container> */}
 
       <Container>
         <Grid
@@ -51,12 +50,12 @@ const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
           justifyContent="space-around"
           className="about-section"
         >
-          <Grid item xs={12} sm={5} data-aos="fade-right">
+          <Grid item xs={12} sm={4} data-aos="fade-right">
             <Typography gutterBottom>
               <Trans i18nKey="contact.description.body" />
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={6} data-aos="fade-left">
+          <Grid item xs={12} sm={7} data-aos="fade-left">
             {teamImage && (
               <GatsbyImage
                 image={teamImage}

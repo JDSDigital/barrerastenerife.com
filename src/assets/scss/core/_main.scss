@@ -373,7 +373,6 @@ body {
         transition: all 0.3s ease;
 
         & p {
-          font-family: "Poppins Regular";
           text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
         }
 
@@ -926,7 +925,7 @@ body {
 
 .about-container {
   position: relative;
-  height: 80vh;
+  height: 100vh;
 
   .about-overlay {
     z-index: 1;
@@ -956,12 +955,10 @@ body {
   }
 
   .banner-title {
-    font-family: "Playfair Display";
-    text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 4rem;
 
     @include sm {
-      font-size: 5rem;
+      font-size: 6rem;
     }
   }
 }

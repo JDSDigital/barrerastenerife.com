@@ -63,7 +63,7 @@ export const query = graphql`
         }
       }
     }
-    team: file(relativePath: { eq: "home/6.jpg" }) {
+    team: file(relativePath: { eq: "home/3.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED)
       }

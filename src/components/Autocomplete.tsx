@@ -1,7 +1,7 @@
 import * as Portal from "@radix-ui/react-portal";
 
 import {
-  IconButton,
+  Button,
   TextField,
   TextFieldProps,
   Typography,
@@ -118,13 +118,13 @@ export function Autocomplete<T>({
             {...rest}
             InputProps={{
               endAdornment: onSubmit ? (
-                <IconButton onClick={onSubmit}>
+                <Button onClick={onSubmit}>
                   <SearchIcon />
-                </IconButton>
+                </Button>
               ) : (
-                <IconButton onClick={resetInput}>
+                <Button onClick={resetInput}>
                   <CloseIcon />
-                </IconButton>
+                </Button>
               ),
             }}
           />

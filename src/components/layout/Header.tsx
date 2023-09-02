@@ -84,6 +84,7 @@ const Header: React.FC<Props> = ({ siteTitle = "", ...rest }) => {
   `);
 
   const linkList = [
+    { to: "/", text: t("home") },
     {
       to: "/properties/buy",
       text: t("header.link.buy"),

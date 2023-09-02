@@ -46,6 +46,11 @@ const TeamSection = () => {
           gatsbyImageData(layout: CONSTRAINED)
         }
       }
+      ekaterina: file(relativePath: { eq: "about/ekaterina.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED)
+        }
+      }
       es: file(relativePath: { eq: "flags/sp.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED)
@@ -87,13 +92,15 @@ const TeamSection = () => {
   const Team = ({
     image,
     name,
+    position,
     phone,
     languages,
     animationDelay = "0",
   }: {
     image: IGatsbyImageData;
     name: string;
-    phone: string;
+    position: string;
+    phone?: string;
     languages: string[];
     animationDelay?: string;
   }) => {
@@ -117,9 +124,16 @@ const TeamSection = () => {
           <Typography className="team-name" variant="h4">
             {name}
           </Typography>
+
           <Typography className="team-position" variant="body1">
-            {phone}
+            {position}
           </Typography>
+
+          {phone && (
+            <Typography className="team-position" variant="body1">
+              {phone}
+            </Typography>
+          )}
 
           <div className="team-flags">
             {languages.includes("es") && (
@@ -207,22 +221,25 @@ const TeamSection = () => {
       <Container>
         <Grid item xs={12} className="team-grid">
           <Team
-            image={images.gian}
-            name="Giambattista Guala"
-            phone="+34 638 418 917"
-            languages={["es", "en", "fr", "it"]}
-          />
-
-          <Team
             image={images.maryna}
             name="Maryna Bohush"
+            position="CEO & Cofundadora"
             phone="+34 671 616 456"
             languages={["es", "en", "it", "ru"]}
           />
 
           <Team
+            image={images.gian}
+            name="Giambattista Guala"
+            position="CEO & Cofundador"
+            phone="+34 638 418 917"
+            languages={["es", "en", "fr", "it"]}
+          />
+
+          <Team
             image={images.irina}
             name="Irina Elistratova"
+            position="CEO & Cofundadora"
             phone="+34 653 414 149"
             languages={["es", "en", "de", "it", "ru"]}
           />
@@ -232,22 +249,29 @@ const TeamSection = () => {
           <Team
             image={images.arely}
             name="Arely Arteaga"
-            phone="+34 630 088 490"
+            position="Asesor inmobiliario"
             languages={["es", "en"]}
           />
 
           <Team
             image={images.uliana}
             name="Uliana Popovycheva"
-            phone="+34 651 873 215"
+            position="Asesor inmobiliario"
             languages={["es", "en", "ru", "ua"]}
           />
 
           <Team
             image={images.oleksandra}
             name="Oleksandra Dzhaparidze"
-            phone="+34 656 610 837"
+            position="Asesor inmobiliario"
             languages={["es", "en", "ru", "ua"]}
+          />
+
+          <Team
+            image={images.ekaterina}
+            name="Ekaterina Staselko"
+            position="Asesora de inversiones"
+            languages={["es", "en", "de", "ru"]}
           />
         </Grid>
       </Container>
