@@ -31,27 +31,27 @@
       "fontSize": "1.375rem"
     },
     "subtitle1": {
-      "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
+      "fontFamily": "\"Lato Regular\", Helvetica, Arial, sans-serif"
     },
     "subtitle2": {
-      "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
+      "fontFamily": "\"Lato Regular\", Helvetica, Arial, sans-serif"
     },
     "body1": {
-      "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif",
+      "fontFamily": "\"Lato Regular\", Helvetica, Arial, sans-serif",
       "fontSize": "1.125rem"
     },
     "body2": {
-      "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
+      "fontFamily": "\"Lato Regular\", Helvetica, Arial, sans-serif"
     },
     "caption": {
-      "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
+      "fontFamily": "\"Lato Regular\", Helvetica, Arial, sans-serif"
     },
     "button": {
       "fontFamily": "\"Messina Sans Regular\", Helvetica, Arial, sans-serif",
       "fontSize": "1rem"
     },
     "overline": {
-      "fontFamily": "\"Messina Sans Light\", Helvetica, Arial, sans-serif"
+      "fontFamily": "\"Lato Regular\", Helvetica, Arial, sans-serif"
     }
   }
 }

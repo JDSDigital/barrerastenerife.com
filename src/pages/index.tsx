@@ -25,10 +25,6 @@ const IndexPage: React.FC<PageProps<IndexPageProps>> = ({ data }) => {
 
       <MainSlider />
 
-      <p className="text-blastyes" data-aos="fade-in">
-        {t("welcome")}
-      </p>
-
       <ExpertRepresentation />
 
       <FeaturedPropertiesSection />

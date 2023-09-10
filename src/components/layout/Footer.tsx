@@ -4,6 +4,7 @@ import { Link, graphql, useStaticQuery } from "gatsby";
 
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import React from "react";
 import { useTranslation } from "hooks/useTranslation";
 
@@ -37,10 +38,35 @@ const Footer: React.FC = () => {
           <Typography variant="h4">{t("contact.title")}</Typography>
 
           <div>
-            <Typography variant="h6">Av. Los Abrigos, 32.</Typography>
-            <Typography variant="h6">Los Abrigos.</Typography>
-            <Typography variant="h6">Santa Cruz de Tenerife.</Typography>
-            <Typography variant="h6">38618</Typography>
+            {/* <Typography variant="h6">Av. Los Abrigos, 32</Typography>
+            <Typography variant="h6">Los Abrigos</Typography>
+            <Typography variant="h6">Santa Cruz de Tenerife</Typography>
+            <br />
+            <Typography variant="h6">inmobiliariabarreras@gmail.com</Typography>
+            <br />
+            <Typography className="text-lato-light">
+              +34 822 29 81 28
+            </Typography>
+            <Typography className="text-lato-light">
+              +34 638 41 89 17
+            </Typography> */}
+
+            <Typography variant="h6" className="text-lato-light">
+              Av. Los Abrigos, 32
+            </Typography>
+            <Typography variant="h6" className="text-lato-light">
+              Los Abrigos
+            </Typography>
+            <Typography variant="h6" className="text-lato-light">
+              Santa Cruz de Tenerife
+            </Typography>
+            <br />
+            <Typography className="text-lato-light">
+              +34 822 29 81 28 / +34 638 41 89 17
+            </Typography>
+            <Typography variant="h6" className="text-lato-light">
+              info@barrerastenerife.com
+            </Typography>
           </div>
 
           <div className="footer-social">
@@ -60,17 +86,16 @@ const Footer: React.FC = () => {
             >
               <InstagramIcon />
             </a>
+            <a
+              href="https://www.linkedin.com/company/inmobiliaria-barreras-tenerife/"
+              target="_blank"
+              className="mr-3"
+              aria-label="go to linkedin"
+            >
+              <LinkedInIcon />
+            </a>
           </div>
         </Grid>
-
-        {/* <Grid item xs={12} sm={3}>
-          <p className="footer-title">{t("footer.offices")}</p>
-          <GatsbyImage image={getImage(data.map)!} alt="map" />
-        </Grid>
-
-        <Grid item xs={12} className="text-center">
-          {`© ${new Date().getFullYear()} - ${t("footer.copyright")}`}
-        </Grid> */}
       </Grid>
     </footer>
   );

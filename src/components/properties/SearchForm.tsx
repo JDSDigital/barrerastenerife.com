@@ -74,10 +74,6 @@ const SearchForm: React.FC<Props> = ({
     setState({ ...state, [event.target.name]: event.target.value });
   };
 
-  // const handlePriceChange = (event: any, newValue: number | number[]) => {
-  //   setState({ ...state, price: newValue as number[] });
-  // };
-
   const handleSearch = () => {
     let data: Search = {};
 

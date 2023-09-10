@@ -1,21 +1,19 @@
-import { Button, Container, Grid, Typography } from "@material-ui/core";
-import React, { useEffect, useState } from "react";
+import { Container, Grid } from "@material-ui/core";
 import { graphql, useStaticQuery } from "gatsby";
+import React, { useCallback, useEffect, useState } from "react";
 
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
-import { ParallaxBanner } from "react-scroll-parallax";
-import SearchIcon from "@material-ui/icons/Search";
-import { TownSearch } from "../TownSearch";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { useI18next } from "gatsby-plugin-react-i18next";
-import { useTranslation } from "hooks/useTranslation";
+import { ParallaxBanner } from "react-scroll-parallax";
+import { TownSearch } from "../TownSearch";
 
 const MainSlider: React.FC = () => {
   const data = useStaticQuery(graphql`
     query {
       image1: file(relativePath: { eq: "home/1.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: CONSTRAINED)
         }
       }
       image4: file(relativePath: { eq: "home/4.jpg" }) {
@@ -30,15 +28,15 @@ const MainSlider: React.FC = () => {
       }
       image6: file(relativePath: { eq: "home/6.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: CONSTRAINED)
         }
       }
       team: file(relativePath: { eq: "about/team.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: CONSTRAINED)
         }
       }
-      logo: file(relativePath: { eq: "logo/logo-vertical-full-text.png" }) {
+      logo: file(relativePath: { eq: "logo/dreams.png" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED)
         }
@@ -65,9 +63,8 @@ const MainSlider: React.FC = () => {
     },
   ]);
 
-  const SearchForm = () => {
+  const SearchForm = useCallback(() => {
     const { navigate } = useI18next();
-    const { t } = useTranslation();
 
     const [town, setTown] = useState<string>("");
 
@@ -82,23 +79,15 @@ const MainSlider: React.FC = () => {
     return (
       <Grid container spacing={2} alignItems="center" justifyContent="center">
         <Grid item xs={12} sm={8}>
-          <TownSearch value={town} onChange={handleChange} />
-          <div className="text-center">
-            <Button
-              variant="contained"
-              color="primary"
-              size="large"
-              className="color-white mt-5"
-              startIcon={<SearchIcon />}
-              onClick={handleSearch}
-            >
-              {t("search")}
-            </Button>
-          </div>
+          <TownSearch
+            value={town}
+            onChange={handleChange}
+            onSubmit={handleSearch}
+          />
         </Grid>
       </Grid>
     );
-  };
+  }, []);
 
   const [, setIndex] = useState(0);
 

@@ -607,7 +607,7 @@ export const promotions = [
 
 export const MIN_PRICE = 0;
 export const MAX_PRICE = 50000000;
-export const LUXURY_MIN_PRICE = 500000;
+export const LUXURY_MIN_PRICE = 800000;
 
 export const PROPERTIES_PRICE_RANGE: [number, number] = [
   MIN_PRICE,

@@ -60,7 +60,7 @@ export const query = graphql`
     }
     banner: file(relativePath: { eq: "buyers/1.jpg" }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
   }

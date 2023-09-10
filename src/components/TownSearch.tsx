@@ -8,9 +8,14 @@ import { useTranslation } from "hooks/useTranslation";
 type TownSearchProps = {
   value: string;
   onChange: (value: string) => void;
+  onSubmit?: () => void;
 };
 
-export const TownSearch: FC<TownSearchProps> = ({ value, onChange }) => {
+export const TownSearch: FC<TownSearchProps> = ({
+  value,
+  onChange,
+  onSubmit,
+}) => {
   const { t } = useTranslation();
 
   const towns = constants.zones.sort((a, b) => a.value.localeCompare(b.value));
@@ -32,6 +37,7 @@ export const TownSearch: FC<TownSearchProps> = ({ value, onChange }) => {
       value={value}
       onChange={value => onChange(value)}
       noMatchesText="No consigue resultados"
+      onSubmit={onSubmit}
     />
   );
 };

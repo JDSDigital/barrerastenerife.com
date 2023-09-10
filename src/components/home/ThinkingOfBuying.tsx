@@ -9,14 +9,14 @@ import { useTranslation } from "hooks/useTranslation";
 export const ThinkingOfBuying = () => {
   const data = useStaticQuery(graphql`
     query {
-      buying: file(relativePath: { eq: "buyers/3.jpg" }) {
+      buying: file(relativePath: { eq: "about/gian-3.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: CONSTRAINED)
         }
       }
-      selling: file(relativePath: { eq: "sellers/3.jpg" }) {
+      selling: file(relativePath: { eq: "sellers/4.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: CONSTRAINED)
         }
       }
     }
@@ -34,13 +34,13 @@ export const ThinkingOfBuying = () => {
           <GatsbyImage
             image={buyingImage}
             alt="Thinking of buying image"
-            className="crop-center"
+            className="crop-top"
           />
           <div className="thinking-image-overlay">
             <div>
               <Typography
                 component="p"
-                variant="h4"
+                variant="h5"
                 className="color-white"
                 align="center"
               >
@@ -48,7 +48,7 @@ export const ThinkingOfBuying = () => {
               </Typography>
               <Typography
                 component="p"
-                variant="h4"
+                variant="h5"
                 className="color-white"
                 align="center"
               >
@@ -68,13 +68,13 @@ export const ThinkingOfBuying = () => {
           <GatsbyImage
             image={sellingImage}
             alt="Thinking of selling image"
-            className="crop-center"
+            className="crop-top"
           />
           <div className="thinking-image-overlay">
             <div>
               <Typography
                 component="p"
-                variant="h4"
+                variant="h5"
                 className="color-white"
                 align="center"
               >
@@ -82,7 +82,7 @@ export const ThinkingOfBuying = () => {
               </Typography>
               <Typography
                 component="p"
-                variant="h4"
+                variant="h5"
                 className="color-white"
                 align="center"
               >

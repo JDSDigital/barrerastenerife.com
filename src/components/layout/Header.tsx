@@ -84,25 +84,15 @@ const Header: React.FC<Props> = ({ siteTitle = "", ...rest }) => {
   `);
 
   const linkList = [
+    { to: "/", text: t("home") },
     {
       to: "/properties/buy",
       text: t("header.link.buy"),
       sub: [
         { to: "/properties/luxury", text: t("header.link.luxury") },
         { to: "/promotion", text: t("header.link.promotion") },
+        { to: "/properties/investment", text: t("header.link.investment") },
         { to: "/properties/buy", text: t("header.link.properties") },
-      ],
-    },
-    {
-      to: "https://tenerifeservice.vip/",
-      text: t("header.link.rent"),
-      external: true,
-      sub: [
-        {
-          to: "https://tenerifeservice.vip/",
-          text: t("header.link.luxury"),
-          external: true,
-        },
       ],
     },
     { to: "/about", text: t("header.link.about") },

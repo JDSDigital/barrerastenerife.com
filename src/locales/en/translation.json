@@ -67,6 +67,7 @@
       "local": "Shop",
       "promotion": "New development",
       "luxury": "Luxury properties",
+      "investment": "Investment Projects",
       "properties": "Properties",
       "info": "Info",
       "forBuyers": "For buyers",
@@ -149,11 +150,11 @@
 
   "about": {
     "title": "Inmobiliaria Barreras",
-    "description": "Barriers Tenerife S.L. was founded by Pablo Barreras González in Tenerife in the year 2000. Today, his successors, with extensive experience in the field of real estate consulting and negotiations, continue to provide services with honesty, trust, empathy and professionalism. Our carefully selected team is united by a desire to care for each client throughout all stages of the buying or selling process, to be responsive to client requests and concerns and to pay attention to even the smallest detail. We understand that each real estate transaction can be one of the most important decisions that our clients make, so we take care of all the details to guarantee success.",
+    "description": "Barriers Tenerife S.L. was founded by Pablo Barreras González in Tenerife in the year 2000. Today, his successors, with extensive experience in the field of real estate consulting and negotiations, continue to provide services with honesty, trust, empathy and professionalism.<br /><br />Our carefully selected team is united by a desire to care for each client throughout all stages of the buying or selling process, to be responsive to client requests and concerns and to pay attention to even the smallest detail. We understand that each real estate transaction can be one of the most important decisions that our clients make, so we take care of all the details to guarantee success.",
 
     "banner": {
       "p1": "About",
-      "p2": "Inmobiliaria Barreras"
+      "p2": "Barreras"
     },
 
     "team": "Meet our experts",
@@ -163,8 +164,7 @@
   "contact": {
     "description": {
       "title": "Welcome to Barreras Tenerife S.L., your Trusted Real Estate Agency.",
-      "subtitle": "We have created our agency for you, to provide you with the service of Excellence, Honesty and Trust that you want to find in Tenerife.",
-      "body": "Founded by Pablo Barreras González in the year 2000 in Tenerife (the largest and most populated island of the Canary archipelago) and today owned by his successors with a rich track record in the field of real estate consulting and operations, Barreras Tenerife S.L guarantees optimal results while offering personalized treatment tailored to each of our clients. We provide an innovative marketing strategy and exhibit integrity and professionalism in all our work."
+      "body": "OUR AGENTS are at your disposal to advise you on the sale or rental of your property, as well as to help you in the purchase of any real estate asset.<br /><br />WE WILL BE HAPPY TO HELP YOU.<br /><br />A cordial greeting from Barreras Real Estate"
     },
 
     "title": "Contact us",
