@@ -22,7 +22,7 @@ jobs:
     name: Lint & Test & Export
     runs-on: ubuntu-latest
     container: node:lts-alpine
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v3
       - name: install dependencies
