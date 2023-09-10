@@ -11,12 +11,12 @@
 
   "thinkingOfBuying": {
     "buying": {
-      "title": "Thinking of buying?",
-      "subtitle": "Understanding the buying process"
+      "title": "¿Está pensando en comprar?",
+      "subtitle": "Entender el proceso de compra"
     },
     "selling": {
-      "title": "Thinking of selling?",
-      "subtitle": "Understanding the selling process"
+      "title": "¿Está pensando en vender?",
+      "subtitle": "Comprender el proceso de venta"
     },
     "details": "Más detalles"
   },
@@ -26,7 +26,7 @@
 
     "experience": {
       "title": "20+ AÑOS",
-      "subtitle": "Experiencia combinada en la industria - Ponga nuestra experiencia a trabajar para usted"
+      "subtitle": "Amplia experiencia en el sector - Ponga nuestra experiencia a trabajar para usted"
     },
     "knowledge": {
       "title": "CONOCIMIENTO DEL MERCADO",
@@ -42,18 +42,18 @@
 
   "info": {
     "buyers": {
-      "title": "BUYER SERVICES",
-      "subtitle1": "World-Class Service",
-      "subtitle2": "Unrivaled Market Knowledge",
-      "description1": "Providing real estate services in Tenerife.",
-      "description2": "Helping buyers negotiate the perfect deal."
+      "title": "SERVICIOS AL COMPRADOR",
+      "subtitle1": "Servicio de clase mundial",
+      "subtitle2": "Conocimiento inigualable del mercado",
+      "description1": "Prestación de servicios inmobiliarios en Tenerife.",
+      "description2": "Ayudar a los compradores a negociar el trato perfecto."
     },
     "sellers": {
-      "title": "SELLER SERVICES",
-      "subtitle1": "World-Class Service",
-      "subtitle2": "Unrivaled Market Knowledge",
-      "description1": "Providing real estate services in Tenerife.",
-      "description2": "Helping sellers market and sell their home for top dollar."
+      "title": "SERVICIOS DEL VENDEDOR",
+      "subtitle1": "Servicio de clase mundial",
+      "subtitle2": "Conocimiento inigualable del mercado",
+      "description1": "Prestación de servicios inmobiliarios en Tenerife.",
+      "description2": "Ayudar a los vendedores a comercializar y vender su casa por el mejor precio."
     }
   },
 
@@ -312,7 +312,14 @@
 
   "buyers": {
     "title": "ENTENDER EL PROCESO DE COMPRA",
-    "description": "• Una cita con nuestro agente inmobiliario para describir sus solicitudes y deseos ayudará al nuestro agente a encontrar la propiedad adecuada para usted indistintamente  si es  casa de vacaciones, apartamento residencial, propiedad de inversión, casa para renovar o nueva construcción, comunitaria o independiente, en un área específica, en una zona turística, en el pueblo o más aislado.<br /><br />    • Si necesita una hipoteca sería ideal asesorarse antes de buscar una propiedad. Así sabrá aproximadamente la cantidad que te puede financiar la entidad financiera.<br /><br />      El importe del préstamo variará según el banco y sobre todo depende de su domicilio fiscal. Si resides en España puedes conseguir una hipoteca de hasta el 80%, en el caso de no ser residente fiscal puedes conseguir hasta el 50/60%.<br /><br />    •Al comprar una propiedad en España, se debe solicitar un número NIE, que es un número de identificación para extranjeros. Normalmente se solicita en la comisaría de policía nacional.<br /><br />    • Es recomendable abrir una cuenta bancaria española antes de comprar una propiedad para poder transferir dinero para realizar la compra y  poder pagar las facturas y otros gastos fijos posteriores a la compra. Para abrir una cuenta necesitará su pasaporte o documento de identidad y se le pedirán otros documentos. Los requisitos exactos pueden variar de un banco a otro. En caso de que lo necesite, podemos encontrar un banco que hable su idioma.<br /><br />    • una vez elegido el inmueble que se desea comprar, generalmente se procede a un precontrato en el que se exige el pago de una fianza penitencial que suele ser del 10% del precio de venta y se establece el tiempo que se tardará en realizar la compra-venta ante notario. La formalización de una venta puede variar, podría realizarse en sólo unos días o incluso varias semanas.<br /><br />    La entrega del inmueble tendrá lugar en el momento de la escrituración pública. La firma se realiza ante Notario que será quien  validará la transacción.<br /><br />    Naturalmente, la propiedad debe estar completamente libre de deudas, inquilinos, ocupantes el día de la firma de la escritura pública.<br /><br />      Su agente inmobiliario y/o asesor legal (y traductor si es necesario) estarán presentes en la firma para ayudarlo y asegurarse de que se hayan entregado y verificado todos los documentos necesarios.<br /><br />    . Los costes adicionales al precio de compra del inmueble oscilan entre el 7% y el 10% del precio de venta.<br /><br />      El impuesto por la compra de un inmueble de segunda mano es del 6,5% (ITP), mientras que para la compra de un inmueble de nueva construcción es del 7%.<br /><br />    • Además del impuesto sobre el precio de compra, también hay que tener en cuenta los gastos de notaría, registro de la propiedad y cualquier otro gasto de gestión.<br /><br />    •Esperamos que nuestros consejos puedan ayudar. Si desea más información o desea ayuda y asesoramiento para vender su propiedad, no dude en ponerse en contacto con nosotros."
+    "p1": "<strong>UNA CITA CON NUESTRO AGENTE INMOBILIARIO</strong> para describir sus solicitudes y deseos ayudará al nuestro agente a encontrar la propiedad adecuada para usted indistintamente si es casa de vacaciones, apartamento residencial, propiedad de inversión, casa para renovar o nueva construcción, comunitaria o independiente, en un área específica, en una zona turística, en el pueblo o más aislado.",
+    "p2": "<strong>SI NECESITA UNA HIPOTECA</strong> sería ideal asesorarse antes de buscar una propiedad. Así sabrá aproximadamente la cantidad que te puede financiar la entidad financiera. El importe del préstamo variará según el banco y sobre todo depende de su domicilio fiscal. Si resides en España puedes conseguir una hipoteca de hasta el 80%, en el caso de no ser residente fiscal puedes conseguir hasta el 50/60%.",
+    "p3": "Al comprar una propiedad en España, <strong>SE DEBE SOLICITAR UN NÚMERO NIE</strong>, que es un número de identificación para extranjeros. Normalmente se solicita en la comisaría de policía nacional.",
+    "p4": "<strong>ES RECOMENDABLE ABRIR UNA CUENTA BANCARIA ESPAÑOLA</strong> antes de comprar una propiedad para poder transferir dinero para realizar la compra y poder pagar las facturas y otros gastos fijos posteriores a la compra. Para abrir una cuenta necesitará su pasaporte o documento de identidad y se le pedirán otros documentos. Los requisitos exactos pueden variar de un banco a otro. En caso de que lo necesite, podemos encontrar un banco que hable su idioma.",
+    "p5": "<strong>UNA VEZ ELEGIDO EL INMUEBLE QUE SE DESEA COMPRAR</strong>, generalmente se procede a un precontrato en el que se exige el pago de una fianza penitencial que suele ser del 10% del precio de venta y se establece el tiempo que se tardará en realizar la compra-venta ante notario. La formalización de una venta puede variar, podría realizarse en sólo unos días o incluso varias semanas.",
+    "p6": "<strong>LA ENTREGA DEL INMUEBLE</strong> tendrá lugar en el momento de la escrituración pública. La firma se realiza ante Notario que será quien validará la transacción. Naturalmente, la propiedad debe estar completamente libre de deudas, inquilinos, ocupantes el día de la firma de la escritura pública. Su agente inmobiliario y/o asesor legal (y traductor si es necesario) estarán presentes en la firma para ayudarle y asegurarse de que se hayan entregado y verificado todos los documentos necesarios.",
+    "p7": "<strong>LOS COSTES ADICIONALES</strong> al precio de compra del inmueble oscilan entre el 7% y el 10% del precio de venta. El impuesto por la compra de un inmueble de segunda mano es del 6,5% (ITP), mientras que para la compra de un inmueble de nueva construcción es del 7%. Además del impuesto sobre el precio de compra, también hay que tener en cuenta los gastos de notaría, registro de la propiedad y cualquier otro gasto de gestión.",
+    "p8": "Esperamos que nuestros consejos puedan ayudar. Si desea más información o desea ayuda y asesoramiento para vender su propiedad, no dude en ponerse en contacto con nosotros."
   },
 
   "sellers": {

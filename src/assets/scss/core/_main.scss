@@ -311,10 +311,10 @@ body {
     .expert-representation {
       text-align: justify;
       .button-container {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
         gap: 12px;
-        justify-content: space-between;
         margin-top: 24px;
 
         a {
@@ -326,7 +326,9 @@ body {
         }
 
         @include sm {
-          flex-direction: row;
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
 
           button {
             width: auto;
@@ -334,7 +336,14 @@ body {
         }
       }
 
-      .expert-image-container {
+      .expert-text-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+      }
+
+      .expert-image-container img {
         height: 600px;
       }
 
@@ -413,6 +422,22 @@ body {
 
       .info-banner-container {
         height: 100vh;
+      }
+
+      .info-paragraph {
+        display: flex;
+        gap: 64px;
+        margin-bottom: 72px;
+
+        .info-number {
+          font-size: 70px;
+          line-height: 70px;
+          font-weight: 700;
+        }
+      }
+
+      p.italic {
+        font-style: italic;
       }
     }
   }
@@ -553,8 +578,38 @@ body {
 
     &:hover .property-card-overlay {
       width: 80%;
-      height: 60%;
+      height: 70%;
       background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    &:hover .property-card-overlay .small-divider {
+      width: 150px;
+    }
+
+    .property-more-info {
+      font-size: 18px;
+
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      -ms-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+    }
+
+    &:hover .property-more-info {
+      font-size: 24px;
+    }
+
+    .small-divider {
+      display: inline-block;
+      width: 0px;
+      border-top: 1px solid #fff;
+
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      -ms-transition: all 0.3s linear;
+      transition: all 0.3s linear;
     }
   }
 
@@ -565,6 +620,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    padding: 24px;
     background-color: rgba(0, 0, 0, 0.3);
     // background-color: rgba(29, 177, 184, 0.3);
 
@@ -579,12 +635,15 @@ body {
     display: flex;
     position: relative;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     flex-grow: 1;
-    padding: 56px;
 
     p {
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    .property-more-info {
+      justify-self: flex-end;
     }
   }
 }

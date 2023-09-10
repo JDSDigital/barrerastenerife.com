@@ -11,30 +11,30 @@
 
   "thinkingOfBuying": {
     "buying": {
-      "title": "Thinking of buying?",
-      "subtitle": "Understanding the buying process"
+      "title": "Sta pensando di acquistare?",
+      "subtitle": "Comprendere il processo di acquisto"
     },
     "selling": {
-      "title": "Thinking of selling?",
-      "subtitle": "Understanding the selling process"
+      "title": "Sta pensando di vendere sua propietá?",
+      "subtitle": "Comprendere il processo di vendita"
     },
     "details": "Piú informazioni"
   },
 
   "workWithUs": {
-    "title": "WORK WITH US",
+    "title": "LAVORA CON NOI",
 
     "experience": {
-      "title": "20+ YEARS",
-      "subtitle": "Combined Industry Experience - Put Our Expertise to Work for You"
+      "title": "20+ ANNI",
+      "subtitle": "Vasta esperienza nel sectore: metti la nostra esperienza al Suo servizio"
     },
     "knowledge": {
-      "title": "MARKET KNOWLEDGE",
-      "subtitle": "Extensive Market Knowledge is the Key to Our Success"
+      "title": "CONOSCENZA DEL MERCATO",
+      "subtitle": "Una vasta conoscenza del mercato è la chiave del nostro successo"
     },
     "guidance": {
-      "title": "EXPERT GUIDANCE",
-      "subtitle": "We Make Even the Most Complicated Transactions Run Smoothly"
+      "title": "GUIDA ESPERTA",
+      "subtitle": "Facciamo in modo che anche le transazioni più complicate si svolgano senza intoppi"
     },
 
     "button": "GET IN TOUCH"
@@ -42,18 +42,18 @@
 
   "info": {
     "buyers": {
-      "title": "BUYER SERVICES",
-      "subtitle1": "World-Class Service",
-      "subtitle2": "Unrivaled Market Knowledge",
-      "description1": "Providing real estate services in Tenerife.",
-      "description2": "Helping buyers negotiate the perfect deal."
+      "title": "SERVIZI ACQUIRENTE",
+      "subtitle1": "Servizio di prima classe",
+      "subtitle2": "Conoscenza del mercato senza rivali",
+      "description1": "Fornire i servizi immobiliari a Tenerife.",
+      "description2": "Aiutare gli acquirenti a negoziare l'accordo perfetto."
     },
     "sellers": {
-      "title": "SELLER SERVICES",
-      "subtitle1": "World-Class Service",
-      "subtitle2": "Unrivaled Market Knowledge",
-      "description1": "Providing real estate services in Tenerife.",
-      "description2": "Helping sellers market and sell their home for top dollar."
+      "title": "SERVIZI DEL VENDITORE",
+      "subtitle1": "Servizio di prima classe",
+      "subtitle2": "Conoscenza del mercato senza rivali",
+      "description1": "Fornire servizi immobiliari a Tenerife.",
+      "description2": "Aiutare i venditori a commercializzare e vendere la propria casa a un prezzo eccezionale."
     }
   },
 
@@ -312,7 +312,14 @@
 
   "buyers": {
     "title": "CAPIRE IL PROCESSO DI ACQUISTO",
-    "description": "•Un appuntamento col nostro agente inmobiliare per descrivere le sue richieste ed i suoi desideri aiuterà l'agente a trovare la proprietà giusta per lei:  Casa per le vacanze, apartamento abituale, investimento immobiliare, casa da ristrutturare o di nuova costruzione, in condominio o indipendente,  in una specifica zona, in una zona turistica, in paese o più isolata.<br /><br />    •Nel caso avesse bisogno di un mutuo per acquistare la proprietà, sarebbe ideale ottenere una consulenza prima di cercare un immobile. In questo modo saprà all'incirca quanto la banca le può finanziare.<br /><br />     L’importo del finanziamento varierà a seconda della banca e sopratutto dipende dalla sua residenza fiscale. Se risiede in Spagna può ottenere un mutuo fino all'80% , nel caso non fosse residente fiscale può ottenere fino al 50/60%.<br /><br />    •Quando si acquista una proprietà in Spagna, è necessario richiedere un numero NIE che è un numero di identificazione per stranieri. Questo viene normalmente richiesto presso la stazione di polizia nazionale.<br /><br />    • É opportuno aprire un conto bancario spagnolo prima di acquistare una proprietà in modo da poter trasferire i soldi per effettuare l'acquisto e per poi poter domiciliare le bollette e altre spese fisse dopo l'acquisto. Per aprire un conto avrà bisogno del suo passaporto o carta d'identità e le verranno richiesti altri documenti. I requisiti esatti possono variare da banca a banca. Nel caso avesse bisogno, possiamo trovare una banca che parla la sua lingua.<br /><br />    •una volta scelta la proprietà che desidera acquistare, si procede generalmente con un contratto preliminare nel quale viene richiesto il versamento di una caparra penitenziale che di solito è il 10% del prezzo di vendita e si stabilisce quale sarà il tempo necessario per andare al rogito. I tempi per una vendita possono variare, potrebbero volerci solo alcuni giorni oppure anche diverse settimane. <br /><br />    La consegna della proprietà avverrà al momento del rogito. La firma avviene davanti a un Notaio che assisterà alla transazione.<br /><br />    La  proprietà naturalmente dovrà essere completamente libera da debiti, inquilini, occupanti il ​​giorno in cui si firma il rogito.<br /><br />     Il suo agente inmobiliare e/o consulente legale (e traduttore nel caso avesse bisogno) saranno  presenti alla firma per assisterla e assicurarsi che tutti i documenti necessari siano stati recapitati e controllati . <br /><br />    I costi aggiuntivi oltre al prezzo di acquisto della proprietà oscillano tra l'7% e il 10% dell importo di compravendita.<br /><br />     l'imposta  per l'acquisto di un immobile di seconda mano è del 6,5% (ITP), mentre è del 7% per l'acquisto di un immobile di nuova costruzione. <br /><br />    •Oltre all’imposta sul prezzo d'acquisto ci sono da considerare anche le spese  notarili,  di registro della proprietà e eventuali ulteriori costi di gestione. <br /><br />    •Ci auguriamo che i nostri consigli possano essere di aiuto. Se desidera maggiori informazioni o desidera aiuto e consigli sulla vendita della sua proprietà, non esiti a contattarci."
+    "p1": "<strong>UN APPUNTAMENTO COL NOSTRO AGENTE INMOBILIARE</strong> per descrivere le sue richieste ed i suoi desideri aiuterà l'agente a trovare la proprietà giusta per lei:  Casa per le vacanze, apartamento abituale, investimento immobiliare, casa da ristrutturare o di nuova costruzione, in condominio o indipendente,  in una specifica zona, in una zona turistica, in paese o più isolata.",
+    "p2": "<strong>NEL CASO AVESSE BISOGNO DI UN MUTUO</strong> per acquistare la proprietà, sarebbe ideale ottenere una consulenza prima di cercare un immobile. In questo modo saprà all'incirca quanto la banca le può finanziare. L’importo del finanziamento varierà a seconda della banca e sopratutto dipende dalla sua residenza fiscale. Se risiede in Spagna può ottenere un mutuo fino all'80% , nel caso non fosse residente fiscale può ottenere fino al 50/60%.",
+    "p3": "Quando si acquista una proprietà in Spagna, <strong>È NECESSARIO RICHIEDERE UN NUMERO NIE</strong> che è un numero di identificazione per stranieri. Questo viene normalmente richiesto presso la stazione di polizia nazionale.",
+    "p4": "<strong>É OPPORTUNO APRIRE UN CONTO BANCARIO SPAGNOLO</strong> prima di acquistare una proprietà in modo da poter trasferire i soldi per effettuare l'acquisto e per poi poter domiciliare le bollette e altre spese fisse dopo l'acquisto. Per aprire un conto avrà bisogno del suo passaporto o carta d'identità e le verranno richiesti altri documenti. I requisiti esatti possono variare da banca a banca. Nel caso avesse bisogno, possiamo trovare una banca che parla la sua lingua.",
+    "p5": "<strong>UNA VOLTA SCELTA LA PROPRIETÀ CHE DESIDERA ACQUISTARE</strong>, si procede generalmente con un contratto preliminare nel quale viene richiesto il versamento di una caparra penitenziale che di solito è il 10% del prezzo di vendita e si stabilisce quale sarà il tempo necessario per andare al rogito. I tempi per una vendita possono variare, potrebbero volerci solo alcuni giorni oppure anche diverse settimane. ",
+    "p6": "<strong>LA CONSEGNA DELLA PROPRIETÀ</strong> avverrà al momento del rogito. La firma avviene davanti a un Notaio che assisterà alla transazione. La  proprietà naturalmente dovrà essere completamente libera da debiti, inquilini, occupanti il ​​giorno in cui si firma il rogito. Il suo agente inmobiliare e/o consulente legale (e traduttore nel caso avesse bisogno) saranno  presenti alla firma per assisterla e assicurarsi che tutti i documenti necessari siano stati recapitati e controllati . ",
+    "p7": "<strong>I COSTI AGGIUNTIVI</strong> oltre al prezzo di acquisto della proprietà oscillano tra l'7% e il 10% dell importo di compravendita. l'imposta  per l'acquisto di un immobile di seconda mano è del 6,5% (ITP), mentre è del 7% per l'acquisto di un immobile di nuova costruzione. Oltre all’imposta sul prezzo d'acquisto ci sono da considerare anche le spese  notarili,  di registro della proprietà e eventuali ulteriori costi di gestione. ",
+    "p8": "Ci auguriamo che i nostri consigli possano essere di aiuto. Se desidera maggiori informazioni o desidera aiuto e consigli sulla vendita della sua proprietà, non esiti a contattarci."
   },
 
   "sellers": {

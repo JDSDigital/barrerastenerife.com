@@ -11,30 +11,30 @@
 
   "thinkingOfBuying": {
     "buying": {
-      "title": "Thinking of buying?",
-      "subtitle": "Understanding the buying process"
+      "title": "Vous envisagez d'acheter?",
+      "subtitle": "Comprendre le processus d'achat"
     },
     "selling": {
-      "title": "Thinking of selling?",
-      "subtitle": "Understanding the selling process"
+      "title": "Vous envisagez de vendre?",
+      "subtitle": "Comprendre le processus de vente"
     },
-    "details": "Details"
+    "details": "Montre plus"
   },
 
   "workWithUs": {
-    "title": "WORK WITH US",
+    "title": "TRAVAILLE AVEC NOUS",
 
     "experience": {
-      "title": "20+ YEARS",
-      "subtitle": "Combined Industry Experience - Put Our Expertise to Work for You"
+      "title": "20+ ANS",
+      "subtitle": "Une vaste expérience dans le secteur - Mettez notre expertise à votre service"
     },
     "knowledge": {
-      "title": "MARKET KNOWLEDGE",
-      "subtitle": "Extensive Market Knowledge is the Key to Our Success"
+      "title": "CONNAISSANCE DU MARCHÉ",
+      "subtitle": "Une connaissance approfondie du marché est la clé de notre succès"
     },
     "guidance": {
-      "title": "EXPERT GUIDANCE",
-      "subtitle": "We Make Even the Most Complicated Transactions Run Smoothly"
+      "title": "CONSEILS D'EXPERTS",
+      "subtitle": "Nous faisons en sorte que même les transactions les plus compliquées se déroulent sans problème"
     },
 
     "button": "GET IN TOUCH"
@@ -42,18 +42,18 @@
 
   "info": {
     "buyers": {
-      "title": "BUYER SERVICES",
-      "subtitle1": "World-Class Service",
-      "subtitle2": "Unrivaled Market Knowledge",
-      "description1": "Providing real estate services in Tenerife.",
-      "description2": "Helping buyers negotiate the perfect deal."
+      "title": "SERVICES ACHETEUR",
+      "subtitle1": "Service de classe mondiale",
+      "subtitle2": "Connaissance inégalée du marché",
+      "description1": "Fournir des services immobiliers à Tenerife.",
+      "description2": "Aider les acheteurs à négocier l’accord parfait."
     },
     "sellers": {
-      "title": "SELLER SERVICES",
-      "subtitle1": "World-Class Service",
-      "subtitle2": "Unrivaled Market Knowledge",
-      "description1": "Providing real estate services in Tenerife.",
-      "description2": "Helping sellers market and sell their home for top dollar."
+      "title": "SERVICES DU VENDEUR",
+      "subtitle1": "Service de classe mondiale",
+      "subtitle2": "Connaissance inégalée du marché",
+      "description1": "Fournir des services immobiliers à Tenerife.",
+      "description2": "Aider les vendeurs à commercialiser et à vendre leur maison au meilleur prix."
     }
   },
 
@@ -311,8 +311,15 @@
   },
 
   "buyers": {
-    "title": "UNDERSTANDING THE BUYING PROCESS",
-    "description": "• Un rendez-vous avec notre Conseiller immobilier pour exprimer vos besoins, et notre mission sera de vous trouver le bien qui vous convient : Maison de vacances, appartement ordinaire, immeuble, maison à rénover ou nouvelle construction, en copropriété ou indépendante, dans un quartier précis, en zone touristique, au village ou plus isolé.<br /><br />    • Si vous avez besoin d'un prêt hypothécaire pour acheter la propriété, il serait idéal d'obtenir des conseils avant de chercher une propriété. De cette façon, vous saurez approximativement combien la banque peut vous financer.<br /><br />     Le montant du prêt variera selon les banques et dépendra surtout de votre lieu de résidence. Si vous résidez en Espagne, vous pouvez obtenir une hypothèque jusqu'à 80 %, si vous n'êtes pas résident, vous pouvez obtenir jusqu'à 50/60 %.<br /><br />    • Lors de l'achat d'une propriété en Espagne, vous devez demander un numéro NIE qui est un numéro d'identification pour les étrangers. Ceci est normalement demandé au commissariat de la police nationale.<br /><br />    • Il est conseillé d'ouvrir un compte bancaire espagnol avant d'acheter une propriété afin de pouvoir transférer de l'argent pour effectuer l'achat et pouvoir ensuite payer les factures et autres dépenses fixes après l'achat. Pour ouvrir un compte, vous aurez besoin de votre passeport ou de votre carte d'identité et d'autres documents vous seront demandés. Les exigences exactes peuvent varier d'une banque à l'autre. En cas de besoin, nous pouvons trouver une banque qui parle votre langue.<br /><br />    • une fois que vous avez choisi le bien que vous souhaitez acheter, vous procédez généralement à un avant-contrat dans lequel le versement d'un acompte pénitentiel est exigé qui est généralement de 10% du prix de vente et il est établi combien de temps il faudra pour aller à l'acte. Le moment d'une vente peut varier, cela peut prendre quelques jours ou même plusieurs semaines.<br /><br />    La livraison du bien aura lieu au moment de l'acte authentique. La signature a lieu devant un notaire qui assistera la transaction.<br /><br />    Naturellement, le bien doit être totalement libre de dettes, locataires et occupants au jour de la signature de l'acte.<br /><br />     Votre Conseiller immobilier et/ou conseiller juridique (et traducteur si nécessaire) sera présent lors de la signature pour vous assister et s'assurer que tous les documents nécessaires ont été remis et vérifiés.<br /><br />    Les surcoûts qui s'ajoutent au prix d'achat du bien varient entre 7% et 10% du prix de vente.<br /><br />     la taxe pour l'achat d'un bien d'occasion est de 6,5% (ITP), alors qu'elle est de 7% pour l'achat d'un bien neuf.<br /><br />    • Outre la taxe sur le prix d'achat, il faut également tenir compte des frais de notaire, des droits d'enregistrement de la propriété et de tout autre frais de gestion.<br /><br />    •Nous espérons que nos conseils pourront vous aider. Si vous souhaitez plus d'informations ou souhaitez obtenir de l'aide et des conseils sur la vente de votre propriété, n'hésitez pas à nous contacter."
+    "title": "COMPRENDRE LE PROCESSUS D'ACHAT",
+    "p1": "<strong>UN RENDEZ-VOUS AVEC NOTRE CONSEILLER IMMOBILIER</strong> pour exprimer vos besoins, et notre mission sera de vous trouver le bien qui vous convient : Maison de vacances, appartement ordinaire, immeuble, maison à rénover ou nouvelle construction, en copropriété ou indépendante, dans un quartier précis, en zone touristique, au village ou plus isolé.",
+    "p2": "<strong>SI VOUS AVEZ BESOIN D'UN PRET HYPOTHECAIRE</strong> pour acheter la propriété, il serait idéal d'obtenir des conseils avant de chercher une propriété. De cette façon, vous saurez approximativement combien la banque peut vous financer. Le montant du prêt variera selon les banques et dépendra surtout de votre lieu de résidence. Si vous résidez en Espagne, vous pouvez obtenir une hypothèque jusqu'à 80 %, si vous n'êtes pas résident, vous pouvez obtenir jusqu'à 50/60 %.",
+    "p3": "Lors de l'achat d'une propriété en Espagne, vous devez demander <strong>UN NUMERO NIE</strong> qui est un numéro d'identification pour les étrangers. Ceci est normalement demandé au commissariat de la police nationale.",
+    "p4": "<strong>IL EST CONSEILLE D'OUVRIR UN COMPTE BANCAIRE ESPAGNOL</strong> avant d'acheter une propriété afin de pouvoir transférer de l'argent pour effectuer l'achat et pouvoir ensuite payer les factures et autres dépenses fixes après l'achat. Pour ouvrir un compte, vous aurez besoin de votre passeport ou de votre carte d'identité et d'autres documents vous seront demandés. Les exigences exactes peuvent varier d'une banque à l'autre. En cas de besoin, nous pouvons trouver une banque qui parle votre langue.",
+    "p5": "<strong>UNE FOIS QUE VOUS AVEZ CHOISI LE BIEN QUE VOUS SOUHAITEZ ACHETER</strong>, vous procédez généralement à un avant-contrat dans lequel le versement d'un acompte pénitentiel est exigé qui est généralement de 10% du prix de vente et il est établi combien de temps il faudra pour aller à l'acte. Le moment d'une vente peut varier, cela peut prendre quelques jours ou même plusieurs semaines.",
+    "p6": "<strong>LA LIVRAISON DU BIEN</strong> aura lieu au moment de l'acte authentique. La signature a lieu devant un notaire qui assistera la transaction. Naturellement, le bien doit être totalement libre de dettes, locataires et occupants au jour de la signature de l'acte. Votre Conseiller immobilier et/ou conseiller juridique (et traducteur si nécessaire) sera présent lors de la signature pour vous assister et s'assurer que tous les documents nécessaires ont été remis et vérifiés.",
+    "p7": "<strong>LES SURCOUTS</strong> qui s'ajoutent au prix d'achat du bien varient entre 7% et 10% du prix de vente. La taxe pour l'achat d'un bien d'occasion est de 6,5% (ITP), alors qu'elle est de 7% pour l'achat d'un bien neuf. Outre la taxe sur le prix d'achat, il faut également tenir compte des frais de notaire, des droits d'enregistrement de la propriété et de tout autre frais de gestion.",
+    "p8": "Nous espérons que nos conseils pourront vous aider. Si vous souhaitez plus d'informations ou souhaitez obtenir de l'aide et des conseils sur la vente de votre propriété, n'hésitez pas à nous contacter."
   },
 
   "sellers": {
