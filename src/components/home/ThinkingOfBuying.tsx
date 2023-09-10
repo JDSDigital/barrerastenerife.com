@@ -9,12 +9,12 @@ import { useTranslation } from "hooks/useTranslation";
 export const ThinkingOfBuying = () => {
   const data = useStaticQuery(graphql`
     query {
-      buying: file(relativePath: { eq: "about/gian-3.jpg" }) {
+      buying: file(relativePath: { eq: "buyers/3.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED)
         }
       }
-      selling: file(relativePath: { eq: "sellers/4.jpg" }) {
+      selling: file(relativePath: { eq: "sellers/3.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED)
         }

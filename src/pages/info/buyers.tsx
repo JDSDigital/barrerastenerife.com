@@ -31,8 +31,71 @@ const BuyersPage: React.FC<PageProps<BuyersPageProps>> = ({ data }) => {
         <InfoContainer>
           <Grid container>
             <Grid item xs={12}>
-              <Typography component="p">
-                <Trans i18nKey={"buyers.description"} />
+              <div className="info-paragraph">
+                <Typography component="p" className="info-number">
+                  1
+                </Typography>
+                <Typography component="p">
+                  <Trans i18nKey={"buyers.p1"} />
+                </Typography>
+              </div>
+
+              <div className="info-paragraph">
+                <Typography component="p" className="info-number">
+                  2
+                </Typography>
+                <Typography component="p">
+                  <Trans i18nKey={"buyers.p2"} />
+                </Typography>
+              </div>
+
+              <div className="info-paragraph">
+                <Typography component="p" className="info-number">
+                  3
+                </Typography>
+                <Typography component="p">
+                  <Trans i18nKey={"buyers.p3"} />
+                </Typography>
+              </div>
+
+              <div className="info-paragraph">
+                <Typography component="p" className="info-number">
+                  4
+                </Typography>
+                <Typography component="p">
+                  <Trans i18nKey={"buyers.p4"} />
+                </Typography>
+              </div>
+
+              <div className="info-paragraph">
+                <Typography component="p" className="info-number">
+                  5
+                </Typography>
+                <Typography component="p">
+                  <Trans i18nKey={"buyers.p5"} />
+                </Typography>
+              </div>
+
+              <div className="info-paragraph">
+                <Typography component="p" className="info-number">
+                  6
+                </Typography>
+                <Typography component="p">
+                  <Trans i18nKey={"buyers.p6"} />
+                </Typography>
+              </div>
+
+              <div className="info-paragraph">
+                <Typography component="p" className="info-number">
+                  7
+                </Typography>
+                <Typography component="p">
+                  <Trans i18nKey={"buyers.p7"} />
+                </Typography>
+              </div>
+
+              <Typography component="p" align="center" className="italic">
+                <Trans i18nKey={"buyers.p8"} />
               </Typography>
             </Grid>
           </Grid>

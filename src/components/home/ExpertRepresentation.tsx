@@ -35,24 +35,31 @@ export const ExpertRepresentation = () => {
       <Container className="expert-representation">
         <Grid container spacing={5}>
           <Grid item xs={12} sm={6} data-aos="fade-right" data-aos-delay="400">
-            <Typography>
-              <Trans i18nKey="expertRepresentation.description" />
-            </Typography>
-            <div className="button-container">
-              <div className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge">
-                <Link to="/promotion" className="color-white">
-                  {t("header.link.promotion")}
-                </Link>
-              </div>
-              <div className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge">
-                <Link to="/properties/luxury" className="color-white">
-                  {t("header.link.luxury")}
-                </Link>
-              </div>
-              <div className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge">
-                <Link to="/properties/buy" className="color-white">
-                  {t("header.link.properties")}
-                </Link>
+            <div className="expert-text-container">
+              <Typography>
+                <Trans i18nKey="expertRepresentation.description" />
+              </Typography>
+              <div className="button-container">
+                <div className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge">
+                  <Link to="/promotion" className="color-white">
+                    {t("header.link.promotion")}
+                  </Link>
+                </div>
+                <div className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge">
+                  <Link to="/properties/luxury" className="color-white">
+                    {t("header.link.luxury")}
+                  </Link>
+                </div>
+                <div className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge">
+                  <Link to="/properties/buy" className="color-white">
+                    {t("header.link.properties")}
+                  </Link>
+                </div>
+                <div className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge">
+                  <Link to="/properties/investment" className="color-white">
+                    {t("header.link.investment")}
+                  </Link>
+                </div>
               </div>
             </div>
           </Grid>
