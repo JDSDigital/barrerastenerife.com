@@ -11,11 +11,13 @@ import { Trans } from "gatsby-plugin-react-i18next";
 
 type BuyersPageProps = {
   banner: any; // TODO: Get image type
+  team: any;
 };
 
 const BuyersPage: React.FC<PageProps<BuyersPageProps>> = ({ data }) => {
   const { t } = useTranslation();
 
+  const teamImage = getImage(data.team)!;
   const bannerImage = getImage(data.banner)!;
 
   return (
@@ -31,68 +33,49 @@ const BuyersPage: React.FC<PageProps<BuyersPageProps>> = ({ data }) => {
         <InfoContainer>
           <Grid container>
             <Grid item xs={12}>
-              <div className="info-paragraph">
+              {/* <div className="info-paragraph">
                 <Typography component="p" className="info-number">
                   1
                 </Typography>
                 <Typography component="p">
                   <Trans i18nKey={"buyers.p1"} />
                 </Typography>
-              </div>
+              </div> */}
 
-              <div className="info-paragraph">
-                <Typography component="p" className="info-number">
-                  2
-                </Typography>
-                <Typography component="p">
-                  <Trans i18nKey={"buyers.p2"} />
-                </Typography>
-              </div>
+              <Grid container spacing={5}>
+                <Grid item xs={5}>
+                  <GatsbyImage image={teamImage} alt="" />
+                </Grid>
 
-              <div className="info-paragraph">
-                <Typography component="p" className="info-number">
-                  3
-                </Typography>
-                <Typography component="p">
-                  <Trans i18nKey={"buyers.p3"} />
-                </Typography>
-              </div>
+                <Grid item xs={7}>
+                  <Typography component="p">
+                    <Trans i18nKey={"buyers.p1"} />
+                  </Typography>
 
-              <div className="info-paragraph">
-                <Typography component="p" className="info-number">
-                  4
-                </Typography>
-                <Typography component="p">
-                  <Trans i18nKey={"buyers.p4"} />
-                </Typography>
-              </div>
+                  <Typography component="p">
+                    <Trans i18nKey={"buyers.p2"} />
+                  </Typography>
 
-              <div className="info-paragraph">
-                <Typography component="p" className="info-number">
-                  5
-                </Typography>
-                <Typography component="p">
-                  <Trans i18nKey={"buyers.p5"} />
-                </Typography>
-              </div>
+                  <Typography component="p">
+                    <Trans i18nKey={"buyers.p3"} />
+                  </Typography>
+                  <Typography component="p">
+                    <Trans i18nKey={"buyers.p4"} />
+                  </Typography>
+                </Grid>
+              </Grid>
 
-              <div className="info-paragraph">
-                <Typography component="p" className="info-number">
-                  6
-                </Typography>
-                <Typography component="p">
-                  <Trans i18nKey={"buyers.p6"} />
-                </Typography>
-              </div>
+              <Typography component="p">
+                <Trans i18nKey={"buyers.p5"} />
+              </Typography>
 
-              <div className="info-paragraph">
-                <Typography component="p" className="info-number">
-                  7
-                </Typography>
-                <Typography component="p">
-                  <Trans i18nKey={"buyers.p7"} />
-                </Typography>
-              </div>
+              <Typography component="p">
+                <Trans i18nKey={"buyers.p6"} />
+              </Typography>
+
+              <Typography component="p">
+                <Trans i18nKey={"buyers.p7"} />
+              </Typography>
 
               <Typography component="p" align="center" className="italic">
                 <Trans i18nKey={"buyers.p8"} />
@@ -122,6 +105,11 @@ export const query = graphql`
       }
     }
     banner: file(relativePath: { eq: "buyers/1.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED)
+      }
+    }
+    team: file(relativePath: { eq: "buyers/4.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED)
       }

@@ -37,7 +37,7 @@
       "subtitle": "Hacemos que incluso las transacciones más complicadas se realicen sin problemas"
     },
 
-    "button": "CONTÁCTANOS"
+    "button": "PÓNGASE EN CONTACTO"
   },
 
   "info": {
@@ -323,7 +323,30 @@
   },
 
   "sellers": {
-    "title": "UNDERSTANDING THE SELLING PROCESS",
-    "description": "Vender su casa es un momento emocionante y estimulante. Una información más completa sobre el proceso de venta le traerá los mejores resultados con el menor estrés posible. Aquí describimos algunos puntos importantes del proceso de venta de su propiedad.<br /><br />• una valoración correcta basada en el precio medio de mercado actual, las características del inmueble y las estadísticas de precios oficiales de venta en su zona concreta.<br /><br />•Presencia online a través de web profesional y portales inmobiliarios nacionales e internacionales.<br /><br />Una buena estrategia de marketing.<br /><br />Fotos profesionales, descripción elegante y detallada de la propiedad y de la zona en que se encuentra.<br /><br />• vender una propiedad implica algunos gastos:<br /><br />Una ley introducida en 2013, que establece que para vender o alquilar una propiedad es necesario tener un certificado de eficiencia energética en vigor. Si no tiene uno o ha caducado (válido por 10 años) tendrá que hacerse uno que puede costar desde 100 € dependiendo del tamaño de su propiedad. Tu agente podrá ayudarte a conseguirlo.<br /><br />Un impuesto local a pagar al municipio denominado Plus Valía Municipal (Impuesto sobre el Incremento del Valor de la Tierra). Es posible solicitar una simulación del importe  de la Plusvalía Municipal.<br /><br />Si no es residente fiscal en España, se le retendrá el 3% del precio de venta del inmueble. Este es retenido el día de la escritura pública ante notario por los compradores que están obligados a ingresarlo en la Agencia Tributaria y aportar el justificante del pago. Una vez realizada la retención en La Agencia Tributaría puede solicitar un reembolso parcial o total de la cantidad retenida en la escritura. La devolución dependerá de los posibles impuestos sobre la venta del inmueble.<br /><br />•¿Que documentos necesitas?<br /><br />Documento de identidad y NIE del propietario(s), La \"nota simple\" de la propiedad,<br /><br />un certificado actualizado firmado por el administrador del condominio que indique que no tiene deudas pendientes con la comunidad,<br /><br />comprobante de pago del IBI del año en curso (pago correspondiente por ley al vendedor),<br /><br />si tuviera una hipoteca sobre la propiedad, se requeriría solicitar un certificado al Banco que acredite el importe residual de la deuda.<br /><br />También sería útil preparar copias de las facturas recientes de agua, electricidad y otros impuestos municipales.<br /><br />•¿Cómo se procede en caso de acuerdo económico sobre el precio de venta del inmueble entre comprador y vendedor?<br /><br />Normalmente se firma un contrato preliminar y se establece el tiempo necesario para  realizar la escritura pública. La formalización  de la venta puede variar desde unos días a varias semanas.<br /><br />La entrega de la propiedad a los compradores se realizará en el momento de la escritura pública. La firma se realiza ante un Notario que asistirá a la transacción.<br /><br />Naturalmente, la propiedad debe estar completamente libre de deudas, inquilinos, ocupantes el día de la firma de la escritura pública.<br /><br />Su agente inmobiliario y/o asesor legal (y traductor si es necesario) estarán presentes en la firma para ayudarlo y asegurarse de que se hayan entregado y verificado todos los documentos necesarios.<br /><br />Esperamos que nuestros consejos ayuden. Si desea más información o desea ayuda y asesoramiento para vender su propiedad, no dude en ponerse en contacto con nosotros."
+    "title": "ENTENDER EL PROCESO DE VENTA",
+    "intro": "Vender su casa es un momento emocionante y estimulante. Una información más completa sobre el proceso de venta le traerá los mejores resultados con el menor estrés posible. Aquí describimos algunos puntos importantes del proceso de venta de su propiedad.",
+
+    "p1": "<strong>UNA VALORACIÓN CORRECTA</strong> basada en el precio medio de mercado actual, las características del inmueble y las estadísticas de precios oficiales de venta en su zona concreta.",
+    "p2": "<strong>PRESENCIA ONLINE</strong> a través de web profesional y portales inmobiliarios nacionales e internacionales. Una buena estrategia de marketing.",
+    "p3": "<strong>FOTOS PROFESIONALES</strong>, descripción elegante y detallada de la propiedad y de la zona en que se encuentra.",
+    "p4": "<strong>VENDER UNA PROPIEDAD IMPLICA ALGUNOS GASTOS:</strong>",
+
+    "p41": "Una ley introducida en 2013, que establece que para vender o alquilar una propiedad es necesario tener un certificado de eficiencia energética en vigor. Si no tiene uno o ha caducado (válido por 10 años) tendrá que hacerse uno que puede costar desde 100 € dependiendo del tamaño de su propiedad. Tu agente podrá ayudarte a conseguirlo. ",
+    "p42": "Un impuesto local a pagar al municipio denominado Plus Valía Municipal (Impuesto sobre el Incremento del Valor de la Tierra). Es posible solicitar una simulación del importe de la Plusvalía Municipal.",
+    "p43": "Si no es residente fiscal en España, se le retendrá el 3% del precio de venta del inmueble. Este es retenido el día de la escritura pública ante notario por los compradores que están obligados a ingresarlo en la Agencia Tributaria y aportar el justificante del pago. Una vez realizada la retención en La Agencia Tributaría puede solicitar un reembolso parcial o total de la cantidad retenida en la escritura. La devolución dependerá de los posibles impuestos sobre la venta del inmueble.",
+
+    "p5": "<strong>¿QUÉ DOCUMENTOS NECESITAS?</strong>",
+
+    "p51": "Documento de identidad y NIE del propietario(s), La \"nota simple\" de la propiedad.",
+    "p52": "Un certificado actualizado firmado por el administrador del condominio que indique que no tiene deudas pendientes con la comunidad.",
+    "p53": "Comprobante de pago del IBI del año en curso (pago correspondiente por ley al vendedor).",
+    "p54": "Si tuviera una hipoteca sobre la propiedad, se requeriría solicitar un certificado al Banco que acredite el importe residual de la deuda.",
+    "p55": "También sería útil preparar copias de las facturas recientes de agua, electricidad y otros impuestos municipales.",
+
+    "p6": "<strong>¿CÓMO SE PROCEDE EN CASO DE ACUERDO ECONÓMICO SOBRE EL PRECIO DE VENTA DEL INMUEBLE ENTRE COMPRADOR Y VENDEDOR?</strong>",
+    "p7": "Normalmente se firma un contrato preliminar y se establece el tiempo necesario para realizar la escritura pública. La formalización de la venta puede variar desde unos días a varias semanas. ",
+    "p8": "<strong>LA ENTREGA DE LA PROPIEDAD</strong> a los compradores se realizará en el momento de la escritura pública. La firma se realiza ante un Notario que asistirá a la transacción. Naturalmente, la propiedad debe estar completamente libre de deudas, inquilinos, ocupantes el día de la firma de la escritura pública. Su agente inmobiliario y/o asesor legal (y traductor si es necesario) estarán presentes en la firma para ayudarlo y asegurarse de que se hayan entregado y verificado todos los documentos necesarios.",
+
+    "conclusion": "Esperamos que nuestros consejos ayuden. Si desea más información o desea ayuda y asesoramiento para vender su propiedad, no dude en ponerse en contacto con nosotros."
   }
 }

@@ -5,7 +5,7 @@
   "welcome": "Welcome to the island of eternal spring",
 
   "expertRepresentation": {
-    "title": "Expert Representation",
+    "title": "Notre Expertise",
     "description": "Bienvenue à Inmobiliaria Barreras Tenerife, votre agence immobilière doté d'une grand expérience professionnelle.<br /><br />Nous avons créé notre agence pour vous, afin de vous fournir le service d'excellence, d'honnêteté et de confiance que vous souhaitez trouver à Tenerife.<br /><br />Fondée par Pablo Barreras González en 2000 à Tenerife, l'île la plus grande et la plus peuplée des îles Canaries et aujourd'hui détenue par ses successeurs avec une riche expérience dans le domaine du conseil et des opérations immobilières, Barreras Tenerife S.L. Il est toujours prêt à obtenir des résultats optimaux avec la garantie maximale, offrant un traitement personnalisé adapté à chacun de nos clients, y compris une stratégie marketing innovante et l'intégrité et le professionnalisme dans tous les efforts."
   },
 
@@ -37,7 +37,7 @@
       "subtitle": "Nous faisons en sorte que même les transactions les plus compliquées se déroulent sans problème"
     },
 
-    "button": "GET IN TOUCH"
+    "button": "ENTREZ EN RELATION"
   },
 
   "info": {
@@ -324,6 +324,29 @@
 
   "sellers": {
     "title": "UNDERSTANDING THE SELLING PROCESS",
-    "description": "Vendre sa maison est un moment excitant et stimulant. Une information plus complète sur le processus de vente vous apportera les meilleurs résultats avec le moins de stress possible. Nous décrivons ici quelques points importants du processus de vente immobilière.<br /><br />• une évaluation correcte basée sur le prix moyen actuel du marché, les caractéristiques de la propriété et les statistiques sur les prix de vente officiels dans une zone spécifique.<br /><br />•Présence en ligne à travers le web professionnel et les portails immobiliers nationaux et internationaux.<br /><br />Une bonne stratégie marketing.<br /><br />Photos professionnelles, description élégante et détaillée de la propriété et de la zone dans laquelle elle se trouve.<br /><br />• vendre un bien immobilier implique aussi des frais :<br /><br />Une loi introduite en 2013, qui établit que pour vendre ou louer une propriété, il est nécessaire d'avoir un certificat d'efficacité énergétique valide. Si vous n'en avez pas ou qu'il est périmé (valable 10 ans) vous devrez en faire produire pour un coût à partir de 100€ selon la taille de votre bien. Votre Conseiller Immobilier pourra vous aider à l'obtenir.<br /><br />Une taxe locale à payer à la municipalité appelée Plus Valía Municipal (taxe d'augmentation de la valeur foncière). Il est possible de demander une simulation du montant de la Plusvalía Municipal.<br /><br />Si vous n'êtes pas résident fiscal en Espagne, 3% du prix de vente du bien seront retenus. Celle-ci est retenue au jour de l'acte par les acquéreurs qui sont tenus de la verser à l'administration fiscale et de fournir une preuve de paiement. Vous pouvez alors demander ultérieurement un remboursement partiel ou total de la somme retenue dans l'acte. Le remboursement dépendra des éventuelles taxes sur la vente du bien.<br /><br />•De quels documents avez-vous besoin ?<br /><br />La pièce d'identité et le NIE du ou des propriétaires, la \"nota simple\" du bien,<br /><br />une attestation à jour signée par l'administrateur de la copropriété attestant que vous n'avez pas de dettes impayées avec la communauté,<br /><br />preuve de paiement de l'IBI pour l'année en cours (paiement dû par la loi au vendeur),<br /><br />s'il avait une hypothèque sur la propriété, un certificat devrait être demandé à la Banque attestant le montant résiduel de la dette.<br /><br />Il serait également utile de préparer des copies des factures récentes d'eau, d'électricité et d'autres taxes municipales.<br /><br />•Comment procéder en cas d'accord économique sur le prix de vente du bien entre l'acheteur et le vendeur ?<br /><br />Normalement, un contrat préliminaire est signé et le temps nécessaire pour passer à l'acte est établi. Le moment d'une vente peut varier, cela peut prendre quelques jours ou même plusieurs semaines.<br /><br />La livraison du bien aux acquéreurs aura lieu au moment de l'acte notarié. La signature a lieu devant un notaire qui assistera la transaction.<br /><br />La propriété devra bien sûr être totalement libre de dettes, locataires, occupants au jour de la signature de l'acte.<br /><br />Votre Conseiller Immobilier et/ou conseiller juridique (et traducteur si nécessaire) sera présent lors de la signature pour vous assister et s'assurer que tous les documents nécessaires ont été remis et vérifiés.<br /><br />Nous serions très heureux de vous accompagner dans la réussite de vos projets si cela vous agrée"
+    "intro": "Vendre sa maison est un moment excitant et stimulant. Une information plus complète sur le processus de vente vous apportera les meilleurs résultats avec le moins de stress possible. Nous décrivons ici quelques points importants du processus de vente immobilière.",
+
+    "p1": "<strong>UNE EVALUATION CORRECTE</strong> basée sur le prix moyen actuel du marché, les caractéristiques de la propriété et les statistiques sur les prix de vente officiels dans une zone spécifique.",
+    "p2": "<strong>PRESENCE EN LIGNE A TRAVERS LE WEB PROFESSIONNEL</strong> et les portails immobiliers nationaux et internationaux. Une bonne stratégie marketing.",
+    "p3": "<strong>PHOTOS PROFESSIONNELLES</strong>, description élégante et détaillée de la propriété et de la zone dans laquelle elle se trouve.",
+    "p4": "<strong>VENDRE UN BIEN IMMOBILIER IMPLIQUE AUSSI DES FRAIS:</strong>",
+
+    "p41": "Une loi introduite en 2013, qui établit que pour vendre ou louer une propriété, il est nécessaire d'avoir un certificat d'efficacité énergétique valide. Si vous n'en avez pas ou qu'il est périmé (valable 10 ans) vous devrez en faire produire pour un coût à partir de 100€ selon la taille de votre bien. Votre Conseiller Immobilier pourra vous aider à l'obtenir.",
+    "p42": "Une taxe locale à payer à la municipalité appelée Plus Valía Municipal (taxe d'augmentation de la valeur foncière). Il est possible de demander une simulation du montant de la Plusvalía Municipal.",
+    "p43": "Si vous n'êtes pas résident fiscal en Espagne, 3% du prix de vente du bien seront retenus. Celle-ci est retenue au jour de l'acte par les acquéreurs qui sont tenus de la verser à l'administration fiscale et de fournir une preuve de paiement. Vous pouvez alors demander ultérieurement un remboursement partiel ou total de la somme retenue dans l'acte. Le remboursement dépendra des éventuelles taxes sur la vente du bien.",
+
+    "p5": "<strong>DE QUELS DOCUMENTS AVEZ-VOUS BESOIN?</strong>",
+
+    "p51": "La pièce d'identité et le NIE du ou des propriétaires, la \"nota simple\" du bien,",
+    "p52": "une attestation à jour signée par l'administrateur de la copropriété attestant que vous n'avez pas de dettes impayées avec la communauté,",
+    "p53": "preuve de paiement de l'IBI pour l'année en cours (paiement dû par la loi au vendeur),",
+    "p54": "s'il avait une hypothèque sur la propriété, un certificat devrait être demandé à la Banque attestant le montant résiduel de la dette.",
+    "p55": "Il serait également utile de préparer des copies des factures récentes d'eau, d'électricité et d'autres taxes municipales.",
+
+    "p6": "<strong>COMMENT PROCEDER EN CAS D'ACCORD ECONOMIQUE SUR LE PRIX DE VENTE</strong>",
+    "p7": "Normalement, un contrat préliminaire est signé et le temps nécessaire pour passer à l'acte est établi. Le moment d'une vente peut varier, cela peut prendre quelques jours ou même plusieurs semaines.",
+    "p8": "<strong>LA LIVRAISON DU BIEN</strong> aux acquéreurs aura lieu au moment de l'acte notarié. La signature a lieu devant un notaire qui assistera la transaction. La propriété devra bien sûr être totalement libre de dettes, locataires, occupants au jour de la signature de l'acte. Votre Conseiller Immobilier et/ou conseiller juridique (et traducteur si nécessaire) sera présent lors de la signature pour vous assister et s'assurer que tous les documents nécessaires ont été remis et vérifiés.",
+
+    "conclusion": "Nous serions très heureux de vous accompagner dans la réussite de vos projets si cela vous agrée"
   }
 }

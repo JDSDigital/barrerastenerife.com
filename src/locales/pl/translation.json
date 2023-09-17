@@ -5,7 +5,7 @@
   "welcome": "Welcome to the island of eternal spring",
 
   "expertRepresentation": {
-    "title": "Expert Representation",
+    "title": "KONTAKTIEREN SIE UNS",
     "description": "Witamy w Inmobiliaria Barreras Tenerife, agencji nieruchomości, której możesz zaufać.<br /><br />Naszą agencję na Teneryfie stworzyliśmy dla Ciebie, a świadczone przez nas usługi cechują Perfekcja, Uczciwość i Zaufanie.<br /><br />Założona przez Pablo Barrerasa Gonzáleza w 2000 roku na Teneryfie, największej i najgęściej zaludnionej wyspie archipelagu Wysp Kanaryjskich, a obecnie należąca do jego następców z bogatym doświadczeniem w dziedzinie doradztwa i negocjacji w zakresie nieruchomości,  Agencja Barreras Tenerife S.L. osiąga najlepsze rezultaty z najwyższą gwarancją, oferując indywidualne podejście dostosowane do każdego z naszych klientów, w tym innowacyjną strategię marketingową oraz rzetelność i profesjonalizm we wszystkich działaniach."
   },
 
@@ -37,7 +37,7 @@
       "subtitle": "Dzięki nam nawet najbardziej skomplikowane transakcje przebiegają sprawnie"
     },
 
-    "button": "GET IN TOUCH"
+    "button": "SKONTAKTUJ SIĘ Z NAMI"
   },
 
   "info": {
@@ -324,6 +324,29 @@
 
   "sellers": {
     "title": "UNDERSTANDING THE SELLING PROCESS",
-    "description": ""
+    "intro": "Sprzedaż domu to ekscytujący i ważny moment. Pełniejsza wiedza o procesie sprzedaży przyniesie najlepsze efekty przy możliwie najmniejszym stresie. W tym miejscu opisujemy kilka ważnych punktów procesu sprzedaży nieruchomości.",
+
+    "p1": "<strong>WŁAŚCIWA WYCENA OPARTA NA AKTUALNEJ ŚREDNIEJ CENIE RYNKOWEJ</strong>, charakterystyce nieruchomości oraz statystykach dotyczących oficjalnych cen sprzedaży na danym terenie.",
+    "p2": "<strong>OBECNOŚĆ W INTERNECIE</strong> za pośrednictwem profesjonalnych portali internetowych oraz krajowych i międzynarodowych portali nieruchomości. Dobra strategia marketingowa.",
+    "p3": "<strong>PROFESJONALNE ZDJĘCIA</strong>, elegancki i szczegółowy opis nieruchomości oraz okolicy, w której się znajduje.",
+    "p4": "<strong>SPRZEDAŻ NIERUCHOMOŚCI WIĄŻE SIĘ RÓWNIEŻ Z PEWNYMI KOSZTAMI:</strong>",
+
+    "p41": "W 2013 r. została wprowadzona ustawa, która stanowi, że aby sprzedać lub wynająć nieruchomość, konieczne jest posiadanie ważnego świadectwa efektywności energetycznej. Jeśli go nie posiadasz lub wygasł (ważny przez 10 lat), należy go wyrobić, co może kosztować od 100 €, w zależności od wielkości Twojej nieruchomości. Twój agent pomoże Ci go zdobyć.",
+    "p42": "Lokalny podatek do zapłaty na rzecz gminy o nazwie Plus Valía Municipal (podatek od wzrostu wartości gruntu). Istnieje możliwość zawnioskowania o symulację kwoty Plusvalía Municipal.",
+    "p43": "Jeśli nie jesteś rezydentem podatkowym w Hiszpanii, 3% ceny sprzedaży nieruchomości zostanie potrącone i zatrzymane w dniu aktu przez kupujących, którzy są zobowiązani do wpłacenia go do Urzędu Skarbowego i przedstawienia dowodu wpłaty. Możesz później zażądać częściowego lub pełnego zwrotu kwoty zatrzymanej w akcie. Zwrot będzie uzależniony od ewentualnych podatków od sprzedaży nieruchomości.",
+
+    "p5": "<strong>JAKICH DOKUMENTÓW POTRZEBUJESZ?</strong>",
+
+    "p51": "Dokument tożsamości i numer NIE właściciela (właścicieli), „nota simple” nieruchomości,",
+    "p52": "aktualne zaświadczenie podpisane przez zarządcę wspólnoty mieszkaniowej stwierdzające, że nie masz żadnych zobowiązań wobec wspólnoty,",
+    "p53": "dowód wpłaty IBI za bieżący rok (płatność należna z mocy prawa sprzedającemu),",
+    "p54": "jeśli masz hipotekę na nieruchomości, konieczne jest zażądanie od Banku zaświadczenia potwierdzającego pozostałą kwotę długu.",
+    "p55": "Przydatne byłoby również sporządzenie kopii ostatnich rachunków za wodę, prąd i inne podatki miejskie.",
+
+    "p6": "<strong>6. JAK POSTĘPOWAĆ W PRZYPADKU ZAWARCIA UMOWY GOSPODARCZEJ W SPRAWIE CENY SPRZEDAŻY NIERUCHOMOŚCI MIĘDZY KUPUJĄCYM A SPRZEDAJĄCYM?</strong>",
+    "p7": "Zwykle podpisywana jest umowa przedwstępna i ustalany jest czas potrzebny na przystąpienie do aktu. Czas trwania procesu sprzedaży bywa różny, może zająć zaledwie kilka dni lub nawet kilka tygodni.",
+    "p8": "Wydanie nieruchomości nabywcom nastąpi w momencie zawarcia aktu. Podpisanie odbywa się przed notariuszem, który będzie asystował przy transakcji. Oczywiście nieruchomość musi być całkowicie wolna od długów, najemców i mieszkańców w dniu podpisania aktu. Twój agent nieruchomości i/lub doradca prawny (i tłumacz w razie potrzeby) będą obecni przy podpisywaniu, aby pomóc Ci i upewnić się, że wszystkie niezbędne dokumenty zostały dostarczone i sprawdzone.",
+
+    "conclusion": "Mamy nadzieję, że nasze wskazówki są pomocne. Jeśli potrzebujesz więcej informacji lub pomocy i porady w sprawie sprzedaży swojej nieruchomości, nie wahaj się z nami skontaktować."
   }
 }

@@ -5,7 +5,7 @@
   "welcome": "Welcome to the island of eternal spring",
 
   "expertRepresentation": {
-    "title": "Expert Representation",
+    "title": "Expertenvertretung",
     "description": "Herzlich willkommen bei Inmobiliaria Barreras Teneriffa, Ihrer vertrauenswürdigen Immobilienagentur.<br /><br />Wir haben diese Agentur gegründet, um Ihnen den erstklassigen Service, Ehrlichkeit und Vertrauen zu bieten, nach dem Sie auf Teneriffa suchen.<br /><br />Barreras Teneriffa S.L. wurde im Jahr 2000 von Pablo Barreras González auf Teneriffa, der größten und bevölkerungsreichsten Insel der Kanarischen Inseln, gegründet. Heute befindet sich das Unternehmen im Besitz seiner Nachfolger und kann auf eine erfolgreiche Geschichte in der Immobilienberatung und -vermittlung zurückblicken.  Wir streben immer nach optimalen Ergebnissen mit maximaler Gewährleistung und bieten jedem unserer Kunden eine individuell zugeschnittene, personalisierte Betreuung. Dabei setzen wir auf innovative Marketingstrategien sowie Integrität und Professionalität in all unseren Bemühungen."
   },
 
@@ -37,7 +37,7 @@
       "subtitle": "Wir sorgen dafür, dass selbst die kompliziertesten Transaktionen reibungslos ablaufen"
     },
 
-    "button": "GET IN TOUCH"
+    "button": "KONTAKTIEREN SIE UNS"
   },
 
   "info": {
@@ -324,6 +324,29 @@
 
   "sellers": {
     "title": "UNDERSTANDING THE SELLING PROCESS",
-    "description": "Der Verkauf Ihres Hauses ist ein aufregender und spannender Moment. Um die besten Ergebnisse mit möglichst geringem Stress zu erzielen, möchten wir Ihnen umfassende Informationen über den Verkaufsprozess bereitstellen. Im Folgenden beschreiben wir einige wichtige Punkte des Immobilienverkaufsprozesses:<br /><br />• eine korrekte Bewertung basierend auf dem aktuellen durchschnittlichen Marktpreis, den Eigenschaften der Immobilie und den Statistiken über offizielle Verkaufspreise in einem bestimmten Gebiet.<br /><br />•Online-Präsenz über professionelle Webseiten sowie nationale und internationale Immobilienportale.<br /><br />•Eine gute Marketingstrategie, einschließlich professioneller Fotos und einer eleganten und detaillierten Beschreibung der Immobilie und ihrer Umgebung.<br /><br />• Der Verkauf einer Immobilie ist mit bestimmten Kosten verbunden, wie z.B. dem Energieausweis, der gemäß einem 2013 eingeführten Gesetz für den Verkauf oder die Vermietung einer Immobilie erforderlich ist. Falls Sie keinen gültigen Energieausweis haben oder dieser abgelaufen ist (gültig für 10 Jahre), müssen Sie einen neuen erstellen lassen, was je nach Größe Ihrer Immobilie ab 100 € kosten kann. Ihr Makler kann Ihnen bei der Beschaffung behilflich sein.<br /><br />• Eine lokale Steuer, genannt Plusvalía Municipal (Bodenwertsteigerungssteuer), die an die Gemeinde zu zahlen ist. Es besteht die Möglichkeit, eine Simulation des Betrags der Plusvalía Municipal anzufordern.<br /><br />• Wenn Sie nicht in Spanien steuerlich ansässig sind, wird ein Betrag von 3 % des Verkaufspreises der Immobilie einbehalten. Dieser Betrag wird am Tag der Kaufurkunde von den Käufern einbehalten und muss an das Finanzamt abgeführt werden. Später können Sie eine teilweise oder vollständige Rückerstattung des einbehaltenen Betrags beantragen, abhängig von den eventuellen Steuern beim Verkauf der Immobilie.<br /><br />•Welche Dokumente benötigen Sie?<br /><br />Erforderlich sind der Ausweis und die NIE-Nummer des/der Eigentümer(s), die \"nota simple\" der Immobilie, eine aktuelle Bescheinigung vom Wohnungseigentumsverwalter, dass Sie keine ausstehenden Schulden gegenüber der Gemeinde haben, sowie der Nachweis über die Zahlung des IBI (Grundsteuer) für das laufende Jahr.<br /><br />Falls Sie eine Hypothek auf die Immobilie haben, müssen Sie eine Bescheinigung über den Restbetrag der Schulden von der Bank anfordern. Es wäre auch hilfreich, Kopien der aktuellen Rechnungen für Wasser, Strom und andere kommunale Steuern anzufertigen.<br /><br />•Wie wird vorgegangen, wenn Käufer und Verkäufer sich über den Verkaufspreis der Immobilie einigen?<br /><br />Im Falle einer wirtschaftlichen Einigung über den Verkaufspreis der Immobilie zwischen Käufer und Verkäufer wird normalerweise ein Vorvertrag unterzeichnet, und die Dauer bis zur Kaufurkunde wird festgelegt. Der Zeitpunkt für einen Verkauf kann variieren und dauert in der Regel nur wenige Tage oder sogar mehrere Wochen.<br /><br />• Der Kauf der Immobilie tritt in Kraft, sobald die Kaufurkunde erstellt wird. Die Unterzeichnung erfolgt vor einem Notar, der die Transaktion begleitet.<br /><br />Selbstverständlich muss die Immobilie am Tag der Unterzeichnung der Kaufurkunde völlig schulden-, miet- und bewohnungsfrei sein.<br /><br />Ihr Immobilienmakler und/oder Rechtsberater (und ggf. ein Übersetzer) werden bei der Unterzeichnung anwesend sein, um Sie zu unterstützen und sicherzustellen, dass alle erforderlichen Dokumente übergeben und überprüft wurden.<br /><br />Wir hoffen, dass unsere Tipps helfen. Wenn Sie weitere Informationen wünschen oder Hilfe und Beratung beim Verkauf Ihrer Immobilie benötigen, zögern Sie nicht, uns zu kontaktieren."
+    "intro": "Selling your home is an exciting and stimulating time. More complete information about the selling process will bring you the best results with as little stress as possible. Here, we describe some important points of the process of selling your property.",
+
+    "p1": "<strong>A CORRECT VALUATION</strong> based on the current average market price, the characteristics of the property and the statistics of official sales prices in a specific area.",
+    "p2": "<strong>ONLINE PRESENCE</strong> through a professional website and national and international real estate portals. A good marketing strategy.",
+    "p3": "<strong>PROFESSIONAL PHOTOS</strong>, elegant and detailed description of the property and the area in which it is located.",
+    "p4": "<strong>SELLING A PROPERTY ALSO INVOLVES SOME COSTS: </strong>",
+
+    "p41": "A law introduced in 2013, which states that in order to sell or rent a property it is necessary to have a valid energy efficiency certificate. If you don't have one or it has expired (valid for 10 years) you will need to get one done which can cost from €100 depending on the size of your property. Your agent will be able to help you get one.",
+    "p42": "A local tax to be paid to the municipality called Plus Valía Municipal (Impuesto sobre el Incremento del Valor de la Tierra). It is possible to request a simulation of the amount of the Plus Valia Municipal.",
+    "p43": "If you are not a tax resident in Spain, 3% of the sale price of the property will be withheld. This is withheld on the day of the deed by the purchasers who are obliged to pay it to the Tax Office and provide proof of payment. You can then request a partial or total refund of the amount withheld in the deed. The refund will depend on the possible taxes on the sale of the property.",
+
+    "p5": "<strong>¿QUÉ DOCUMENTOS NECESITAS?</strong>",
+
+    "p51": "Identity card and NIE of the owner(s), The \"nota simple\" of the property an updated certificate signed by the administrator of the condominium stating that there are no outstanding debts with the community.",
+    "p52": "An updated certificate signed by the condominium administrator indicating that you have no outstanding debts with the community.",
+    "p53": "Proof of payment of the IBI for the current year (payment due by law to the seller).",
+    "p54": "If you have a mortgage on the property, you would be required to request a certificate from the Bank stating the residual amount of the debt.",
+    "p55": "It would also be useful to prepare copies of recent bills for water, electricity and other municipal taxes.",
+
+    "p6": "<strong>WHAT IS THE PROCEDURE IN CASE OF A FINANCIAL AGREEMENT ON THE SALE PRICE OF THE PROPERTY BETWEEN BUYER AND SELLER?</strong>",
+    "p7": "Normally a preliminary contract is signed and the time required to go to title deeds is established. The timing of a sale can vary, it could take only a few days or even several weeks.",
+    "p8": "<strong>THE HANDOVER OF THE PROPERTY</strong> to the buyers will take place at the time of the deed. The signing is done in front of a Notary who will attend the transaction. Naturally, the property must be completely free of debts, tenants, occupants on the day of the signing of the title deed. Your real estate agent and/or legal advisor (and translator if necessary) will be present at the signing to assist you and ensure that all the necessary documents have been delivered and verified.",
+
+    "conclusion": "We hope our advice will help. If you would like more information or would like help and advice on selling your property, please do not hesitate to contact us."
   }
 }

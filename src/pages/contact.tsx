@@ -32,17 +32,6 @@ const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
 
       <ContactBanner />
 
-      {/* <Container className="text-center">
-        <Typography
-          variant="h4"
-          className="text-blastyes"
-          align="center"
-          gutterBottom
-        >
-          {t("welcome")}
-        </Typography>
-      </Container> */}
-
       <Container>
         <Grid
           container
@@ -60,7 +49,7 @@ const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
               <GatsbyImage
                 image={teamImage}
                 alt="Team image"
-                className="img-responsive crop-center"
+                className="img-responsive crop-center contact-image"
               />
             )}
           </Grid>
@@ -123,7 +112,7 @@ export const query = graphql`
         }
       }
     }
-    team: file(relativePath: { eq: "home/6.jpg" }) {
+    team: file(relativePath: { eq: "contact/2.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED)
       }
