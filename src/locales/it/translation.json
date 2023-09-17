@@ -5,7 +5,7 @@
   "welcome": "Welcome to the island of eternal spring",
 
   "expertRepresentation": {
-    "title": "Expert Representation",
+    "title": "Presentazione dei Professionisti",
     "description": "Benvenuto in Inmobiliaria Barreras Tenerife, la tua agenzia immobiliare di fiducia.<br /><br />Abbiamo creato la nostra agenzia per te, per fornirti un ​​servizio di Eccellenza e Fiducia a Tenerife.<br /><br />Fondata da Pablo Barreras González nel 2000 a Tenerife, l'isola più grande e popolosa delle Canarie e oggi di proprietà dei suoi successori con una ricca esperienza nel campo immobiliare, Barreras Tenerife S.L. é sempre pronta a ottenere risultati ottimali con la massima garanzia, offrendo un trattamento personalizzato su misura per ciascuno dei nostri clienti e una strategia di marketing innovativa e professionale."
   },
 
@@ -37,7 +37,7 @@
       "subtitle": "Facciamo in modo che anche le transazioni più complicate si svolgano senza intoppi"
     },
 
-    "button": "GET IN TOUCH"
+    "button": "METTERSI IN CONTACTO"
   },
 
   "info": {
@@ -324,6 +324,29 @@
 
   "sellers": {
     "title": "UNDERSTANDING THE SELLING PROCESS",
-    "description": "Vendere la propria casa è un momento emozionante e stimolante. Una piú completa informazione sul processo di vendita le porterà migliori risultati con il minor stress possibile. Qui, descriviamo alcuni punti importanti del processo di vendita  immobiliare.<br /><br />• una valutazione corretta in base al prezzo medio attuale del mercato, alle caratteristiche della proprietà e alle statistiche sui prezzi ufficiali di vendita di una specifica zona.<br /><br />•Presenza online tramite web professionale e portali inmobiliari nazionali e internazionali.<br /><br />Una buona strategia di marketing.<br /><br />Foto professionali, descrizione elegante e dettagliata della proprietà e della zona in cui si trova.<br /><br />• vendere una proprietà comporta anche alcuni costi: <br /><br />Una legge introdotta nel 2013, che stabilisce che per vendere o affittare un immobile è necessario avere un certificato di efficienza energetica valido. Se non ne ha uno o é scaduto ( validitá 10 anni) dovrà far realizzare uno che può costare a partire da € 100 a seconda delle dimensioni della sua proprietà. Il suo agente sarà in grado di aiutarle a ottenerlo.<br /><br />Una tassa locale da pagare al comune chiamata Plus Valía Municipal (Imposta sull'aumento del valore del terreno). É possibile richiedere una simulazione dell'ammontare della Plusvalía Municipal.<br /><br />Se Lei  non ha la residenza fiscale in Spagna le verrà trattenuto il 3% sul importo di vendita della proprietà. Questo viene  trattenuto il ​​giorno del rogito dagli acquirenti che  hanno obbligo di versarlo all'Agenzia tributaria e fornirle una prova del versamento. Potrà poi in seguito richiedere il rimborso parziale o completo della somma trattenuta nel rogito. Il rimborso dipenderà dalle possibili tasse sulla vendita della proprietà.<br /><br />•Di quali documenti ha bisogno? <br /><br />Il documento di identità e il NIE del/dei proprietario/i, La \"nota simple\" della proprietà,<br /><br />un certificato  aggiornato firmato dall'amministratore condominiale attestante che non si ha debiti insoluti con la comunità, <br /><br />prova del pagamento dell'IBI dell'anno in corso ( pagamento che spetta per legge alla parte venditrice),<br /><br />nel caso avesse un mutuo sulla proprietà servirebbe un certificato da richiedere alla Banca che attesta l'importo residuo del debito,<br /><br />Sarebbe utile anche preparare copia delle bollette recenti di acqua, luce, altre tasse comunali.<br /><br />•Como si procede in caso di un accordo economico sul prezzo di vendita della proprietà  tra le parti acquirente e venditrice?<br /><br />Di norma si procede alla firma di un contratto preliminare  e si stabilisce quale sarà il tempo necessario per andare al rogito. I tempi per una vendita possono variare, potrebbero volerci solo alcuni giorni oppure anche diverse settimane. <br /><br />La consegna della proprietà agli acquirenti avverrà al momento del rogito. La firma avviene davanti a un Notaio che assisterà alla transazione.<br /><br />La  proprietà naturalmente dovrà essere completamente libera da debiti ,inquilini ,occupanti il ​​giorno in cui si firma il rogito.<br /><br />Il suo agente inmobiliare e/o consulente legale (e traduttore nel caso avesse bisogno) saranno  presenti alla firma per assisterla e assicurarsi che tutti i documenti necessari siano stati recapitati e controllati . <br /><br />Ci auguriamo che i nostri consigli possano essere di aiuto. Se desidera maggiori informazioni o desidera aiuto e consigli sulla vendita della sua proprietà, non esiti a  contattarci."
+    "intro": "Vendere la propria casa è un momento emozionante e stimolante. Una piú completa informazione sul processo di vendita le porterà migliori risultati con il minor stress possibile. Qui, descriviamo alcuni punti importanti del processo di vendita  immobiliare.",
+
+    "p1": "<strong>UNA VALUTAZIONE CORRETTA</strong> in base al prezzo medio attuale del mercato, alle caratteristiche della proprietà e alle statistiche sui prezzi ufficiali di vendita di una specifica zona.",
+    "p2": "<strong>PRESENZA ONLINE</strong> tramite web professionale e portali inmobiliari nazionali e internazionali. Una buona strategia di marketing.",
+    "p3": "<strong>FOTO PROFESSIONALI</strong>, descrizione elegante e dettagliata della proprietà e della zona in cui si trova.",
+    "p4": "<strong>VENDERE UNA PROPRIETÀ COMPORTA ANCHE ALCUNI COSTI:</strong>",
+
+    "p41": "Una legge introdotta nel 2013, che stabilisce che per vendere o affittare un immobile è necessario avere un certificato di efficienza energetica valido. Se non ne ha uno o é scaduto ( validitá 10 anni) dovrà far realizzare uno che può costare a partire da € 100 a seconda delle dimensioni della sua proprietà. Il suo agente sarà in grado di aiutarle a ottenerlo.",
+    "p42": "Una tassa locale da pagare al comune chiamata Plus Valía Municipal (Imposta sull'aumento del valore del terreno). É possibile richiedere una simulazione dell'ammontare della Plusvalía Municipal.",
+    "p43": "Se Lei  non ha la residenza fiscale in Spagna le verrà trattenuto il 3% sul importo di vendita della proprietà. Questo viene  trattenuto il ​​giorno del rogito dagli acquirenti che  hanno obbligo di versarlo all'Agenzia tributaria e fornirle una prova del versamento. Potrà poi in seguito richiedere il rimborso parziale o completo della somma trattenuta nel rogito. Il rimborso dipenderà dalle possibili tasse sulla vendita della proprietà.",
+
+    "p5": "<strong>DI QUALI DOCUMENTI HA BISOGNO?</strong>",
+
+    "p51": "Il documento di identità e il NIE del/dei proprietario/i, La \"nota simple\" della proprietà,",
+    "p52": "Un certificato  aggiornato firmato dall'amministratore condominiale attestante che non si ha debiti insoluti con la comunità, ",
+    "p53": "Prova del pagamento dell'IBI dell'anno in corso ( pagamento che spetta per legge alla parte venditrice),",
+    "p54": "Nel caso avesse un mutuo sulla proprietà servirebbe un certificato da richiedere alla Banca che attesta l'importo residuo del debito,",
+    "p55": "Sarebbe utile anche preparare copia delle bollette recenti di acqua, luce, altre tasse comunali.",
+
+    "p6": "<strong>COMO SI PROCEDE IN CASO DI UN ACCORDO ECONOMICO SUL PREZZO DI VENDITA DELLA PROPRIETÀ  TRA LE PARTI ACQUIRENTE E VENDITRICE?</strong>",
+    "p7": "Di norma si procede alla firma di un contratto preliminare  e si stabilisce quale sarà il tempo necessario per andare al rogito. I tempi per una vendita possono variare, potrebbero volerci solo alcuni giorni oppure anche diverse settimane.",
+    "p8": "<strong>LA CONSEGNA DELLA PROPRIETÀ</strong> agli acquirenti avverrà al momento del rogito. La firma avviene davanti a un Notaio che assisterà alla transazione. La  proprietà naturalmente dovrà essere completamente libera da debiti ,inquilini ,occupanti il ​​giorno in cui si firma il rogito. Il suo agente inmobiliare e/o consulente legale (e traduttore nel caso avesse bisogno) saranno  presenti alla firma per assisterla e assicurarsi che tutti i documenti necessari siano stati recapitati e controllati.",
+
+    "conclusion": "Ci auguriamo che i nostri consigli possano essere di aiuto. Se desidera maggiori informazioni o desidera aiuto e consigli sulla vendita della sua proprietà, non esiti a  contattarci."
   }
 }

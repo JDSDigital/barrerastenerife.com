@@ -363,7 +363,7 @@ body {
 
       .thinking-image-container {
         position: relative;
-        height: calc(100vh - 90px);
+        height: calc(60vh);
       }
 
       .thinking-image-overlay {
@@ -419,6 +419,14 @@ body {
 
     .info {
       overflow-x: hidden;
+
+      p {
+        margin-bottom: 16px;
+      }
+
+      img {
+        padding-bottom: 24px;
+      }
 
       .info-banner-container {
         height: 100vh;
@@ -749,6 +757,10 @@ body {
       }
     }
   }
+}
+.contact-image {
+  height: 500px;
+  width: auto;
 }
 
 .contact-container {

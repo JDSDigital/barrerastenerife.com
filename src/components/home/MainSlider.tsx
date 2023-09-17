@@ -78,7 +78,7 @@ const MainSlider: React.FC = () => {
 
     return (
       <Grid container spacing={2} alignItems="center" justifyContent="center">
-        <Grid item xs={12} sm={8}>
+        <Grid item xs={12} sm={6}>
           <TownSearch
             value={town}
             onChange={handleChange}
