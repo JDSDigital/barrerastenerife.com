@@ -23,7 +23,7 @@ const PropertyDescription: React.FC<Props> = ({ price, title, address }) => {
         <Typography
           variant="h6"
           component="p"
-          className="color-white text-lato-light text-uppercase"
+          className="color-white text-lato-light text-uppercase text-truncate"
         >
           {address}
         </Typography>
@@ -35,7 +35,7 @@ const PropertyDescription: React.FC<Props> = ({ price, title, address }) => {
           {formatPrice(price)}
         </Typography>
       </div>
-      <div>
+      <div className="property-card-footer">
         <div className="small-divider" />
         <Typography
           variant="h6"

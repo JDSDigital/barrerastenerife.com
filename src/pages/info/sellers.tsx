@@ -39,11 +39,11 @@ const SellersPage: React.FC<PageProps<SellersPageProps>> = ({ data }) => {
             </Grid>
 
             <Grid container spacing={5}>
-              <Grid item xs={5}>
+              <Grid item xs={12} md={5}>
                 <GatsbyImage image={teamImage} alt="" />
               </Grid>
 
-              <Grid item xs={7}>
+              <Grid item xs={12} md={7}>
                 <Typography component="p">
                   <Trans i18nKey={"sellers.p1"} />
                 </Typography>

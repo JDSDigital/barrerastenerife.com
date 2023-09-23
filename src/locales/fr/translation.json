@@ -59,19 +59,19 @@
 
   "header": {
     "link": {
-      "buy": "Buy",
-      "rent": "Rent",
-      "about": "About Us",
+      "buy": "Acheter",
+      "rent": "Louer",
+      "about": "À propos de nous",
       "contact": "Contact",
-      "invest": "Invest",
-      "local": "Shop",
-      "promotion": "New development",
-      "luxury": "Luxury properties",
-      "investment": "Investment Projects",
-      "properties": "Properties",
+      "invest": "Investir",
+      "local": "boutique",
+      "promotion": "Nouveau développement",
+      "luxury": "Propriétés de luxe",
+      "investment": "Projets d'investissement",
+      "properties": "Propriétés",
       "info": "Info",
-      "forBuyers": "For buyers",
-      "forSellers": "For sellers"
+      "forBuyers": "Pour les acheteur",
+      "forSellers": "Pour les vendeurs"
     }
   },
 
@@ -123,7 +123,7 @@
 
   "properties": {
     "title": "Properties",
-    "featured": "Featured Properties",
+    "featured": "Propriétés Remarquables",
     "recent": "Recent properties",
     "sell": "Properties for sale",
     "rent": "Properties for rent",
@@ -167,18 +167,18 @@
       "body": "NOS CONSEILLERS sont à votre disposition pour vous administrer dans la vente ou la location de votre bien, ainsi pour vous guider dans toutes transactions immobilières.<br /><br />NOUS SERONS HEUREUX DE POUVOIR VOUS GUIDER.<br /><br />Nos meilleures salutations Barreras Real Estate"
     },
 
-    "title": "Contact us",
-    "subtitle": "At your service.",
-    "address": "Address",
-    "phone": "Phone",
+    "title": "Contactez-nous",
+    "subtitle": "À votre service.",
+    "address": "Adresse",
+    "phone": "Téléphone",
     "email": "Email",
 
     "form": {
-      "name": "Name",
+      "name": "Nom",
       "email": "Email",
       "message": "Message",
-      "send": "Send",
-      "sent": "Sent"
+      "send": "Envoyer",
+      "sent": "Envoyé"
     }
   },
 

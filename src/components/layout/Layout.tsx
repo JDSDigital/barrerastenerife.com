@@ -42,7 +42,7 @@ export const Layout: React.FC<Props> = ({ children }) => {
   });
 
   useEffect(() => {
-    Aos.init({ duration: 1200 });
+    Aos.init({ duration: 800 });
   }, []);
 
   return (

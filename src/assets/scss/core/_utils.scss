@@ -91,6 +91,11 @@
 .text-uppercase {
   text-transform: uppercase;
 }
+.text-truncate {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .font-bold {
   font-weight: 700 !important;
 }

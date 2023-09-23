@@ -123,8 +123,8 @@
 
   "properties": {
     "title": "Immobilie",
-    "featured": "Featured Properties",
-    "recent": "neuesten Immobilien",
+    "featured": "Hervorgehobene Eigenschaften",
+    "recent": "Neuesten Immobilien",
     "sell": "Immobilien zum Verkauf",
     "rent": "Immobilien zur Vermietung",
     "related": "verwandte Eigenschaften",
@@ -175,7 +175,7 @@
 
     "form": {
       "name": "Name",
-      "email": "E-Mail",
+      "email": "Email",
       "message": "Meldung",
       "send": "senden",
       "sent": "geschickt"

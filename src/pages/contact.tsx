@@ -112,7 +112,7 @@ export const query = graphql`
         }
       }
     }
-    team: file(relativePath: { eq: "contact/2.jpg" }) {
+    team: file(relativePath: { eq: "contact/4.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED)
       }
