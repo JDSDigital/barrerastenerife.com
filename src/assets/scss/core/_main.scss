@@ -107,7 +107,7 @@ body {
       justify-content: center;
       height: 100%;
 
-      @include sm {
+      @include lg {
         display: flex;
       }
     }
@@ -140,10 +140,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 24px;
 
     a {
       display: flex;
-      padding: 14px 0;
       border-bottom: none;
     }
   }
@@ -424,12 +426,40 @@ body {
         margin-bottom: 16px;
       }
 
-      img {
-        padding-bottom: 24px;
-      }
-
       .info-banner-container {
         height: 100vh;
+
+        img {
+          height: 100vh;
+        }
+
+        .info-banner-title {
+          font-size: 3rem;
+          margin-bottom: 0;
+          font-weight: bold;
+
+          @include sm {
+            font-size: 4rem;
+          }
+        }
+
+        .info-banner-subtitle {
+          font-size: 2rem;
+          margin-bottom: 0;
+
+          @include sm {
+            font-size: 3rem;
+          }
+        }
+
+        .info-banner-subtitle2 {
+          font-size: 1.6rem;
+          margin-bottom: 0;
+
+          @include sm {
+            font-size: 2rem;
+          }
+        }
       }
 
       .info-paragraph {
@@ -597,11 +627,11 @@ body {
     .property-more-info {
       font-size: 18px;
 
-      -webkit-transition: all 0.3s linear;
-      -moz-transition: all 0.3s linear;
-      -o-transition: all 0.3s linear;
-      -ms-transition: all 0.3s linear;
-      transition: all 0.3s linear;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
 
     &:hover .property-more-info {
@@ -613,17 +643,26 @@ body {
       width: 0px;
       border-top: 1px solid #fff;
 
-      -webkit-transition: all 0.3s linear;
-      -moz-transition: all 0.3s linear;
-      -o-transition: all 0.3s linear;
-      -ms-transition: all 0.3s linear;
-      transition: all 0.3s linear;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .property-card-footer {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      position: absolute;
+      bottom: 0;
     }
   }
 
   .property-card-overlay {
-    display: flex;
+    // display: flex;
     position: absolute;
+    overflow: hidden;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -632,11 +671,11 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     // background-color: rgba(29, 177, 184, 0.3);
 
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    -ms-transition: all 0.3s linear;
-    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .property-card-content {
@@ -644,14 +683,10 @@ body {
     position: relative;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1;
+    height: 100%;
 
     p {
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-    }
-
-    .property-more-info {
-      justify-self: flex-end;
     }
   }
 }
@@ -675,7 +710,7 @@ body {
 }
 
 .about-section {
-  text-align: justify;
+  // text-align: justify;
   margin-top: 8em;
   margin-bottom: 8em;
 
@@ -707,14 +742,20 @@ body {
     margin-bottom: 36px;
   }
   .team-card:not(:last-child) {
-    margin-right: 36px;
+    margin-right: 0;
   }
 
   .team-image {
     height: 500px;
     width: 100%;
+  }
 
-    @include md {
+  @include md {
+    .team-card:not(:last-child) {
+      margin-right: 36px;
+    }
+
+    .team-image {
       height: 500px;
     }
   }
@@ -759,7 +800,7 @@ body {
   }
 }
 .contact-image {
-  height: 500px;
+  // height: 500px;
   width: auto;
 }
 
@@ -941,12 +982,16 @@ body {
 }
 
 .main-slider {
-  .image-gallery-slide {
-    opacity: 0;
-    transition: opacity 2000ms ease-out !important;
+  position: relative;
+
+  .slider-image {
+    position: absolute !important;
+    top: 0;
   }
-  .image-gallery-slide.center {
-    opacity: 1;
+
+  .main-slider-overlay {
+    position: absolute;
+    top: 0;
   }
 }
 
@@ -1026,7 +1071,8 @@ body {
   }
 
   .banner-title {
-    font-size: 4rem;
+    font-size: 3rem;
+    text-transform: uppercase;
 
     @include sm {
       font-size: 6rem;

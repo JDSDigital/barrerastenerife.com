@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
               <FacebookIcon />
             </a>
             <a
-              href="https://www.instagram.com/inmobarrerastenerife/"
+              href="https://www.instagram.com/inmobiliaria_barreras_tenerife/"
               target="_blank"
               className="mr-3"
               aria-label="go to instagram"

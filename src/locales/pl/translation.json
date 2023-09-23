@@ -59,19 +59,19 @@
 
   "header": {
     "link": {
-      "buy": "Buy",
-      "rent": "Rent",
-      "about": "About Us",
-      "contact": "Contact",
-      "invest": "Invest",
-      "local": "Shop",
-      "promotion": "New development",
-      "luxury": "Luxury properties",
-      "investment": "Investment Projects",
-      "properties": "Properties",
-      "info": "Info",
-      "forBuyers": "For buyers",
-      "forSellers": "For sellers"
+      "buy": "Kupić",
+      "rent": "Wynajem",
+      "about": "O nas",
+      "contact": "Kontakt",
+      "invest": "Inwestować",
+      "local": "sklep",
+      "promotion": "Nowy rozwój",
+      "luxury": "Luksusowe nieruchomości",
+      "investment": "Projekty inwestycyjne",
+      "properties": "Nieruchomości",
+      "info": "Informacje",
+      "forBuyers": "Dla kupujących",
+      "forSellers": "Dla sprzedawców"
     }
   },
 
@@ -123,7 +123,7 @@
 
   "properties": {
     "title": "Properties",
-    "featured": "Featured Properties",
+    "featured": "Wyrózniona Nieruchomosc",
     "recent": "Recent properties",
     "sell": "Properties for sale",
     "rent": "Properties for rent",
@@ -167,18 +167,18 @@
       "body": "NASI AGENCI są do twojej dyspozycji, aby doradzić ci w sprawie sprzedaży lub wynajmu twojej nieruchomości, a także pomóc w zakupie dowolnych środków stałych.<br /><br />CHĘTNIE CI POMOŻEMY.<br /><br />Serdeczne pozdrowienia od barreras real estate"
     },
 
-    "title": "Contact us",
-    "subtitle": "At your service.",
-    "address": "Address",
-    "phone": "Phone",
+    "title": "Skontaktuj się z nami",
+    "subtitle": "Do usług.",
+    "address": "Adres",
+    "phone": "Telefon",
     "email": "Email",
 
     "form": {
-      "name": "Name",
+      "name": "Nazwa",
       "email": "Email",
-      "message": "Message",
-      "send": "Send",
-      "sent": "Sent"
+      "message": "Wiadomość",
+      "send": "Wysłać",
+      "sent": "Wysłano"
     }
   },
 

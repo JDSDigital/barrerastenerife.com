@@ -54,15 +54,6 @@ const MainSlider: React.FC = () => {
 
   const parsedImages = queryImages.map(image => getImage(image));
 
-  const images = parsedImages.map(image => image?.images.fallback?.src);
-
-  const [layers, setLayers] = useState([
-    {
-      image: images[0],
-      speed: -5,
-    },
-  ]);
-
   const SearchForm = useCallback(() => {
     const { navigate } = useI18next();
 
@@ -89,42 +80,30 @@ const MainSlider: React.FC = () => {
     );
   }, []);
 
-  const [, setIndex] = useState(0);
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(async () => {
-      setIndex(oldIndex => {
-        const newIndex = oldIndex === images.length - 1 ? 0 : oldIndex + 1;
-
-        setLayers(oldLayers => [
-          {
-            image: images[newIndex],
-            speed: -5,
-          },
-          ...oldLayers,
-        ]);
-
-        return oldIndex === images.length - 1 ? 0 : oldIndex + 1;
-      });
-
-      const promise = new Promise(resolve => {
-        setTimeout(resolve, 300);
-      });
-
-      await promise;
-
-      setLayers(oldLayers => {
-        const newLayers = [...oldLayers];
-        newLayers.pop();
-        return newLayers;
-      });
-    }, 5000);
+      setIndex(oldIndex =>
+        oldIndex === parsedImages.length - 1 ? 0 : oldIndex + 1
+      );
+    }, 7000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <ParallaxBanner className="main-slider" layers={layers}>
+    <div className="main-slider">
+      {parsedImages.map((image, i) => (
+        <GatsbyImage
+          key={`slider-image-${i}`}
+          image={image!}
+          alt="slider image"
+          className="slider-image crop-center"
+          style={{ opacity: i === index ? 1 : 0 }}
+        />
+      ))}
+
       <div className="main-slider-overlay">
         <Container
           className="main-slider-container"
@@ -147,7 +126,7 @@ const MainSlider: React.FC = () => {
           </div>
         </Container>
       </div>
-    </ParallaxBanner>
+    </div>
   );
 };
 
