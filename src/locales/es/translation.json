@@ -157,8 +157,13 @@
       "p2": "Barreras"
     },
 
-    "team": "Conoce a nuestro equipo",
-    "agent": "Agente"
+    "team": {
+      "title": "Conoce a nuestro equipo",
+      "ceoM": "CEO & Cofundador",
+      "ceoF": "CEO & Cofundadora",
+      "realEstate": "Asesor inmobiliario",
+      "investment": "Asesora de inversiones"
+    }
   },
 
   "contact": {

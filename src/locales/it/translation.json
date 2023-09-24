@@ -157,8 +157,13 @@
       "p2": "Barreras"
     },
 
-    "team": "Vi presentiamo il nostro team de professionisti",
-    "agent": "Agente"
+    "team": {
+      "title": "Vi presentiamo il nostro team de professionisti",
+      "ceoM": "CEO e Cofondatore",
+      "ceoF": "CEO e Cofondatrice",
+      "realEstate": "Consulente immobiliare",
+      "investment": "Consulente per gli investimenti"
+    }
   },
 
   "contact": {

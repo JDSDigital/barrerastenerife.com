@@ -1,66 +1,76 @@
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { GatsbyImage, IGatsbyImageData, getSrc } from "gatsby-plugin-image";
 import { Hidden, Typography, styled } from "@material-ui/core";
 
 import React from "react";
 import { useTranslation } from "hooks/useTranslation";
+import { ParallaxBanner } from "react-scroll-parallax";
 
 type BannerType = {
   type: "buyers" | "sellers";
-  image: IGatsbyImageData;
+  image: any;
 };
 
 export const Banner: React.FC<BannerType> = ({ type, image }) => {
   const { t } = useTranslation();
 
   return (
-    <RootContainer className="info-banner-container">
-      <GatsbyImage image={image} alt="" objectFit="cover" />
-      <Overlay>
-        <Typography
-          component="p"
-          variant="h2"
-          data-aos="fade-right"
-          className="info-banner-title"
-        >
-          {t(`info.${type}.title`)}
-        </Typography>
-        <Typography
-          component="p"
-          variant="h3"
-          data-aos="fade-left"
-          className="info-banner-subtitle text-lato"
-        >
-          {t(`info.${type}.subtitle1`)}
-        </Typography>
-        <Typography
-          component="p"
-          variant="h5"
-          className="mb-5 info-banner-subtitle2 text-lato"
-          data-aos="fade-up"
-        >
-          {t(`info.${type}.subtitle2`)}
-        </Typography>
-        {/* @ts-ignore TODO: Fix react children type error */}
-        <Hidden smDown>
+    <ParallaxBanner
+      className="about-container"
+      layers={[
+        {
+          image: getSrc(image),
+          speed: -20,
+        },
+      ]}
+    >
+      <RootContainer className="info-banner-container">
+        <Overlay>
           <Typography
             component="p"
-            variant="body1"
-            data-aos="fade-up"
-            data-aos-delay="300"
+            variant="h2"
+            data-aos="fade-right"
+            className="info-banner-title"
           >
-            {t(`info.${type}.description1`)}
+            {t(`info.${type}.title`)}
           </Typography>
           <Typography
             component="p"
-            variant="body1"
-            data-aos="fade-up"
-            data-aos-delay="500"
+            variant="h3"
+            data-aos="fade-left"
+            className="info-banner-subtitle text-lato"
           >
-            {t(`info.${type}.description2`)}
+            {t(`info.${type}.subtitle1`)}
           </Typography>
-        </Hidden>
-      </Overlay>
-    </RootContainer>
+          <Typography
+            component="p"
+            variant="h5"
+            className="mb-5 info-banner-subtitle2 text-lato"
+            data-aos="fade-up"
+          >
+            {t(`info.${type}.subtitle2`)}
+          </Typography>
+          {/* @ts-ignore TODO: Fix react children type error */}
+          <Hidden smDown>
+            <Typography
+              component="p"
+              variant="body1"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              {t(`info.${type}.description1`)}
+            </Typography>
+            <Typography
+              component="p"
+              variant="body1"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              {t(`info.${type}.description2`)}
+            </Typography>
+          </Hidden>
+        </Overlay>
+      </RootContainer>
+    </ParallaxBanner>
   );
 };
 

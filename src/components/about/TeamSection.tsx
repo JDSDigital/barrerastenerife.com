@@ -214,7 +214,7 @@ const TeamSection = () => {
     >
       <Grid item xs={12} data-aos="fade-up">
         <Typography variant="h4" component="p" className="section-title">
-          {t("about.team")}
+          {t("about.team.title")}
         </Typography>
       </Grid>
 
@@ -223,7 +223,7 @@ const TeamSection = () => {
           <Team
             image={images.maryna}
             name="Maryna Bohush"
-            position="CEO & Cofundadora"
+            position={t("about.team.ceoF")}
             phone="+34 671 616 456"
             languages={["es", "en", "it", "ru"]}
           />
@@ -231,7 +231,7 @@ const TeamSection = () => {
           <Team
             image={images.gian}
             name="Giambattista Guala"
-            position="CEO & Cofundador"
+            position={t("about.team.ceoM")}
             phone="+34 638 418 917"
             languages={["es", "en", "fr", "it"]}
           />
@@ -239,7 +239,7 @@ const TeamSection = () => {
           <Team
             image={images.irina}
             name="Irina Elistratova"
-            position="CEO & Cofundadora"
+            position={t("about.team.ceoF")}
             phone="+34 653 414 149"
             languages={["es", "en", "de", "it", "ru"]}
           />
@@ -249,28 +249,28 @@ const TeamSection = () => {
           <Team
             image={images.arely}
             name="Arely Arteaga"
-            position="Asesor inmobiliario"
+            position={t("about.team.realEstate")}
             languages={["es", "en"]}
           />
 
           <Team
             image={images.uliana}
             name="Uliana Popovycheva"
-            position="Asesor inmobiliario"
+            position={t("about.team.realEstate")}
             languages={["es", "en", "ru", "ua"]}
           />
 
           <Team
             image={images.oleksandra}
             name="Oleksandra Dzhaparidze"
-            position="Asesor inmobiliario"
+            position={t("about.team.realEstate")}
             languages={["es", "en", "ru", "ua"]}
           />
 
           <Team
             image={images.ekaterina}
             name="Ekaterina Staselko"
-            position="Asesora de inversiones"
+            position={t("about.team.investment")}
             languages={["es", "en", "de", "ru"]}
           />
         </Grid>

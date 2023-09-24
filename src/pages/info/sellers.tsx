@@ -18,7 +18,7 @@ const SellersPage: React.FC<PageProps<SellersPageProps>> = ({ data }) => {
   const { t } = useTranslation();
 
   const teamImage = getImage(data.team)!;
-  const bannerImage = getImage(data.banner)!;
+  const bannerImage = data.banner;
 
   return (
     <Layout>
