@@ -157,8 +157,13 @@
       "p2": "Barreras"
     },
 
-    "team": "Meet our experts",
-    "agent": "Agent"
+    "team": {
+      "title": "Meet our experts",
+      "ceoM": "CEO & Co-Founder",
+      "ceoF": "CEO & Co-Founder",
+      "realEstate": "Real estate advisor",
+      "investment": "Investment advisor"
+    }
   },
 
   "contact": {

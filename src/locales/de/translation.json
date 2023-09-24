@@ -157,8 +157,13 @@
       "p2": "Barreras"
     },
 
-    "team": "LERNEN SIE UNSER TEAM AUS SENIOR PROFESSIONALS LERNEN",
-    "agent": "Agent"
+    "team": {
+      "title": "LERNEN SIE UNSER TEAM AUS SENIOR PROFESSIONALS LERNEN",
+      "ceoM": "CEO & Mitbegründer",
+      "ceoF": "CEO & Mitbegründer",
+      "realEstate": "Immobilienberater",
+      "investment": "Anlageberater"
+    }
   },
 
   "contact": {

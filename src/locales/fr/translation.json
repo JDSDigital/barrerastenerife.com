@@ -157,8 +157,13 @@
       "p2": "Barreras"
     },
 
-    "team": "RENCONTREZ NOTRE ÉQUIPE DE PROFESSIONNELS",
-    "agent": "Agent"
+    "team": {
+      "title": "RENCONTREZ NOTRE ÉQUIPE DE PROFESSIONNELS",
+      "ceoM": "PDG co-fondateur",
+      "ceoF": "PDG co-fondateur",
+      "realEstate": "Conseiller immobilier",
+      "investment": "Conseiller en investissement financier"
+    }
   },
 
   "contact": {

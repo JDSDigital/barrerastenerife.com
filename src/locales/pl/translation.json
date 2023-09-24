@@ -157,8 +157,13 @@
       "p2": "Barreras"
     },
 
-    "team": "POZNAJ NASZ ZESPÓŁ PROFESJONALISTÓW",
-    "agent": "Agent"
+    "team": {
+      "title": "POZNAJ NASZ ZESPÓŁ PROFESJONALISTÓW",
+      "ceoM": "Dyrektor generalny i współzałożyciel",
+      "ceoF": "Dyrektor generalny i współzałożyciel",
+      "realEstate": "Doradca ds. nieruchomości",
+      "investment": "Doradca inwestycyjny"
+    }
   },
 
   "contact": {
