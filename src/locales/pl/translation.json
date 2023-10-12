@@ -115,36 +115,36 @@
   },
 
   "footer": {
-    "recent": "Recent Properties",
+    "recent": "Najnowsze właściwości",
     "contact": "Contact",
     "copyright": "All rights reserved",
     "offices": "Our office"
   },
 
   "properties": {
-    "title": "Properties",
+    "title": "Nieruchomości",
     "featured": "Wyrózniona Nieruchomosc",
-    "recent": "Recent properties",
-    "sell": "Properties for sale",
-    "rent": "Properties for rent",
-    "related": "Related properties",
-    "share": "Share",
+    "recent": "Najnowsze właściwości",
+    "sell": "Nieruchomości na sprzedaż",
+    "rent": "Nieruchomości do wynajęcia",
+    "related": "Powiązane właściwości",
+    "share": "Udział",
 
-    "info": "Basic information",
-    "description": "Description",
+    "info": "Podstawowe informacje",
+    "description": "Opis",
 
-    "previous": "Previous",
-    "next": "Next",
+    "previous": "Poprzedni",
+    "next": "Następny",
 
-    "area": "Area",
-    "bedrooms": "Bedrooms",
-    "bathrooms": "Bathrooms",
-    "tags": "Tags",
-    "from": "From",
+    "area": "Obszar",
+    "bedrooms": "Sypialnie",
+    "bathrooms": "Łazienki",
+    "tags": "Tagi",
+    "from": "Z",
 
     "search": {
-      "show": "Advanced Search",
-      "hide": "Hide Advanced Search"
+      "show": "zaawansowane wyszukiwanie",
+      "hide": "Ukryj wyszukiwanie zaawansowane"
     }
   },
 
@@ -153,7 +153,7 @@
     "description": "<strong>BARRERAS TENERIFE S.L.</strong> została założona przez PABLO BARRERAS GONZÁLEZ na Teneryfie w <strong>2000</strong> roku. Dziś jego następcy, posiadający bogate doświadczenie w zakresie doradztwa i negocjacji w branży nieruchomości, kontynuują jego dzieło świadcząc swoje usługi z <strong>UCZCIWOŚCIĄ, ZAUFANIEM, EMPATIĄ I PROFESJONALIZMEM</strong>.<br /><br />Nasz starannie dobrany zespół dba o każdego klienta na wszystkich etapach procesu kupna lub sprzedaży, reaguje na prośby i wątpliwości klientów, zwraca uwagę na najdrobniejsze  szczegóły.<br /><br />Wierzymy, że każda transakcja dotycząca nieruchomości może być jedną z najważniejszych decyzji, jakie podjęli nasi klienci, dlatego dbamy o każdy szczegół, aby zagwarantować jej powodzenie.",
 
     "banner": {
-      "p1": "O NAS POLSKI",
+      "p1": "O NAS",
       "p2": "Barreras"
     },
 
@@ -328,7 +328,7 @@
   },
 
   "sellers": {
-    "title": "UNDERSTANDING THE SELLING PROCESS",
+    "title": "ZROZUMIENIE PROCESU SPRZEDAŻY",
     "intro": "Sprzedaż domu to ekscytujący i ważny moment. Pełniejsza wiedza o procesie sprzedaży przyniesie najlepsze efekty przy możliwie najmniejszym stresie. W tym miejscu opisujemy kilka ważnych punktów procesu sprzedaży nieruchomości.",
 
     "p1": "<strong>WŁAŚCIWA WYCENA OPARTA NA AKTUALNEJ ŚREDNIEJ CENIE RYNKOWEJ</strong>, charakterystyce nieruchomości oraz statystykach dotyczących oficjalnych cen sprzedaży na danym terenie.",

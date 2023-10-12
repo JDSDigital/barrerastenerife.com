@@ -42,28 +42,23 @@ const BuyersPage: React.FC<PageProps<BuyersPageProps>> = ({ data }) => {
                 </Typography>
               </div> */}
 
-              <Grid container spacing={5}>
-                <Grid item xs={12} md={5}>
-                  <GatsbyImage image={teamImage} alt="" />
-                </Grid>
+              <GatsbyImage image={teamImage} alt="" className="info-image" />
 
-                <Grid item xs={12} md={7}>
-                  <Typography component="p">
-                    <Trans i18nKey={"buyers.p1"} />
-                  </Typography>
+              <Typography component="p">
+                <Trans i18nKey={"buyers.p1"} />
+              </Typography>
 
-                  <Typography component="p">
-                    <Trans i18nKey={"buyers.p2"} />
-                  </Typography>
+              <Typography component="p">
+                <Trans i18nKey={"buyers.p2"} />
+              </Typography>
 
-                  <Typography component="p">
-                    <Trans i18nKey={"buyers.p3"} />
-                  </Typography>
-                  <Typography component="p">
-                    <Trans i18nKey={"buyers.p4"} />
-                  </Typography>
-                </Grid>
-              </Grid>
+              <Typography component="p">
+                <Trans i18nKey={"buyers.p3"} />
+              </Typography>
+
+              <Typography component="p">
+                <Trans i18nKey={"buyers.p4"} />
+              </Typography>
 
               <Typography component="p">
                 <Trans i18nKey={"buyers.p5"} />

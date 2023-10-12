@@ -115,36 +115,36 @@
   },
 
   "footer": {
-    "recent": "Recent Properties",
+    "recent": "Propriétés récentes",
     "contact": "Contact",
     "copyright": "All rights reserved",
     "offices": "Our office"
   },
 
   "properties": {
-    "title": "Properties",
+    "title": "Propriétés",
     "featured": "Propriétés Remarquables",
-    "recent": "Recent properties",
-    "sell": "Properties for sale",
-    "rent": "Properties for rent",
-    "related": "Related properties",
-    "share": "Share",
+    "recent": "Propriétés récentes",
+    "sell": "Propriétés à vendre",
+    "rent": "Propriétés à louer",
+    "related": "Propriétés associées",
+    "share": "Partager",
 
-    "info": "Basic information",
+    "info": "Informations de base",
     "description": "Description",
 
-    "previous": "Previous",
-    "next": "Next",
+    "previous": "Précédent",
+    "next": "Suivant",
 
-    "area": "Area",
-    "bedrooms": "Bedrooms",
-    "bathrooms": "Bathrooms",
-    "tags": "Tags",
-    "from": "From",
+    "area": "Zone",
+    "bedrooms": "Chambres",
+    "bathrooms": "Salles de bains",
+    "tags": "Mots clés",
+    "from": "Depuis",
 
     "search": {
-      "show": "Advanced Search",
-      "hide": "Hide Advanced Search"
+      "show": "Recherche Avancée",
+      "hide": "Masquer la recherche avancée"
     }
   },
 
@@ -328,7 +328,7 @@
   },
 
   "sellers": {
-    "title": "UNDERSTANDING THE SELLING PROCESS",
+    "title": "COMPRENDRE LE PROCESSUS DE VENTE",
     "intro": "Vendre sa maison est un moment excitant et stimulant. Une information plus complète sur le processus de vente vous apportera les meilleurs résultats avec le moins de stress possible. Nous décrivons ici quelques points importants du processus de vente immobilière.",
 
     "p1": "<strong>UNE EVALUATION CORRECTE</strong> basée sur le prix moyen actuel du marché, les caractéristiques de la propriété et les statistiques sur les prix de vente officiels dans une zone spécifique.",

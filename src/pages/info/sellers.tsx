@@ -38,51 +38,47 @@ const SellersPage: React.FC<PageProps<SellersPageProps>> = ({ data }) => {
               </Typography>
             </Grid>
 
-            <Grid container spacing={5}>
-              <Grid item xs={12} md={5}>
-                <GatsbyImage image={teamImage} alt="" />
-              </Grid>
-
-              <Grid item xs={12} md={7}>
-                <Typography component="p">
-                  <Trans i18nKey={"sellers.p1"} />
-                </Typography>
-
-                <Typography component="p">
-                  <Trans i18nKey={"sellers.p2"} />
-                </Typography>
-
-                <Typography component="p">
-                  <Trans i18nKey={"sellers.p3"} />
-                </Typography>
-
-                <Typography component="p">
-                  <Trans i18nKey={"sellers.p4"} />
-                </Typography>
-
-                <ol>
-                  <li>
-                    <Typography component="p">
-                      <Trans i18nKey={"sellers.p41"} />
-                    </Typography>
-                  </li>
-
-                  <li>
-                    <Typography component="p">
-                      <Trans i18nKey={"sellers.p42"} />
-                    </Typography>
-                  </li>
-
-                  <li>
-                    <Typography component="p">
-                      <Trans i18nKey={"sellers.p43"} />
-                    </Typography>
-                  </li>
-                </ol>
-              </Grid>
-            </Grid>
-
             <Grid item xs={12}>
+              <GatsbyImage image={teamImage} alt="" className="info-image" />
+
+              <Typography component="p">
+                <Trans i18nKey={"sellers.p1"} />
+              </Typography>
+
+              <Typography component="p">
+                <Trans i18nKey={"sellers.p2"} />
+              </Typography>
+
+              <Typography component="p">
+                <Trans i18nKey={"sellers.p3"} />
+              </Typography>
+
+              <Typography component="p">
+                <Trans i18nKey={"sellers.p4"} />
+              </Typography>
+
+              <ol>
+                <li>
+                  <Typography component="p">
+                    <Trans i18nKey={"sellers.p41"} />
+                  </Typography>
+                </li>
+
+                <li>
+                  <Typography component="p">
+                    <Trans i18nKey={"sellers.p42"} />
+                  </Typography>
+                </li>
+
+                <li>
+                  <Typography component="p">
+                    <Trans i18nKey={"sellers.p43"} />
+                  </Typography>
+                </li>
+              </ol>
+
+              <br />
+
               <Typography component="p">
                 <Trans i18nKey={"sellers.p5"} />
               </Typography>

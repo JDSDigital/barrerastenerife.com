@@ -422,6 +422,18 @@ body {
     .info {
       overflow-x: hidden;
 
+      .info-image {
+        float: left;
+        height: auto;
+        width: 100%;
+        margin: 0 0 32px;
+
+        @include md {
+          width: 45%;
+          margin: 0 36px 36px 0;
+        }
+      }
+
       p {
         margin-bottom: 16px;
       }
