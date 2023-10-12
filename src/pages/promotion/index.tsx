@@ -18,10 +18,7 @@ const NewProperties: React.FC<PageProps<NewPropertiesProps>> = ({ data }) => {
   return (
     <Layout>
       <SEO title={title} />
-      <PropertiesBanner
-        image={data.banner}
-        title={t("folders.promotion.title")}
-      />
+      <PropertiesBanner image={data.banner} title={title} />
       <Properties tags={["promotion"]} />
     </Layout>
   );

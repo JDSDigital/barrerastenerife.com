@@ -61,7 +61,7 @@
     "link": {
       "buy": "Kauf",
       "rent": "Miete",
-      "about": "über uns",
+      "about": "Über uns",
       "contact": "Kontakt",
       "invest": "Investition",
       "local": "Gewerberäume",
@@ -70,8 +70,8 @@
       "investment": "Investment Projects",
       "properties": "Immobilie",
       "info": "Information",
-      "forBuyers": "für Käufer",
-      "forSellers": "ür Verkäufer"
+      "forBuyers": "Für Käufer",
+      "forSellers": "Für Verkäufer"
     }
   },
 
@@ -328,30 +328,30 @@
   },
 
   "sellers": {
-    "title": "UNDERSTANDING THE SELLING PROCESS",
-    "intro": "Selling your home is an exciting and stimulating time. More complete information about the selling process will bring you the best results with as little stress as possible. Here, we describe some important points of the process of selling your property.",
+    "title": "DEN VERKAUFSPROZESS VERSTEHEN",
+    "intro": "Der verkauf ihres hauses ist ein aufregender und spannender moment. Um die besten ergebnisse mit möglichst geringem stress zu erzielen, möchten wir ihnen umfassende informationen über den verkaufsprozess bereitstellen.",
 
-    "p1": "<strong>A CORRECT VALUATION</strong> based on the current average market price, the characteristics of the property and the statistics of official sales prices in a specific area.",
-    "p2": "<strong>ONLINE PRESENCE</strong> through a professional website and national and international real estate portals. A good marketing strategy.",
-    "p3": "<strong>PROFESSIONAL PHOTOS</strong>, elegant and detailed description of the property and the area in which it is located.",
-    "p4": "<strong>SELLING A PROPERTY ALSO INVOLVES SOME COSTS: </strong>",
+    "p1": "<strong>EINE KORREKTE BEWERTUNG</strong> basierend auf dem aktuellen durchschnittlichen Marktpreis, den Eigenschaften der Immobilie und den Statistiken über offizielle Verkaufspreise in einem bestimmten Gebiet.",
+    "p2": "<strong>ONLINE-PRÄSENZ ÜBER PROFESSIONELLE WEBSEITEN</strong> sowie nationale und internationale Immobilienportale. Eine gute Marketingstrategie, einschließlich professioneller Fotos und einer eleganten und detaillierten Beschreibung der Immobilie und ihrer Umgebung.",
+    "p3": "<strong>PROFESSIONELLE FOTOS</strong>, elegante und detaillierte Beschreibung der Immobilie und der Gegend, in der sie sich befindet.",
+    "p4": "<strong>Der Verkauf einer Immobilie verursacht auch einige Kosten: </strong>",
 
-    "p41": "A law introduced in 2013, which states that in order to sell or rent a property it is necessary to have a valid energy efficiency certificate. If you don't have one or it has expired (valid for 10 years) you will need to get one done which can cost from €100 depending on the size of your property. Your agent will be able to help you get one.",
-    "p42": "A local tax to be paid to the municipality called Plus Valía Municipal (Impuesto sobre el Incremento del Valor de la Tierra). It is possible to request a simulation of the amount of the Plus Valia Municipal.",
-    "p43": "If you are not a tax resident in Spain, 3% of the sale price of the property will be withheld. This is withheld on the day of the deed by the purchasers who are obliged to pay it to the Tax Office and provide proof of payment. You can then request a partial or total refund of the amount withheld in the deed. The refund will depend on the possible taxes on the sale of the property.",
+    "p41": "Ein im Jahr 2013 eingeführtes Gesetz, das besagt, dass für den Verkauf oder die Vermietung einer Immobilie ein gültiger Energieausweis erforderlich ist. Wenn Sie keins haben oder es abgelaufen ist (gültig für 10 Jahre), müssen Sie eins anfertigen lassen, was je nach Größe Ihrer Immobilie ab 100 € kosten kann. Ihr Agent kann Ihnen bei der Beschaffung helfen.",
+    "p42": "Eine an die Gemeinde zu entrichtende Kommunalsteuer namens Plus Valía Municipal (Impuesto sobre el Incremento del Valor de la Tierra). Es besteht die Möglichkeit, eine Simulation der Höhe des Plus Valia Municipal anzufordern.",
+    "p43": "Wenn Sie nicht in Spanien steuerlich ansässig sind, werden 3 % des Verkaufspreises der Immobilie einbehalten. Diese wird am Tag der Kaufurkunde von den Käufern einbehalten und ist verpflichtet, sie an das Finanzamt abzuführen und einen Zahlungsnachweis vorzulegen. Sie können dann eine teilweise oder vollständige Rückerstattung des in der Urkunde einbehaltenen Betrags beantragen. Die Rückerstattung hängt von den eventuellen Steuern beim Verkauf der Immobilie ab.",
 
-    "p5": "<strong>¿QUÉ DOCUMENTOS NECESITAS?</strong>",
+    "p5": "<strong>WELCHE DOKUMENTE SIND ERFORDERLICH?</strong>",
 
-    "p51": "Identity card and NIE of the owner(s), The \"nota simple\" of the property an updated certificate signed by the administrator of the condominium stating that there are no outstanding debts with the community.",
-    "p52": "An updated certificate signed by the condominium administrator indicating that you have no outstanding debts with the community.",
-    "p53": "Proof of payment of the IBI for the current year (payment due by law to the seller).",
-    "p54": "If you have a mortgage on the property, you would be required to request a certificate from the Bank stating the residual amount of the debt.",
-    "p55": "It would also be useful to prepare copies of recent bills for water, electricity and other municipal taxes.",
+    "p51": "Personalausweis und NIE des/der Eigentümer(s), \"nota simple\" der Immobilie, eine vom Verwalter der Eigentumswohnung unterzeichnete aktualisierte Bescheinigung, aus der hervorgeht, dass keine ausstehenden Schulden bei der Gemeinde bestehen.",
+    "p52": "Eine aktualisierte, vom Wohnungseigentumsverwalter unterzeichnete Bescheinigung, aus der hervorgeht, dass Sie keine ausstehenden Schulden gegenüber der Gemeinde haben.",
+    "p53": "Zahlungsnachweis des IBI für das laufende Jahr (gesetzlich geschuldete Zahlung an den Verkäufer).",
+    "p54": "Wenn Sie eine Hypothek auf die Immobilie haben, müssen Sie bei der Bank eine Bescheinigung über den Restbetrag der Schulden anfordern.",
+    "p55": "Es wäre auch nützlich, Kopien der aktuellen Rechnungen für Wasser, Strom und andere kommunale Steuern anzufertigen.",
 
-    "p6": "<strong>WHAT IS THE PROCEDURE IN CASE OF A FINANCIAL AGREEMENT ON THE SALE PRICE OF THE PROPERTY BETWEEN BUYER AND SELLER?</strong>",
-    "p7": "Normally a preliminary contract is signed and the time required to go to title deeds is established. The timing of a sale can vary, it could take only a few days or even several weeks.",
-    "p8": "<strong>THE HANDOVER OF THE PROPERTY</strong> to the buyers will take place at the time of the deed. The signing is done in front of a Notary who will attend the transaction. Naturally, the property must be completely free of debts, tenants, occupants on the day of the signing of the title deed. Your real estate agent and/or legal advisor (and translator if necessary) will be present at the signing to assist you and ensure that all the necessary documents have been delivered and verified.",
+    "p6": "<strong>WIE VERFAHREN SIE IM FALLE EINER FINANZIELLEN VEREINBARUNG ÜBER DEN VERKAUFSPREIS DER IMMOBILIE ZWISCHEN KÄUFER UND VERKÄUFER?</strong>",
+    "p7": "Normalerweise wird ein Vorvertrag unterzeichnet und die Zeit festgelegt, die für die Ausstellung der Eigentumsurkunden erforderlich ist. Der Zeitpunkt eines Verkaufs kann variieren, er kann nur wenige Tage oder sogar mehrere Wochen dauern.",
+    "p8": "<strong>DIE ÜBERGABE DER IMMOBILIE</strong> an die Käufer erfolgt zum Zeitpunkt der Kaufurkunde. Die Unterzeichnung erfolgt vor einem Notar, der die Transaktion begleitet. Selbstverständlich muss die Immobilie am Tag der Unterzeichnung der Eigentumsurkunde völlig frei von Schulden, Mietern und Bewohnern sein. Ihr Immobilienmakler und/oder Rechtsberater (und gegebenenfalls ein Übersetzer) wird bei der Unterzeichnung anwesend sein, um Sie zu unterstützen und sicherzustellen, dass alle erforderlichen Dokumente übermittelt und überprüft wurden.",
 
-    "conclusion": "We hope our advice will help. If you would like more information or would like help and advice on selling your property, please do not hesitate to contact us."
+    "conclusion": "Wir hoffen, dass unser Rat weiterhilft. Wenn Sie weitere Informationen wünschen oder Hilfe und Beratung beim Verkauf Ihrer Immobilie wünschen, zögern Sie nicht, uns zu kontaktieren."
   }
 }

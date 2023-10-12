@@ -32,7 +32,7 @@ export const NewProperties = () => {
         className="section-title"
         data-aos="fade-up"
       >
-        {t("folders.promotion.description")}
+        {t("header.link.promotion")}
       </Typography>
 
       <Grid container>
