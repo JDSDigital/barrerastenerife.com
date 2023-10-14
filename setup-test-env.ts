@@ -110,8 +110,6 @@ jest.mock("react-query", () => ({
 
 jest.mock("gatsby-image", () => jest.fn());
 
-jest.mock("google-map-react", () => jest.fn());
-
 jest.mock("@material-ui/core", () => ({
   ...jest.requireActual("@material-ui/core"),
   CircularProgress: jest.fn(),

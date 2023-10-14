@@ -1,6 +1,5 @@
-import React from "react";
-import LocationPin from "./LocationPin";
-import GoogleMapReact from "google-map-react";
+import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
+import React, { useMemo } from "react";
 
 type Props = {
   lat?: number;
@@ -14,19 +13,40 @@ const MapView = ({
   lng = -16.59129,
   zoom = 18,
   language = "es",
-}: Props) => (
-  <div className="map-container">
-    <GoogleMapReact
-      bootstrapURLKeys={{
-        key: `${process.env.GOOGLE_MAPS_API_KEY}`,
-        language,
-      }}
-      defaultCenter={{ lat, lng }}
-      defaultZoom={zoom}
-    >
-      <LocationPin lat={lat} lng={lng} />
-    </GoogleMapReact>
-  </div>
-);
+}: Props) => {
+  const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+
+  if (!apiKey) {
+    console.error("Missing Google Maps API Key");
+    return null;
+  }
+
+  const { isLoaded } = useJsApiLoader({
+    id: "google-map-script",
+    googleMapsApiKey: apiKey,
+    language,
+  });
+
+  const center = useMemo(
+    () => ({ lat: Number(lat), lng: Number(lng) }),
+    [lat, lng]
+  );
+
+  return (
+    <div>
+      {!isLoaded ? (
+        <h1>Loading...</h1>
+      ) : (
+        <GoogleMap
+          mapContainerClassName="map-container"
+          center={center}
+          zoom={zoom}
+        >
+          <Marker position={center} />
+        </GoogleMap>
+      )}
+    </div>
+  );
+};
 
 export default MapView;
