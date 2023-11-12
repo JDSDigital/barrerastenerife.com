@@ -2,7 +2,6 @@ import {
   Button,
   Card,
   CardContent,
-  CardHeader,
   Chip,
   CircularProgress,
   Container,
@@ -15,16 +14,16 @@ import React, { useState } from "react";
 
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import Form from "components/contact/Form";
-import { I18nextContext } from "gatsby-plugin-react-i18next";
-import Lightbox from "react-spring-lightbox";
-import List from "./List";
-import MapView from "components/maps/MapView";
-import PropertyFooter from "./PropertyFooter";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
-import { formatPrice } from "../../utils";
+import Form from "components/contact/Form";
+import MapView from "components/maps/MapView";
+import { I18nextContext } from "gatsby-plugin-react-i18next";
 import { useGetProperty } from "hooks/useGetProperty";
 import { useTranslation } from "hooks/useTranslation";
+import Lightbox from "react-spring-lightbox";
+import { formatPrice } from "../../utils";
+import List from "./List";
+import PropertyFooter from "./PropertyFooter";
 
 type DetailProps = {
   identifier: string | null;
@@ -98,11 +97,8 @@ const Detail = ({ identifier }: DetailProps) => {
 
   const onShareClick = () => {
     const BASE_URL = "https://www.barrerastenerife.com";
-    // const BASE_URL_DEV = "https://barrerastenerifedev.web.app";
 
-    window.open(
-      `https://web.whatsapp.com/send?text=${BASE_URL}/property/?id=${identifier}`
-    );
+    window.open(`https://wa.me/?text=${BASE_URL}/property/?id=${identifier}`);
   };
 
   return (
