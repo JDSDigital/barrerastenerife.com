@@ -7,8 +7,9 @@
 
 import { graphql, useStaticQuery } from "gatsby";
 
-import { Helmet } from "react-helmet";
+import { getImage } from "gatsby-plugin-image";
 import React from "react";
+import { Helmet } from "react-helmet";
 
 type Meta = {
   name: string;
@@ -28,7 +29,7 @@ const SEO: React.FC<Props> = ({
   meta = [],
   title,
 }) => {
-  const { site } = useStaticQuery(
+  const { site, logo } = useStaticQuery(
     graphql`
       query {
         site {
@@ -38,9 +39,17 @@ const SEO: React.FC<Props> = ({
             author
           }
         }
+        logo: file(relativePath: { eq: "logo/logo-vertical-color.png" }) {
+          childImageSharp {
+            gatsbyImageData(layout: CONSTRAINED)
+          }
+        }
       }
     `
   );
+
+  const logoImage = logo && getImage(logo);
+  const ogImage = logoImage?.images?.fallback?.src;
 
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
@@ -68,6 +77,10 @@ const SEO: React.FC<Props> = ({
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:image`,
+          content: ogImage,
         },
         {
           name: `twitter:card`,
