@@ -6,7 +6,7 @@
 
   "expertRepresentation": {
     "title": "Expert Representation",
-    "description": "Welcome to Barreras Tenerife S.L., your Trusted Real Estate Agency.<br /><br />We have created our agency for you, to provide you with the service of Excellence, Honesty and Trust that you want to find in Tenerife.<br /><br />Founded by Pablo Barreras González in the year 2000 in Tenerife (the largest and most populated island of the Canary archipelago) and today owned by his successors with a rich track record in the field of real estate consulting and operations, Barreras Tenerife S.L guarantees optimal results while offering personalized treatment tailored to each of our clients. We provide an innovative marketing strategy and exhibit integrity and professionalism in all our work."
+    "description": "Welcome to Barreras Tenerife S.L., your Trusted Real Estate Agency.<br /><br />The Agency was created to provide with the service based on Excellence, Honesty and Trust.<br /><br />Founded by Pablo Barreras González in the year 2000 in Tenerife (the largest and most populated island of the Canary archipelago) and today owned by his successors with a rich track record in the field of real estate consulting and operations, Barreras Tenerife S.L guarantees optimal results while offering personalized treatment tailored to each of our clients. We provide an innovative marketing strategy and exhibit integrity and professionalism in all our work."
   },
 
   "thinkingOfBuying": {
@@ -150,7 +150,7 @@
 
   "about": {
     "title": "Inmobiliaria Barreras",
-    "description": "Barriers Tenerife S.L. was founded by Pablo Barreras González in Tenerife in the year 2000. Today, his successors, with extensive experience in the field of real estate consulting and negotiations, continue to provide services with honesty, trust, empathy and professionalism.<br /><br />Our carefully selected team is united by a desire to care for each client throughout all stages of the buying or selling process, to be responsive to client requests and concerns and to pay attention to even the smallest detail. We understand that each real estate transaction can be one of the most important decisions that our clients make, so we take care of all the details to guarantee success.",
+    "description": "Barriers Tenerife S.L. was founded by Pablo Barreras González in Tenerife in the year 2000. Today, his successors, with extensive experience in the field of real estate consulting and negotiations, continue to provide services with honesty, trust, empathy and professionalism.<br /><br />Our professional team is committed to offering tailor-made solutions that adapt to each client's needs and circumstances, taking care of each client throughout buying or selling process.  We are focused on a client-first approach, paying attention to the smallest details.  This approach allows us comprehensive individualized service results in a long-lasting relationship with our clients.",
 
     "banner": {
       "p1": "About",
@@ -317,40 +317,40 @@
 
   "buyers": {
     "title": "UNDERSTANDING THE BUYING PROCESS",
-    "p1": "<strong>AN APPOINTMENT WITH OUR REAL ESTATE AGENT</strong> to describe your requests and wishes will help the agent to find the right property for you: holiday home, normal flat, investment property, house for renovation or new construction, condominium or detached, in a specific area, in a tourist area, in the village or more secluded.",
-    "p2": "<strong>IF YOU NEED A MORTGAGE</strong> to buy the property, it would be ideal to get advice first before looking for a property. This way you will know approximately how much the bank can finance you. The amount of the loan will vary depending on the bank and above all depends on your fiscal domicile. If you are resident in Spain, you can get a mortgage of up to 80%, if you are not tax resident you can get up to 50/60%.",
+    "p1": "<strong>AN APPOINTMENT WITH OUR REAL ESTATE AGENT</strong> will help to find the right property from our company portfolio: holiday home, apartment, investment property, house for renovation or new construction, condominium or detached, in a specific touristic or residential area.",
+    "p2": "<strong>IF YOU NEED A MORTGAGE</strong> to buy a property, you can get a comprehensive advice about mortgage rates and bank finance products and conditions. Mortgage conditions will vary depending on the bank and your fiscal residence. Spanish residents can get a mortgage up to 80%. Non-residents are required to provide a larger down payment and can apply for 50-60%.",
     "p3": "When buying a property in Spain, <strong>YOU MUST APPLY FOR A NIE NUMBER</strong>, which is an identification number for foreigners. It is usually applied for at the national police station.",
-    "p4": "<strong>IT IS ADVISABLE TO OPEN A SPANISH BANK ACCOUNT</strong> before buying a property in order to be able to transfer money to make the purchase and then to be able to pay bills and other fixed expenses after the purchase. To open an account, you will need your passport or identity card and you will be asked for other documents. The exact requirements may vary from bank to bank. In case you need it, we can find a bank that speaks your language.",
-    "p5": "<strong>ONCE YOU HAVE CHOSEN THE PROPERTY</strong> you wish to buy, a pre-contract is usually drawn up, which requires the payment of a deposit, usually 10% of the sale price, and establishes the time it will take for the property to arrive. The timing of a sale can vary, it could take just a few days or even several weeks.",
-    "p6": "<strong>THE HANDOVER OF THE PROPERTY</strong> will take place at the time of the deed. The signing takes place in front of a Notary who will attend the transaction. Naturally, the property must be completely free of debts, tenants, occupants on the day of the signing of the deed. Your real estate agent and/or legal advisor (and translator if necessary) will be present at the signing to assist you and ensure that all necessary documents have been delivered and verified.",
-    "p7": "<strong>ADDITIONAL COSTS</strong> to the purchase price of the property range from 7% to 10% of the sale price. The tax for the purchase of a second-hand property is 6.5% (ITP), while for the purchase of a newly built property it is 7%. In addition to the tax on the purchase price, there are also notary fees, land registry fees and any other management fees to be taken into account.",
+    "p4": "<strong>IT IS ADVISABLE TO OPEN A SPANISH BANK ACCOUNT</strong> before buying a property in order to be able to transfer money for the purchase and then be able to pay bills and other fixed expenses after the purchase. To open an account, you'll need to choose a bank and provide the bank with some necessary information, including your identification. Requirements may vary depending on the bank. We can also help you to find the bank with professional language related assistance.",
+    "p5": "<strong>ONCE YOU HAVE CHOSEN THE PROPERTY</strong> you wish to buy, a pre-contract is usually drawn up. Signing a deposit contract usually requires a 10% down payment of the sale price, and includes terms and conditions for the property to be delivered. Property delivery time may vary and can take either a few days or several months depending on the type of investment.",
+    "p6": "<strong>THE HANDOVER OF THE PROPERTY</strong> is completed on the day of the signing of the notary deed. The deed of purchase is certified before the notary. The property should be free of any debts, tenants, occupants on the day of the signing of the purchase deed. Your real estate agent and/or legal advisor (and translator if necessary) will assist and ensure you that all necessary documents have been delivered and verified.",
+    "p7": "<strong>ADDITIONAL COSTS</strong> to formalize the purchase may range from 7% to 10% of the sale price. The ITP tax (6,5%) is levied on property transfers, and is payable by the buyer who purchases a second-hand property. Other costs include notary fees, land registry fees and other management fees.",
     "p8": "We hope our advice can help. If you would like more information or would like help and advice on selling your property, please do not hesitate to contact us."
   },
 
   "sellers": {
     "title": "UNDERSTANDING THE SELLING PROCESS",
-    "intro": "Selling your home is an exciting and stimulating time. More complete information about the selling process will bring you the best results with as little stress as possible. Here, we describe some important points of the process of selling your property.",
+    "intro": "Selling your property is a key decision that requires expert guidance and careful approach. Following our tips will help you to get more detailed information and minimise stress in the selling process.",
 
     "p1": "<strong>A CORRECT VALUATION</strong> based on the current average market price, the characteristics of the property and the statistics of official sales prices in a specific area.",
     "p2": "<strong>ONLINE PRESENCE</strong> through a professional website and national and international real estate portals. A good marketing strategy.",
     "p3": "<strong>PROFESSIONAL PHOTOS</strong>, elegant and detailed description of the property and the area in which it is located.",
-    "p4": "<strong>SELLING A PROPERTY ALSO INVOLVES SOME COSTS: </strong>",
+    "p4": "<strong>ADITIONAL COSTS WHILE SELLING A PROPERTY:</strong>",
 
-    "p41": "A law introduced in 2013, which states that in order to sell or rent a property it is necessary to have a valid energy efficiency certificate. If you don't have one or it has expired (valid for 10 years) you will need to get one done which can cost from €100 depending on the size of your property. Your agent will be able to help you get one.",
+    "p41": "As stipulated in the Law that came into force in 2013, it is obligatory to have a valid energy efficiency certificate while selling the property. Should you don’t have one or it has been expired (valid for 10 years) our agents will assist you with obtaining a new one. The cost can vary starting from 100€ depending on the property characteristics.",
     "p42": "A local tax to be paid to the municipality called Plus Valía Municipal (Impuesto sobre el Incremento del Valor de la Tierra). It is possible to request a simulation of the amount of the Plus Valia Municipal.",
-    "p43": "If you are not a tax resident in Spain, 3% of the sale price of the property will be withheld. This is withheld on the day of the deed by the purchasers who are obliged to pay it to the Tax Office and provide proof of payment. You can then request a partial or total refund of the amount withheld in the deed. The refund will depend on the possible taxes on the sale of the property.",
+    "p43": "If you are not a Spanish fiscal resident ,  there will be withheld a  3% of the sale price.This tax  is withheld on the day of the deed by the purchaser who is  obliged to pay it to the Tax Office with a proof of payment to be  provided. A partial or total refund of the amount withheld in the deed can be requested later. The amount of the refund will depend on the taxes charged  on the sale of the property.",
 
-    "p5": "<strong>WHAT DOCUMENTS DO YOU NEED?</strong>",
+    "p5": "<strong>REQUIRED DOCUMENTS:</strong>",
 
     "p51": "Identity card and NIE of the owner(s), The \"nota simple\" of the property an updated certificate signed by the administrator of the condominium stating that there are no outstanding debts with the community.",
     "p52": "An updated certificate signed by the condominium administrator indicating that you have no outstanding debts with the community.",
-    "p53": "Proof of payment of the IBI for the current year (payment due by law to the seller).",
+    "p53": "Proof of payment of the IBI for the current year (is payable by  the seller).",
     "p54": "If you have a mortgage on the property, you would be required to request a certificate from the Bank stating the residual amount of the debt.",
     "p55": "It would also be useful to prepare copies of recent bills for water, electricity and other municipal taxes.",
 
-    "p6": "<strong>WHAT IS THE PROCEDURE IN CASE OF A FINANCIAL AGREEMENT ON THE SALE PRICE OF THE PROPERTY BETWEEN BUYER AND SELLER?</strong>",
-    "p7": "Normally a preliminary contract is signed and the time required to go to title deeds is established. The timing of a sale can vary, it could take only a few days or even several weeks.",
-    "p8": "<strong>THE HANDOVER OF THE PROPERTY</strong> to the buyers will take place at the time of the deed. The signing is done in front of a Notary who will attend the transaction. Naturally, the property must be completely free of debts, tenants, occupants on the day of the signing of the title deed. Your real estate agent and/or legal advisor (and translator if necessary) will be present at the signing to assist you and ensure that all the necessary documents have been delivered and verified.",
+    "p6": "<strong>WHAT IS THE PROCEDURE IN CASE OF A PRIOR AGREEMENT BETWEEN BUYER AND SELLER?</strong>",
+    "p7": "After signing a preliminary contract, the date to sign the Notary deed is confirmed. The terms can vary between a few days or several weeks.",
+    "p8": "<strong>THE HANDOVER OF THE PROPERTY</strong> is completed on the day of the signing of the notary deed. The deed of purchase is certified before the notary. The property should be free of any debts, tenants, occupants on the day of the signing of the purchase deed. Your real estate agent and/or legal advisor (and translator if necessary) will assist and ensure you that all necessary documents have been delivered and verified.",
 
     "conclusion": "We hope our advice will help. If you would like more information or would like help and advice on selling your property, please do not hesitate to contact us."
   }
