@@ -31,11 +31,6 @@ const TeamSection = () => {
           gatsbyImageData(layout: CONSTRAINED)
         }
       }
-      arely: file(relativePath: { eq: "about/arely.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
-        }
-      }
       uliana: file(relativePath: { eq: "about/uliana-3.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED)
@@ -246,13 +241,6 @@ const TeamSection = () => {
         </Grid>
 
         <Grid item xs={12} className="team-grid">
-          <Team
-            image={images.arely}
-            name="Arely Arteaga"
-            position={t("about.team.realEstate")}
-            languages={["es", "en"]}
-          />
-
           <Team
             image={images.uliana}
             name="Uliana Popovycheva"
