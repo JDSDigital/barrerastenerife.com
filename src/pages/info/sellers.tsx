@@ -17,7 +17,6 @@ type SellersPageProps = {
 const SellersPage: React.FC<PageProps<SellersPageProps>> = ({ data }) => {
   const { t } = useTranslation();
 
-  const teamImage = getImage(data.team)!;
   const bannerImage = data.banner;
 
   return (
@@ -39,8 +38,6 @@ const SellersPage: React.FC<PageProps<SellersPageProps>> = ({ data }) => {
             </Grid>
 
             <Grid item xs={12}>
-              <GatsbyImage image={teamImage} alt="" className="info-image" />
-
               <Typography component="p">
                 <Trans i18nKey={"sellers.p1"} />
               </Typography>
@@ -155,11 +152,6 @@ export const query = graphql`
       }
     }
     banner: file(relativePath: { eq: "sellers/1.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED)
-      }
-    }
-    team: file(relativePath: { eq: "sellers/4.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED)
       }

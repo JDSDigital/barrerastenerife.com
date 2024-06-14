@@ -21,22 +21,7 @@ const TeamSection = () => {
           gatsbyImageData(layout: CONSTRAINED)
         }
       }
-      irina: file(relativePath: { eq: "about/irina.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
-        }
-      }
       maryna: file(relativePath: { eq: "about/maryna.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
-        }
-      }
-      uliana: file(relativePath: { eq: "about/uliana-3.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
-        }
-      }
-      oleksandra: file(relativePath: { eq: "about/oleksandra-3.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED)
         }
@@ -229,30 +214,6 @@ const TeamSection = () => {
             position={t("about.team.ceoM")}
             phone="+34 638 418 917"
             languages={["es", "en", "fr", "it"]}
-          />
-
-          <Team
-            image={images.irina}
-            name="Irina Elistratova"
-            position={t("about.team.ceoF")}
-            phone="+34 653 414 149"
-            languages={["es", "en", "de", "it", "ru"]}
-          />
-        </Grid>
-
-        <Grid item xs={12} className="team-grid">
-          <Team
-            image={images.uliana}
-            name="Uliana Popovycheva"
-            position={t("about.team.realEstate")}
-            languages={["es", "en", "ru", "ua"]}
-          />
-
-          <Team
-            image={images.oleksandra}
-            name="Oleksandra Dzhaparidze"
-            position={t("about.team.realEstate")}
-            languages={["es", "en", "ru", "ua"]}
           />
 
           <Team

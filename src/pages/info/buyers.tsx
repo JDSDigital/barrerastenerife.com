@@ -17,7 +17,6 @@ type BuyersPageProps = {
 const BuyersPage: React.FC<PageProps<BuyersPageProps>> = ({ data }) => {
   const { t } = useTranslation();
 
-  const teamImage = getImage(data.team)!;
   const bannerImage = data.banner;
 
   return (
@@ -33,17 +32,6 @@ const BuyersPage: React.FC<PageProps<BuyersPageProps>> = ({ data }) => {
         <InfoContainer>
           <Grid container>
             <Grid item xs={12}>
-              {/* <div className="info-paragraph">
-                <Typography component="p" className="info-number">
-                  1
-                </Typography>
-                <Typography component="p">
-                  <Trans i18nKey={"buyers.p1"} />
-                </Typography>
-              </div> */}
-
-              <GatsbyImage image={teamImage} alt="" className="info-image" />
-
               <Typography component="p">
                 <Trans i18nKey={"buyers.p1"} />
               </Typography>
@@ -100,11 +88,6 @@ export const query = graphql`
       }
     }
     banner: file(relativePath: { eq: "buyers/1.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED)
-      }
-    }
-    team: file(relativePath: { eq: "buyers/4.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED)
       }
