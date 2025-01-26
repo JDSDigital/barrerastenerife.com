@@ -2,9 +2,9 @@ const path = require("path");
 
 module.exports = {
   siteMetadata: {
-    title: "Inmobiliaria Barreras",
+    title: "Barreras Realty",
     description:
-      "INMOBILIARIA BARRERAS nace en pintoresco pueblo de pescadores de nombre Los Abrigos ubicado en la parte sur de la isla de Tenerife en el año 1995.",
+      "BARRERAS REALTY nace en pintoresco pueblo de pescadores de nombre Los Abrigos ubicado en la parte sur de la isla de Tenerife en el año 1995.",
     author: "Jorge Daniel Sosa <jdsosa@gmail.com>",
   },
   plugins: [
