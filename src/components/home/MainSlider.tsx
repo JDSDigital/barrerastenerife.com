@@ -11,27 +11,22 @@ import { TownSearch } from "../TownSearch";
 const MainSlider: React.FC = () => {
   const data = useStaticQuery(graphql`
     query {
-      image1: file(relativePath: { eq: "home/1.jpg" }) {
+      image1: file(relativePath: { eq: "home/1.png" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED)
         }
       }
-      image4: file(relativePath: { eq: "home/4.jpg" }) {
+      image2: file(relativePath: { eq: "home/2.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED)
         }
       }
-      image5: file(relativePath: { eq: "home/5.jpg" }) {
+      image3: file(relativePath: { eq: "home/3.png" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED)
         }
       }
-      image6: file(relativePath: { eq: "home/6.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
-        }
-      }
-      team: file(relativePath: { eq: "about/team.jpg" }) {
+      image4: file(relativePath: { eq: "home/4.png" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED)
         }
@@ -44,13 +39,7 @@ const MainSlider: React.FC = () => {
     }
   `);
 
-  const queryImages = [
-    data.image1,
-    data.image4,
-    data.image5,
-    data.image6,
-    data.team,
-  ];
+  const queryImages = [data.image1, data.image2, data.image3, data.image4];
 
   const parsedImages = queryImages.map(image => getImage(image));
 
