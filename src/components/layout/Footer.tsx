@@ -38,19 +38,6 @@ const Footer: React.FC = () => {
           <Typography variant="h4">{t("contact.title")}</Typography>
 
           <div>
-            {/* <Typography variant="h6">Av. Los Abrigos, 32</Typography>
-            <Typography variant="h6">Los Abrigos</Typography>
-            <Typography variant="h6">Santa Cruz de Tenerife</Typography>
-            <br />
-            <Typography variant="h6">inmobiliariabarreras@gmail.com</Typography>
-            <br />
-            <Typography className="text-lato-light">
-              +34 822 29 81 28
-            </Typography>
-            <Typography className="text-lato-light">
-              +34 638 41 89 17
-            </Typography> */}
-
             <Typography variant="h6" className="text-lato-light">
               Av. Los Abrigos, 32
             </Typography>
@@ -79,7 +66,7 @@ const Footer: React.FC = () => {
               <FacebookIcon />
             </a>
             <a
-              href="https://www.instagram.com/inmobiliaria_barreras_tenerife/"
+              href="https://www.instagram.com/barreras_realty_tenerife/"
               target="_blank"
               className="mr-3"
               aria-label="go to instagram"
