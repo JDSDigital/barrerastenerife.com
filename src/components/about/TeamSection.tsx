@@ -31,6 +31,11 @@ const TeamSection = () => {
           gatsbyImageData(layout: CONSTRAINED)
         }
       }
+      laura: file(relativePath: { eq: "about/laura.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED)
+        }
+      }
       es: file(relativePath: { eq: "flags/sp.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED)
@@ -221,6 +226,13 @@ const TeamSection = () => {
             name="Ekaterina Staselko"
             position={t("about.team.investment")}
             languages={["es", "en", "de", "ru"]}
+          />
+
+          <Team
+            image={images.laura}
+            name="Laura Coghlan"
+            position={t("about.team.realEstate")}
+            languages={["es", "en"]}
           />
         </Grid>
       </Container>
