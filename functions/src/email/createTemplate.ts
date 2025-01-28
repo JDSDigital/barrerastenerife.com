@@ -13,7 +13,7 @@ export const createTemplate = ({
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Barreras Tenerife</title>
+    <title>Barreras Realty Tenerife</title>
   </head>
   <body bgcolor="#eee" style="background-color: #eee !important">
     <div

@@ -54,7 +54,7 @@ export const sendMail = functions.https.onCall(async data => {
   });
 
   const mailOptions = {
-    from: `Inmobiliaria Barreras <${EMAIL_USER}>`,
+    from: `Barreras Realty <${EMAIL_USER}>`,
     to: "inmobiliariabarreras@gmail.com",
     subject: "Correo de prueba",
     html: createTemplate({

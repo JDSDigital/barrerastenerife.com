@@ -1,226 +1,226 @@
 {
-  "home": "Inizio",
-  "search": "Cerca",
-  "property": "Proprietá",
+  "home": "Home",
+  "search": "Search",
+  "property": "Property",
   "welcome": "Welcome to the island of eternal spring",
 
   "expertRepresentation": {
-    "title": "Presentazione dei Professionisti",
-    "description": "Benvenuto in Inmobiliaria Barreras Tenerife, la tua agenzia immobiliare di fiducia.<br /><br />Abbiamo creato la nostra agenzia per te, per fornirti un ​​servizio di Eccellenza e Fiducia a Tenerife.<br /><br />Fondata da Pablo Barreras González nel 2000 a Tenerife, l'isola più grande e popolosa delle Canarie e oggi di proprietà dei suoi successori con una ricca esperienza nel campo immobiliare, Barreras Tenerife S.L. é sempre pronta a ottenere risultati ottimali con la massima garanzia, offrendo un trattamento personalizzato su misura per ciascuno dei nostri clienti e una strategia di marketing innovativa e professionale."
+    "title": "KONTAKTIEREN SIE UNS",
+    "description": "Witamy w Barreras Realty Tenerife, agencji nieruchomości, której możesz zaufać.<br /><br />Naszą agencję na Teneryfie stworzyliśmy dla Ciebie, a świadczone przez nas usługi cechują Perfekcja, Uczciwość i Zaufanie.<br /><br />Założona przez Pablo Barrerasa Gonzáleza w 2000 roku na Teneryfie, największej i najgęściej zaludnionej wyspie archipelagu Wysp Kanaryjskich, a obecnie należąca do jego następców z bogatym doświadczeniem w dziedzinie doradztwa i negocjacji w zakresie nieruchomości,  Agencja Barreras Realty S.L. osiąga najlepsze rezultaty z najwyższą gwarancją, oferując indywidualne podejście dostosowane do każdego z naszych klientów, w tym innowacyjną strategię marketingową oraz rzetelność i profesjonalizm we wszystkich działaniach."
   },
 
   "thinkingOfBuying": {
     "buying": {
-      "title": "Sta pensando di acquistare?",
-      "subtitle": "Comprendere il processo di acquisto"
+      "title": "Myślisz o zakupie?",
+      "subtitle": "Zrozumienie procesu zakupowego"
     },
     "selling": {
-      "title": "Sta pensando di vendere sua propietá?",
-      "subtitle": "Comprendere il processo di vendita"
+      "title": "Myślisz o sprzedaży?",
+      "subtitle": "Zrozumienie procesu sprzedaży"
     },
-    "details": "Piú informazioni"
+    "details": "Details"
   },
 
   "workWithUs": {
-    "title": "LAVORA CON NOI",
+    "title": "PRACUJ Z NAMI",
 
     "experience": {
-      "title": "20+ ANNI",
-      "subtitle": "Vasta esperienza nel sectore: metti la nostra esperienza al Suo servizio"
+      "title": "20+ LAT",
+      "subtitle": "Połączone doświadczenie w branży — wykorzystaj naszą wiedzę specjalistyczną, aby pracowała dla Ciebie"
     },
     "knowledge": {
-      "title": "CONOSCENZA DEL MERCATO",
-      "subtitle": "Una vasta conoscenza del mercato è la chiave del nostro successo"
+      "title": "ZNAJOMOŚĆ RYNKU",
+      "subtitle": "Rozległa znajomość rynku jest kluczem do naszego sukcesu"
     },
     "guidance": {
-      "title": "GUIDA ESPERTA",
-      "subtitle": "Facciamo in modo che anche le transazioni più complicate si svolgano senza intoppi"
+      "title": "WSKAZÓWKI EKSPERTÓW",
+      "subtitle": "Dzięki nam nawet najbardziej skomplikowane transakcje przebiegają sprawnie"
     },
 
-    "button": "METTERSI IN CONTACTO"
+    "button": "SKONTAKTUJ SIĘ Z NAMI"
   },
 
   "info": {
     "buyers": {
-      "title": "SERVIZI ACQUIRENTE",
-      "subtitle1": "Servizio di prima classe",
-      "subtitle2": "Conoscenza del mercato senza rivali",
-      "description1": "Fornire i servizi immobiliari a Tenerife.",
-      "description2": "Aiutare gli acquirenti a negoziare l'accordo perfetto."
+      "title": "USŁUGI KUPUJĄCEGO",
+      "subtitle1": "Obsługa na światowym poziomie",
+      "subtitle2": "Bezkonkurencyjna znajomość rynku",
+      "description1": "Świadczenie usług w zakresie nieruchomości na Teneryfie.",
+      "description2": "Pomaganie kupującym w negocjowaniu idealnej oferty."
     },
     "sellers": {
-      "title": "SERVIZI DEL VENDITORE",
-      "subtitle1": "Servizio di prima classe",
-      "subtitle2": "Conoscenza del mercato senza rivali",
-      "description1": "Fornire servizi immobiliari a Tenerife.",
-      "description2": "Aiutare i venditori a commercializzare e vendere la propria casa a un prezzo eccezionale."
+      "title": "USŁUGI SPRZEDAWCY",
+      "subtitle1": "Obsługa na światowym poziomie",
+      "subtitle2": "Bezkonkurencyjna znajomość rynku",
+      "description1": "Świadczenie usług w zakresie nieruchomości na Teneryfie.",
+      "description2": "Pomaganie sprzedawcom w promowaniu i sprzedawaniu ich domów za najwyższą cenę."
     }
   },
 
   "header": {
     "link": {
-      "buy": "Comprare",
-      "rent": "Affittare",
-      "about": "Chi siamo",
-      "contact": "Contatti",
-      "invest": "Investimenti",
-      "local": "Locali",
-      "promotion": "Nuova costruzione",
-      "luxury": "Proprietá di lusso",
-      "investment": "Investment Projects",
-      "properties": "Proprietá ",
-      "info": "Informazioni",
-      "forBuyers": "Per acquirenti",
-      "forSellers": "Per venditori"
+      "buy": "Kupić",
+      "rent": "Wynajem",
+      "about": "O nas",
+      "contact": "Kontakt",
+      "invest": "Inwestować",
+      "local": "sklep",
+      "promotion": "Nowy rozwój",
+      "luxury": "Luksusowe nieruchomości",
+      "investment": "Projekty inwestycyjne",
+      "properties": "Nieruchomości",
+      "info": "Informacje",
+      "forBuyers": "Dla kupujących",
+      "forSellers": "Dla sprzedawców"
     }
   },
 
   "folders": {
     "buy": {
-      "title": "Comprare",
-      "description": "Propietá di seconda mano"
+      "title": "Buy",
+      "description": "Second hand properties"
     },
     "rent": {
-      "title": "Affittare",
-      "description": "Propietà in affitto"
+      "title": "Rent",
+      "description": "Properties for rent"
     },
     "invest": {
-      "title": "Investimento",
-      "description": "Idee per investitori"
+      "title": "Invest",
+      "description": "Ideas for investment"
     },
     "local": {
-      "title": "Negozi",
-      "description": "Locali commerciali"
+      "title": "Shop",
+      "description": "Commercial premises"
     },
     "promotion": {
-      "title": "Nuova costruzione",
-      "description": "Nuova costruzione"
+      "title": "New Promotion",
+      "description": "New property developments"
     },
     "services": {
-      "title": "Servizi",
-      "description": "Nostri servizi"
+      "title": "Services",
+      "description": "Our services"
     },
-    "more": "Scopri di piú"
+    "more": "View More"
   },
 
-  "partnerships": "In collaborazione con",
+  "partnerships": "Partnerships",
 
   "testimonials": {
-    "title": "Recensioni dei nostri clienti",
-    "subtitle": "Come valutano i nostri clienti il nostro lavoro",
+    "title": "Customer Testimonials",
+    "subtitle": "What our customers say about us.",
 
     "t1": "Muy buena atención y profesionalidad por parte de Marina. Nos ha guiado y nos ha ayudado en todo el proceso de compraventa de la vivienda. Ahora somos propietarios y aún estamos en contacto. Recomendados 100%.",
-    "t2": "Utilicé sus servicios para la compra de una propiedad (vivienda principal) en Tenerife y no podría estar mas feliz con lo fluído que fué todo el proceso. Irina fué muy amigable, comprensiva y lo más importante nunca invasiva! La comunicación es fantástica en Español e Inglés. Con su ayuda y consejos, lo que era un proceso muy estresante se convirtió en fácil y llevadero. Recomendaría altamente esta agencia a cualquiera que esté buscando comprar/vender una propiedad en Tenerife.",
-    "t3": "Muy buena atención por parte de Inmobiliaria Barreras. Gian, es un excelente profesional, siempre dispuesto a ayudarte en todo momento y con un trato cercano y efectivo. Gracias a él alquilé mi piso rápidamente. Sin duda, volveré a repetir en el futuro."
+    "t2": "I used their services for the purchase of a property (main residence) in Tenerife and I couldn't be happier with how smoothly everything went throughout the whole process. Irina was very friendly understanding and most importantly never pushy! Communication eas fantastic in both Spanish and English. With Irina's help and advice, what is usually a very stressful process became very easy and straightforward. I would highly recommend this agency for anyone looking to buy/sell/rent a property in Tenerife.",
+    "t3": "Muy buena atención por parte de Barreras Realty. Gian, es un excelente profesional, siempre dispuesto a ayudarte en todo momento y con un trato cercano y efectivo. Gracias a él alquilé mi piso rápidamente. Sin duda, volveré a repetir en el futuro."
   },
 
   "footer": {
-    "recent": "Immobili recenti",
-    "contact": "Contatti",
-    "copyright": "Tutti i diritti reservati",
-    "offices": "Il nostro ufficio"
+    "recent": "Najnowsze właściwości",
+    "contact": "Contact",
+    "copyright": "All rights reserved",
+    "offices": "Our office"
   },
 
   "properties": {
-    "title": "Immobili",
-    "featured": "Immobili In Evidenza",
-    "recent": "Immobili recenti",
-    "sell": "Immobili in vendita",
-    "rent": "Immobili in affitto",
-    "related": "Proprietà correlate",
-    "share": "Condividere",
+    "title": "Nieruchomości",
+    "featured": "Wyrózniona Nieruchomosc",
+    "recent": "Najnowsze właściwości",
+    "sell": "Nieruchomości na sprzedaż",
+    "rent": "Nieruchomości do wynajęcia",
+    "related": "Powiązane właściwości",
+    "share": "Udział",
 
-    "info": "Informazioni",
-    "description": "Descrizione",
+    "info": "Podstawowe informacje",
+    "description": "Opis",
 
-    "previous": "Anrteriore",
-    "next": "Prossima",
+    "previous": "Poprzedni",
+    "next": "Następny",
 
-    "area": "Area",
-    "bedrooms": "Camere",
-    "bathrooms": "Bagni",
-    "tags": "Tags",
-    "from": "Da",
+    "area": "Obszar",
+    "bedrooms": "Sypialnie",
+    "bathrooms": "Łazienki",
+    "tags": "Tagi",
+    "from": "Z",
 
     "search": {
-      "show": "Ricerca avanzata",
-      "hide": "Nascondere ricerca avanzata"
+      "show": "zaawansowane wyszukiwanie",
+      "hide": "Ukryj wyszukiwanie zaawansowane"
     }
   },
 
   "about": {
-    "title": "Agenzia Immobiliare Barreras",
-    "description": "<strong>BARRERAS TENERIFE S.L.</strong> è stata fondata da PABLO BARRERAS GONZÁLEZ a TENERIFE nell'anno <strong>2000</strong>. Oggi i suoi successori con una vasta esperienza nel campo immobiliare, continuano a offrire <strong>UN SERVIZIO PROFESSIONALE E DI ALTA QUALITÀ</strong>.<br /><br />Il nostro team accuratamente selezionato è lieto di prendersi cura di ogni cliente durante le fasi del processo di acquisto o vendita, di rispondere alle richieste e preoccupazioni del cliente, di prestare attenzione anche al più piccolo dettaglio.<br /><br />Crediamo che un'operazione immobiliare sia una delle decisioni più importanti che ognuno dei nostri clienti possa prendere per questo siamo attenti a tutti i dettagli per poter garantirne il buon fine.",
+    "title": "Barreras Realty",
+    "description": "<strong>BARRERAS REALTY TENERIFE S.L.</strong> została założona przez PABLO BARRERAS GONZÁLEZ na Teneryfie w <strong>2000</strong> roku. Dziś jego następcy, posiadający bogate doświadczenie w zakresie doradztwa i negocjacji w branży nieruchomości, kontynuują jego dzieło świadcząc swoje usługi z <strong>UCZCIWOŚCIĄ, ZAUFANIEM, EMPATIĄ I PROFESJONALIZMEM</strong>.<br /><br />Nasz starannie dobrany zespół dba o każdego klienta na wszystkich etapach procesu kupna lub sprzedaży, reaguje na prośby i wątpliwości klientów, zwraca uwagę na najdrobniejsze  szczegóły.<br /><br />Wierzymy, że każda transakcja dotycząca nieruchomości może być jedną z najważniejszych decyzji, jakie podjęli nasi klienci, dlatego dbamy o każdy szczegół, aby zagwarantować jej powodzenie.",
 
     "banner": {
-      "p1": "Chi Siamo",
+      "p1": "O NAS",
       "p2": "Barreras"
     },
 
     "team": {
-      "title": "Vi presentiamo il nostro team de professionisti",
-      "ceoM": "CEO e Cofondatore",
-      "ceoF": "CEO e Cofondatrice",
-      "realEstate": "Consulente immobiliare",
-      "investment": "Consulente per gli investimenti"
+      "title": "POZNAJ NASZ ZESPÓŁ PROFESJONALISTÓW",
+      "ceoM": "Dyrektor generalny i współzałożyciel",
+      "ceoF": "Dyrektor generalny i współzałożyciel",
+      "realEstate": "Doradca ds. nieruchomości",
+      "investment": "Doradca inwestycyjny"
     }
   },
 
   "contact": {
     "description": {
-      "title": "Benvenuto in Inmobiliaria Barreras Tenerife, la tua agenzia immobiliare di fiducia.",
-      "body": "I NOSTRI AGENTI sono a vostra disposizione per una consulenza sulla vendita, l'affitto del vostro immobile o l'acquisto di una nuova proprietà.<br /><br />SAREMO LIETI DI ASSISTERVI.<br /><br />Un cordiale saluto, Barreras immobiliare."
+      "title": "Witamy w Barreras Realty Tenerife, agencji nieruchomości, której możesz zaufać.",
+      "body": "NASI AGENCI są do twojej dyspozycji, aby doradzić ci w sprawie sprzedaży lub wynajmu twojej nieruchomości, a także pomóc w zakupie dowolnych środków stałych.<br /><br />CHĘTNIE CI POMOŻEMY.<br /><br />Serdeczne pozdrowienia od barreras real estate"
     },
 
-    "title": "Contattaci",
-    "subtitle": "At your service.",
-    "address": "Indirizzo",
-    "phone": "Telefono",
+    "title": "Skontaktuj się z nami",
+    "subtitle": "Do usług.",
+    "address": "Adres",
+    "phone": "Telefon",
     "email": "Email",
 
     "form": {
-      "name": "Nome",
+      "name": "Nazwa",
       "email": "Email",
-      "message": "Messaggio",
-      "send": "Inviare",
-      "sent": "Inviato"
+      "message": "Wiadomość",
+      "send": "Wysłać",
+      "sent": "Wysłano"
     }
   },
 
   "constants": {
     "fields": {
-      "type": "Tipo",
-      "contract": "Contratto",
-      "zone": "Area",
-      "sort_by": "Odina per",
-      "bedrooms": "Camere",
-      "bathrooms": "Bagni",
+      "type": "Type",
+      "contract": "Operation",
+      "zone": "Zone",
+      "sort_by": "Sort by",
+      "bedrooms": "Bedrooms",
+      "bathrooms": "Bathrooms",
       "tags": "Tags",
-      "identifier": "ID riferimento",
-      "price": "Prezzo"
+      "identifier": "Reference ID",
+      "price": "Price"
     },
     "types": {
-      "all": "Tutti",
-      "flat": "Appartamento",
-      "chalet": "Casa/Villa",
-      "country_house": "Casa Rustica",
+      "all": "All",
+      "flat": "Flat",
+      "chalet": "House / Chalet",
+      "country_house": "Country House",
       "bungalow": "Bungalow",
       "room": "Hotel",
-      "parking": "Garage",
-      "shop": "Negozio",
-      "industrial": "Locale industriale",
-      "office": "Ufficio",
-      "land": "Terreno",
-      "storage": "Cantina",
-      "building": "Edificio"
+      "parking": "Parking",
+      "shop": "Shop",
+      "industrial": "Industrial Ship",
+      "office": "Office",
+      "land": "Land",
+      "storage": "Storage",
+      "building": "Building"
     },
     "contract": {
-      "all": "Tutto",
-      "rent": "Affitto",
-      "sell": "Acquista"
+      "all": "All",
+      "rent": "Rent",
+      "sell": "Sale"
     },
     "zones": {
-      "all": "Tutte le localitá",
+      "all": "All",
       "adeje": "Adeje",
       "armenime": "Armeñime",
       "callao": "Callao Salvaje",
@@ -275,12 +275,12 @@
       "puertoSantiago": "Puerto de Santiago"
     },
     "sort_by": {
-      "creation_date_desc": "Recenti",
-      "price_desc": "Prezzo piú alto",
-      "price_asc": "Prezzo piú basso"
+      "creation_date_desc": "Recent",
+      "price_desc": "Highest price",
+      "price_asc": "Lowest price"
     },
     "bedrooms": {
-      "all": "Tutti",
+      "all": "All",
       "1": "1",
       "2": "2",
       "3": "3",
@@ -288,10 +288,10 @@
       "5": "5",
       "6": "6",
       "7": "7",
-      "10": "Piú di 7"
+      "10": "More than 7"
     },
     "bathrooms": {
-      "all": "Tutti",
+      "all": "All",
       "1": "1",
       "2": "2",
       "3": "3",
@@ -299,59 +299,59 @@
       "5": "5",
       "6": "6",
       "7": "7",
-      "10": "Piú di 7"
+      "10": "More than 7"
     },
     "tags": {
-      "all": "Tutti",
-      "elevator": "Ascensore",
+      "all": "All",
+      "elevator": "Elevator",
       "garage": "Garage",
-      "garden": "Giardino",
-      "outdoor": "Esteriore",
-      "rooftop_terrace": "Terrazza sul tetto",
-      "sea_views": "Vista mare",
-      "storage_room": "Cantina",
-      "swimming_pool": "Piscina",
-      "terrace": "Terrazza"
+      "garden": "Garden",
+      "outdoor": "Outdoor",
+      "rooftop_terrace": "Rooftop terrace",
+      "sea_views": "Ocean views",
+      "storage_room": "Storage room",
+      "swimming_pool": "Swimimng pool",
+      "terrace": "Terrace"
     }
   },
 
   "buyers": {
-    "title": "CAPIRE IL PROCESSO DI ACQUISTO",
-    "p1": "<strong>UN APPUNTAMENTO COL NOSTRO AGENTE INMOBILIARE</strong> per descrivere le sue richieste ed i suoi desideri aiuterà l'agente a trovare la proprietà giusta per lei:  Casa per le vacanze, apartamento abituale, investimento immobiliare, casa da ristrutturare o di nuova costruzione, in condominio o indipendente,  in una specifica zona, in una zona turistica, in paese o più isolata.",
-    "p2": "<strong>NEL CASO AVESSE BISOGNO DI UN MUTUO</strong> per acquistare la proprietà, sarebbe ideale ottenere una consulenza prima di cercare un immobile. In questo modo saprà all'incirca quanto la banca le può finanziare. L’importo del finanziamento varierà a seconda della banca e sopratutto dipende dalla sua residenza fiscale. Se risiede in Spagna può ottenere un mutuo fino all'80% , nel caso non fosse residente fiscale può ottenere fino al 50/60%.",
-    "p3": "Quando si acquista una proprietà in Spagna, <strong>È NECESSARIO RICHIEDERE UN NUMERO NIE</strong> che è un numero di identificazione per stranieri. Questo viene normalmente richiesto presso la stazione di polizia nazionale.",
-    "p4": "<strong>É OPPORTUNO APRIRE UN CONTO BANCARIO SPAGNOLO</strong> prima di acquistare una proprietà in modo da poter trasferire i soldi per effettuare l'acquisto e per poi poter domiciliare le bollette e altre spese fisse dopo l'acquisto. Per aprire un conto avrà bisogno del suo passaporto o carta d'identità e le verranno richiesti altri documenti. I requisiti esatti possono variare da banca a banca. Nel caso avesse bisogno, possiamo trovare una banca che parla la sua lingua.",
-    "p5": "<strong>UNA VOLTA SCELTA LA PROPRIETÀ CHE DESIDERA ACQUISTARE</strong>, si procede generalmente con un contratto preliminare nel quale viene richiesto il versamento di una caparra penitenziale che di solito è il 10% del prezzo di vendita e si stabilisce quale sarà il tempo necessario per andare al rogito. I tempi per una vendita possono variare, potrebbero volerci solo alcuni giorni oppure anche diverse settimane. ",
-    "p6": "<strong>LA CONSEGNA DELLA PROPRIETÀ</strong> avverrà al momento del rogito. La firma avviene davanti a un Notaio che assisterà alla transazione. La  proprietà naturalmente dovrà essere completamente libera da debiti, inquilini, occupanti il ​​giorno in cui si firma il rogito. Il suo agente inmobiliare e/o consulente legale (e traduttore nel caso avesse bisogno) saranno  presenti alla firma per assisterla e assicurarsi che tutti i documenti necessari siano stati recapitati e controllati . ",
-    "p7": "<strong>I COSTI AGGIUNTIVI</strong> oltre al prezzo di acquisto della proprietà oscillano tra l'7% e il 10% dell importo di compravendita. l'imposta  per l'acquisto di un immobile di seconda mano è del 6,5% (ITP), mentre è del 7% per l'acquisto di un immobile di nuova costruzione. Oltre all’imposta sul prezzo d'acquisto ci sono da considerare anche le spese  notarili,  di registro della proprietà e eventuali ulteriori costi di gestione. ",
-    "p8": "Ci auguriamo che i nostri consigli possano essere di aiuto. Se desidera maggiori informazioni o desidera aiuto e consigli sulla vendita della sua proprietà, non esiti a contattarci."
+    "title": "ZROZUMIEĆ PROCES ZAKUPU",
+    "p1": "<strong>SPOTKANIE Z NASZYM AGENTEM NIERUCHOMOŚCI</strong> w celu opisania Twoich próśb i życzeń pomoże agentowi znaleźć odpowiednią nieruchomość dla Ciebie: dom wakacyjny, mieszkanie, nieruchomość inwestycyjna, dom do remontu lub nowa budowa, kondominium, w określonej okolicy, w obszarze turystycznym, w wiosce lub bardziej odizolowany.",
+    "p2": "<strong>JEŚLI POTRZEBUJESZ KREDYTU HIPOTECZNEGO</strong> na zakup nieruchomości, najlepiej byłoby zasięgnąć porady przed rozpoczęciem poszukiwań nieruchomości. W ten sposób będziesz wiedział w przybliżeniu, na jakie finansowanie ze strony banku możesz liczyć. Wysokość kredytu będzie się różnić w zależności od banku i przede wszystkim zależy od Twojej rezydencji podatkowej. Jeśli mieszkasz w Hiszpanii, możesz otrzymać kredyt hipoteczny do 80%. Jeśli nie jesteś rezydentem podatkowym, możesz otrzymać do 50/60%.",
+    "p3": "Kupując nieruchomość w Hiszpanii należy wystąpić o <strong>NUMER NIE</strong>, który jest numerem identyfikacyjnym dla obcokrajowców. Zwykle wnioskuje się o ten dokument na posterunku krajowej policji.",
+    "p4": "<strong>WSKAZANE JEST BY, PRZED ZAKUPEM NIERUCHOMOŚCI</strong>, otworzyć hiszpańskie konto bankowe, aby móc przelać pieniądze na zakup, a następnie opłacić rachunki i inne stałe wydatki po zakupie. Aby otworzyć konto, będziesz potrzebować paszportu lub dowodu osobistego, a także innych dokumentów. Dokładne wymagania mogą się różnić w zależności od banku. W razie potrzeby możemy znaleźć bank, który mówi w Twoim języku.",
+    "p5": "<strong>PO WYBRANIU NIERUCHOMOŚCI</strong>, którą chcesz kupić, z reguły przystępujemy do umowy przedwstępnej, podczas której wymagana jest wpłata kaucji, wynoszącej zwykle 10% ceny sprzedaży i ustalamy termin finalizacji transakcji. Czas trwania procesu sprzedaży bywa różny, może zająć zaledwie kilka dni, a czasem nawet kilka tygodni.",
+    "p6": "<strong>WYDANIE NIERUCHOMOŚCI</strong> nastąpi w momencie zawarcia aktu. Podpisanie odbywa się przed notariuszem, który będzie asystował przy transakcji. Oczywiście nieruchomość musi być całkowicie wolna od długów, najemców i mieszkańców w dniu podpisania aktu. Twój agent nieruchomości i/lub doradca prawny (i tłumacz w razie potrzeby) będą obecni przy podpisywaniu aktu, aby pomóc Ci i upewnić się, że wszystkie niezbędne dokumenty zostały dostarczone i sprawdzone.",
+    "p7": "<strong>DODATKOWE KOSZTY</strong>, oprócz ceny zakupu nieruchomości, wahają się od 7% do 10% ceny sprzedaży. Podatek przy zakupie nieruchomości z rynku wtórnego wynosi 6,5% (ITP), natomiast przy zakupie nieruchomości nowo wybudowanej 7%. Oprócz podatku od ceny zakupu, należy wziąć pod uwagę również opłaty notarialne, opłaty za rejestrację nieruchomości i wszelkie inne koszty zarządzania.",
+    "p8": "Mamy nadzieję, że nasze rady okażą się pomocne. Jeśli potrzebujesz więcej informacji lub potrzebujesz pomocy i porady w sprawie sprzedaży swojej nieruchomości, nie wahaj się z nami skontaktować."
   },
 
   "sellers": {
-    "title": "COMPRENDERE IL PROCESSO DI VENDITA",
-    "intro": "Vendere la propria casa è un momento emozionante e stimolante. Una piú completa informazione sul processo di vendita le porterà migliori risultati con il minor stress possibile. Qui, descriviamo alcuni punti importanti del processo di vendita  immobiliare.",
+    "title": "ZROZUMIENIE PROCESU SPRZEDAŻY",
+    "intro": "Sprzedaż domu to ekscytujący i ważny moment. Pełniejsza wiedza o procesie sprzedaży przyniesie najlepsze efekty przy możliwie najmniejszym stresie. W tym miejscu opisujemy kilka ważnych punktów procesu sprzedaży nieruchomości.",
 
-    "p1": "<strong>UNA VALUTAZIONE CORRETTA</strong> in base al prezzo medio attuale del mercato, alle caratteristiche della proprietà e alle statistiche sui prezzi ufficiali di vendita di una specifica zona.",
-    "p2": "<strong>PRESENZA ONLINE</strong> tramite web professionale e portali inmobiliari nazionali e internazionali. Una buona strategia di marketing.",
-    "p3": "<strong>FOTO PROFESSIONALI</strong>, descrizione elegante e dettagliata della proprietà e della zona in cui si trova.",
-    "p4": "<strong>VENDERE UNA PROPRIETÀ COMPORTA ANCHE ALCUNI COSTI:</strong>",
+    "p1": "<strong>WŁAŚCIWA WYCENA OPARTA NA AKTUALNEJ ŚREDNIEJ CENIE RYNKOWEJ</strong>, charakterystyce nieruchomości oraz statystykach dotyczących oficjalnych cen sprzedaży na danym terenie.",
+    "p2": "<strong>OBECNOŚĆ W INTERNECIE</strong> za pośrednictwem profesjonalnych portali internetowych oraz krajowych i międzynarodowych portali nieruchomości. Dobra strategia marketingowa.",
+    "p3": "<strong>PROFESJONALNE ZDJĘCIA</strong>, elegancki i szczegółowy opis nieruchomości oraz okolicy, w której się znajduje.",
+    "p4": "<strong>SPRZEDAŻ NIERUCHOMOŚCI WIĄŻE SIĘ RÓWNIEŻ Z PEWNYMI KOSZTAMI:</strong>",
 
-    "p41": "Una legge introdotta nel 2013, che stabilisce che per vendere o affittare un immobile è necessario avere un certificato di efficienza energetica valido. Se non ne ha uno o é scaduto ( validitá 10 anni) dovrà far realizzare uno che può costare a partire da € 100 a seconda delle dimensioni della sua proprietà. Il suo agente sarà in grado di aiutarle a ottenerlo.",
-    "p42": "Una tassa locale da pagare al comune chiamata Plus Valía Municipal (Imposta sull'aumento del valore del terreno). É possibile richiedere una simulazione dell'ammontare della Plusvalía Municipal.",
-    "p43": "Se Lei  non ha la residenza fiscale in Spagna le verrà trattenuto il 3% sul importo di vendita della proprietà. Questo viene  trattenuto il ​​giorno del rogito dagli acquirenti che  hanno obbligo di versarlo all'Agenzia tributaria e fornirle una prova del versamento. Potrà poi in seguito richiedere il rimborso parziale o completo della somma trattenuta nel rogito. Il rimborso dipenderà dalle possibili tasse sulla vendita della proprietà.",
+    "p41": "W 2013 r. została wprowadzona ustawa, która stanowi, że aby sprzedać lub wynająć nieruchomość, konieczne jest posiadanie ważnego świadectwa efektywności energetycznej. Jeśli go nie posiadasz lub wygasł (ważny przez 10 lat), należy go wyrobić, co może kosztować od 100 €, w zależności od wielkości Twojej nieruchomości. Twój agent pomoże Ci go zdobyć.",
+    "p42": "Lokalny podatek do zapłaty na rzecz gminy o nazwie Plus Valía Municipal (podatek od wzrostu wartości gruntu). Istnieje możliwość zawnioskowania o symulację kwoty Plusvalía Municipal.",
+    "p43": "Jeśli nie jesteś rezydentem podatkowym w Hiszpanii, 3% ceny sprzedaży nieruchomości zostanie potrącone i zatrzymane w dniu aktu przez kupujących, którzy są zobowiązani do wpłacenia go do Urzędu Skarbowego i przedstawienia dowodu wpłaty. Możesz później zażądać częściowego lub pełnego zwrotu kwoty zatrzymanej w akcie. Zwrot będzie uzależniony od ewentualnych podatków od sprzedaży nieruchomości.",
 
-    "p5": "<strong>DI QUALI DOCUMENTI HA BISOGNO?</strong>",
+    "p5": "<strong>JAKICH DOKUMENTÓW POTRZEBUJESZ?</strong>",
 
-    "p51": "Il documento di identità e il NIE del/dei proprietario/i, La \"nota simple\" della proprietà,",
-    "p52": "Un certificato  aggiornato firmato dall'amministratore condominiale attestante che non si ha debiti insoluti con la comunità, ",
-    "p53": "Prova del pagamento dell'IBI dell'anno in corso ( pagamento che spetta per legge alla parte venditrice),",
-    "p54": "Nel caso avesse un mutuo sulla proprietà servirebbe un certificato da richiedere alla Banca che attesta l'importo residuo del debito,",
-    "p55": "Sarebbe utile anche preparare copia delle bollette recenti di acqua, luce, altre tasse comunali.",
+    "p51": "Dokument tożsamości i numer NIE właściciela (właścicieli), „nota simple” nieruchomości,",
+    "p52": "aktualne zaświadczenie podpisane przez zarządcę wspólnoty mieszkaniowej stwierdzające, że nie masz żadnych zobowiązań wobec wspólnoty,",
+    "p53": "dowód wpłaty IBI za bieżący rok (płatność należna z mocy prawa sprzedającemu),",
+    "p54": "jeśli masz hipotekę na nieruchomości, konieczne jest zażądanie od Banku zaświadczenia potwierdzającego pozostałą kwotę długu.",
+    "p55": "Przydatne byłoby również sporządzenie kopii ostatnich rachunków za wodę, prąd i inne podatki miejskie.",
 
-    "p6": "<strong>COMO SI PROCEDE IN CASO DI UN ACCORDO ECONOMICO SUL PREZZO DI VENDITA DELLA PROPRIETÀ  TRA LE PARTI ACQUIRENTE E VENDITRICE?</strong>",
-    "p7": "Di norma si procede alla firma di un contratto preliminare  e si stabilisce quale sarà il tempo necessario per andare al rogito. I tempi per una vendita possono variare, potrebbero volerci solo alcuni giorni oppure anche diverse settimane.",
-    "p8": "<strong>LA CONSEGNA DELLA PROPRIETÀ</strong> agli acquirenti avverrà al momento del rogito. La firma avviene davanti a un Notaio che assisterà alla transazione. La  proprietà naturalmente dovrà essere completamente libera da debiti ,inquilini ,occupanti il ​​giorno in cui si firma il rogito. Il suo agente inmobiliare e/o consulente legale (e traduttore nel caso avesse bisogno) saranno  presenti alla firma per assisterla e assicurarsi che tutti i documenti necessari siano stati recapitati e controllati.",
+    "p6": "<strong>6. JAK POSTĘPOWAĆ W PRZYPADKU ZAWARCIA UMOWY GOSPODARCZEJ W SPRAWIE CENY SPRZEDAŻY NIERUCHOMOŚCI MIĘDZY KUPUJĄCYM A SPRZEDAJĄCYM?</strong>",
+    "p7": "Zwykle podpisywana jest umowa przedwstępna i ustalany jest czas potrzebny na przystąpienie do aktu. Czas trwania procesu sprzedaży bywa różny, może zająć zaledwie kilka dni lub nawet kilka tygodni.",
+    "p8": "Wydanie nieruchomości nabywcom nastąpi w momencie zawarcia aktu. Podpisanie odbywa się przed notariuszem, który będzie asystował przy transakcji. Oczywiście nieruchomość musi być całkowicie wolna od długów, najemców i mieszkańców w dniu podpisania aktu. Twój agent nieruchomości i/lub doradca prawny (i tłumacz w razie potrzeby) będą obecni przy podpisywaniu, aby pomóc Ci i upewnić się, że wszystkie niezbędne dokumenty zostały dostarczone i sprawdzone.",
 
-    "conclusion": "Ci auguriamo che i nostri consigli possano essere di aiuto. Se desidera maggiori informazioni o desidera aiuto e consigli sulla vendita della sua proprietà, non esiti a  contattarci."
+    "conclusion": "Mamy nadzieję, że nasze wskazówki są pomocne. Jeśli potrzebujesz więcej informacji lub pomocy i porady w sprawie sprzedaży swojej nieruchomości, nie wahaj się z nami skontaktować."
   }
 }

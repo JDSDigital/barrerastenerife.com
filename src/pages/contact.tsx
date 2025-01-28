@@ -16,14 +16,14 @@ import { useTranslation } from "hooks/useTranslation";
 import React from "react";
 
 type ContactPageProps = {
-  team: any; // TODO: Get image type
+  logo: any; // TODO: Get image type
   ocean: any;
 };
 
 const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
   const { t } = useTranslation();
 
-  const teamImage = getImage(data.team);
+  const logo = getImage(data.logo);
   const oceanImage = getImage(data.ocean);
 
   return (
@@ -39,15 +39,15 @@ const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
           justifyContent="space-around"
           className="about-section"
         >
-          <Grid item xs={12} sm={4} data-aos="fade-right">
+          <Grid item xs={12} sm={5} data-aos="fade-right">
             <Typography gutterBottom>
               <Trans i18nKey="contact.description.body" />
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={7} data-aos="fade-left">
-            {teamImage && (
+          <Grid item xs={12} sm={5} data-aos="fade-left">
+            {logo && (
               <GatsbyImage
-                image={teamImage}
+                image={logo}
                 alt="Team image"
                 className="img-responsive crop-center contact-image"
               />
@@ -112,7 +112,7 @@ export const query = graphql`
         }
       }
     }
-    team: file(relativePath: { eq: "contact/4.jpg" }) {
+    logo: file(relativePath: { eq: "logo/logo-vertical-color.png" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED)
       }

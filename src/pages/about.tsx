@@ -12,7 +12,7 @@ import { Trans } from "gatsby-plugin-react-i18next";
 
 //TODO: Get image type
 type AboutPageProps = {
-  team: any;
+  logo: any;
 };
 
 const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
@@ -31,14 +31,14 @@ const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
           justifyContent="space-around"
           className="about-section"
         >
-          <Grid item xs={12} sm={5} data-aos="fade-right">
+          <Grid item xs={12} sm={6} data-aos="fade-right">
             <Typography gutterBottom>
               <Trans i18nKey="about.description" />
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={6} data-aos="fade-left">
+          <Grid item xs={12} sm={5} data-aos="fade-left">
             <GatsbyImage
-              image={getImage(data.team)!}
+              image={getImage(data.logo)!}
               alt="Barreras founder"
               className="img-responsive about-image"
             />
@@ -63,7 +63,7 @@ export const query = graphql`
         }
       }
     }
-    team: file(relativePath: { eq: "home/3.jpg" }) {
+    logo: file(relativePath: { eq: "logo/logo-vertical-color.png" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED)
       }

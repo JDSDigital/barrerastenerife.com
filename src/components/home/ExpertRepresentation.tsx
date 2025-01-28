@@ -9,7 +9,7 @@ import React from "react";
 export const ExpertRepresentation = () => {
   const data = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "home/3.jpg" }) {
+      image: file(relativePath: { eq: "home/expert.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
         }
@@ -33,8 +33,8 @@ export const ExpertRepresentation = () => {
       </Typography>
 
       <Container className="expert-representation">
-        <Grid container spacing={5}>
-          <Grid item xs={12} sm={6} data-aos="fade-right" data-aos-delay="400">
+        <Grid container spacing={6}>
+          <Grid item xs={12} sm={5} data-aos="fade-right" data-aos-delay="400">
             <div className="expert-text-container">
               <Typography>
                 <Trans i18nKey="expertRepresentation.description" />
@@ -63,7 +63,7 @@ export const ExpertRepresentation = () => {
               </div>
             </div>
           </Grid>
-          <Grid item xs={12} sm={6} data-aos="fade-left" data-aos-delay="400">
+          <Grid item xs={12} sm={7} data-aos="fade-left" data-aos-delay="400">
             <div className="expert-image-container">
               <GatsbyImage image={image} alt="" className="expert-image" />
             </div>
