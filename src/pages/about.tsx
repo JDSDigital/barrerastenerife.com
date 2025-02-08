@@ -36,7 +36,7 @@ const AboutPage: React.FC<PageProps<AboutPageProps>> = ({ data }) => {
               <Trans i18nKey="about.description" />
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={5} data-aos="fade-left">
+          <Grid item xs={9} sm={5} data-aos="fade-left">
             <GatsbyImage
               image={getImage(data.logo)!}
               alt="Barreras founder"
@@ -63,7 +63,7 @@ export const query = graphql`
         }
       }
     }
-    logo: file(relativePath: { eq: "logo/logo-vertical-color.png" }) {
+    logo: file(relativePath: { eq: "logo/logo-vertical-color-full.png" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED)
       }

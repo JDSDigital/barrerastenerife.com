@@ -11,12 +11,18 @@ export const ThinkingOfBuying = () => {
     query {
       buying: file(relativePath: { eq: "buyers/3.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(
+            layout: CONSTRAINED
+            breakpoints: [400, 600, 960, 1280, 1920]
+          )
         }
       }
       selling: file(relativePath: { eq: "sellers/3.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(
+            layout: CONSTRAINED
+            breakpoints: [400, 600, 960, 1280, 1920]
+          )
         }
       }
     }
