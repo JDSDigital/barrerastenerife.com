@@ -47,37 +47,37 @@ const Header: React.FC<Props> = ({ siteTitle = "", ...rest }) => {
       }
       es: file(relativePath: { eq: "flags/sp.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 25)
+          gatsbyImageData(layout: FIXED, height: 25, width: 38)
         }
       }
       en: file(relativePath: { eq: "flags/uk.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 25)
+          gatsbyImageData(layout: FIXED, height: 25, width: 38)
         }
       }
       ru: file(relativePath: { eq: "flags/ru.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 25)
+          gatsbyImageData(layout: FIXED, height: 25, width: 38)
         }
       }
       it: file(relativePath: { eq: "flags/it.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 25)
+          gatsbyImageData(layout: FIXED, height: 25, width: 38)
         }
       }
       de: file(relativePath: { eq: "flags/de.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 25)
+          gatsbyImageData(layout: FIXED, height: 25, width: 38)
         }
       }
       fr: file(relativePath: { eq: "flags/fr.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 25)
+          gatsbyImageData(layout: FIXED, height: 25, width: 38)
         }
       }
       pl: file(relativePath: { eq: "flags/pl.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, height: 25)
+          gatsbyImageData(layout: FIXED, height: 25, width: 38)
         }
       }
     }

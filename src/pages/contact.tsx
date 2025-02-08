@@ -44,7 +44,7 @@ const ContactPage: React.FC<PageProps<ContactPageProps>> = ({ data }) => {
               <Trans i18nKey="contact.description.body" />
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={5} data-aos="fade-left">
+          <Grid item xs={9} sm={5} data-aos="fade-left">
             {logo && (
               <GatsbyImage
                 image={logo}
@@ -112,7 +112,7 @@ export const query = graphql`
         }
       }
     }
-    logo: file(relativePath: { eq: "logo/logo-vertical-color.png" }) {
+    logo: file(relativePath: { eq: "logo/logo-vertical-color-full.png" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED)
       }

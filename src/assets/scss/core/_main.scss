@@ -346,7 +346,11 @@ body {
       }
 
       .expert-image-container img {
-        height: 600px;
+        height: 300px;
+
+        @include sm {
+          height: 600px;
+        }
       }
 
       .expert-image {
@@ -726,6 +730,14 @@ body {
   margin-top: 8em;
   margin-bottom: 8em;
 
+  .about-image {
+    margin-top: 50px;
+
+    @include sm {
+      margin-top: 0px;
+    }
+  }
+
   &--text-shadow {
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
@@ -812,8 +824,12 @@ body {
   }
 }
 .contact-image {
-  // height: 500px;
   width: auto;
+  margin-top: 50px;
+
+  @include sm {
+    margin-top: 0px;
+  }
 }
 
 .contact-container {

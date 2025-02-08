@@ -13,27 +13,42 @@ const MainSlider: React.FC = () => {
     query {
       image1: file(relativePath: { eq: "home/1.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(
+            layout: CONSTRAINED
+            breakpoints: [400, 600, 960, 1280, 1920]
+          )
         }
       }
       image2: file(relativePath: { eq: "home/2.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(
+            layout: CONSTRAINED
+            breakpoints: [400, 600, 960, 1280, 1920]
+          )
         }
       }
       image3: file(relativePath: { eq: "home/3.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(
+            layout: CONSTRAINED
+            breakpoints: [400, 600, 960, 1280, 1920]
+          )
         }
       }
       image4: file(relativePath: { eq: "home/4.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(
+            layout: CONSTRAINED
+            breakpoints: [400, 600, 960, 1280, 1920]
+          )
         }
       }
       logo: file(relativePath: { eq: "logo/dreams.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(
+            layout: CONSTRAINED
+            breakpoints: [400, 600, 960, 1280, 1920]
+          )
         }
       }
     }

@@ -18,22 +18,34 @@ const TeamSection = () => {
     query {
       gian: file(relativePath: { eq: "about/gian.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(
+            layout: CONSTRAINED
+            breakpoints: [400, 600, 960, 1280, 1920]
+          )
         }
       }
       maryna: file(relativePath: { eq: "about/maryna.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(
+            layout: CONSTRAINED
+            breakpoints: [400, 600, 960, 1280, 1920]
+          )
         }
       }
       ekaterina: file(relativePath: { eq: "about/ekaterina.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(
+            layout: CONSTRAINED
+            breakpoints: [400, 600, 960, 1280, 1920]
+          )
         }
       }
       laura: file(relativePath: { eq: "about/laura.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
+          gatsbyImageData(
+            layout: CONSTRAINED
+            breakpoints: [400, 600, 960, 1280, 1920]
+          )
         }
       }
       es: file(relativePath: { eq: "flags/sp.jpg" }) {
