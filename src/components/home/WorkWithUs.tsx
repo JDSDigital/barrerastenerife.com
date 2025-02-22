@@ -10,7 +10,7 @@ import { useTranslation } from "hooks/useTranslation";
 export const WorkWithUs = () => {
   const data = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "home/work.jpg" }) {
+      image: file(relativePath: { eq: "home/work-2.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
