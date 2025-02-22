@@ -404,6 +404,11 @@ body {
     }
 
     .work-with-us {
+      & > div:first-child {
+        background-position: left center !important;
+        inset: 10px -275px !important;
+      }
+
       .item-container {
         flex-direction: column;
 
