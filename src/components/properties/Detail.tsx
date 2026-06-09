@@ -13,6 +13,7 @@ import {
 import React, { useState } from "react";
 
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import LightboxToolbarButtons from "./LightboxToolbarButtons";
 import Form from "components/contact/Form";
 import MapView from "components/maps/MapView";
 import { I18nextContext } from "gatsby-plugin-react-i18next";
@@ -125,11 +126,17 @@ const Detail = ({ identifier }: DetailProps) => {
           ))}
         </div>
         <FloatingButtons>
-          <FloatingButton variant="contained" onClick={() => setIsGalleryOpen(true)}>
+          <FloatingButton
+            variant="contained"
+            onClick={() => setIsGalleryOpen(true)}
+          >
             {imageGallery.length} {t("properties.photos") || "Fotos"}
           </FloatingButton>
           {videoGallery.length > 0 && (
-            <FloatingButton variant="contained" onClick={() => setIsVideoGalleryOpen(true)}>
+            <FloatingButton
+              variant="contained"
+              onClick={() => setIsVideoGalleryOpen(true)}
+            >
               {videoGallery.length} {t("properties.videos") || "Vídeos"}
             </FloatingButton>
           )}
@@ -206,6 +213,25 @@ const Detail = ({ identifier }: DetailProps) => {
         index={currentImageIndex}
         slides={imageGallery}
         carousel={{ finite: true }}
+        toolbar={{
+          buttons: [
+            ...(videoGallery.length > 0
+              ? [
+                  <LightboxToolbarButtons
+                    key="toolbar-buttons"
+                    activeType="photo"
+                    onSwitch={type => {
+                      if (type === "video") {
+                        setIsGalleryOpen(false);
+                        setIsVideoGalleryOpen(true);
+                      }
+                    }}
+                  />,
+                ]
+              : []),
+            "close",
+          ],
+        }}
       />
       {videoGallery.length > 0 && (
         <Lightbox
@@ -216,6 +242,21 @@ const Detail = ({ identifier }: DetailProps) => {
           slides={videoGallery}
           plugins={[Video]}
           carousel={{ finite: true }}
+          toolbar={{
+            buttons: [
+              <LightboxToolbarButtons
+                key="toolbar-buttons"
+                activeType="video"
+                onSwitch={type => {
+                  if (type === "photo") {
+                    setIsVideoGalleryOpen(false);
+                    setIsGalleryOpen(true);
+                  }
+                }}
+              />,
+              "close",
+            ],
+          }}
         />
       )}
     </>
@@ -253,7 +294,7 @@ const FloatingButtons = styled("div")({
 });
 
 const FloatingButton = styled(Button)({
-  backgroundColor: "rgba(255, 255, 255, 0.9)",
+  "backgroundColor": "rgba(255, 255, 255, 0.9)",
   "&:hover": {
     backgroundColor: "rgba(255, 255, 255, 1)",
   },
