@@ -12,15 +12,15 @@ import {
 } from "@material-ui/core";
 import React, { useState } from "react";
 
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import Form from "components/contact/Form";
 import MapView from "components/maps/MapView";
 import { I18nextContext } from "gatsby-plugin-react-i18next";
 import { useGetProperty } from "hooks/useGetProperty";
 import { useTranslation } from "hooks/useTranslation";
-import Lightbox from "react-spring-lightbox";
+import Lightbox from "yet-another-react-lightbox";
+import Video from "yet-another-react-lightbox/plugins/video";
+import "yet-another-react-lightbox/styles.css";
 import { formatPrice } from "../../utils";
 import List from "./List";
 import PropertyFooter from "./PropertyFooter";
@@ -63,20 +63,24 @@ const Detail = ({ identifier }: DetailProps) => {
   const canShowOverlay = (index: number) =>
     index === imageGrid.length - 1 && property.pictures.length > 5;
 
-  const imageQuantity = property.pictures.length - 5;
-
   const imageGallery = property.pictures.map((image: any, index: number) => ({
+    type: "image",
     src: image.original,
-    loading: "lazy",
     alt: `Property image ${index + 1}`,
   }));
 
-  const gotoPrevious = () =>
-    currentImageIndex > 0 && setCurrentIndex(currentImageIndex - 1);
+  const videoGallery = (property.videos || []).map((videoUrl: string) => ({
+    type: "video",
+    sources: [
+      {
+        src: videoUrl,
+        type: "video/mp4",
+      },
+    ],
+  }));
 
-  const gotoNext = () =>
-    currentImageIndex + 1 < imageGallery.length &&
-    setCurrentIndex(currentImageIndex + 1);
+  const allSlides = [...imageGallery, ...videoGallery] as any;
+  const slidesQuantity = allSlides.length - 5;
 
   const handleClose = () => {
     setIsGalleryOpen(false);
@@ -120,7 +124,7 @@ const Detail = ({ identifier }: DetailProps) => {
             {canShowOverlay(index) && (
               <div className="overlay">
                 <Typography component="p" variant="h3" className="color-white">
-                  +{imageQuantity}
+                  +{slidesQuantity}
                 </Typography>
               </div>
             )}
@@ -193,29 +197,12 @@ const Detail = ({ identifier }: DetailProps) => {
 
       <Lightbox
         className="image-gallery"
-        isOpen={isGalleryOpen}
-        onPrev={gotoPrevious}
-        onNext={gotoNext}
-        images={imageGallery}
-        currentIndex={currentImageIndex}
-        renderPrevButton={() => (
-          <IconButton className="image-gallery-button" onClick={gotoPrevious}>
-            <ChevronLeftIcon className="color-white" fontSize="large" />
-          </IconButton>
-        )}
-        renderNextButton={() => (
-          <IconButton className="image-gallery-button" onClick={gotoNext}>
-            <ChevronRightIcon className="color-white" fontSize="large" />
-          </IconButton>
-        )}
-        onClose={handleClose}
-        singleClickToZoom
-        pageTransitionConfig={{
-          from: { opacity: 0 },
-          enter: { opacity: 1 },
-          leave: { opacity: 0 },
-          config: { mass: 1, tension: 320, friction: 32 },
-        }}
+        open={isGalleryOpen}
+        close={handleClose}
+        index={currentImageIndex}
+        slides={allSlides}
+        plugins={[Video]}
+        carousel={{ finite: true }}
       />
     </>
   );

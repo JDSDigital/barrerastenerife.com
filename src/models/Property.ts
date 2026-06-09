@@ -9,6 +9,7 @@ export type Property = {
   description: string;
   description_en: string;
   pictures: any;
+  videos?: string[];
   tags: string[];
   selling: boolean;
   selling_cost: number;
