@@ -32,6 +32,8 @@ type DetailProps = {
 const Detail = ({ identifier }: DetailProps) => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [currentImageIndex, setCurrentIndex] = useState(0);
+  const [isVideoGalleryOpen, setIsVideoGalleryOpen] = useState(false);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const { t } = useTranslation();
   const { language } = React.useContext(I18nextContext);
@@ -79,9 +81,6 @@ const Detail = ({ identifier }: DetailProps) => {
     ],
   }));
 
-  const allSlides = [...imageGallery, ...videoGallery] as any;
-  const slidesQuantity = allSlides.length - 5;
-
   const handleClose = () => {
     setIsGalleryOpen(false);
   };
@@ -107,30 +106,35 @@ const Detail = ({ identifier }: DetailProps) => {
 
   return (
     <>
-      <div className="image-container">
-        {imageGrid.map((image: any, index: number) => (
-          <div
-            key={`image-grid-${index}`}
-            onClick={() => {
-              setCurrentIndex(index);
-              setIsGalleryOpen(true);
-            }}
-          >
-            <img
-              className="img-responsive crop-center"
-              src={image.original}
-              alt={`Property image ${index + 1}`}
-            />
-            {canShowOverlay(index) && (
-              <div className="overlay">
-                <Typography component="p" variant="h3" className="color-white">
-                  +{slidesQuantity}
-                </Typography>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
+      <ImageContainerWrapper>
+        <div className="image-container">
+          {imageGrid.map((image: any, index: number) => (
+            <div
+              key={`image-grid-${index}`}
+              onClick={() => {
+                setCurrentIndex(index);
+                setIsGalleryOpen(true);
+              }}
+            >
+              <img
+                className="img-responsive crop-center"
+                src={image.original}
+                alt={`Property image ${index + 1}`}
+              />
+            </div>
+          ))}
+        </div>
+        <FloatingButtons>
+          <FloatingButton variant="contained" onClick={() => setIsGalleryOpen(true)}>
+            {imageGallery.length} {t("properties.photos") || "Fotos"}
+          </FloatingButton>
+          {videoGallery.length > 0 && (
+            <FloatingButton variant="contained" onClick={() => setIsVideoGalleryOpen(true)}>
+              {videoGallery.length} {t("properties.videos") || "Vídeos"}
+            </FloatingButton>
+          )}
+        </FloatingButtons>
+      </ImageContainerWrapper>
 
       <Container>
         <Grid container spacing={3}>
@@ -200,10 +204,20 @@ const Detail = ({ identifier }: DetailProps) => {
         open={isGalleryOpen}
         close={handleClose}
         index={currentImageIndex}
-        slides={allSlides}
-        plugins={[Video]}
+        slides={imageGallery}
         carousel={{ finite: true }}
       />
+      {videoGallery.length > 0 && (
+        <Lightbox
+          className="video-gallery"
+          open={isVideoGalleryOpen}
+          close={() => setIsVideoGalleryOpen(false)}
+          index={currentVideoIndex}
+          slides={videoGallery}
+          plugins={[Video]}
+          carousel={{ finite: true }}
+        />
+      )}
     </>
   );
 };
@@ -222,5 +236,25 @@ const WhatsAppButton = styled(Button)({
   "& > *": {
     display: "flex",
     gap: "8px",
+  },
+});
+
+const ImageContainerWrapper = styled("div")({
+  position: "relative",
+});
+
+const FloatingButtons = styled("div")({
+  position: "absolute",
+  bottom: "20px",
+  right: "20px",
+  display: "flex",
+  gap: "10px",
+  zIndex: 10,
+});
+
+const FloatingButton = styled(Button)({
+  backgroundColor: "rgba(255, 255, 255, 0.9)",
+  "&:hover": {
+    backgroundColor: "rgba(255, 255, 255, 1)",
   },
 });
