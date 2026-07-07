@@ -21,7 +21,7 @@ jobs:
   deploy:
     name: Lint & Test & Export
     runs-on: ubuntu-latest
-    container: node:lts-alpine
+    container: node:22-alpine
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v3
