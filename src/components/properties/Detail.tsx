@@ -12,15 +12,16 @@ import {
 } from "@material-ui/core";
 import React, { useState } from "react";
 
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import LightboxToolbarButtons from "./LightboxToolbarButtons";
 import Form from "components/contact/Form";
 import MapView from "components/maps/MapView";
 import { I18nextContext } from "gatsby-plugin-react-i18next";
 import { useGetProperty } from "hooks/useGetProperty";
 import { useTranslation } from "hooks/useTranslation";
-import Lightbox from "react-spring-lightbox";
+import Lightbox from "yet-another-react-lightbox";
+import Video from "yet-another-react-lightbox/plugins/video";
+import "yet-another-react-lightbox/styles.css";
 import { formatPrice } from "../../utils";
 import List from "./List";
 import PropertyFooter from "./PropertyFooter";
@@ -32,6 +33,8 @@ type DetailProps = {
 const Detail = ({ identifier }: DetailProps) => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [currentImageIndex, setCurrentIndex] = useState(0);
+  const [isVideoGalleryOpen, setIsVideoGalleryOpen] = useState(false);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const { t } = useTranslation();
   const { language } = React.useContext(I18nextContext);
@@ -63,20 +66,21 @@ const Detail = ({ identifier }: DetailProps) => {
   const canShowOverlay = (index: number) =>
     index === imageGrid.length - 1 && property.pictures.length > 5;
 
-  const imageQuantity = property.pictures.length - 5;
-
   const imageGallery = property.pictures.map((image: any, index: number) => ({
+    type: "image",
     src: image.original,
-    loading: "lazy",
     alt: `Property image ${index + 1}`,
   }));
 
-  const gotoPrevious = () =>
-    currentImageIndex > 0 && setCurrentIndex(currentImageIndex - 1);
-
-  const gotoNext = () =>
-    currentImageIndex + 1 < imageGallery.length &&
-    setCurrentIndex(currentImageIndex + 1);
+  const videoGallery = (property.videos || []).map((videoUrl: string) => ({
+    type: "video",
+    sources: [
+      {
+        src: videoUrl,
+        type: "video/mp4",
+      },
+    ],
+  }));
 
   const handleClose = () => {
     setIsGalleryOpen(false);
@@ -103,30 +107,41 @@ const Detail = ({ identifier }: DetailProps) => {
 
   return (
     <>
-      <div className="image-container">
-        {imageGrid.map((image: any, index: number) => (
-          <div
-            key={`image-grid-${index}`}
-            onClick={() => {
-              setCurrentIndex(index);
-              setIsGalleryOpen(true);
-            }}
+      <ImageContainerWrapper>
+        <div className="image-container">
+          {imageGrid.map((image: any, index: number) => (
+            <div
+              key={`image-grid-${index}`}
+              onClick={() => {
+                setCurrentIndex(index);
+                setIsGalleryOpen(true);
+              }}
+            >
+              <img
+                className="img-responsive crop-center"
+                src={image.original}
+                alt={`Property image ${index + 1}`}
+              />
+            </div>
+          ))}
+        </div>
+        <FloatingButtons>
+          <FloatingButton
+            variant="contained"
+            onClick={() => setIsGalleryOpen(true)}
           >
-            <img
-              className="img-responsive crop-center"
-              src={image.original}
-              alt={`Property image ${index + 1}`}
-            />
-            {canShowOverlay(index) && (
-              <div className="overlay">
-                <Typography component="p" variant="h3" className="color-white">
-                  +{imageQuantity}
-                </Typography>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
+            {imageGallery.length} {t("properties.photos") || "Fotos"}
+          </FloatingButton>
+          {videoGallery.length > 0 && (
+            <FloatingButton
+              variant="contained"
+              onClick={() => setIsVideoGalleryOpen(true)}
+            >
+              {videoGallery.length} {t("properties.videos") || "Vídeos"}
+            </FloatingButton>
+          )}
+        </FloatingButtons>
+      </ImageContainerWrapper>
 
       <Container>
         <Grid container spacing={3}>
@@ -193,30 +208,57 @@ const Detail = ({ identifier }: DetailProps) => {
 
       <Lightbox
         className="image-gallery"
-        isOpen={isGalleryOpen}
-        onPrev={gotoPrevious}
-        onNext={gotoNext}
-        images={imageGallery}
-        currentIndex={currentImageIndex}
-        renderPrevButton={() => (
-          <IconButton className="image-gallery-button" onClick={gotoPrevious}>
-            <ChevronLeftIcon className="color-white" fontSize="large" />
-          </IconButton>
-        )}
-        renderNextButton={() => (
-          <IconButton className="image-gallery-button" onClick={gotoNext}>
-            <ChevronRightIcon className="color-white" fontSize="large" />
-          </IconButton>
-        )}
-        onClose={handleClose}
-        singleClickToZoom
-        pageTransitionConfig={{
-          from: { opacity: 0 },
-          enter: { opacity: 1 },
-          leave: { opacity: 0 },
-          config: { mass: 1, tension: 320, friction: 32 },
+        open={isGalleryOpen}
+        close={handleClose}
+        index={currentImageIndex}
+        slides={imageGallery}
+        carousel={{ finite: true }}
+        toolbar={{
+          buttons: [
+            ...(videoGallery.length > 0
+              ? [
+                  <LightboxToolbarButtons
+                    key="toolbar-buttons"
+                    activeType="photo"
+                    onSwitch={type => {
+                      if (type === "video") {
+                        setIsGalleryOpen(false);
+                        setIsVideoGalleryOpen(true);
+                      }
+                    }}
+                  />,
+                ]
+              : []),
+            "close",
+          ],
         }}
       />
+      {videoGallery.length > 0 && (
+        <Lightbox
+          className="video-gallery"
+          open={isVideoGalleryOpen}
+          close={() => setIsVideoGalleryOpen(false)}
+          index={currentVideoIndex}
+          slides={videoGallery}
+          plugins={[Video]}
+          carousel={{ finite: true }}
+          toolbar={{
+            buttons: [
+              <LightboxToolbarButtons
+                key="toolbar-buttons"
+                activeType="video"
+                onSwitch={type => {
+                  if (type === "photo") {
+                    setIsVideoGalleryOpen(false);
+                    setIsGalleryOpen(true);
+                  }
+                }}
+              />,
+              "close",
+            ],
+          }}
+        />
+      )}
     </>
   );
 };
@@ -235,5 +277,25 @@ const WhatsAppButton = styled(Button)({
   "& > *": {
     display: "flex",
     gap: "8px",
+  },
+});
+
+const ImageContainerWrapper = styled("div")({
+  position: "relative",
+});
+
+const FloatingButtons = styled("div")({
+  position: "absolute",
+  bottom: "20px",
+  right: "20px",
+  display: "flex",
+  gap: "10px",
+  zIndex: 10,
+});
+
+const FloatingButton = styled(Button)({
+  "backgroundColor": "rgba(255, 255, 255, 0.9)",
+  "&:hover": {
+    backgroundColor: "rgba(255, 255, 255, 1)",
   },
 });
