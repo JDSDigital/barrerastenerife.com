@@ -17,9 +17,9 @@ const Footer: React.FC = () => {
           gatsbyImageData(layout: FIXED, height: 230)
         }
       }
-      map: file(relativePath: { eq: "map.png" }) {
+      moves: file(relativePath: { eq: "moves.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 255)
+          gatsbyImageData(layout: FIXED, width: 300)
         }
       }
     }
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
           </Link>
         </Grid>
 
-        <Grid item xs={12} sm={8} className="footer-data">
+        <Grid item xs={12} sm={4} className="footer-data">
           <Typography variant="h4">{t("contact.title")}</Typography>
 
           <div>
@@ -82,6 +82,10 @@ const Footer: React.FC = () => {
               <LinkedInIcon />
             </a>
           </div>
+        </Grid>
+
+        <Grid item xs={12} sm={4} className="footer-provider">
+          <GatsbyImage image={getImage(data.moves)!} alt="moves" />
         </Grid>
       </Grid>
     </footer>

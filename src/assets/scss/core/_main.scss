@@ -133,6 +133,16 @@ body {
         margin-right: 0.5em;
       }
     }
+
+    .footer-provider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include sm {
+        padding: 8em !important;
+      }
+    }
   }
 
   .languages-menu {
