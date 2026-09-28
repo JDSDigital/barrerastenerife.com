@@ -73,7 +73,7 @@ const Detail = ({ identifier }: DetailProps) => {
   }));
 
   const videoGallery = (property.videos || []).map((videoUrl: string) => ({
-    type: "video",
+    type: "video" as const,
     sources: [
       {
         src: videoUrl,
