@@ -12,7 +12,7 @@ module.exports = {
   modulePaths: ["<rootDir>/src"],
   testPathIgnorePatterns: [`node_modules`, `\\.cache`, `<rootDir>.*/public`],
   transformIgnorePatterns: [
-    `node_modules/(?!(gatsby|gatsby-script|gatsby-link)/)`,
+    `node_modules/(?!(gatsby|gatsby-script|gatsby-link|yet-another-react-lightbox)/)`,
   ],
   globals: {
     __PATH_PREFIX__: ``,

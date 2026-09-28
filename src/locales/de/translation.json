@@ -141,6 +141,8 @@
     "bathrooms": "Badezimmer",
     "tags": "Etiketten",
     "from": "Ab",
+    "photos": "Fotos",
+    "videos": "Videos",
 
     "search": {
       "show": "erweiterte Suche",

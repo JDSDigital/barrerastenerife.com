@@ -141,6 +141,8 @@
     "bathrooms": "Łazienki",
     "tags": "Tagi",
     "from": "Z",
+    "photos": "Foto",
+    "videos": "Video",
 
     "search": {
       "show": "zaawansowane wyszukiwanie",

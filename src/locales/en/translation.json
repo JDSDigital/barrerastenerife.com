@@ -141,6 +141,8 @@
     "bathrooms": "Bathrooms",
     "tags": "Tags",
     "from": "From",
+    "photos": "Photos",
+    "videos": "Videos",
 
     "search": {
       "show": "Advanced Search",

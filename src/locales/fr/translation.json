@@ -141,6 +141,8 @@
     "bathrooms": "Salles de bains",
     "tags": "Mots clés",
     "from": "Depuis",
+    "photos": "Photos",
+    "videos": "Vidéos",
 
     "search": {
       "show": "Recherche Avancée",
